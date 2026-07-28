@@ -1,0 +1,11 @@
+/* Make logo bigger and responsive */
+.header__logo img {
+    height: 80px !important;  /* Adjust this value as needed */
+    width: auto !important;
+}
+
+@media (max-width: 768px) {
+    .header__logo img {
+        height: 60px !important;
+    }
+}

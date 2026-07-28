@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="no-js theme-{{ preferences.get_value('simple_style') or 'auto' }} center-alignment-{{ preferences.get_value('center_alignment') and 'yes' or 'no' }}" lang="{{ locale_rfc5646 }}" {% if rtl %} dir="rtl"{% endif %}>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Aperion Search — a privacy-respecting, open metasearch engine">
+  <meta name="google-site-verification" content="JRY4X-Ohc3JaFLd5yODaT9B849Xdb2QEePyBFdefUcY" />
+  <meta name="keywords" content="Aperion Search, search, search engine, metasearch, meta search">
+  <meta name="generator" content="Aperion Search">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noarchive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <title>{% block title %}Aperion Search{% endblock %}</title>
+  {% block meta %}{% endblock %}
+  {% if rtl %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/aperion-rtl.min.css') }}" type="text/css" media="screen">
+  {% else %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/aperion.min.css') }}" type="text/css" media="screen">
+  {% endif %}
+  {% if get_setting('server.limiter') or get_setting('server.public_instance') %}
+  <link rel="stylesheet" href="{{ url_for('client_token', token=link_token) }}" type="text/css">
+  {% endif %}
+  <script src="{{ url_for('static', filename='js/aperion.head.min.js') }}" client_settings="{{ client_settings }}"></script>
+  {% block head %}
+  <link title="Aperion Search" type="application/opensearchdescription+xml" rel="search" href="{{ opensearch_url }}">
+  {% endblock %}
+  <link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}" sizes="any">
+  <link rel="icon" href="{{ url_for('static', filename='img/favicon.svg') }}" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+</head>
+<body class="{{ endpoint }}_endpoint">
+  <main id="main_{{  self._TemplateReference__context.name|replace("simple/", "")|replace(".html", "") }}" class="{{body_class}}">
+    {% if errors %}
+        <div class="dialog-error" role="alert">
+            <a href="#" class="close" aria-label="close" title="close">×</a>
+            <ul>
+            {% for message in errors %}
+                <li>{{ message }}</li>
+            {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+
+    <nav id="links_on_top">
+      {%- from 'simple/icons.html' import icon_big -%}
+      {%- block linkto_about -%}
+        <a href="{{ url_for('info', pagename='about') }}" class="link_on_top_about">{{ icon_big('information-circle') }}<span>{{ _('About') }}</span></a>
+      {%- endblock -%}
+      {%- block linkto_donate -%}
+        {%- if donation_url -%}
+        <a href="{{ donation_url }}" class="link_on_top_donate">{{ icon_big('heart') }}<span>{{ _('Donate') }}</span></a>
+        {%- endif -%}
+      {%- endblock -%}
+      {%- block linkto_preferences -%}
+        <a href="{{ url_for('preferences') }}" class="link_on_top_preferences">{{ icon_big('settings') }}<span>{{ _('Preferences') }}</span></a>
+      {%- endblock -%}
+    </nav>
+
+    {% block header %}{% endblock %}
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    <p>
+        Powered by <a href="{{ url_for('info', pagename='about') }}">Aperion Search</a>
+        — a privacy-respecting, open metasearch engine<br>
+        Created by <strong>Burhanuddin M. Huzaifa Badnagar</strong> — <em>Founder of Aperion Search</em><br>
+        | <a href="{{ get_setting('brand.issue_url') }}">Issue tracker</a>
+        {% if enable_metrics %}| <a href="{{ url_for('stats') }}">Engine stats</a>{% endif %}
+        {% if get_setting('general.privacypolicy_url') %}
+        | <a href="{{ get_setting('general.privacypolicy_url') }}">Privacy policy</a>
+        {% endif %}
+        {% if get_setting('general.contact_url') %}
+        | <a href="{{ get_setting('general.contact_url') }}">Contact instance maintainer</a>
+        {% endif %}
+        {% for title, link in get_setting('brand.custom.links').items() %}
+        | <a href="{{ link }}">{{ _(title) }}</a>
+        {% endfor %}
+    </p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/aperion.min.js') }}"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Aperion Search",
+  "creator": {
+    "@type": "Person",
+    "name": "Burhanuddin M. Huzaifa Badnagar",
+    "url": "https://yourwebsite.com"
+  },
+  "description": "Aperion Search is a privacy-respecting, open metasearch engine created by Burhanuddin M. Huzaifa Badnagar.",
+  "url": "https://infinitysearch.com"
+}
+</script>
+</body>
+</html>

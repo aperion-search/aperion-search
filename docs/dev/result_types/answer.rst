@@ -1,0 +1,10 @@
+.. _result_types.answer:
+
+==============
+Answer Results
+==============
+
+The :ref:`area answer results` is an area in which additional information can
+be displayed.
+
+.. automodule:: aperion.result_types.answer

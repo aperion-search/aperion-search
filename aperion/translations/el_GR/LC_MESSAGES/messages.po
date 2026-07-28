@@ -1,0 +1,2396 @@
+# Greek (Greece) translations for .
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the  project.
+#
+# Translators:
+# xinomilo <dimitris@stinpriza.org>, 2017-2018
+# xinomilo <dimitris@stinpriza.org>, 2015
+# Markus Heiser <markus.heiser@darmarit.de>, 2022, 2023.
+# Constantine Giannopoulos <K.Giannopoulos@acg.edu>, 2022.
+# Alexandre Flament <alex@al-f.net>, 2022.
+# return42 <markus.heiser@darmarit.de>, 2023.
+# KDesp73 <kdesp2003@gmail.com>, 2023.
+# RaptaG <george-raptis@tutamail.com>, 2023.
+# return42 <return42@users.noreply.translate.codeberg.org>, 2024, 2025.
+# notlmutsaers <notlmutsaers@users.noreply.translate.codeberg.org>, 2024,
+# 2025.
+# silukyo <silukyo@users.noreply.translate.codeberg.org>, 2024, 2025.
+# Anonymous <anonymous@users.noreply.translate.codeberg.org>, 2025.
+# RaptaG <raptag@users.noreply.translate.codeberg.org>, 2025.
+# KDesp73 <kdesp73@users.noreply.translate.codeberg.org>, 2025.
+# return42 <return42@noreply.codeberg.org>, 2025.
+# sakistzimas <sakistzimas@noreply.codeberg.org>, 2025.
+# gkalathas <gkalathas@noreply.codeberg.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: aperion\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-07-03 14:46+0000\n"
+"PO-Revision-Date: 2025-07-30 09:09+0000\n"
+"Last-Translator: gkalathas <gkalathas@noreply.codeberg.org>\n"
+"Language-Team: Greek <https://translate.codeberg.org/projects/aperion/"
+"aperion/el/>\n"
+"Language: el_GR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.12.2\n"
+"Generated-By: Babel 2.17.0\n"
+
+#. CONSTANT_NAMES['NO_SUBGROUPING']
+#: aperion/aperion.msg
+msgid "without further subgrouping"
+msgstr "χωρίς περαιτέρω ομαδοποίηση"
+
+#. CONSTANT_NAMES['DEFAULT_CATEGORY']
+#: aperion/aperion.msg
+msgid "other"
+msgstr "λοιπά"
+
+#. CATEGORY_NAMES['FILES']
+#: aperion/aperion.msg
+msgid "files"
+msgstr "αρχεία"
+
+#. CATEGORY_NAMES['GENERAL']
+#: aperion/aperion.msg
+msgid "general"
+msgstr "γενικά"
+
+#. CATEGORY_NAMES['MUSIC']
+#: aperion/aperion.msg
+msgid "music"
+msgstr "μουσική"
+
+#. CATEGORY_NAMES['SOCIAL_MEDIA']
+#: aperion/aperion.msg
+msgid "social media"
+msgstr "κοινωνικά δίκτυα"
+
+#. CATEGORY_NAMES['IMAGES']
+#: aperion/aperion.msg
+msgid "images"
+msgstr "εικόνες"
+
+#. CATEGORY_NAMES['VIDEOS']
+#: aperion/aperion.msg
+msgid "videos"
+msgstr "Βίντεο"
+
+#. CATEGORY_NAMES['RADIO']
+#: aperion/engines/radio_browser.py:151 aperion/aperion.msg
+msgid "radio"
+msgstr "ράδιο"
+
+#. CATEGORY_NAMES['TV']
+#: aperion/aperion.msg
+msgid "tv"
+msgstr "Τηλεόραση"
+
+#. CATEGORY_NAMES['IT']
+#: aperion/aperion.msg
+msgid "it"
+msgstr "Πληροφορική"
+
+#. CATEGORY_NAMES['NEWS']
+#: aperion/aperion.msg
+msgid "news"
+msgstr "νέα"
+
+#. CATEGORY_NAMES['MAP']
+#: aperion/aperion.msg
+msgid "map"
+msgstr "χάρτης"
+
+#. CATEGORY_NAMES['ONIONS']
+#: aperion/aperion.msg
+msgid "onions"
+msgstr "Σελίδες .onion (tor)"
+
+#. CATEGORY_NAMES['SCIENCE']
+#: aperion/aperion.msg
+msgid "science"
+msgstr "επιστήμη"
+
+#. CATEGORY_GROUPS['APPS']
+#: aperion/aperion.msg
+msgid "apps"
+msgstr "Εφαρμογές"
+
+#. CATEGORY_GROUPS['DICTIONARIES']
+#: aperion/aperion.msg
+msgid "dictionaries"
+msgstr "λεξικά"
+
+#. CATEGORY_GROUPS['LYRICS']
+#: aperion/aperion.msg
+msgid "lyrics"
+msgstr "Στίχοι"
+
+#. CATEGORY_GROUPS['PACKAGES']
+#: aperion/aperion.msg
+msgid "packages"
+msgstr "πακέτα"
+
+#. CATEGORY_GROUPS['Q_A']
+#: aperion/aperion.msg
+msgid "q&a"
+msgstr "ερωταπαντήσεις"
+
+#. CATEGORY_GROUPS['REPOS']
+#: aperion/aperion.msg
+msgid "repos"
+msgstr "αποθετήρια"
+
+#. CATEGORY_GROUPS['SOFTWARE_WIKIS']
+#: aperion/aperion.msg
+msgid "software wikis"
+msgstr "Wiki λογισμικού"
+
+#. CATEGORY_GROUPS['WEB']
+#: aperion/aperion.msg
+msgid "web"
+msgstr "Ιστός"
+
+#. CATEGORY_GROUPS['SCIENTIFIC PUBLICATIONS']
+#: aperion/aperion.msg
+msgid "scientific publications"
+msgstr "Επιστημονικά δημοσιεύματα"
+
+#. STYLE_NAMES['AUTO']
+#: aperion/aperion.msg
+msgid "auto"
+msgstr "Αυτόματα"
+
+#. STYLE_NAMES['LIGHT']
+#: aperion/aperion.msg
+msgid "light"
+msgstr "φωτεινό"
+
+#. STYLE_NAMES['DARK']
+#: aperion/aperion.msg
+msgid "dark"
+msgstr "σκοτεινό"
+
+#. STYLE_NAMES['BLACK']
+#: aperion/aperion.msg
+msgid "black"
+msgstr "μαύρο"
+
+#. BRAND_CUSTOM_LINKS['UPTIME']
+#: aperion/aperion.msg
+msgid "Uptime"
+msgstr "χρόνο λειτουργίας"
+
+#. BRAND_CUSTOM_LINKS['ABOUT']
+#: aperion/aperion.msg aperion/templates/simple/base.html:49
+msgid "About"
+msgstr "Σχετικά με το aperion"
+
+#. WEATHER_TERMS['AVERAGE TEMP.']
+#: aperion/aperion.msg
+msgid "Average temp."
+msgstr "Μέση θερμοκρασία."
+
+#. WEATHER_TERMS['CLOUD COVER']
+#: aperion/aperion.msg
+msgid "Cloud cover"
+msgstr "Νεφοκάλυψη"
+
+#. WEATHER_TERMS['CONDITION']
+#: aperion/engines/duckduckgo_weather.py:45 aperion/aperion.msg
+msgid "Condition"
+msgstr "Κατάσταση"
+
+#. WEATHER_TERMS['CURRENT CONDITION']
+#: aperion/engines/duckduckgo_weather.py:118 aperion/aperion.msg
+msgid "Current condition"
+msgstr "Τωρινή κατάσταση"
+
+#. WEATHER_TERMS['EVENING']
+#: aperion/aperion.msg
+msgid "Evening"
+msgstr "Βράδυ"
+
+#. WEATHER_TERMS['FEELS LIKE']
+#: aperion/engines/duckduckgo_weather.py:53 aperion/aperion.msg
+msgid "Feels like"
+msgstr "Αίσθηση"
+
+#. WEATHER_TERMS['HUMIDITY']
+#: aperion/engines/duckduckgo_weather.py:64 aperion/aperion.msg
+#: aperion/templates/simple/answer/weather.html:29
+msgid "Humidity"
+msgstr "Υγρασία"
+
+#. WEATHER_TERMS['MAX TEMP.']
+#: aperion/engines/duckduckgo_weather.py:77 aperion/aperion.msg
+msgid "Max temp."
+msgstr "Μέγιστη θερμοκρασία."
+
+#. WEATHER_TERMS['MIN TEMP.']
+#: aperion/engines/duckduckgo_weather.py:73 aperion/aperion.msg
+msgid "Min temp."
+msgstr "Ελάχιστη Θερμοκρασία"
+
+#. WEATHER_TERMS['MORNING']
+#: aperion/aperion.msg
+msgid "Morning"
+msgstr "Πρωί"
+
+#. WEATHER_TERMS['NIGHT']
+#: aperion/aperion.msg
+msgid "Night"
+msgstr "Βράδι"
+
+#. WEATHER_TERMS['NOON']
+#: aperion/aperion.msg
+msgid "Noon"
+msgstr "Μεσημέρι"
+
+#. WEATHER_TERMS['PRESSURE']
+#: aperion/aperion.msg aperion/templates/simple/answer/weather.html:25
+msgid "Pressure"
+msgstr "Πίεση"
+
+#. WEATHER_TERMS['SUNRISE']
+#: aperion/engines/duckduckgo_weather.py:81 aperion/aperion.msg
+msgid "Sunrise"
+msgstr "Ανατολή ηλίου"
+
+#. WEATHER_TERMS['SUNSET']
+#: aperion/engines/duckduckgo_weather.py:82 aperion/aperion.msg
+msgid "Sunset"
+msgstr "Η δυση του ηλιου"
+
+#. WEATHER_TERMS['TEMPERATURE']
+#: aperion/engines/duckduckgo_weather.py:48 aperion/aperion.msg
+#: aperion/templates/simple/answer/weather.html:17
+msgid "Temperature"
+msgstr "Θερμοκρασία"
+
+#. WEATHER_TERMS['UV INDEX']
+#: aperion/engines/duckduckgo_weather.py:80 aperion/aperion.msg
+msgid "UV index"
+msgstr "Δείκτης UV"
+
+#. WEATHER_TERMS['VISIBILITY']
+#: aperion/engines/duckduckgo_weather.py:62 aperion/aperion.msg
+msgid "Visibility"
+msgstr "Ορατότητα"
+
+#. WEATHER_TERMS['WIND']
+#: aperion/engines/duckduckgo_weather.py:58 aperion/aperion.msg
+#: aperion/templates/simple/answer/weather.html:23
+msgid "Wind"
+msgstr "Ανεμος"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Clear sky"
+msgstr "Καθαρός Ουρανός"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Partly cloudy"
+msgstr "Μερική Συννεφιά"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Cloudy"
+msgstr "Συννεφιασμένος"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Fair"
+msgstr "Δίκαιος"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Fog"
+msgstr "Ομίχλη"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain and thunder"
+msgstr "ψιλή βροχή με κεραυνούς"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain showers and thunder"
+msgstr "Ελαφριές βροχές και καταιγίδες"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain showers"
+msgstr "Ασθενείς βροχές"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain"
+msgstr "Ελαφριά βροχή"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain and thunder"
+msgstr "Βροχές και καταιγίδες"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain showers and thunder"
+msgstr "Βροχές και καταιγίδες"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain showers"
+msgstr "Μπόρες βροχής"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain"
+msgstr "Βροχή"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain and thunder"
+msgstr "Ισχυρές βροχές και καταιγίδες"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain showers and thunder"
+msgstr "Ισχυρές βροχοπτώσεις και καταιγίδες"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain showers"
+msgstr "Ισχυρές βροχοπτώσεις"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain"
+msgstr "Δυνατή βροχή"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet and thunder"
+msgstr "Ελαφρύ χιονόνερο και βροντές"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet showers and thunder"
+msgstr "Ελαφρύ χιονόνερο και καταιγίδες"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet showers"
+msgstr "Ελαφρύ χιονόνερο"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet"
+msgstr "Ελαφρύ χιονόνερο"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet and thunder"
+msgstr "Χιονόνερο και βροντές"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet showers and thunder"
+msgstr "Χιονόνερο και βροντές"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet showers"
+msgstr "Χιονόνερο"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet"
+msgstr "Χιονόνερο"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet and thunder"
+msgstr "Ισχυρό χιονόνερο και βροντές"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet showers and thunder"
+msgstr "Έντονες χαλαζοπτώσεις και καταιγίδα"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet showers"
+msgstr "Ισχυρές χιονόνερες"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet"
+msgstr "Ισχυρό χιονόνερο"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow and thunder"
+msgstr "Ασθενής χιονόπτωση και βροντές"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow showers and thunder"
+msgstr "Ασθενείς χιονοπτώσεις με συνοδεία βροντών"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow showers"
+msgstr "Ασθενείς χιονοπτώσεις"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow"
+msgstr "Ψιλό Χιόνι"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow and thunder"
+msgstr "Χιόνι και βροντές"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow showers and thunder"
+msgstr "χιονοπτώσεις και βροντές"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow showers"
+msgstr "χιονοπτώσεις"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow"
+msgstr "Χιόνι"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow and thunder"
+msgstr "Ισχυρές χιονοπτώσεις και βροντές"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow showers and thunder"
+msgstr "Ισχυρές χιονοπτώσεις και βροντές"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow showers"
+msgstr "Ισχυρές χιονοπτώσεις"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow"
+msgstr "Πυκνό χιόνι"
+
+#. SOCIAL_MEDIA_TERMS['SUBSCRIBERS']
+#: aperion/engines/lemmy.py:85 aperion/aperion.msg
+msgid "subscribers"
+msgstr "συνδρομητές"
+
+#. SOCIAL_MEDIA_TERMS['POSTS']
+#: aperion/engines/lemmy.py:86 aperion/aperion.msg
+msgid "posts"
+msgstr "αναρτήσεις"
+
+#. SOCIAL_MEDIA_TERMS['ACTIVE USERS']
+#: aperion/engines/lemmy.py:87 aperion/aperion.msg
+msgid "active users"
+msgstr "ενεργούς χρήστες"
+
+#. SOCIAL_MEDIA_TERMS['COMMENTS']
+#: aperion/engines/discourse.py:157 aperion/engines/hackernews.py:82
+#: aperion/engines/lemmy.py:130 aperion/aperion.msg
+msgid "comments"
+msgstr "σχόλια"
+
+#. SOCIAL_MEDIA_TERMS['USER']
+#: aperion/engines/lemmy.py:129 aperion/engines/lemmy.py:164 aperion/aperion.msg
+msgid "user"
+msgstr "χρήστης"
+
+#. SOCIAL_MEDIA_TERMS['COMMUNITY']
+#: aperion/engines/lemmy.py:131 aperion/engines/lemmy.py:165 aperion/aperion.msg
+msgid "community"
+msgstr "κοινότητα"
+
+#. SOCIAL_MEDIA_TERMS['POINTS']
+#: aperion/engines/hackernews.py:82 aperion/aperion.msg
+msgid "points"
+msgstr "σημεία"
+
+#. SOCIAL_MEDIA_TERMS['TITLE']
+#: aperion/aperion.msg
+msgid "title"
+msgstr "τίτλος"
+
+#. SOCIAL_MEDIA_TERMS['AUTHOR']
+#: aperion/engines/hackernews.py:85 aperion/aperion.msg
+msgid "author"
+msgstr "συγγραφέας"
+
+#. SOCIAL_MEDIA_TERMS['THREAD OPEN']
+#: aperion/engines/discourse.py:149 aperion/aperion.msg
+msgid "open"
+msgstr "Άνοιξε"
+
+#. SOCIAL_MEDIA_TERMS['THREAD CLOSED']
+#: aperion/engines/discourse.py:149 aperion/aperion.msg
+msgid "closed"
+msgstr "κλειστό"
+
+#. SOCIAL_MEDIA_TERMS['THREAD ANSWERED']
+#: aperion/engines/discourse.py:160 aperion/aperion.msg
+msgid "answered"
+msgstr "απάντησε"
+
+#: aperion/webapp.py:292
+msgid "No item found"
+msgstr "Δεν βρέθηκαν αντικείμενα"
+
+#: aperion/engines/qwant.py:291
+#: aperion/templates/simple/result_templates/images.html:23 aperion/webapp.py:294
+msgid "Source"
+msgstr "Πηγή"
+
+#: aperion/webapp.py:296
+msgid "Error loading the next page"
+msgstr "Σφάλμα φόρτωσης της επόμενης σελίδας"
+
+#: aperion/webapp.py:447 aperion/webapp.py:845
+msgid "Invalid settings, please edit your preferences"
+msgstr "Μη έγκυρες ρυθμίσεις, παρακαλούμε ελέγξτε τις προτιμήσεις σας"
+
+#: aperion/webapp.py:463
+msgid "Invalid settings"
+msgstr "Μη έγκυρες ρυθμίσεις"
+
+#: aperion/webapp.py:540 aperion/webapp.py:630
+msgid "search error"
+msgstr "σφάλμα αναζήτησης"
+
+#: aperion/webutils.py:35
+msgid "timeout"
+msgstr "Λήξη χρόνου"
+
+#: aperion/webutils.py:36
+msgid "parsing error"
+msgstr "σφάλμα ανάλυσης"
+
+#: aperion/webutils.py:37
+msgid "HTTP protocol error"
+msgstr "Σφάλμα πρωτοκόλλου HTTP"
+
+#: aperion/webutils.py:38
+msgid "network error"
+msgstr "Σφάλμα δικτύου"
+
+#: aperion/webutils.py:39
+msgid "SSL error: certificate validation has failed"
+msgstr "Σφάλμα SSL: η επικύρωση του πιστοποιητικού απέτυχε"
+
+#: aperion/webutils.py:41
+msgid "unexpected crash"
+msgstr "Απροσδόκητο σφάλμα"
+
+#: aperion/webutils.py:48
+msgid "HTTP error"
+msgstr "Σφάλμα HTTP"
+
+#: aperion/webutils.py:49
+msgid "HTTP connection error"
+msgstr "Σφάλμα σύνδεσης HTTP"
+
+#: aperion/webutils.py:55
+msgid "proxy error"
+msgstr "Σφάλμα διακομιστή μεσολάβησης"
+
+#: aperion/webutils.py:56
+msgid "CAPTCHA"
+msgstr "CAPTCHA"
+
+#: aperion/webutils.py:57
+msgid "too many requests"
+msgstr "υπέρβαση ορίου αιτημάτων"
+
+#: aperion/webutils.py:58
+msgid "access denied"
+msgstr "Άρνηση πρόσβασης"
+
+#: aperion/webutils.py:59
+msgid "server API error"
+msgstr "Σφάλμα API διακομιστή"
+
+#: aperion/webutils.py:78
+msgid "Suspended"
+msgstr "Σε αναστολή"
+
+#: aperion/webutils.py:313
+#, python-brace-format
+msgid "{minutes} minute(s) ago"
+msgstr "{minutes} λεπτά πριν"
+
+#: aperion/webutils.py:314
+#, python-brace-format
+msgid "{hours} hour(s), {minutes} minute(s) ago"
+msgstr "{hours} ώρα(-ες), {minutes} λεπτό(-ά) πριν"
+
+#: aperion/answerers/random.py:69
+msgid "Generate different random values"
+msgstr "Δημιουργία διαφορετικών τυχαίων τιμών"
+
+#: aperion/answerers/statistics.py:36
+#, python-brace-format
+msgid "Compute {func} of the arguments"
+msgstr "Υπολογίστε τη {func} των ορισμάτων"
+
+#: aperion/engines/openstreetmap.py:158
+msgid "Show route in map .."
+msgstr "Εμφάνιση διαδρομής στον χάρτη .."
+
+#: aperion/engines/pdbe.py:96
+#, python-brace-format
+msgid "{title} (OBSOLETE)"
+msgstr "{title} (ΠΑΡΩΧΗΜΕΝΟΣ)"
+
+#: aperion/engines/pdbe.py:103
+msgid "This entry has been superseded by"
+msgstr "Αυτή η καταχώριση έχει αντικατασταθεί από"
+
+#: aperion/engines/qwant.py:293
+msgid "Channel"
+msgstr "Κανάλι"
+
+#: aperion/engines/radio_browser.py:153
+msgid "bitrate"
+msgstr "ρυθμός μετάδοσης"
+
+#: aperion/engines/radio_browser.py:154
+msgid "votes"
+msgstr "ψήφους"
+
+#: aperion/engines/radio_browser.py:155
+msgid "clicks"
+msgstr "κλικ"
+
+#: aperion/engines/seekr.py:193 aperion/engines/yummly.py:71
+#: aperion/engines/zlibrary.py:137
+msgid "Language"
+msgstr "Γλώσσα"
+
+#: aperion/engines/semantic_scholar.py:101
+#, python-brace-format
+msgid ""
+"{numCitations} citations from the year {firstCitationVelocityYear} to "
+"{lastCitationVelocityYear}"
+msgstr ""
+"{numCitations} αναφορές απο τα έτη {firstCitationVelocityYear} εώς "
+"{lastCitationVelocityYear}"
+
+#: aperion/engines/tineye.py:48
+msgid ""
+"Could not read that image url. This may be due to an unsupported file "
+"format. TinEye only supports images that are JPEG, PNG, GIF, BMP, TIFF or"
+" WebP."
+msgstr ""
+"Αποτυχία ανάγνωσης του συνδέσμου της εικόνας. Αυτό μπορεί να οφείλεται σε"
+" μη υποστηριζόμενη μορφή αρχείου. Το TinEye υποστηρίζει μόνο εικόνες που "
+"είναι JPEG, PNG, GIF, BMP, TIFF ή WebP."
+
+#: aperion/engines/tineye.py:54
+msgid ""
+"The image is too simple to find matches. TinEye requires a basic level of"
+" visual detail to successfully identify matches."
+msgstr ""
+"Η εικόνα είναι πολύ απλή για να βρεθούν αντιστοιχίες. Το TinEye απαιτεί "
+"ένα στοιχειώδης επίπεδο λεπτομέρειας για τον επιτυχή εντοπισμό "
+"αντιστοιχιών."
+
+#: aperion/engines/tineye.py:59
+msgid "The image could not be downloaded."
+msgstr "Αποτυχία μεταφόρτωσης εικόνας."
+
+#: aperion/engines/zlibrary.py:138
+msgid "Book rating"
+msgstr "Βαθμολογία βιβλίου"
+
+#: aperion/engines/zlibrary.py:139
+msgid "File quality"
+msgstr "Ποιότητα αρχείου"
+
+#: aperion/plugins/ahmia_filter.py:32
+msgid "Ahmia blacklist"
+msgstr "Η μαύρη λίστα της Ahmia"
+
+#: aperion/plugins/ahmia_filter.py:33
+msgid "Filter out onion results that appear in Ahmia's blacklist."
+msgstr ""
+"Φιλτράρισμα των αποτελεσμάτων onion που εμφανίζονται στη μάυρη λίστα της "
+"Ahmia."
+
+#: aperion/plugins/calculator.py:38
+msgid "Basic Calculator"
+msgstr "Βασική Αριθμομηχανή"
+
+#: aperion/plugins/calculator.py:39
+msgid "Calculate mathematical expressions via the search bar"
+msgstr "Υπολογίστε μαθηματικές εκφράσεις μέσω της γραμμής αναζήτησης"
+
+#: aperion/plugins/hash_plugin.py:34
+msgid "Hash plugin"
+msgstr "Hash plugin"
+
+#: aperion/plugins/hash_plugin.py:36
+msgid ""
+"Converts strings to different hash digests. Available functions: md5, "
+"sha1, sha224, sha256, sha384, sha512."
+msgstr ""
+"Μετατρέπει συμβολοσειρές σε διαφορετικά hash digests. Διαθέσιμες συναρτήσεις:"
+" md5, sha1, sha224, sha256, sha384, sha512."
+
+#: aperion/plugins/hash_plugin.py:64
+msgid "hash digest"
+msgstr "συνάρτηση κατατεμαχισμού"
+
+#: aperion/plugins/hostnames.py:123
+msgid "Hostnames plugin"
+msgstr "Προσθήκη ονομάτων κεντρικού υπολογιστή"
+
+#: aperion/plugins/hostnames.py:124
+msgid "Rewrite hostnames and remove or prioritize results based on the hostname"
+msgstr ""
+"Ξαναγράψτε τα ονόματα κεντρικών υπολογιστών και καταργήστε ή ιεραρχήστε τα "
+"αποτελέσματα με βάση το όνομα κεντρικού υπολογιστή"
+
+#: aperion/plugins/oa_doi_rewrite.py:55
+msgid "Open Access DOI rewrite"
+msgstr "Ανοίξτε την επανεγγραφή DOI της Access"
+
+#: aperion/plugins/oa_doi_rewrite.py:56
+msgid ""
+"Avoid paywalls by redirecting to open-access versions of publications "
+"when available"
+msgstr ""
+"Αποφυγή τοίχων πληρωμής με ανακατεύθυνση σε ανοικτές εκδόσεις των "
+"δημοσιεύσεων όταν είναι διαθέσιμες"
+
+#: aperion/plugins/self_info.py:37
+msgid "Self Information"
+msgstr "Αυτοπληροφορίες"
+
+#: aperion/plugins/self_info.py:39
+msgid ""
+"Displays your IP if the query is \"ip\" and your user agent if the query "
+"is \"user-agent\"."
+msgstr ""
+"Εμφανίζει την IP σας εάν το ερώτημα είναι \"ip\" και τον παράγοντα χρήστη"
+" σας εάν το ερώτημα είναι \"user-agent\"."
+
+#: aperion/plugins/self_info.py:52
+msgid "Your IP is: "
+msgstr "Η IP σας είναι: "
+
+#: aperion/plugins/self_info.py:55
+msgid "Your user-agent is: "
+msgstr "Ο χρήστης-πράκτοράς σας είναι: "
+
+#: aperion/plugins/tor_check.py:42
+msgid "Tor check plugin"
+msgstr "Πρόσθετο ελέγχου Tor"
+
+#: aperion/plugins/tor_check.py:44
+msgid ""
+"This plugin checks if the address of the request is a Tor exit-node, and "
+"informs the user if it is; like check.torproject.org, but from aperion."
+msgstr ""
+"Αυτό το πρόσθετο ελέγχει εάν η διεύθυνση του χρήστη είναι διεύθυνση "
+"εξόδου του δικτύου Tor και ενημερώνει τον χρήστη εάν είναι έτσι. Όπως στο"
+" check.torproject.org, αλλά από το aperion."
+
+#: aperion/plugins/tor_check.py:65
+msgid "Could not download the list of Tor exit-nodes from"
+msgstr "Δεν ήταν δυνατή η λήψη της λίστας των κόμβων εξόδου Tor από"
+
+#: aperion/plugins/tor_check.py:72
+msgid "You are using Tor and it looks like you have the external IP address"
+msgstr "Χρησιμοποιείτε Tor και φαίνεται ότι έχετε την εξωτερική διεύθυνση IP"
+
+#: aperion/plugins/tor_check.py:76
+msgid "You are not using Tor and you have the external IP address"
+msgstr "Δεν χρησιμοποιείτε Tor και έχετε την εξωτερική διεύθυνση IP"
+
+#: aperion/plugins/tracker_url_remover.py:35
+msgid "Tracker URL remover"
+msgstr "Αφαίρεση ιχνηλατών από συνδέσμους"
+
+#: aperion/plugins/tracker_url_remover.py:36
+msgid "Remove trackers arguments from the returned URL"
+msgstr "Αφαίρεση ιχνηλατών από τους επιστρεφόμενους συνδέσμους"
+
+#: aperion/plugins/unit_converter.py:49
+msgid "Unit converter plugin"
+msgstr "Πρόσθετο μετατροπέας μονάδων"
+
+#: aperion/plugins/unit_converter.py:50
+msgid "Convert between units"
+msgstr "Μετατροπή μεταξύ μονάδων"
+
+#: aperion/result_types/answer.py:224
+#, python-brace-format
+msgid "{location}: {temperature}, {condition}"
+msgstr "{location}: {temperature}, {condition}"
+
+#: aperion/templates/simple/404.html:4
+msgid "Page not found"
+msgstr "Η σελίδα δεν βρέθηκε"
+
+#: aperion/templates/simple/404.html:6
+#, python-format
+msgid "Go to %(search_page)s."
+msgstr "Μετάβαση στο %(search_page)s."
+
+#: aperion/templates/simple/404.html:6
+msgid "search page"
+msgstr "σελίδα αναζήτησης"
+
+#: aperion/templates/simple/base.html:53
+msgid "Donate"
+msgstr "Κάνε δωρεά"
+
+#: aperion/templates/simple/base.html:57
+#: aperion/templates/simple/preferences.html:156
+msgid "Preferences"
+msgstr "Προτιμήσεις"
+
+#: aperion/templates/simple/base.html:67
+msgid "Powered by"
+msgstr "Με την υποστήριξη του"
+
+#: aperion/templates/simple/base.html:67
+msgid "a privacy-respecting, open metasearch engine"
+msgstr "μια ανοικτή μηχανή μετα-αναζήτησης που σέβεται την ιδιωτικότητα"
+
+#: aperion/templates/simple/base.html:68
+#: aperion/templates/simple/result_templates/packages.html:59
+msgid "Source code"
+msgstr "Πηγαίος κώδικας"
+
+#: aperion/templates/simple/base.html:69
+msgid "Issue tracker"
+msgstr "Παρακολούθηση ζητημάτων"
+
+#: aperion/templates/simple/base.html:70 aperion/templates/simple/stats.html:18
+msgid "Engine stats"
+msgstr "Στατιστικά μηχανής"
+
+#: aperion/templates/simple/base.html:72
+msgid "Public instances"
+msgstr "Δημόσιες εκφάνσεις"
+
+#: aperion/templates/simple/base.html:75
+msgid "Privacy policy"
+msgstr "Πολιτική απορρήτου"
+
+#: aperion/templates/simple/base.html:78
+msgid "Contact instance maintainer"
+msgstr "Επικοινωνήστε με τον συντηρητή αυτής της σελίδας"
+
+#: aperion/templates/simple/categories.html:30
+msgid "Click on the magnifier to perform search"
+msgstr "Κάντε κλικ στο μεγεθυντικό φακό για να πραγματοποιήσετε αναζήτηση"
+
+#: aperion/templates/simple/macros.html:40
+msgid "Length"
+msgstr "Μήκος"
+
+#: aperion/templates/simple/macros.html:41
+msgid "Views"
+msgstr "Προβολές"
+
+#: aperion/templates/simple/macros.html:42
+#: aperion/templates/simple/result_templates/files.html:34
+#: aperion/templates/simple/result_templates/images.html:19
+#: aperion/templates/simple/result_templates/paper.html:6
+msgid "Author"
+msgstr "Συγγραφέας"
+
+#: aperion/templates/simple/macros.html:50
+msgid "cached"
+msgstr "προσωρινά αποθηκευμένο"
+
+#: aperion/templates/simple/new_issue.html:64
+msgid "Start submitting a new issue on GitHub"
+msgstr "Ξεκινήστε την υποβολή ενός νέου ζητήματος στο GitHub"
+
+#: aperion/templates/simple/new_issue.html:66
+msgid "Please check for existing bugs about this engine on GitHub"
+msgstr ""
+"Παρακαλούμε ελέγξτε για υπάρχοντα σφάλματα σχετικά με αυτή τη μηχανή "
+"αναζήτησης στο GitHub"
+
+#: aperion/templates/simple/new_issue.html:69
+msgid "I confirm there is no existing bug about the issue I encounter"
+msgstr ""
+"Επιβεβαιώνω ότι δεν υπάρχει υπάρχον σφάλμα σχετικά με το πρόβλημα που "
+"αντιμετωπίζω"
+
+#: aperion/templates/simple/new_issue.html:71
+msgid "If this is a public instance, please specify the URL in the bug report"
+msgstr ""
+"Εάν πρόκειται για μια δημόσια σελίδα (aperion instance), παρακαλούμε "
+"αναφέρετε τη διεύθυνση URL στην αναφορά σφάλματος"
+
+#: aperion/templates/simple/new_issue.html:72
+msgid "Submit a new issue on Github including the above information"
+msgstr "Υποβολή νέου ζητήματος στο Github με τις παραπάνω πληροφορίες"
+
+#: aperion/templates/simple/preferences.html:65
+msgid "No HTTPS"
+msgstr "Όχι HTTPS"
+
+#: aperion/templates/simple/elements/engines_msg.html:14
+#: aperion/templates/simple/preferences.html:69
+#: aperion/templates/simple/preferences.html:70
+msgid "View error logs and submit a bug report"
+msgstr "Προβολή αρχείων καταγραφής σφαλμάτων και υποβολή αναφοράς σφάλματος"
+
+#: aperion/templates/simple/preferences.html:74
+msgid "!bang for this engine"
+msgstr "!bang γι' αυτή τη μαχανή αναζήτησης"
+
+#: aperion/templates/simple/preferences.html:80
+msgid "!bang for its categories"
+msgstr "!bang για τις κατηγορίες της"
+
+#: aperion/templates/simple/preferences.html:102
+#: aperion/templates/simple/stats.html:64
+msgid "Median"
+msgstr "Διάμεσος"
+
+#: aperion/templates/simple/preferences.html:103
+#: aperion/templates/simple/stats.html:70
+msgid "P80"
+msgstr "P80"
+
+#: aperion/templates/simple/preferences.html:104
+#: aperion/templates/simple/stats.html:76
+msgid "P95"
+msgstr "P95"
+
+#: aperion/templates/simple/preferences.html:136
+msgid "Failed checker test(s): "
+msgstr "Αποτυχημένα δοκιμαστικά τεστ: "
+
+#: aperion/templates/simple/preferences.html:138
+msgid "Errors:"
+msgstr "Σφάλματα:"
+
+#: aperion/templates/simple/preferences.html:163
+msgid "General"
+msgstr "Γενικά"
+
+#: aperion/templates/simple/preferences.html:166
+msgid "Default categories"
+msgstr "Προεπιλεγμένες κατηγορίες"
+
+#: aperion/templates/simple/preferences.html:194
+msgid "User interface"
+msgstr "Διεπαφή χρήστη"
+
+#: aperion/templates/simple/preferences.html:217
+msgid "Privacy"
+msgstr "Ιδιωτικότητα"
+
+#: aperion/templates/simple/preferences.html:232
+msgid "Engines"
+msgstr "Μηχανές"
+
+#: aperion/templates/simple/preferences.html:234
+msgid "Currently used search engines"
+msgstr "Μηχανές αναζήτησης που χρησιμοποιούνται"
+
+#: aperion/templates/simple/preferences.html:243
+msgid "Special Queries"
+msgstr "Ειδικά Ερωτήματα"
+
+#: aperion/templates/simple/preferences.html:251
+msgid "Cookies"
+msgstr "Cookies"
+
+#: aperion/templates/simple/results.html:30
+msgid "Number of results"
+msgstr "Αριθμός αποτελεσμάτων"
+
+#: aperion/templates/simple/results.html:36
+msgid "Info"
+msgstr "Πληροφορίες"
+
+#: aperion/templates/simple/results.html:77
+msgid "Back to top"
+msgstr "Επιστροφή στην κορυφή"
+
+#: aperion/templates/simple/results.html:95
+msgid "Previous page"
+msgstr "Προηγούμενη σελίδα"
+
+#: aperion/templates/simple/results.html:113
+msgid "Next page"
+msgstr "Επόμενη σελίδα"
+
+#: aperion/templates/simple/search.html:3
+msgid "Display the front page"
+msgstr "Εμφάνιση της αρχικής σελίδας"
+
+#: aperion/templates/simple/search.html:9
+#: aperion/templates/simple/simple_search.html:5
+msgid "Search for..."
+msgstr "Αναζήτηση για..."
+
+#: aperion/templates/simple/search.html:10
+#: aperion/templates/simple/simple_search.html:6
+msgid "clear"
+msgstr "καθαρισμός"
+
+#: aperion/templates/simple/search.html:11
+#: aperion/templates/simple/simple_search.html:7
+msgid "search"
+msgstr "αναζήτηση"
+
+#: aperion/templates/simple/stats.html:21
+msgid "There is currently no data available. "
+msgstr "Δεν υπάρχουν διαθέσιμα δεδομένα. "
+
+#: aperion/templates/simple/preferences/engines.html:24
+#: aperion/templates/simple/stats.html:25
+msgid "Engine name"
+msgstr "Όνομα μηχανής"
+
+#: aperion/templates/simple/stats.html:26
+msgid "Scores"
+msgstr "Βαθμολογίες"
+
+#: aperion/templates/simple/stats.html:27
+msgid "Result count"
+msgstr "Αριθμός αποτελεσμάτων"
+
+#: aperion/templates/simple/elements/engines_msg.html:7
+#: aperion/templates/simple/preferences/engines.html:31
+#: aperion/templates/simple/stats.html:28
+msgid "Response time"
+msgstr "Χρόνος απόκρισης"
+
+#: aperion/templates/simple/preferences/engines.html:35
+#: aperion/templates/simple/stats.html:29
+msgid "Reliability"
+msgstr "Αξιοπιστία"
+
+#: aperion/templates/simple/stats.html:59
+msgid "Total"
+msgstr "Σύνολο"
+
+#: aperion/templates/simple/stats.html:60
+msgid "HTTP"
+msgstr "HTTP"
+
+#: aperion/templates/simple/stats.html:61
+msgid "Processing"
+msgstr "Επεξεργασία"
+
+#: aperion/templates/simple/stats.html:99
+msgid "Warnings"
+msgstr "Προειδοποιήσεις"
+
+#: aperion/templates/simple/stats.html:99
+msgid "Errors and exceptions"
+msgstr "Σφάλματα και εξαιρέσεις"
+
+#: aperion/templates/simple/stats.html:105
+msgid "Exception"
+msgstr "Εξαίρεση"
+
+#: aperion/templates/simple/stats.html:107
+msgid "Message"
+msgstr "Μήνυμα"
+
+#: aperion/templates/simple/stats.html:109
+msgid "Percentage"
+msgstr "Ποσοστό"
+
+#: aperion/templates/simple/stats.html:111
+msgid "Parameter"
+msgstr "Παράμετρος"
+
+#: aperion/templates/simple/result_templates/files.html:36
+#: aperion/templates/simple/stats.html:119
+msgid "Filename"
+msgstr "Όνομα αρχείου"
+
+#: aperion/templates/simple/stats.html:120
+msgid "Function"
+msgstr "Συνάρτηση"
+
+#: aperion/templates/simple/stats.html:121
+msgid "Code"
+msgstr "Κώδικας"
+
+#: aperion/templates/simple/stats.html:128
+msgid "Checker"
+msgstr "Ελεγκτής"
+
+#: aperion/templates/simple/stats.html:131
+msgid "Failed test"
+msgstr "Αποτυχημένη δοκιμή"
+
+#: aperion/templates/simple/stats.html:132
+msgid "Comment(s)"
+msgstr "Σχόλιο(α)"
+
+#: aperion/templates/simple/answer/translations.html:12
+#: aperion/templates/simple/preferences/answerers.html:8
+msgid "Examples"
+msgstr "Παραδείγματα"
+
+#: aperion/templates/simple/answer/translations.html:21
+msgid "Definitions"
+msgstr "Ορισμοί"
+
+#: aperion/templates/simple/answer/translations.html:30
+msgid "Synonyms"
+msgstr "Συνώνυμα"
+
+#: aperion/templates/simple/answer/weather.html:19
+msgid "Feels Like"
+msgstr "Αίσθηση σαν"
+
+#: aperion/templates/simple/elements/answers.html:2
+msgid "Answers"
+msgstr "Απαντήσεις"
+
+#: aperion/templates/simple/elements/apis.html:3
+msgid "Download results"
+msgstr "Λήψη αποτελεσμάτων"
+
+#: aperion/templates/simple/elements/corrections.html:2
+msgid "Try searching for:"
+msgstr "Δοκιμάστε αναζήτηση για:"
+
+#: aperion/templates/simple/elements/engines_msg.html:4
+msgid "Messages from the search engines"
+msgstr "Μηνύματα από μηχανές αναζήτησης"
+
+#: aperion/templates/simple/elements/engines_msg.html:7
+msgid "seconds"
+msgstr "s"
+
+#: aperion/templates/simple/elements/search_url.html:3
+msgid "Search URL"
+msgstr "Σύνδεσμος αναζήτησης"
+
+#: aperion/templates/simple/elements/search_url.html:4
+#: aperion/templates/simple/preferences/cookies.html:54
+msgid "Copied"
+msgstr "Αντιγράφηκε"
+
+#: aperion/templates/simple/elements/search_url.html:4
+#: aperion/templates/simple/preferences/cookies.html:54
+msgid "Copy"
+msgstr "Αντιγραφή"
+
+#: aperion/templates/simple/elements/suggestions.html:3
+msgid "Suggestions"
+msgstr "Προτάσεις"
+
+#: aperion/templates/simple/filters/languages.html:1
+#: aperion/templates/simple/preferences/language.html:2
+msgid "Search language"
+msgstr "Γλώσσα αναζήτησης"
+
+#: aperion/templates/simple/filters/languages.html:4
+#: aperion/templates/simple/preferences/language.html:7
+msgid "Default language"
+msgstr "Προεπιλεγμένη γλώσσα"
+
+#: aperion/templates/simple/filters/languages.html:8
+#: aperion/templates/simple/preferences/language.html:11
+msgid "Auto-detect"
+msgstr "Αυτόματη αναγνώριση της γλώσσας"
+
+#: aperion/templates/simple/filters/safesearch.html:1
+#: aperion/templates/simple/filters/safesearch.html:2
+#: aperion/templates/simple/filters/safesearch.html:3
+#: aperion/templates/simple/filters/safesearch.html:4
+#: aperion/templates/simple/preferences/engines.html:27
+#: aperion/templates/simple/preferences/safesearch.html:2
+msgid "SafeSearch"
+msgstr "Ασφαλής Αναζήτηση"
+
+#: aperion/templates/simple/filters/safesearch.html:2
+#: aperion/templates/simple/preferences/safesearch.html:7
+msgid "Strict"
+msgstr "Αυστηρό"
+
+#: aperion/templates/simple/filters/safesearch.html:3
+#: aperion/templates/simple/preferences/safesearch.html:11
+msgid "Moderate"
+msgstr "Μέτριο"
+
+#: aperion/templates/simple/filters/safesearch.html:4
+#: aperion/templates/simple/preferences/safesearch.html:15
+msgid "None"
+msgstr "Κανένα"
+
+#: aperion/templates/simple/filters/time_range.html:1
+#: aperion/templates/simple/preferences/engines.html:28
+msgid "Time range"
+msgstr "Εύρος χρόνου"
+
+#: aperion/templates/simple/filters/time_range.html:3
+msgid "Anytime"
+msgstr "Οποιαδήποτε στιγμή"
+
+#: aperion/templates/simple/filters/time_range.html:6
+msgid "Last day"
+msgstr "Τελευταία μέρα"
+
+#: aperion/templates/simple/filters/time_range.html:9
+msgid "Last week"
+msgstr "Τελευταία βδομάδα"
+
+#: aperion/templates/simple/filters/time_range.html:12
+msgid "Last month"
+msgstr "Τελευταίος μήνας"
+
+#: aperion/templates/simple/filters/time_range.html:15
+msgid "Last year"
+msgstr "Τελευταίο έτος"
+
+#: aperion/templates/simple/messages/no_cookies.html:3
+msgid "Information!"
+msgstr "Πληροφορίες!"
+
+#: aperion/templates/simple/messages/no_cookies.html:4
+msgid "currently, there are no cookies defined."
+msgstr "προς το παρόν, δεν έχουν οριστεί cookies."
+
+#: aperion/templates/simple/messages/no_results.html:6
+msgid "Sorry!"
+msgstr "Συγνώμη!"
+
+#: aperion/templates/simple/messages/no_results.html:12
+msgid "No results were found. You can try to:"
+msgstr "Δεν βρέθηκαν αποτελέσματα. Μπορείτε να δοκιμάσετε:"
+
+#: aperion/templates/simple/messages/no_results.html:14
+msgid "There are no more results. You can try to:"
+msgstr "Δεν υπάρχουν άλλα αποτελέσματα. Μπορείτε να προσπαθήσετε να:"
+
+#: aperion/templates/simple/messages/no_results.html:19
+msgid "Refresh the page."
+msgstr "Ανανέωση σελίδας."
+
+#: aperion/templates/simple/messages/no_results.html:20
+msgid "Search for another query or select another category (above)."
+msgstr "Υποβάλετε νέα αναζήτηση ή επιλέξτε άλλη κατηγορία (επάνω)."
+
+#: aperion/templates/simple/messages/no_results.html:21
+msgid "Change the search engine used in the preferences:"
+msgstr "Αλλάξτε την μηχανή αναζήτησης που χρησιμοποιείται στις ρυθμίσεις:"
+
+#: aperion/templates/simple/messages/no_results.html:22
+msgid "Switch to another instance:"
+msgstr "Αλλαγή σε άλλη έκδοση:"
+
+#: aperion/templates/simple/messages/no_results.html:24
+msgid "Search for another query or select another category."
+msgstr "Αναζητήστε άλλο ερώτημα ή επιλέξτε άλλη κατηγορία."
+
+#: aperion/templates/simple/messages/no_results.html:25
+msgid "Go back to the previous page using the previous page button."
+msgstr ""
+"Επιστρέψτε στην προηγούμενη σελίδα χρησιμοποιώντας το κουμπί της "
+"προηγούμενης σελίδας."
+
+#: aperion/templates/simple/preferences/answerers.html:4
+#: aperion/templates/simple/preferences/engines.html:23
+msgid "Allow"
+msgstr "Επέτρεψε"
+
+#: aperion/templates/simple/preferences/answerers.html:5
+msgid "Keywords (first word in query)"
+msgstr "Λέξεις-κλειδιά (πρώτη λέξη στο ερώτημα)"
+
+#: aperion/templates/simple/preferences/answerers.html:6
+#: aperion/templates/simple/result_templates/packages.html:7
+msgid "Name"
+msgstr "Όνομα"
+
+#: aperion/templates/simple/preferences/answerers.html:7
+msgid "Description"
+msgstr "Περιγραφή"
+
+#: aperion/templates/simple/preferences/answerers.html:13
+msgid "This is the list of aperion's instant answering modules."
+msgstr "Αυτός είναι ο κατάλογος των ενοτήτων άμεσης απάντησης του aperion."
+
+#: aperion/templates/simple/preferences/answerers.html:29
+msgid "This is the list of plugins."
+msgstr "Αυτός είναι ο κατάλογος των πρόσθετων."
+
+#: aperion/templates/simple/preferences/autocomplete.html:2
+msgid "Autocomplete"
+msgstr "Αυτόματη συμπλήρωση"
+
+#: aperion/templates/simple/preferences/autocomplete.html:15
+msgid "Show possible queries as you type"
+msgstr "Εμφάνιση πιθανών ερωτημάτων καθώς πληκτρολογείτε"
+
+#: aperion/templates/simple/preferences/center_alignment.html:2
+msgid "Center Alignment"
+msgstr "Κεντρική ευθυγράμμιση"
+
+#: aperion/templates/simple/preferences/center_alignment.html:14
+msgid "Display results in the center of the page (Oscar layout)."
+msgstr "Εμφάνιση αποτελεσμάτων στο κέντρο της σελίδας (διάταξη Oscar)."
+
+#: aperion/templates/simple/preferences/cookies.html:2
+msgid ""
+"This is the list of cookies and their values aperion is storing on your "
+"computer."
+msgstr ""
+"Αυτός είναι ο κατάλογος των cookies και των τιμών τους που αποθηκεύει η "
+"aperion στον υπολογιστή σας."
+
+#: aperion/templates/simple/preferences/cookies.html:3
+msgid "With this list, you can assess the transparency of aperion."
+msgstr "Με αυτήν τη λίστα, μπορείτε να αξιολογήσετε τη διαφάνεια του aperion."
+
+#: aperion/templates/simple/preferences/cookies.html:9
+msgid "Cookie name"
+msgstr "Όνομα cookie"
+
+#: aperion/templates/simple/preferences/cookies.html:10
+msgid "Value"
+msgstr "Τιμή"
+
+#: aperion/templates/simple/preferences/cookies.html:23
+msgid "Search URL of the currently saved preferences"
+msgstr "Σύνδεσμος αναζήτησης των αποθηκευμένων προτιμήσεων"
+
+#: aperion/templates/simple/preferences/cookies.html:32
+msgid ""
+"Note: specifying custom settings in the search URL can reduce privacy by "
+"leaking data to the clicked result sites."
+msgstr ""
+"Σημείωση: ο καθορισμός προσαρμοσμένων ρυθμίσεων στη διεύθυνση URL "
+"αναζήτησης μπορεί να μειώσει την ιδιωτικότητα διαρρέοντας δεδομένα στους "
+"ιστότοπους των αποτελεσμάτων που εσείς κάνετε κλίκ."
+
+#: aperion/templates/simple/preferences/cookies.html:35
+msgid "URL to restore your preferences in another browser"
+msgstr "Σύνδεσμος για επαναφορά προτιμήσεων σε διαφορετικό περιηγητή"
+
+#: aperion/templates/simple/preferences/cookies.html:43
+msgid ""
+"A URL containing your preferences. This URL can be used to restore your "
+"settings on a different device."
+msgstr ""
+"Ένα URL που περιέχει τις προτιμήσεις σας. Αυτό το URL μπορεί να "
+"χρησιμοποιηθεί για να επαναφέρει τις ρυθμίσεις σας σε διαφορετική "
+"συσκευή."
+
+#: aperion/templates/simple/preferences/cookies.html:46
+msgid "Copy preferences hash"
+msgstr "Αντιγραφή κατακερματισμού προτιμήσεων"
+
+#: aperion/templates/simple/preferences/cookies.html:57
+msgid "Insert copied preferences hash (without URL) to restore"
+msgstr ""
+"Εισαγάγετε αντιγραμμένο κατακερματισμό προτιμήσεων (χωρίς URL) για "
+"επαναφορά"
+
+#: aperion/templates/simple/preferences/cookies.html:59
+msgid "Preferences hash"
+msgstr "Κατακερματισμός προτιμήσεων"
+
+#: aperion/templates/simple/preferences/doi_resolver.html:1
+msgid "Digital Object Identifier (DOI)"
+msgstr "Ψηφιακό αναγνωριστικό αντικειμένου (DOI)"
+
+#: aperion/templates/simple/preferences/doi_resolver.html:6
+msgid "Open Access DOI resolver"
+msgstr "Επιλυτής DOI ανοικτής πρόσβασης"
+
+#: aperion/templates/simple/preferences/doi_resolver.html:18
+msgid "Select service used by DOI rewrite"
+msgstr "Επιλέξτε την υπηρεσία που θα χρησιμοποιηθεί απ' το DOI rewrite"
+
+#: aperion/templates/simple/preferences/engines.html:9
+msgid ""
+"This tab does not exist in the user interface, but you can search with "
+"these engines via !bangs."
+msgstr ""
+"Αυτή η καρτέλα δεν υπάρχει στο περιβάλλον χρήστη, αλλά μπορείτε να κάνετε "
+"αναζήτηση με αυτές τις μηχανές αναζήτησης μέσω του !bangs."
+
+#: aperion/templates/simple/preferences/engines.html:15
+msgid "Enable all"
+msgstr "Ενεργοποίηση όλων"
+
+#: aperion/templates/simple/preferences/engines.html:16
+msgid "Disable all"
+msgstr "Απενεργοποίηση όλων"
+
+#: aperion/templates/simple/preferences/engines.html:25
+msgid "!bang"
+msgstr "!bang"
+
+#: aperion/templates/simple/preferences/engines.html:26
+msgid "Supports selected language"
+msgstr "Υποστηρίζει την επιλεγμένη γλώσσα"
+
+#: aperion/templates/simple/preferences/engines.html:29
+msgid "Weight"
+msgstr "Βάρος"
+
+#: aperion/templates/simple/preferences/engines.html:33
+msgid "Max time"
+msgstr "Μέγιστος χρόνος"
+
+#: aperion/templates/simple/preferences/favicon.html:2
+msgid "Favicon Resolver"
+msgstr "Ευρετής Εικόνων Σελιδών"
+
+#: aperion/templates/simple/preferences/favicon.html:15
+msgid "Display favicons near search results"
+msgstr "Εμφάνιση εικονιδίων σελιδών δίπλα από τα αποτελέσματα αναζήτησης"
+
+#: aperion/templates/simple/preferences/footer.html:2
+msgid ""
+"These settings are stored in your cookies. This allows us not to store "
+"this data about you."
+msgstr ""
+"Αυτές οι ρυθμίσεις αποθηκεύονται στα cookies σας. Αυτό μας επιτρέπει να μην "
+"αποθηκεύουμε αυτά τα δεδομένα που σας αφορούν."
+
+#: aperion/templates/simple/preferences/footer.html:3
+msgid "These cookies serve your sole convenience; we don't use them to track you."
+msgstr ""
+"Αυτά τα cookies εξυπηρετούν αποκλειστικά την δική σας ευκολία. Δεν τα "
+"χρησιμοποιούμε για να σας παρακολουθούμε"
+
+#: aperion/templates/simple/preferences/footer.html:6
+msgid "Save"
+msgstr "Αποθήκευση"
+
+#: aperion/templates/simple/preferences/footer.html:9
+msgid "Reset defaults"
+msgstr "Επαναφορά προεπιλογών"
+
+#: aperion/templates/simple/preferences/footer.html:13
+msgid "Back"
+msgstr "Πίσω"
+
+#: aperion/templates/simple/preferences/hotkeys.html:2
+msgid "Hotkeys"
+msgstr "Πλήκτρα συντόμευσης"
+
+#: aperion/templates/simple/preferences/hotkeys.html:13
+msgid "Vim-like"
+msgstr "Σαν του Vim"
+
+#: aperion/templates/simple/preferences/hotkeys.html:18
+msgid ""
+"Navigate search results with hotkeys (JavaScript required). Press \"h\" "
+"key on main or result page to get help."
+msgstr ""
+"Πλοήγηση αποτελεσμάτων με πλήκτρα συντόμευσης (αναγκαία η χρήση "
+"Javascript). Πατήστε το πλήκτρο\"h\" στην κύρια σελίδα ή την σελίδα "
+"αποτελεσμάτων για οδηγίες."
+
+#: aperion/templates/simple/preferences/image_proxy.html:2
+msgid "Image proxy"
+msgstr "Διακομιστής μεσολάβησης εικόνων"
+
+#: aperion/templates/simple/preferences/image_proxy.html:14
+msgid "Proxy image results through aperion"
+msgstr "Αποτελέσματα εικόνας proxy μέσω του aperion"
+
+#: aperion/templates/simple/preferences/infinite_scroll.html:2
+msgid "Infinite scroll"
+msgstr "Άπειρη κύλιση"
+
+#: aperion/templates/simple/preferences/infinite_scroll.html:14
+msgid ""
+"Automatically load the next page when scrolling to the bottom of the "
+"current page"
+msgstr ""
+"Αυτόματη φόρτωση της επόμενης σελίδας κατά την κύλιση στο κάτω μέρος της "
+"τρέχουσας σελίδας"
+
+#: aperion/templates/simple/preferences/language.html:24
+msgid "What language do you prefer for search?"
+msgstr "Τι γλώσσα προτιμάτε για αναζήτηση;"
+
+#: aperion/templates/simple/preferences/language.html:25
+msgid "Choose Auto-detect to let aperion detect the language of your query."
+msgstr ""
+"Επιλέξτε αυτόματη αναγνώριση για να αφήσετε το aperion να αναγνωρίσει την"
+" γλώσσα του ερωτήματος σας αυτόματα."
+
+#: aperion/templates/simple/preferences/method.html:2
+msgid "HTTP Method"
+msgstr "Μέθοδος HTTP"
+
+#: aperion/templates/simple/preferences/method.html:14
+msgid "Change how forms are submitted"
+msgstr "Αλλαγή τρόπου υποβολής φόρμας"
+
+#: aperion/templates/simple/preferences/query_in_title.html:2
+msgid "Query in the page's title"
+msgstr "Ερώτημα στον τίτλο της σελίδας"
+
+#: aperion/templates/simple/preferences/query_in_title.html:14
+msgid ""
+"When enabled, the result page's title contains your query. Your browser "
+"can record this title"
+msgstr ""
+"Όταν ενεργό, ο τίτλος της σελίδας αποτελεσμάτων περιέχει το ερώτημά σας. "
+"Το πρόγραμμα περιήγησής σας μπορεί να καταγράψει αυτόν τον τίτλο"
+
+#: aperion/templates/simple/preferences/results_on_new_tab.html:2
+msgid "Results in new tabs"
+msgstr "Αποτελέσματα σε νέες καρτέλες"
+
+#: aperion/templates/simple/preferences/results_on_new_tab.html:14
+msgid "Open result links in new browser tabs"
+msgstr ""
+"Άνοιγμα συνδέσμων αποτελεσμάτων σε νέες καρτέλες προγράμματος περιήγησης"
+
+#: aperion/templates/simple/preferences/safesearch.html:20
+msgid "Filter content"
+msgstr "Φιλτράρισμα περιεχομένου"
+
+#: aperion/templates/simple/preferences/search_on_category_select.html:2
+msgid "Search on category select"
+msgstr "Αναζήτηση κατά την επιλογή κατηγορίας"
+
+#: aperion/templates/simple/preferences/search_on_category_select.html:14
+msgid ""
+"Perform a search immediately if a category is selected. Disable to select"
+" multiple categories"
+msgstr ""
+"Εκτελέστε αμέσως αναζήτηση εάν επιλεγεί μια κατηγορία. Απενεργοποιήστε την "
+"επιλογή πολλαπλών κατηγοριών"
+
+#: aperion/templates/simple/preferences/theme.html:2
+msgid "Theme"
+msgstr "Θέμα"
+
+#: aperion/templates/simple/preferences/theme.html:14
+msgid "Change the layout of aperion"
+msgstr "Αλλαγή της διάταξης του aperion"
+
+#: aperion/templates/simple/preferences/theme.html:19
+msgid "Theme style"
+msgstr "Στυλ θέματος"
+
+#: aperion/templates/simple/preferences/theme.html:31
+msgid "Choose auto to follow your browser settings"
+msgstr ""
+"Επιλέξτε αυτόματο για να τηρήσετε τις ρυθμίσεις του προγράμματος "
+"περιήγησης"
+
+#: aperion/templates/simple/preferences/tokens.html:2
+msgid "Engine tokens"
+msgstr "Tokens μηχανών αναζήτησης"
+
+#: aperion/templates/simple/preferences/tokens.html:9
+msgid "Access tokens for private engines"
+msgstr "Tokens πρόσβασης για ιδιωτικές μηχανές"
+
+#: aperion/templates/simple/preferences/ui_locale.html:2
+msgid "Interface language"
+msgstr "Γλώσσα διεπαφής"
+
+#: aperion/templates/simple/preferences/ui_locale.html:14
+msgid "Change the language of the layout"
+msgstr "Αλλαγή γλώσσας της διάταξης"
+
+#: aperion/templates/simple/preferences/urlformatting.html:2
+msgid "URL formatting"
+msgstr "Τρόπος εμφάνισης ηλεκτρονικού συνδέσμου"
+
+#: aperion/templates/simple/preferences/urlformatting.html:8
+msgid "Pretty"
+msgstr "Όμορφο"
+
+#: aperion/templates/simple/preferences/urlformatting.html:13
+msgid "Full"
+msgstr "Πλήρες"
+
+#: aperion/templates/simple/preferences/urlformatting.html:18
+msgid "Host"
+msgstr "Διακομιστής"
+
+#: aperion/templates/simple/preferences/urlformatting.html:23
+msgid "Change result URL formatting"
+msgstr "Αλλαγή τρόπου εμφάνισης ηλεκτρονικών συνδέσμων"
+
+#: aperion/templates/simple/result_templates/code.html:13
+msgid "repo"
+msgstr "αποθετήρια"
+
+#: aperion/templates/simple/result_templates/default.html:6
+#: aperion/templates/simple/result_templates/files.html:8
+#: aperion/templates/simple/result_templates/files.html:11
+msgid "show media"
+msgstr "προβολή πολυμέσων"
+
+#: aperion/templates/simple/result_templates/default.html:6
+#: aperion/templates/simple/result_templates/files.html:8
+msgid "hide media"
+msgstr "απόκρυψη πολυμέσων"
+
+#: aperion/templates/simple/result_templates/default.html:14
+#: aperion/templates/simple/result_templates/videos.html:14
+msgid "This site did not provide any description."
+msgstr "Αυτός ο ιστότοπος δεν παρείχε καμία περιγραφή."
+
+#: aperion/templates/simple/result_templates/files.html:38
+#: aperion/templates/simple/result_templates/images.html:22
+#: aperion/templates/simple/result_templates/torrent.html:18
+msgid "Filesize"
+msgstr "Μέγεθος αρχείου"
+
+#: aperion/templates/simple/result_templates/files.html:40
+msgid "Date"
+msgstr "Ημερομηνία"
+
+#: aperion/templates/simple/result_templates/files.html:42
+#: aperion/templates/simple/result_templates/paper.html:24
+msgid "Type"
+msgstr "Τύπος"
+
+#: aperion/templates/simple/result_templates/images.html:20
+msgid "Resolution"
+msgstr "Ανάλυση"
+
+#: aperion/templates/simple/result_templates/images.html:21
+msgid "Format"
+msgstr "Μορφή"
+
+#: aperion/templates/simple/result_templates/images.html:24
+msgid "Engine"
+msgstr "Μηχανή"
+
+#: aperion/templates/simple/result_templates/images.html:25
+msgid "View source"
+msgstr "Προβολή πηγής"
+
+#: aperion/templates/simple/result_templates/map.html:12
+msgid "address"
+msgstr "διεύθυνση"
+
+#: aperion/templates/simple/result_templates/map.html:43
+msgid "show map"
+msgstr "προβολή χάρτη"
+
+#: aperion/templates/simple/result_templates/map.html:43
+msgid "hide map"
+msgstr "απόκρυψη χάρτη"
+
+#: aperion/templates/simple/result_templates/packages.html:12
+msgid "Version"
+msgstr "Έκδοση"
+
+#: aperion/templates/simple/result_templates/packages.html:18
+msgid "Maintainer"
+msgstr "Συντηρητής"
+
+#: aperion/templates/simple/result_templates/packages.html:24
+msgid "Updated at"
+msgstr "Ενημερώθηκε στις"
+
+#: aperion/templates/simple/result_templates/packages.html:30
+#: aperion/templates/simple/result_templates/paper.html:25
+msgid "Tags"
+msgstr "Σημάνσεις"
+
+#: aperion/templates/simple/result_templates/packages.html:36
+msgid "Popularity"
+msgstr "Δημοτικότητα"
+
+#: aperion/templates/simple/result_templates/packages.html:42
+msgid "License"
+msgstr "Άδεια"
+
+#: aperion/templates/simple/result_templates/packages.html:52
+msgid "Project"
+msgstr "Έργο"
+
+#: aperion/templates/simple/result_templates/packages.html:55
+msgid "Project homepage"
+msgstr "Αρχική σελίδα του έργου"
+
+#: aperion/templates/simple/result_templates/paper.html:5
+msgid "Published date"
+msgstr "Ημερομηνία δημοσίευσης"
+
+#: aperion/templates/simple/result_templates/paper.html:9
+msgid "Journal"
+msgstr "Περιοδικό"
+
+#: aperion/templates/simple/result_templates/paper.html:22
+msgid "Editor"
+msgstr "Συντάκτης"
+
+#: aperion/templates/simple/result_templates/paper.html:23
+msgid "Publisher"
+msgstr "Εκδότης"
+
+#: aperion/templates/simple/result_templates/paper.html:26
+msgid "DOI"
+msgstr "DOI"
+
+#: aperion/templates/simple/result_templates/paper.html:27
+msgid "ISSN"
+msgstr "ISSN"
+
+#: aperion/templates/simple/result_templates/paper.html:28
+msgid "ISBN"
+msgstr "ISBN"
+
+#: aperion/templates/simple/result_templates/paper.html:33
+msgid "PDF"
+msgstr "PDF"
+
+#: aperion/templates/simple/result_templates/paper.html:34
+msgid "HTML"
+msgstr "HTML"
+
+#: aperion/templates/simple/result_templates/torrent.html:7
+msgid "magnet link"
+msgstr "Σύνδεσμος magnet"
+
+#: aperion/templates/simple/result_templates/torrent.html:8
+msgid "torrent file"
+msgstr "Αρχείο torrent"
+
+#: aperion/templates/simple/result_templates/torrent.html:13
+msgid "Seeder"
+msgstr "Seeder"
+
+#: aperion/templates/simple/result_templates/torrent.html:14
+msgid "Leecher"
+msgstr "Leecher"
+
+#: aperion/templates/simple/result_templates/torrent.html:19
+msgid "Number of Files"
+msgstr "Αριθμός Αρχείων"
+
+#: aperion/templates/simple/result_templates/videos.html:6
+msgid "show video"
+msgstr "προβολή βίντεο"
+
+#: aperion/templates/simple/result_templates/videos.html:6
+msgid "hide video"
+msgstr "απόκρυψη βίντεο"
+
+#~ msgid "Engine time (sec)"
+#~ msgstr "Χρόνος μηχανής (δευτ)"
+
+#~ msgid "Page loads (sec)"
+#~ msgstr "Φόρτωση σελίδας (δευτ)"
+
+#~ msgid "Errors"
+#~ msgstr "Λάθη"
+
+#~ msgid "CAPTCHA required"
+#~ msgstr ""
+
+#~ msgid "Rewrite HTTP links to HTTPS if possible"
+#~ msgstr "Επανεγγραφή συνδέσμων HTTP σε HTTPS αν είναι δυνατό"
+
+#~ msgid ""
+#~ "Results are opened in the same "
+#~ "window by default. This plugin "
+#~ "overwrites the default behaviour to open"
+#~ " links on new tabs/windows. (JavaScript "
+#~ "required)"
+#~ msgstr ""
+
+#~ msgid "Color"
+#~ msgstr "Χρώμα"
+
+#~ msgid "Blue (default)"
+#~ msgstr "Μπλε (προεπιλεγμένο)"
+
+#~ msgid "Violet"
+#~ msgstr "Βιολετί"
+
+#~ msgid "Green"
+#~ msgstr "Πράσινο"
+
+#~ msgid "Cyan"
+#~ msgstr "Κυανό"
+
+#~ msgid "Orange"
+#~ msgstr "Πορτοκαλί"
+
+#~ msgid "Red"
+#~ msgstr "Κόκκινο"
+
+#~ msgid "Category"
+#~ msgstr "Κατηγορία"
+
+#~ msgid "Block"
+#~ msgstr "Αποκλεισμός"
+
+#~ msgid "original context"
+#~ msgstr ""
+
+#~ msgid "Plugins"
+#~ msgstr "Πρόσθετα"
+
+#~ msgid "Answerers"
+#~ msgstr ""
+
+#~ msgid "Avg. time"
+#~ msgstr ""
+
+#~ msgid "show details"
+#~ msgstr "προβολή λεπτομερειών"
+
+#~ msgid "hide details"
+#~ msgstr "απόκρυψη λεπτομερειών"
+
+#~ msgid "Load more..."
+#~ msgstr "Φόρτωση περισσότερων..."
+
+#~ msgid "Loading..."
+#~ msgstr ""
+
+#~ msgid "Change aperion layout"
+#~ msgstr ""
+
+#~ msgid "Proxying image results through aperion"
+#~ msgstr ""
+
+#~ msgid "This is the list of aperion's instant answering modules."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This is the list of cookies and"
+#~ " their values aperion is storing on "
+#~ "your computer."
+#~ msgstr ""
+
+#~ msgid "With that list, you can assess aperion transparency."
+#~ msgstr ""
+
+#~ msgid "It look like you are using aperion first time."
+#~ msgstr "Φαίνεται ότι χρησιμοποιείται το aperion για πρώτη φορά."
+
+#~ msgid "Please, try again later or find another aperion instance."
+#~ msgstr ""
+
+#~ msgid "Themes"
+#~ msgstr "Θέματα"
+
+#~ msgid "Reliablity"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When enabled, the result page's title"
+#~ " contains your query. Your browser "
+#~ "can record this title."
+#~ msgstr ""
+
+#~ msgid "Method"
+#~ msgstr "Μέθοδος"
+
+#~ msgid ""
+#~ "This tab does not show up for "
+#~ "search results but you can search "
+#~ "the engines listed here via bangs."
+#~ msgstr ""
+
+#~ msgid "Advanced settings"
+#~ msgstr "Ρυθμίσεις για προχωρημένους"
+
+#~ msgid "Close"
+#~ msgstr "Κλείσιμο"
+
+#~ msgid "Language"
+#~ msgstr "Γλώσσα"
+
+#~ msgid "broken"
+#~ msgstr "Κατεστραμένο"
+
+#~ msgid "supported"
+#~ msgstr "Υποστηρίζεται"
+
+#~ msgid "not supported"
+#~ msgstr "Δεν υποστηρίζεται"
+
+#~ msgid "about"
+#~ msgstr "Σχετικά"
+
+#~ msgid "Avg."
+#~ msgstr ""
+
+#~ msgid "User Interface"
+#~ msgstr ""
+
+#~ msgid "Choose style for this theme"
+#~ msgstr ""
+
+#~ msgid "Style"
+#~ msgstr ""
+
+#~ msgid "Show advanced settings"
+#~ msgstr ""
+
+#~ msgid "Show advanced settings panel in the home page by default"
+#~ msgstr ""
+
+#~ msgid "Allow all"
+#~ msgstr ""
+
+#~ msgid "Disable all"
+#~ msgstr ""
+
+#~ msgid "Selected language"
+#~ msgstr "Επιλεγμένη γλώσσα"
+
+#~ msgid "Query"
+#~ msgstr ""
+
+#~ msgid "save"
+#~ msgstr "αποθήκευση"
+
+#~ msgid "back"
+#~ msgstr "πίσω"
+
+#~ msgid "Links"
+#~ msgstr "Σύνδεσμοι"
+
+#~ msgid "RSS subscription"
+#~ msgstr ""
+
+#~ msgid "Search results"
+#~ msgstr "Αποτελέσματα αναζήτησης"
+
+#~ msgid "next page"
+#~ msgstr "επόμενη σελίδα"
+
+#~ msgid "previous page"
+#~ msgstr "προηγούμενη σελίδα"
+
+#~ msgid "Start search"
+#~ msgstr "Έναρξη αναζήτησης"
+
+#~ msgid "Clear search"
+#~ msgstr ""
+
+#~ msgid "Clear"
+#~ msgstr ""
+
+#~ msgid "stats"
+#~ msgstr "στατιστικά"
+
+#~ msgid "Heads up!"
+#~ msgstr ""
+
+#~ msgid "It look like you are using aperion first time."
+#~ msgstr ""
+
+#~ msgid "Well done!"
+#~ msgstr "Πολύ καλά!"
+
+#~ msgid "Settings saved successfully."
+#~ msgstr "Οι ρυθμίσεις αποθηκεύτηκαν επιτυχώς."
+
+#~ msgid "Oh snap!"
+#~ msgstr "Φτου!"
+
+#~ msgid "Something went wrong."
+#~ msgstr "Κάτι πήγε στραβά."
+
+#~ msgid "Date"
+#~ msgstr ""
+
+#~ msgid "Type"
+#~ msgstr ""
+
+#~ msgid "Get image"
+#~ msgstr ""
+
+#~ msgid "Center Alignment"
+#~ msgstr ""
+
+#~ msgid "Displays results in the center of the page (Oscar layout)."
+#~ msgstr "Εμφάνιση αποτελεσμάτων στο κέντρο της σελίδας (διάταξη Oscar)."
+
+#~ msgid "preferences"
+#~ msgstr "Προτιμήσεις"
+
+#~ msgid "Scores per result"
+#~ msgstr ""
+
+#~ msgid "a privacy-respecting, hackable metasearch engine"
+#~ msgstr "Μια χακέψιμη μεταμηχανή αναζήτησης , που σέβεται την ιδιωτικότητα"
+
+#~ msgid "No abstract is available for this publication."
+#~ msgstr "Δεν υπάρχει διαθέσιμη σύνοψη για αυτήν την έκδοση."
+
+#~ msgid "Self Informations"
+#~ msgstr "Αυτοπληροφορίες"
+
+#~ msgid ""
+#~ "Change how forms are submited, <a "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">learn more about request "
+#~ "methods</a>"
+#~ msgstr ""
+#~ "Αλλαγή του τρόπου υποβολής φορμών, <a"
+#~ " "
+#~ "href=\"https://el.wikipedia.org/wiki/%CE%A0%CF%81%CF%89%CF%84%CF%8C%CE%BA%CE%BF%CE%BB%CE%BB%CE%BF_%CE%9C%CE%B5%CF%84%CE%B1%CF%86%CE%BF%CF%81%CE%AC%CF%82_%CE%A5%CF%80%CE%B5%CF%81%CE%BA%CE%B5%CE%B9%CE%BC%CE%AD%CE%BD%CE%BF%CF%85#%CE%9C%CE%AD%CE%B8%CE%BF%CE%B4%CE%BF%CE%B9_%CE%B1%CE%AF%CF%84%CE%B7%CF%83%CE%B7%CF%82_%CF%84%CE%BF%CF%85_HTTP\""
+#~ " rel=\"external\">μάθετε περισσότερα για τις "
+#~ "μεθόδους αίτησης</a>"
+
+#~ msgid ""
+#~ "This plugin checks if the address "
+#~ "of the request is a TOR exit "
+#~ "node, and informs the user if it"
+#~ " is, like check.torproject.org but from "
+#~ "aperion."
+#~ msgstr ""
+#~ "Αυτό το πρόσθετο ελέγχει αν η "
+#~ "διεύθυνση της αίτησης είναι ένας κόμβος"
+#~ " εξόδου TOR και ενημερώνει τον χρήστη"
+#~ " αν είναι, όπως το check.torproject.org "
+#~ "αλλά από το aperion."
+
+#~ msgid ""
+#~ "The TOR exit node list "
+#~ "(https://check.torproject.org/exit-addresses) is "
+#~ "unreachable."
+#~ msgstr ""
+#~ "Η λίστα κόμβων εξόδου TOR "
+#~ "(https://check.torproject.org/exit-addresses) δεν "
+#~ "είναι διαθέσιμη."
+
+#~ msgid "You are using TOR. Your IP address seems to be: {ip_address}."
+#~ msgstr "Χρησιμοποιείτε το TOR. Η διεύθυνση IP σας είναι: {ip_address}."
+
+#~ msgid "You are not using TOR. Your IP address seems to be: {ip_address}."
+#~ msgstr "Δεν χρησιμοποιείτε το TOR. Η διεύθυνση IP σας είναι: {ip_address}."
+
+#~ msgid ""
+#~ "The could not download the list of"
+#~ " Tor exit-nodes from "
+#~ "https://check.torproject.org/exit-addresses."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You are using Tor. It looks like"
+#~ " you have this external IP address:"
+#~ " {ip_address}."
+#~ msgstr ""
+
+#~ msgid "You are not using Tor. You have this external IP address: {ip_address}."
+#~ msgstr ""
+
+#~ msgid "Autodetect search language"
+#~ msgstr ""
+
+#~ msgid "Automatically detect the query search language and switch to it."
+#~ msgstr ""
+
+#~ msgid "others"
+#~ msgstr "άλλα"
+
+#~ msgid ""
+#~ "This tab does not show up for "
+#~ "search results, but you can search "
+#~ "the engines listed here via bangs."
+#~ msgstr ""
+#~ "Αυτή η καρτέλα δεν εμφανίζεται για "
+#~ "τα αποτελέσματα αναζήτησης, αλλά μπορείτε "
+#~ "να αναζητήσετε τις μηχανές που "
+#~ "παρατίθενται εδώ μέσω bangs."
+
+#~ msgid "Shortcut"
+#~ msgstr "Συντόμευση"
+
+#~ msgid "!bang"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This tab dues not exists in the"
+#~ " user interface, but you can search"
+#~ " in these engines by its !bangs."
+#~ msgstr ""
+
+#~ msgid "Engines cannot retrieve results."
+#~ msgstr "Οι μηχανές δε μπορούν να φέρουν αποτελέσματα."
+
+#~ msgid "Please, try again later or find another aperion instance."
+#~ msgstr ""
+#~ "Παρακαλώ, προσπαθήστε ξανά αργότερα ή "
+#~ "βρείτε ένα άλλο instance του aperion."
+
+#~ msgid ""
+#~ "Redirect to open-access versions of "
+#~ "publications when available (plugin required)"
+#~ msgstr ""
+#~ "Ανακατεύθυνση σε εκδόσεις ανοικτής πρόσβασης"
+#~ " των δημοσιεύσεων όταν είναι διαθέσιμες "
+#~ "(απαιτείται πρόσθετο)"
+
+#~ msgid "Bang"
+#~ msgstr "!bang"
+
+#~ msgid ""
+#~ "Change how forms are submitted, <a "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">learn more about request "
+#~ "methods</a>"
+#~ msgstr ""
+#~ "Αλλαγή του τρόπου υποβολής φορμών, <a"
+#~ " "
+#~ "href=\"https://el.wikipedia.org/wiki/%CE%A0%CF%81%CF%89%CF%84%CF%8C%CE%BA%CE%BF%CE%BB%CE%BB%CE%BF_%CE%9C%CE%B5%CF%84%CE%B1%CF%86%CE%BF%CF%81%CE%AC%CF%82_%CE%A5%CF%80%CE%B5%CF%81%CE%BA%CE%B5%CE%B9%CE%BC%CE%AD%CE%BD%CE%BF%CF%85#%CE%9C%CE%AD%CE%B8%CE%BF%CE%B4%CE%BF%CE%B9_%CE%B1%CE%AF%CF%84%CE%B7%CF%83%CE%B7%CF%82_%CF%84%CE%BF%CF%85_HTTP\""
+#~ " rel=\"external\">μάθετε περισσότερα για τις "
+#~ "μεθόδους αίτησης</a>"
+
+#~ msgid "On"
+#~ msgstr "Ενεργό"
+
+#~ msgid "Off"
+#~ msgstr "Ανενεργό"
+
+#~ msgid "Enabled"
+#~ msgstr "Ενεργοποιημένο"
+
+#~ msgid "Disabled"
+#~ msgstr "Απενεργοποιημένο"
+
+#~ msgid ""
+#~ "Perform search immediately if a category"
+#~ " selected. Disable to select multiple "
+#~ "categories. (JavaScript required)"
+#~ msgstr ""
+#~ "Άμεση αναζήτηση κατά την επιλογή "
+#~ "κατηγορίας. Απενεργοποιήστε για να διαλέξετε"
+#~ " πολλαπλές κατηγορίες. (απαιτείται JavaScript)"
+
+#~ msgid "Vim-like hotkeys"
+#~ msgstr "Πλήκτρα συντόμευσης τύπου Vim"
+
+#~ msgid ""
+#~ "Navigate search results with Vim-like"
+#~ " hotkeys (JavaScript required). Press \"h\""
+#~ " key on main or result page to"
+#~ " get help."
+#~ msgstr ""
+#~ "Πλοήγηση στα αποτελέσματα αναζήτησης με "
+#~ "πλήκτρα συντόμευσης τύπου Vim (απαιτείται "
+#~ "JavaScript). Πατήστε το πλήκτρο \"h\" "
+#~ "στην κύρια σελίδα ή στη σελίδα "
+#~ "αποτελεσμάτων για να λάβετε βοήθεια."
+
+#~ msgid ""
+#~ "we didn't find any results. Please "
+#~ "use another query or search in "
+#~ "more categories."
+#~ msgstr ""
+#~ "δε βρέθηκαν αποτελέσματα. Παρακαλούμε "
+#~ "χρησιμοποιήστε άλλη αναζήτηση ή ψάξτε σε"
+#~ " περισσότερες κατηγορίες."
+
+#~ msgid "Rewrite result hostnames or remove results based on the hostname"
+#~ msgstr ""
+#~ "Αντικατάσταση hostname των αποτελεσμάτων ή "
+#~ "αφαίρεση των αποτελεσμάτων με βάση το"
+#~ " hostname"
+
+#~ msgid "Bytes"
+#~ msgstr "Bytes"
+
+#~ msgid "kiB"
+#~ msgstr "kiB"
+
+#~ msgid "MiB"
+#~ msgstr "MiB"
+
+#~ msgid "GiB"
+#~ msgstr "GiB"
+
+#~ msgid "TiB"
+#~ msgstr "TiB"
+
+#~ msgid "Hostname replace"
+#~ msgstr "Αντικατάσταση hostname"
+
+#~ msgid "Error!"
+#~ msgstr "Λάθος!"
+
+#~ msgid "Engines cannot retrieve results"
+#~ msgstr "Οι μηχανές δε μπορούν να φέρουν αποτελέσματα"
+
+#~ msgid "Start submiting a new issue on GitHub"
+#~ msgstr "Ξεκινήστε την υποβολή ενός νέου ζητήματος στο GitHub"
+
+#~ msgid "dummy"
+#~ msgstr ""
+
+#~ msgid "Random value generator"
+#~ msgstr "Γεννήτρια τυχαίων τιμών"
+
+#~ msgid "Statistics functions"
+#~ msgstr "Λειτουργίες στατιστικής"
+
+#~ msgid "Compute {functions} of the arguments"
+#~ msgstr "Υπολογισμός {functions} των παραμέτρων"
+
+#~ msgid "Get directions"
+#~ msgstr "Πάρτε οδηγίες"
+
+#~ msgid ""
+#~ "Displays your IP if the query is"
+#~ " \"ip\" and your user agent if "
+#~ "the query contains \"user agent\"."
+#~ msgstr ""
+#~ "Προβολή της IP διεύθυνσης αν η "
+#~ "αναζήτηση είναι \"ip\" και το user "
+#~ "agent αν η αναζήτηση περιέχει \"user "
+#~ "agent\"."
+
+#~ msgid ""
+#~ "Could not download the list of Tor"
+#~ " exit-nodes from: https://check.torproject.org"
+#~ "/exit-addresses"
+#~ msgstr ""
+#~ "Δεν ήταν δυνατή η λήψη της λίστας"
+#~ " διευθύνσεων εξόδου του δικτύου Tor "
+#~ "από το: https://check.torproject.org/exit-addresses"
+
+#~ msgid ""
+#~ "You are using Tor and it looks "
+#~ "like you have this external IP "
+#~ "address: {ip_address}"
+#~ msgstr ""
+#~ "Χρησιμοποιείτε το δίκτυο Tor και "
+#~ "φαίνεται πως η εξωτερική σας διεύθυνση"
+#~ " είναι η: {ip_address}"
+
+#~ msgid ""
+#~ "You are not using Tor and you "
+#~ "have this external IP address: "
+#~ "{ip_address}"
+#~ msgstr ""
+#~ "Δεν χρησιμοποιείτε το δίκτυο Tor. Η "
+#~ "εξωτερική σας διεύθυνση είναι: {ip_address}"
+
+#~ msgid "Keywords"
+#~ msgstr "Λέξεις κλειδιά"
+
+#~ msgid "/"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Specifying custom settings in the "
+#~ "preferences URL can be used to "
+#~ "sync preferences across devices."
+#~ msgstr ""
+#~ "Ο καθορισμός προσαρμοσμένων ρυθμίσεων στον "
+#~ "σύνδεσμο προτιμήσεων μπορεί να χρησιμοποιηθεί"
+#~ " για το συγχρονισμό των προτιμήσεων "
+#~ "σας σε όλες τις συσκευές."
+
+#~ msgid "proxied"
+#~ msgstr "Διαμεσολαβημένα"
+
+#~ msgid ""
+#~ "This tab does not exists in the"
+#~ " user interface, but you can search"
+#~ " in these engines by its !bangs."
+#~ msgstr ""
+#~ "Αυτή η καρτέλα δεν υπάρχει για την"
+#~ " ιστοσελίδα, αλλά μπορείτε να αναζητήσετε"
+#~ " απ' τις !bangs της."
+
+#~ msgid "Results on new tabs"
+#~ msgstr "Αποτελέσματα σε νέες καρτέλες"
+
+#~ msgid "Open result links on new browser tabs"
+#~ msgstr "Άνοιξε τους συνδέσμους των αποτελεσμάτων σε νέα καρτέλα περιηγητή"
+
+#~ msgid "Find stuff as you type"
+#~ msgstr "Εύρεση όρων κατά την πληκτρολόγηση"
+
+#~ msgid "Converts strings to different hash digests."
+#~ msgstr "Μετατρέπει κείμενο σε διαφορετικές συναρτήσεις κατατεμαχισμού."
+
+#~ msgid ""
+#~ "Rewrite hostnames, remove results or "
+#~ "prioritize them based on the hostname"
+#~ msgstr ""
+#~ "Ξαναγράψτε ονόματα κεντρικών υπολογιστών, "
+#~ "αφαιρέστε τα αποτελέσματα ή δώστε "
+#~ "προτεραιότητα σε αυτά με βάση το "
+#~ "όνομα κεντρικού υπολογιστή"
+
+#~ msgid "With that list, you can assess aperion transparency."
+#~ msgstr ""
+#~ "Με αυτόν τον κατάλογο, μπορείτε να "
+#~ "αξιολογήσετε τη διαφάνεια του aperion."
+
+#~ msgid ""
+#~ "These settings are stored in your "
+#~ "cookies, this allows us not to "
+#~ "store this data about you."
+#~ msgstr ""
+#~ "Αυτές οι ρυθμίσεις αποθηκεύονται στα "
+#~ "cookies σας, με αυτόν τον τρόπο "
+#~ "δεν χρειάζεται να αποθηκέυονται στους "
+#~ "δικούς μας διακομιστές."
+
+#~ msgid ""
+#~ "These cookies serve your sole "
+#~ "convenience, we don't use these cookies"
+#~ " to track you."
+#~ msgstr ""
+#~ "Αυτά τα cookies υπάρχουν αποκλειστικά "
+#~ "για την εξυπηρέτησή σας, δεν τα "
+#~ "χρησιμοποιούμε για να σας παρακολουθούμε."
+
+#~ msgid "Proxying image results through aperion"
+#~ msgstr "Διαμεσολάβιση φόρτωσης αποτελεσμάτων εικόνων μέσω του aperion"
+
+#~ msgid "Automatically load next page when scrolling to bottom of current page"
+#~ msgstr ""
+#~ "Αυτόματη φόρτωση της επόμενης σελίδας "
+#~ "κατά την κύλιση στο κάτω μέρος της"
+#~ " τρέχουσας σελίδας"
+
+#~ msgid ""
+#~ "Perform search immediately if a category"
+#~ " selected. Disable to select multiple "
+#~ "categories"
+#~ msgstr ""
+#~ "Άμεση αναζήτηση κατά την επιλογή "
+#~ "κατηγορίας. Απενεργοποιήστε για να διαλέξετε"
+#~ " πολλαπλές κατηγορίες"
+
+#~ msgid "Change aperion layout"
+#~ msgstr "Τροποποίηση διάταξης του aperion"

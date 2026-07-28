@@ -1,0 +1,9 @@
+{
+    "venvPath": "local",
+    "venv": "py3",
+    "include": [
+        "aperion",
+        "aperion_extra",
+        "tests"
+    ]
+}

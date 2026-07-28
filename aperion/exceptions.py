@@ -1,0 +1,118 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+"""Exception types raised by aperion modules.
+"""
+from __future__ import annotations
+
+from typing import Optional, Union
+
+
+class AperionException(Exception):
+    """Base aperion exception."""
+
+
+class AperionParameterException(AperionException):
+    """Raised when query miss a required parameter"""
+
+    def __init__(self, name, value):
+        if value == '' or value is None:
+            message = 'Empty ' + name + ' parameter'
+        else:
+            message = 'Invalid value "' + value + '" for parameter ' + name
+        super().__init__(message)
+        self.message = message
+        self.parameter_name = name
+        self.parameter_value = value
+
+
+class AperionSettingsException(AperionException):
+    """Error while loading the settings"""
+
+    def __init__(self, message: Union[str, Exception], filename: Optional[str]):
+        super().__init__(message)
+        self.message = message
+        self.filename = filename
+
+
+class AperionEngineException(AperionException):
+    """Error inside an engine"""
+
+
+class AperionXPathSyntaxException(AperionEngineException):
+    """Syntax error in a XPATH"""
+
+    def __init__(self, xpath_spec, message):
+        super().__init__(str(xpath_spec) + " " + message)
+        self.message = message
+        # str(xpath_spec) to deal with str and XPath instance
+        self.xpath_str = str(xpath_spec)
+
+
+class AperionEngineResponseException(AperionEngineException):
+    """Impossible to parse the result of an engine"""
+
+
+class AperionEngineAPIException(AperionEngineResponseException):
+    """The website has returned an application error"""
+
+
+class AperionEngineAccessDeniedException(AperionEngineResponseException):
+    """The website is blocking the access"""
+
+    SUSPEND_TIME_SETTING = "search.suspended_times.AperionEngineAccessDenied"
+    """This settings contains the default suspended time (default 86400 sec / 1
+    day)."""
+
+    def __init__(self, suspended_time: int | None = None, message: str = 'Access denied'):
+        """Generic exception to raise when an engine denies access to the results.
+
+        :param suspended_time: How long the engine is going to be suspended in
+            second. Defaults to None.
+        :type suspended_time: int, None
+        :param message: Internal message.  Defaults to ``Access denied``
+        :type message: str
+        """
+        if suspended_time is None:
+            suspended_time = self._get_default_suspended_time()
+        super().__init__(message + ', suspended_time=' + str(suspended_time))
+        self.suspended_time = suspended_time
+        self.message = message
+
+    def _get_default_suspended_time(self) -> int:
+        from aperion import get_setting  # pylint: disable=C0415
+
+        return get_setting(self.SUSPEND_TIME_SETTING)
+
+
+class AperionEngineCaptchaException(AperionEngineAccessDeniedException):
+    """The website has returned a CAPTCHA."""
+
+    SUSPEND_TIME_SETTING = "search.suspended_times.AperionEngineCaptcha"
+    """This settings contains the default suspended time (default 86400 sec / 1
+    day)."""
+
+    def __init__(self, suspended_time: int | None = None, message='CAPTCHA'):
+        super().__init__(message=message, suspended_time=suspended_time)
+
+
+class AperionEngineTooManyRequestsException(AperionEngineAccessDeniedException):
+    """The website has returned a Too Many Request status code
+
+    By default, aperion stops sending requests to this engine for 1 hour.
+    """
+
+    SUSPEND_TIME_SETTING = "search.suspended_times.AperionEngineTooManyRequests"
+    """This settings contains the default suspended time (default 3660 sec / 1
+    hour)."""
+
+    def __init__(self, suspended_time: int | None = None, message='Too many request'):
+        super().__init__(message=message, suspended_time=suspended_time)
+
+
+class AperionEngineXPathException(AperionEngineResponseException):
+    """Error while getting the result of an XPath expression"""
+
+    def __init__(self, xpath_spec, message):
+        super().__init__(str(xpath_spec) + " " + message)
+        self.message = message
+        # str(xpath_spec) to deal with str and XPath instance
+        self.xpath_str = str(xpath_spec)

@@ -1,0 +1,2385 @@
+# Turkish translations for .
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the  project.
+#
+# Translators:
+# Arda Kılıçdağı <ardakilicdagi@gmail.com>, 2018
+# BouRock, 2020
+# Caner Başaran <basaran.caner@gmail.com>, 2014-2016
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014
+# Markus Heiser <markus.heiser@darmarit.de>, 2022.
+# 0xFFD <barann.afsarr@gmail.com>, 2022.
+# crazychicken1 <seymaomay1809@gmail.com>, 2022.
+# Kayra Uylar <k.uylar@outlook.com>, 2022.
+# emirhan <xemirhankoc@gmail.com>, 2023.
+# return42 <markus.heiser@darmarit.de>, 2023, 2024.
+# plawlost <ceo@plawlabs.org>, 2023.
+# Oğuz Ersen <oguz@ersen.moe>, 2024.
+# ggnoredo <mail@fahriuzun.com>, 2024.
+# return42 <return42@users.noreply.translate.codeberg.org>, 2024, 2025.
+# Oğuz Ersen <ersen@users.noreply.translate.codeberg.org>, 2024, 2025.
+# Quitaxd <Quitaxd@users.noreply.translate.codeberg.org>, 2024.
+# sygmamess <sygmamess@users.noreply.translate.codeberg.org>, 2024, 2025.
+# ahmetax <ahmetax@users.noreply.translate.codeberg.org>, 2024, 2025.
+# ulsaa <ulsaa@users.noreply.translate.codeberg.org>, 2024, 2025.
+# Anonymous <anonymous@users.noreply.translate.codeberg.org>, 2025.
+# ggnoredo <ggnoredo@users.noreply.translate.codeberg.org>, 2025.
+# plawlost <plawlost@users.noreply.translate.codeberg.org>, 2025.
+# akinu <akinu@users.noreply.translate.codeberg.org>, 2025.
+# return42 <return42@noreply.codeberg.org>, 2025.
+# AhmetHakki1 <ahmethakki1@noreply.codeberg.org>, 2025.
+# Cookie_Monster <cookie_monster@noreply.codeberg.org>, 2025.
+# zbbhzdaajc <zbbhzdaajc@noreply.codeberg.org>, 2025.
+# musabustun <musabustun@noreply.codeberg.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: aperion\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-07-03 14:46+0000\n"
+"PO-Revision-Date: 2025-07-30 09:09+0000\n"
+"Last-Translator: musabustun <musabustun@noreply.codeberg.org>\n"
+"Language-Team: Turkish <https://translate.codeberg.org/projects/aperion/"
+"aperion/tr/>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Weblate 5.12.2\n"
+"Generated-By: Babel 2.17.0\n"
+
+#. CONSTANT_NAMES['NO_SUBGROUPING']
+#: aperion/aperion.msg
+msgid "without further subgrouping"
+msgstr "daha fazla alt grup olmadan"
+
+#. CONSTANT_NAMES['DEFAULT_CATEGORY']
+#: aperion/aperion.msg
+msgid "other"
+msgstr "diğer"
+
+#. CATEGORY_NAMES['FILES']
+#: aperion/aperion.msg
+msgid "files"
+msgstr "dosyalar"
+
+#. CATEGORY_NAMES['GENERAL']
+#: aperion/aperion.msg
+msgid "general"
+msgstr "genel"
+
+#. CATEGORY_NAMES['MUSIC']
+#: aperion/aperion.msg
+msgid "music"
+msgstr "müzik"
+
+#. CATEGORY_NAMES['SOCIAL_MEDIA']
+#: aperion/aperion.msg
+msgid "social media"
+msgstr "sosyal medya"
+
+#. CATEGORY_NAMES['IMAGES']
+#: aperion/aperion.msg
+msgid "images"
+msgstr "görseller"
+
+#. CATEGORY_NAMES['VIDEOS']
+#: aperion/aperion.msg
+msgid "videos"
+msgstr "görüntüler"
+
+#. CATEGORY_NAMES['RADIO']
+#: aperion/engines/radio_browser.py:151 aperion/aperion.msg
+msgid "radio"
+msgstr "radyo"
+
+#. CATEGORY_NAMES['TV']
+#: aperion/aperion.msg
+msgid "tv"
+msgstr "televizyon"
+
+#. CATEGORY_NAMES['IT']
+#: aperion/aperion.msg
+msgid "it"
+msgstr "bilişim"
+
+#. CATEGORY_NAMES['NEWS']
+#: aperion/aperion.msg
+msgid "news"
+msgstr "haberler"
+
+#. CATEGORY_NAMES['MAP']
+#: aperion/aperion.msg
+msgid "map"
+msgstr "harita"
+
+#. CATEGORY_NAMES['ONIONS']
+#: aperion/aperion.msg
+msgid "onions"
+msgstr "onion lar"
+
+#. CATEGORY_NAMES['SCIENCE']
+#: aperion/aperion.msg
+msgid "science"
+msgstr "bilim"
+
+#. CATEGORY_GROUPS['APPS']
+#: aperion/aperion.msg
+msgid "apps"
+msgstr "uygulamalar"
+
+#. CATEGORY_GROUPS['DICTIONARIES']
+#: aperion/aperion.msg
+msgid "dictionaries"
+msgstr "sözlükler"
+
+#. CATEGORY_GROUPS['LYRICS']
+#: aperion/aperion.msg
+msgid "lyrics"
+msgstr "şarkı sözleri"
+
+#. CATEGORY_GROUPS['PACKAGES']
+#: aperion/aperion.msg
+msgid "packages"
+msgstr "paketler"
+
+#. CATEGORY_GROUPS['Q_A']
+#: aperion/aperion.msg
+msgid "q&a"
+msgstr "soru ve cevap"
+
+#. CATEGORY_GROUPS['REPOS']
+#: aperion/aperion.msg
+msgid "repos"
+msgstr "depolar"
+
+#. CATEGORY_GROUPS['SOFTWARE_WIKIS']
+#: aperion/aperion.msg
+msgid "software wikis"
+msgstr "yazılım vikileri"
+
+#. CATEGORY_GROUPS['WEB']
+#: aperion/aperion.msg
+msgid "web"
+msgstr "ağ"
+
+#. CATEGORY_GROUPS['SCIENTIFIC PUBLICATIONS']
+#: aperion/aperion.msg
+msgid "scientific publications"
+msgstr "bilimsel yayınlar"
+
+#. STYLE_NAMES['AUTO']
+#: aperion/aperion.msg
+msgid "auto"
+msgstr "otomatik"
+
+#. STYLE_NAMES['LIGHT']
+#: aperion/aperion.msg
+msgid "light"
+msgstr "aydınlık"
+
+#. STYLE_NAMES['DARK']
+#: aperion/aperion.msg
+msgid "dark"
+msgstr "karanlık"
+
+#. STYLE_NAMES['BLACK']
+#: aperion/aperion.msg
+msgid "black"
+msgstr "siyah"
+
+#. BRAND_CUSTOM_LINKS['UPTIME']
+#: aperion/aperion.msg
+msgid "Uptime"
+msgstr "Çalışma Süresi"
+
+#. BRAND_CUSTOM_LINKS['ABOUT']
+#: aperion/aperion.msg aperion/templates/simple/base.html:49
+msgid "About"
+msgstr "Hakkında"
+
+#. WEATHER_TERMS['AVERAGE TEMP.']
+#: aperion/aperion.msg
+msgid "Average temp."
+msgstr "Ortalama sıcaklık."
+
+#. WEATHER_TERMS['CLOUD COVER']
+#: aperion/aperion.msg
+msgid "Cloud cover"
+msgstr "Bulut örtüsü"
+
+#. WEATHER_TERMS['CONDITION']
+#: aperion/engines/duckduckgo_weather.py:45 aperion/aperion.msg
+msgid "Condition"
+msgstr "Durum"
+
+#. WEATHER_TERMS['CURRENT CONDITION']
+#: aperion/engines/duckduckgo_weather.py:118 aperion/aperion.msg
+msgid "Current condition"
+msgstr "Şimdiki durum"
+
+#. WEATHER_TERMS['EVENING']
+#: aperion/aperion.msg
+msgid "Evening"
+msgstr "Akşam"
+
+#. WEATHER_TERMS['FEELS LIKE']
+#: aperion/engines/duckduckgo_weather.py:53 aperion/aperion.msg
+msgid "Feels like"
+msgstr "hissettiren"
+
+#. WEATHER_TERMS['HUMIDITY']
+#: aperion/engines/duckduckgo_weather.py:64 aperion/aperion.msg
+#: aperion/templates/simple/answer/weather.html:29
+msgid "Humidity"
+msgstr "Rutubet"
+
+#. WEATHER_TERMS['MAX TEMP.']
+#: aperion/engines/duckduckgo_weather.py:77 aperion/aperion.msg
+msgid "Max temp."
+msgstr "Max Sıcaklık.."
+
+#. WEATHER_TERMS['MIN TEMP.']
+#: aperion/engines/duckduckgo_weather.py:73 aperion/aperion.msg
+msgid "Min temp."
+msgstr "Min Sıcaklık"
+
+#. WEATHER_TERMS['MORNING']
+#: aperion/aperion.msg
+msgid "Morning"
+msgstr "Gündüz"
+
+#. WEATHER_TERMS['NIGHT']
+#: aperion/aperion.msg
+msgid "Night"
+msgstr "Gece"
+
+#. WEATHER_TERMS['NOON']
+#: aperion/aperion.msg
+msgid "Noon"
+msgstr "Öğlen"
+
+#. WEATHER_TERMS['PRESSURE']
+#: aperion/aperion.msg aperion/templates/simple/answer/weather.html:25
+msgid "Pressure"
+msgstr "Basınç"
+
+#. WEATHER_TERMS['SUNRISE']
+#: aperion/engines/duckduckgo_weather.py:81 aperion/aperion.msg
+msgid "Sunrise"
+msgstr "gündoğumu"
+
+#. WEATHER_TERMS['SUNSET']
+#: aperion/engines/duckduckgo_weather.py:82 aperion/aperion.msg
+msgid "Sunset"
+msgstr "Gün batımı"
+
+#. WEATHER_TERMS['TEMPERATURE']
+#: aperion/engines/duckduckgo_weather.py:48 aperion/aperion.msg
+#: aperion/templates/simple/answer/weather.html:17
+msgid "Temperature"
+msgstr "Sıcaklık"
+
+#. WEATHER_TERMS['UV INDEX']
+#: aperion/engines/duckduckgo_weather.py:80 aperion/aperion.msg
+msgid "UV index"
+msgstr "UV Endeksi"
+
+#. WEATHER_TERMS['VISIBILITY']
+#: aperion/engines/duckduckgo_weather.py:62 aperion/aperion.msg
+msgid "Visibility"
+msgstr "Görünürlük"
+
+#. WEATHER_TERMS['WIND']
+#: aperion/engines/duckduckgo_weather.py:58 aperion/aperion.msg
+#: aperion/templates/simple/answer/weather.html:23
+msgid "Wind"
+msgstr "Rüzgâr"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Clear sky"
+msgstr "Açık gökyüzü"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Partly cloudy"
+msgstr "Parçalı bulutlu"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Cloudy"
+msgstr "Bulutlu"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Fair"
+msgstr "Güzel"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Fog"
+msgstr "Sis"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain and thunder"
+msgstr "Gök gürültülü hafif yağmurlu"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain showers and thunder"
+msgstr "Gök gürültülü hafif sağanak"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain showers"
+msgstr "Hafif sağanak yağmur"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain"
+msgstr "Hafif yağmur"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain and thunder"
+msgstr "Yağmurlu ve gök gürültülü"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain showers and thunder"
+msgstr "Yağmur sağanakları ve gök gürültüsü"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain showers"
+msgstr "Sağanak yağmur"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain"
+msgstr "Yağmur"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain and thunder"
+msgstr "Sağanak yağmur ve fırtına"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain showers and thunder"
+msgstr "Gök gürültülü şiddetli yağmur"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain showers"
+msgstr "Şiddetli sağanak yağış"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain"
+msgstr "Sağanak Yağmur"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet and thunder"
+msgstr "Hafif karla karışık yağmur ve gök gürültüsü"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet showers and thunder"
+msgstr "Hafif karla karışık yağmur ve gök gürültüsü"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet showers"
+msgstr "Hafif karla karışık yağmur"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet"
+msgstr "Hafif karla karışık yağmur"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet and thunder"
+msgstr "Karla karışık yağmur ve gök gürültüsü"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet showers and thunder"
+msgstr "Karla karışık yağmur ve gök gürültüsü"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet showers"
+msgstr "Karla karışık yağmur"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet"
+msgstr "Karla karışık yağmur"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet and thunder"
+msgstr "Şiddetli karla karışık yağmur ve gök gürültüsü"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet showers and thunder"
+msgstr "Şiddetli karla karışık yağmur ve gök gürültüsü"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet showers"
+msgstr "Şiddetli karla karışık yağmur"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet"
+msgstr "Yoğun karla karışık yağmur"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow and thunder"
+msgstr "Hafif kar ve gök gürültüsü"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow showers and thunder"
+msgstr "Hafif kar yağışı ve gök gürültüsü"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow showers"
+msgstr "Hafif kar yağışı"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow"
+msgstr "Hafif kar yağışı"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow and thunder"
+msgstr "Kar ve gök gürültüsü"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow showers and thunder"
+msgstr "Kar yağışı ve gök gürültüsü"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow showers"
+msgstr "Kar yağışı"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow"
+msgstr "Kar"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow and thunder"
+msgstr "Yoğun kar ve gök gürültüsü"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow showers and thunder"
+msgstr "Yoğun kar yağışı ve gök gürültüsü"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow showers"
+msgstr "Yoğun kar yağışı"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow"
+msgstr "Yoğun kar yağışı"
+
+#. SOCIAL_MEDIA_TERMS['SUBSCRIBERS']
+#: aperion/engines/lemmy.py:85 aperion/aperion.msg
+msgid "subscribers"
+msgstr "aboneler"
+
+#. SOCIAL_MEDIA_TERMS['POSTS']
+#: aperion/engines/lemmy.py:86 aperion/aperion.msg
+msgid "posts"
+msgstr "gönderiler"
+
+#. SOCIAL_MEDIA_TERMS['ACTIVE USERS']
+#: aperion/engines/lemmy.py:87 aperion/aperion.msg
+msgid "active users"
+msgstr "aktif kullanıcılar"
+
+#. SOCIAL_MEDIA_TERMS['COMMENTS']
+#: aperion/engines/discourse.py:157 aperion/engines/hackernews.py:82
+#: aperion/engines/lemmy.py:130 aperion/aperion.msg
+msgid "comments"
+msgstr "yorumlar"
+
+#. SOCIAL_MEDIA_TERMS['USER']
+#: aperion/engines/lemmy.py:129 aperion/engines/lemmy.py:164 aperion/aperion.msg
+msgid "user"
+msgstr "kullanıcı"
+
+#. SOCIAL_MEDIA_TERMS['COMMUNITY']
+#: aperion/engines/lemmy.py:131 aperion/engines/lemmy.py:165 aperion/aperion.msg
+msgid "community"
+msgstr "topluluk"
+
+#. SOCIAL_MEDIA_TERMS['POINTS']
+#: aperion/engines/hackernews.py:82 aperion/aperion.msg
+msgid "points"
+msgstr "puanlar"
+
+#. SOCIAL_MEDIA_TERMS['TITLE']
+#: aperion/aperion.msg
+msgid "title"
+msgstr "başlık"
+
+#. SOCIAL_MEDIA_TERMS['AUTHOR']
+#: aperion/engines/hackernews.py:85 aperion/aperion.msg
+msgid "author"
+msgstr "yazar"
+
+#. SOCIAL_MEDIA_TERMS['THREAD OPEN']
+#: aperion/engines/discourse.py:149 aperion/aperion.msg
+msgid "open"
+msgstr "açık"
+
+#. SOCIAL_MEDIA_TERMS['THREAD CLOSED']
+#: aperion/engines/discourse.py:149 aperion/aperion.msg
+msgid "closed"
+msgstr "kapalı"
+
+#. SOCIAL_MEDIA_TERMS['THREAD ANSWERED']
+#: aperion/engines/discourse.py:160 aperion/aperion.msg
+msgid "answered"
+msgstr "yanıtlandı"
+
+#: aperion/webapp.py:292
+msgid "No item found"
+msgstr "Öğe bulunamadı"
+
+#: aperion/engines/qwant.py:291
+#: aperion/templates/simple/result_templates/images.html:23 aperion/webapp.py:294
+msgid "Source"
+msgstr "Kaynak"
+
+#: aperion/webapp.py:296
+msgid "Error loading the next page"
+msgstr "Sonraki sayfa yüklenemedi"
+
+#: aperion/webapp.py:447 aperion/webapp.py:845
+msgid "Invalid settings, please edit your preferences"
+msgstr "Geçersiz ayarlar, lütfen tercihlerinizi düzenleyin"
+
+#: aperion/webapp.py:463
+msgid "Invalid settings"
+msgstr "Geçersiz ayarlar"
+
+#: aperion/webapp.py:540 aperion/webapp.py:630
+msgid "search error"
+msgstr "arama hatası"
+
+#: aperion/webutils.py:35
+msgid "timeout"
+msgstr "zaman aşımı"
+
+#: aperion/webutils.py:36
+msgid "parsing error"
+msgstr "ayrıştırma hatası"
+
+#: aperion/webutils.py:37
+msgid "HTTP protocol error"
+msgstr "HTTP protokol hatası"
+
+#: aperion/webutils.py:38
+msgid "network error"
+msgstr "bağlantı hatası"
+
+#: aperion/webutils.py:39
+msgid "SSL error: certificate validation has failed"
+msgstr "SSL Hatası: Sertifika doğrulaması başarısız oldu"
+
+#: aperion/webutils.py:41
+msgid "unexpected crash"
+msgstr "beklenmeyen çökme"
+
+#: aperion/webutils.py:48
+msgid "HTTP error"
+msgstr "HTTP hatası"
+
+#: aperion/webutils.py:49
+msgid "HTTP connection error"
+msgstr "HTTP bağlantı hatası"
+
+#: aperion/webutils.py:55
+msgid "proxy error"
+msgstr "proxy hatası"
+
+#: aperion/webutils.py:56
+msgid "CAPTCHA"
+msgstr "CAPTCHA"
+
+#: aperion/webutils.py:57
+msgid "too many requests"
+msgstr "çok fazla istek"
+
+#: aperion/webutils.py:58
+msgid "access denied"
+msgstr "erişim engellendi"
+
+#: aperion/webutils.py:59
+msgid "server API error"
+msgstr "sunucu API hatası"
+
+#: aperion/webutils.py:78
+msgid "Suspended"
+msgstr "Askıya alındı"
+
+#: aperion/webutils.py:313
+#, python-brace-format
+msgid "{minutes} minute(s) ago"
+msgstr "{minutes} dakika önce"
+
+#: aperion/webutils.py:314
+#, python-brace-format
+msgid "{hours} hour(s), {minutes} minute(s) ago"
+msgstr "{hours} saat, {minutes} dakika önce"
+
+#: aperion/answerers/random.py:69
+msgid "Generate different random values"
+msgstr "Farklı rastgele değerler üret"
+
+#: aperion/answerers/statistics.py:36
+#, python-brace-format
+msgid "Compute {func} of the arguments"
+msgstr "Argümanların değerini hesapla {func}"
+
+#: aperion/engines/openstreetmap.py:158
+msgid "Show route in map .."
+msgstr "Yol tarifini haritada goster .."
+
+#: aperion/engines/pdbe.py:96
+#, python-brace-format
+msgid "{title} (OBSOLETE)"
+msgstr "{title} (ESKİ)"
+
+#: aperion/engines/pdbe.py:103
+msgid "This entry has been superseded by"
+msgstr "Bu girişin yerini alan"
+
+#: aperion/engines/qwant.py:293
+msgid "Channel"
+msgstr "Kanal"
+
+#: aperion/engines/radio_browser.py:153
+msgid "bitrate"
+msgstr "bit hızı"
+
+#: aperion/engines/radio_browser.py:154
+msgid "votes"
+msgstr "oylar"
+
+#: aperion/engines/radio_browser.py:155
+msgid "clicks"
+msgstr "tıklamalar"
+
+#: aperion/engines/seekr.py:193 aperion/engines/yummly.py:71
+#: aperion/engines/zlibrary.py:137
+msgid "Language"
+msgstr "Dil"
+
+#: aperion/engines/semantic_scholar.py:101
+#, python-brace-format
+msgid ""
+"{numCitations} citations from the year {firstCitationVelocityYear} to "
+"{lastCitationVelocityYear}"
+msgstr ""
+"{firstCitationVelocityYear} yılından {lastCitationVelocityYear} yılına "
+"kadar {numCitations} alıntı(lar)"
+
+#: aperion/engines/tineye.py:48
+msgid ""
+"Could not read that image url. This may be due to an unsupported file "
+"format. TinEye only supports images that are JPEG, PNG, GIF, BMP, TIFF or"
+" WebP."
+msgstr ""
+"Görsel bağlantısı okunamadı. Bu desteklenmeyen bir dosya uzantısı "
+"yüzünden olabilir. TinEye sadece JPEG, PNG, GIF, BMP, TIFF veya WebP "
+"uzantılı görselleri destekliyor."
+
+#: aperion/engines/tineye.py:54
+msgid ""
+"The image is too simple to find matches. TinEye requires a basic level of"
+" visual detail to successfully identify matches."
+msgstr ""
+"Fotoğraf aranmak için fazla basit. TinEye 'ın başarılı şekilde çalışması "
+"için basit detaylar gereklidir."
+
+#: aperion/engines/tineye.py:59
+msgid "The image could not be downloaded."
+msgstr "Görsel indirilemedi."
+
+#: aperion/engines/zlibrary.py:138
+msgid "Book rating"
+msgstr "Kitap değerlendirmesi"
+
+#: aperion/engines/zlibrary.py:139
+msgid "File quality"
+msgstr "Dosya kalitesi"
+
+#: aperion/plugins/ahmia_filter.py:32
+msgid "Ahmia blacklist"
+msgstr "Ahmia kara listesi"
+
+#: aperion/plugins/ahmia_filter.py:33
+msgid "Filter out onion results that appear in Ahmia's blacklist."
+msgstr "Ahmia kara listesinde görünen onion sonuçlarını filtrele"
+
+#: aperion/plugins/calculator.py:38
+msgid "Basic Calculator"
+msgstr "Temel Hesap Makinesi"
+
+#: aperion/plugins/calculator.py:39
+msgid "Calculate mathematical expressions via the search bar"
+msgstr "Arama çubuğunu kullanarak matematiksel ifadeleri hesaplayın"
+
+#: aperion/plugins/hash_plugin.py:34
+msgid "Hash plugin"
+msgstr "Hash eklentisi"
+
+#: aperion/plugins/hash_plugin.py:36
+msgid ""
+"Converts strings to different hash digests. Available functions: md5, "
+"sha1, sha224, sha256, sha384, sha512."
+msgstr ""
+"Dizileri farklı hash özetlerine dönüştürür. Kullanılabilir işlevler: md5, "
+"sha1, sha224, sha256, sha384, sha512."
+
+#: aperion/plugins/hash_plugin.py:64
+msgid "hash digest"
+msgstr "özdeğer"
+
+#: aperion/plugins/hostnames.py:123
+msgid "Hostnames plugin"
+msgstr "Sunucu adı eklentisi"
+
+#: aperion/plugins/hostnames.py:124
+msgid "Rewrite hostnames and remove or prioritize results based on the hostname"
+msgstr ""
+"Ana bilgisayar adlarını yeniden yazın ve ana bilgisayar adına göre sonuçları "
+"kaldırın veya önceliklendirin."
+
+#: aperion/plugins/oa_doi_rewrite.py:55
+msgid "Open Access DOI rewrite"
+msgstr "Açık Erişim DOI yeniden yazma"
+
+#: aperion/plugins/oa_doi_rewrite.py:56
+msgid ""
+"Avoid paywalls by redirecting to open-access versions of publications "
+"when available"
+msgstr ""
+"Mevcut olduğunda yayınların açık erişim sürümlerine yeniden yönlendirerek"
+" ödeme ekranlarını önle"
+
+#: aperion/plugins/self_info.py:37
+msgid "Self Information"
+msgstr "kişisel bilgi"
+
+#: aperion/plugins/self_info.py:39
+msgid ""
+"Displays your IP if the query is \"ip\" and your user agent if the query "
+"is \"user-agent\"."
+msgstr ""
+"Sorgu \"ip\" ise IP adresinizi, \"user-agent\" ise kullanıcı aracınızı "
+"gösterir."
+
+#: aperion/plugins/self_info.py:52
+msgid "Your IP is: "
+msgstr "IP adresiniz: "
+
+#: aperion/plugins/self_info.py:55
+msgid "Your user-agent is: "
+msgstr "Kullanıcı-ajanınız: "
+
+#: aperion/plugins/tor_check.py:42
+msgid "Tor check plugin"
+msgstr "Tor kontrol eklentisi"
+
+#: aperion/plugins/tor_check.py:44
+msgid ""
+"This plugin checks if the address of the request is a Tor exit-node, and "
+"informs the user if it is; like check.torproject.org, but from aperion."
+msgstr ""
+"Bu eklenti, isteğin adresinin bir Tor çıkış düğümü olup olmadığını "
+"kontrol eder ve varsa kullanıcıyı bilgilendirir; check.torproject.org "
+"gibi, ancak aperion'den."
+
+#: aperion/plugins/tor_check.py:65
+msgid "Could not download the list of Tor exit-nodes from"
+msgstr "Tor çıkış noktalarinin listesini indiremiyor"
+
+#: aperion/plugins/tor_check.py:72
+msgid "You are using Tor and it looks like you have the external IP address"
+msgstr "Su anda Tor'a baglisiniz ve dış IP adresiniz var gibi görünüyor"
+
+#: aperion/plugins/tor_check.py:76
+msgid "You are not using Tor and you have the external IP address"
+msgstr "Tor kullanmıyorsunuz ve harici IP adresiniz var"
+
+#: aperion/plugins/tracker_url_remover.py:35
+msgid "Tracker URL remover"
+msgstr "Takip URL kaldırıcı"
+
+#: aperion/plugins/tracker_url_remover.py:36
+msgid "Remove trackers arguments from the returned URL"
+msgstr "Takip parametrelerini URL'den kaldır"
+
+#: aperion/plugins/unit_converter.py:49
+msgid "Unit converter plugin"
+msgstr "Birim dönüştürme eklentisi"
+
+#: aperion/plugins/unit_converter.py:50
+msgid "Convert between units"
+msgstr "Birimler arasında dönüştürme"
+
+#: aperion/result_types/answer.py:224
+#, python-brace-format
+msgid "{location}: {temperature}, {condition}"
+msgstr "{location}: {temperature}, {condition}"
+
+#: aperion/templates/simple/404.html:4
+msgid "Page not found"
+msgstr "Sayfa bulunamadı"
+
+#: aperion/templates/simple/404.html:6
+#, python-format
+msgid "Go to %(search_page)s."
+msgstr "%(search_page)s sayfasına git."
+
+#: aperion/templates/simple/404.html:6
+msgid "search page"
+msgstr "arama sayfası"
+
+#: aperion/templates/simple/base.html:53
+msgid "Donate"
+msgstr "Bağış"
+
+#: aperion/templates/simple/base.html:57
+#: aperion/templates/simple/preferences.html:156
+msgid "Preferences"
+msgstr "Tercihler"
+
+#: aperion/templates/simple/base.html:67
+msgid "Powered by"
+msgstr "Destekleyen"
+
+#: aperion/templates/simple/base.html:67
+msgid "a privacy-respecting, open metasearch engine"
+msgstr "Gizliliğiniz önemseyen, açık meta arama motoru"
+
+#: aperion/templates/simple/base.html:68
+#: aperion/templates/simple/result_templates/packages.html:59
+msgid "Source code"
+msgstr "Kaynak kodu"
+
+#: aperion/templates/simple/base.html:69
+msgid "Issue tracker"
+msgstr "Sorun izleyici"
+
+#: aperion/templates/simple/base.html:70 aperion/templates/simple/stats.html:18
+msgid "Engine stats"
+msgstr "Motor istatistikleri"
+
+#: aperion/templates/simple/base.html:72
+msgid "Public instances"
+msgstr "Açık sunucular"
+
+#: aperion/templates/simple/base.html:75
+msgid "Privacy policy"
+msgstr "Gizlilik politikası"
+
+#: aperion/templates/simple/base.html:78
+msgid "Contact instance maintainer"
+msgstr "Sunucu sahibi ile iletişime geçin"
+
+#: aperion/templates/simple/categories.html:30
+msgid "Click on the magnifier to perform search"
+msgstr "Arama yapmak için büyütece tıklayın"
+
+#: aperion/templates/simple/macros.html:40
+msgid "Length"
+msgstr "Uzunluk"
+
+#: aperion/templates/simple/macros.html:41
+msgid "Views"
+msgstr "Görüntülemeler"
+
+#: aperion/templates/simple/macros.html:42
+#: aperion/templates/simple/result_templates/files.html:34
+#: aperion/templates/simple/result_templates/images.html:19
+#: aperion/templates/simple/result_templates/paper.html:6
+msgid "Author"
+msgstr "Hazırlayan"
+
+#: aperion/templates/simple/macros.html:50
+msgid "cached"
+msgstr "önbellek"
+
+#: aperion/templates/simple/new_issue.html:64
+msgid "Start submitting a new issue on GitHub"
+msgstr "GitHub'a Yeni bir hata göndeymeye başlayin"
+
+#: aperion/templates/simple/new_issue.html:66
+msgid "Please check for existing bugs about this engine on GitHub"
+msgstr ""
+"Lütfen Github üzerinden bu tarayıcı hakkında devam eden sorunları kontrol"
+" ediniz"
+
+#: aperion/templates/simple/new_issue.html:69
+msgid "I confirm there is no existing bug about the issue I encounter"
+msgstr "Karşılaştığım hata ile ilgili süregelen bir hata bulunmadığını onaylıyorum"
+
+#: aperion/templates/simple/new_issue.html:71
+msgid "If this is a public instance, please specify the URL in the bug report"
+msgstr ""
+"Eğer bu bir bulut üzerinde bir bilgisayar ise lütfen URL'yi hata "
+"raporunda belirtin"
+
+#: aperion/templates/simple/new_issue.html:72
+msgid "Submit a new issue on Github including the above information"
+msgstr "Yukarıdaki bilgilerle Github'da bir sorun bildirin"
+
+#: aperion/templates/simple/preferences.html:65
+msgid "No HTTPS"
+msgstr "HTTPS Yok"
+
+#: aperion/templates/simple/elements/engines_msg.html:14
+#: aperion/templates/simple/preferences.html:69
+#: aperion/templates/simple/preferences.html:70
+msgid "View error logs and submit a bug report"
+msgstr "Hata kayıtlarını incele ve bir hata raporu gönder"
+
+#: aperion/templates/simple/preferences.html:74
+msgid "!bang for this engine"
+msgstr "bu motor için"
+
+#: aperion/templates/simple/preferences.html:80
+msgid "!bang for its categories"
+msgstr "bu kategoriler için"
+
+#: aperion/templates/simple/preferences.html:102
+#: aperion/templates/simple/stats.html:64
+msgid "Median"
+msgstr "ortalama"
+
+#: aperion/templates/simple/preferences.html:103
+#: aperion/templates/simple/stats.html:70
+msgid "P80"
+msgstr "P80"
+
+#: aperion/templates/simple/preferences.html:104
+#: aperion/templates/simple/stats.html:76
+msgid "P95"
+msgstr "P95"
+
+#: aperion/templates/simple/preferences.html:136
+msgid "Failed checker test(s): "
+msgstr "Başarısız kontrol deneme(leri) "
+
+#: aperion/templates/simple/preferences.html:138
+msgid "Errors:"
+msgstr "Hatalar:"
+
+#: aperion/templates/simple/preferences.html:163
+msgid "General"
+msgstr "Genel"
+
+#: aperion/templates/simple/preferences.html:166
+msgid "Default categories"
+msgstr "Varsayılan kategoriler"
+
+#: aperion/templates/simple/preferences.html:194
+msgid "User interface"
+msgstr "Kullanıcı arayüzü"
+
+#: aperion/templates/simple/preferences.html:217
+msgid "Privacy"
+msgstr "Gizlilik"
+
+#: aperion/templates/simple/preferences.html:232
+msgid "Engines"
+msgstr "Motorlar"
+
+#: aperion/templates/simple/preferences.html:234
+msgid "Currently used search engines"
+msgstr "Şu anda kullanılan arama motorları"
+
+#: aperion/templates/simple/preferences.html:243
+msgid "Special Queries"
+msgstr "Özel Arama Sorguları"
+
+#: aperion/templates/simple/preferences.html:251
+msgid "Cookies"
+msgstr "Tanımlama Bilgileri"
+
+#: aperion/templates/simple/results.html:30
+msgid "Number of results"
+msgstr "Sonuç sayısı"
+
+#: aperion/templates/simple/results.html:36
+msgid "Info"
+msgstr "Bilgi"
+
+#: aperion/templates/simple/results.html:77
+msgid "Back to top"
+msgstr "Yukarıya dön"
+
+#: aperion/templates/simple/results.html:95
+msgid "Previous page"
+msgstr "Önceki sayfa"
+
+#: aperion/templates/simple/results.html:113
+msgid "Next page"
+msgstr "Sonraki sayfa"
+
+#: aperion/templates/simple/search.html:3
+msgid "Display the front page"
+msgstr "Ön sayfayı göster"
+
+#: aperion/templates/simple/search.html:9
+#: aperion/templates/simple/simple_search.html:5
+msgid "Search for..."
+msgstr "Aranan..."
+
+#: aperion/templates/simple/search.html:10
+#: aperion/templates/simple/simple_search.html:6
+msgid "clear"
+msgstr "temizle"
+
+#: aperion/templates/simple/search.html:11
+#: aperion/templates/simple/simple_search.html:7
+msgid "search"
+msgstr "ara"
+
+#: aperion/templates/simple/stats.html:21
+msgid "There is currently no data available. "
+msgstr "Şu anda mevcut veri yok. "
+
+#: aperion/templates/simple/preferences/engines.html:24
+#: aperion/templates/simple/stats.html:25
+msgid "Engine name"
+msgstr "Motor adı"
+
+#: aperion/templates/simple/stats.html:26
+msgid "Scores"
+msgstr "Skor"
+
+#: aperion/templates/simple/stats.html:27
+msgid "Result count"
+msgstr "Sonuç sayısı"
+
+#: aperion/templates/simple/elements/engines_msg.html:7
+#: aperion/templates/simple/preferences/engines.html:31
+#: aperion/templates/simple/stats.html:28
+msgid "Response time"
+msgstr "Yanıt süresi"
+
+#: aperion/templates/simple/preferences/engines.html:35
+#: aperion/templates/simple/stats.html:29
+msgid "Reliability"
+msgstr "Güvenilirlik"
+
+#: aperion/templates/simple/stats.html:59
+msgid "Total"
+msgstr "Toplam"
+
+#: aperion/templates/simple/stats.html:60
+msgid "HTTP"
+msgstr "HTTP"
+
+#: aperion/templates/simple/stats.html:61
+msgid "Processing"
+msgstr "İşlem"
+
+#: aperion/templates/simple/stats.html:99
+msgid "Warnings"
+msgstr "Uyarılar"
+
+#: aperion/templates/simple/stats.html:99
+msgid "Errors and exceptions"
+msgstr "Hatalar ve istisnalar"
+
+#: aperion/templates/simple/stats.html:105
+msgid "Exception"
+msgstr "İstisna"
+
+#: aperion/templates/simple/stats.html:107
+msgid "Message"
+msgstr "Mesaj"
+
+#: aperion/templates/simple/stats.html:109
+msgid "Percentage"
+msgstr "Yüzde"
+
+#: aperion/templates/simple/stats.html:111
+msgid "Parameter"
+msgstr "Parametre"
+
+#: aperion/templates/simple/result_templates/files.html:36
+#: aperion/templates/simple/stats.html:119
+msgid "Filename"
+msgstr "Dosya adı"
+
+#: aperion/templates/simple/stats.html:120
+msgid "Function"
+msgstr "İşlev"
+
+#: aperion/templates/simple/stats.html:121
+msgid "Code"
+msgstr "Kod"
+
+#: aperion/templates/simple/stats.html:128
+msgid "Checker"
+msgstr "Denetleyici"
+
+#: aperion/templates/simple/stats.html:131
+msgid "Failed test"
+msgstr "Başarısız deneme"
+
+#: aperion/templates/simple/stats.html:132
+msgid "Comment(s)"
+msgstr "Yorum"
+
+#: aperion/templates/simple/answer/translations.html:12
+#: aperion/templates/simple/preferences/answerers.html:8
+msgid "Examples"
+msgstr "Örnekler"
+
+#: aperion/templates/simple/answer/translations.html:21
+msgid "Definitions"
+msgstr "Tanımlar"
+
+#: aperion/templates/simple/answer/translations.html:30
+msgid "Synonyms"
+msgstr "Eş Anlamlılar"
+
+#: aperion/templates/simple/answer/weather.html:19
+msgid "Feels Like"
+msgstr "Hissedilen"
+
+#: aperion/templates/simple/elements/answers.html:2
+msgid "Answers"
+msgstr "Yanıtlar"
+
+#: aperion/templates/simple/elements/apis.html:3
+msgid "Download results"
+msgstr "Sonuçlarını indir"
+
+#: aperion/templates/simple/elements/corrections.html:2
+msgid "Try searching for:"
+msgstr "Aramaya çalışılan:"
+
+#: aperion/templates/simple/elements/engines_msg.html:4
+msgid "Messages from the search engines"
+msgstr "Arama motorlarından gelen mesajlar"
+
+#: aperion/templates/simple/elements/engines_msg.html:7
+msgid "seconds"
+msgstr "s"
+
+#: aperion/templates/simple/elements/search_url.html:3
+msgid "Search URL"
+msgstr "Arama URL'si"
+
+#: aperion/templates/simple/elements/search_url.html:4
+#: aperion/templates/simple/preferences/cookies.html:54
+msgid "Copied"
+msgstr "kopyalandı"
+
+#: aperion/templates/simple/elements/search_url.html:4
+#: aperion/templates/simple/preferences/cookies.html:54
+msgid "Copy"
+msgstr "kopyala"
+
+#: aperion/templates/simple/elements/suggestions.html:3
+msgid "Suggestions"
+msgstr "Öneriler"
+
+#: aperion/templates/simple/filters/languages.html:1
+#: aperion/templates/simple/preferences/language.html:2
+msgid "Search language"
+msgstr "Arama dili"
+
+#: aperion/templates/simple/filters/languages.html:4
+#: aperion/templates/simple/preferences/language.html:7
+msgid "Default language"
+msgstr "Varsayılan dil"
+
+#: aperion/templates/simple/filters/languages.html:8
+#: aperion/templates/simple/preferences/language.html:11
+msgid "Auto-detect"
+msgstr "Özdevimli algılama"
+
+#: aperion/templates/simple/filters/safesearch.html:1
+#: aperion/templates/simple/filters/safesearch.html:2
+#: aperion/templates/simple/filters/safesearch.html:3
+#: aperion/templates/simple/filters/safesearch.html:4
+#: aperion/templates/simple/preferences/engines.html:27
+#: aperion/templates/simple/preferences/safesearch.html:2
+msgid "SafeSearch"
+msgstr "Güvenli Arama"
+
+#: aperion/templates/simple/filters/safesearch.html:2
+#: aperion/templates/simple/preferences/safesearch.html:7
+msgid "Strict"
+msgstr "Sıkı"
+
+#: aperion/templates/simple/filters/safesearch.html:3
+#: aperion/templates/simple/preferences/safesearch.html:11
+msgid "Moderate"
+msgstr "Orta"
+
+#: aperion/templates/simple/filters/safesearch.html:4
+#: aperion/templates/simple/preferences/safesearch.html:15
+msgid "None"
+msgstr "Yok"
+
+#: aperion/templates/simple/filters/time_range.html:1
+#: aperion/templates/simple/preferences/engines.html:28
+msgid "Time range"
+msgstr "Zaman aralığı"
+
+#: aperion/templates/simple/filters/time_range.html:3
+msgid "Anytime"
+msgstr "Herhangi bir zaman"
+
+#: aperion/templates/simple/filters/time_range.html:6
+msgid "Last day"
+msgstr "Geçen gün"
+
+#: aperion/templates/simple/filters/time_range.html:9
+msgid "Last week"
+msgstr "Geçen hafta"
+
+#: aperion/templates/simple/filters/time_range.html:12
+msgid "Last month"
+msgstr "Geçen ay"
+
+#: aperion/templates/simple/filters/time_range.html:15
+msgid "Last year"
+msgstr "Geçen yıl"
+
+#: aperion/templates/simple/messages/no_cookies.html:3
+msgid "Information!"
+msgstr "Bilgiler!"
+
+#: aperion/templates/simple/messages/no_cookies.html:4
+msgid "currently, there are no cookies defined."
+msgstr "şu anda, tanımlanmış tanımlama bilgileri yok."
+
+#: aperion/templates/simple/messages/no_results.html:6
+msgid "Sorry!"
+msgstr "Üzgünüz!"
+
+#: aperion/templates/simple/messages/no_results.html:12
+msgid "No results were found. You can try to:"
+msgstr "Hiç sonuç bulunamadı. Bunları deneyebilirsin:"
+
+#: aperion/templates/simple/messages/no_results.html:14
+msgid "There are no more results. You can try to:"
+msgstr "Daha fazla sonuç yok. Şunu deneyebilirsin:"
+
+#: aperion/templates/simple/messages/no_results.html:19
+msgid "Refresh the page."
+msgstr "Sayfayı yenile."
+
+#: aperion/templates/simple/messages/no_results.html:20
+msgid "Search for another query or select another category (above)."
+msgstr "Başka bir sorguyu ara veya başka bir kategori seç (yukarıda)."
+
+#: aperion/templates/simple/messages/no_results.html:21
+msgid "Change the search engine used in the preferences:"
+msgstr "Ayarlardan kullanılan arama motorunu değiştir:"
+
+#: aperion/templates/simple/messages/no_results.html:22
+msgid "Switch to another instance:"
+msgstr "Başka bir sağlayıcıya geçiş yapın:"
+
+#: aperion/templates/simple/messages/no_results.html:24
+msgid "Search for another query or select another category."
+msgstr "Başka bir sorgu arayın veya başka bir kategori seçin."
+
+#: aperion/templates/simple/messages/no_results.html:25
+msgid "Go back to the previous page using the previous page button."
+msgstr "Önceki sayfa butonunu kullanarak bir önceki sayfaya geri dön."
+
+#: aperion/templates/simple/preferences/answerers.html:4
+#: aperion/templates/simple/preferences/engines.html:23
+msgid "Allow"
+msgstr "İzin ver"
+
+#: aperion/templates/simple/preferences/answerers.html:5
+msgid "Keywords (first word in query)"
+msgstr "Anahtar kelimeler (sorgudaki ilk kelime)"
+
+#: aperion/templates/simple/preferences/answerers.html:6
+#: aperion/templates/simple/result_templates/packages.html:7
+msgid "Name"
+msgstr "Ad"
+
+#: aperion/templates/simple/preferences/answerers.html:7
+msgid "Description"
+msgstr "Açıklama"
+
+#: aperion/templates/simple/preferences/answerers.html:13
+msgid "This is the list of aperion's instant answering modules."
+msgstr "Bu, aperion'in anlık cevap modüllerinin listesidir."
+
+#: aperion/templates/simple/preferences/answerers.html:29
+msgid "This is the list of plugins."
+msgstr "Bu eklentilerin listesidir."
+
+#: aperion/templates/simple/preferences/autocomplete.html:2
+msgid "Autocomplete"
+msgstr "Otomatik tamamlama"
+
+#: aperion/templates/simple/preferences/autocomplete.html:15
+msgid "Show possible queries as you type"
+msgstr "Yazarken olası sorguları göster"
+
+#: aperion/templates/simple/preferences/center_alignment.html:2
+msgid "Center Alignment"
+msgstr "Ortaya hizalama"
+
+#: aperion/templates/simple/preferences/center_alignment.html:14
+msgid "Display results in the center of the page (Oscar layout)."
+msgstr "Sonuçları sayfanın ortasında göster (Oscar düzeni)."
+
+#: aperion/templates/simple/preferences/cookies.html:2
+msgid ""
+"This is the list of cookies and their values aperion is storing on your "
+"computer."
+msgstr ""
+"Bu, aperion'nin bilgasayarında sakladığı çerezlerin ve çerezlerin "
+"değerlerinin bir listesidir."
+
+#: aperion/templates/simple/preferences/cookies.html:3
+msgid "With this list, you can assess the transparency of aperion."
+msgstr "Bu liste ile aperion'nin şeffaflığını değerlendirebilirsiniz."
+
+#: aperion/templates/simple/preferences/cookies.html:9
+msgid "Cookie name"
+msgstr "Tanımlama bilgisi adı"
+
+#: aperion/templates/simple/preferences/cookies.html:10
+msgid "Value"
+msgstr "Değer"
+
+#: aperion/templates/simple/preferences/cookies.html:23
+msgid "Search URL of the currently saved preferences"
+msgstr "Şu anda kaydedilmiş tercihlerin arama URL'si"
+
+#: aperion/templates/simple/preferences/cookies.html:32
+msgid ""
+"Note: specifying custom settings in the search URL can reduce privacy by "
+"leaking data to the clicked result sites."
+msgstr ""
+"Not: Arama URL'sinde özel ayarların belirtilmesi, tıklanan sonuç "
+"sitelerine veri sızdırarak gizliliği azaltabilir."
+
+#: aperion/templates/simple/preferences/cookies.html:35
+msgid "URL to restore your preferences in another browser"
+msgstr "Seçeneklerinizi farklı bir tarayıcıda yükleme URL'i"
+
+#: aperion/templates/simple/preferences/cookies.html:43
+msgid ""
+"A URL containing your preferences. This URL can be used to restore your "
+"settings on a different device."
+msgstr ""
+"Tercihlerinizi içeren bir URL. Bu URL, ayarlarınızı farklı bir cihazda "
+"geri yüklemek için kullanılabilir."
+
+#: aperion/templates/simple/preferences/cookies.html:46
+msgid "Copy preferences hash"
+msgstr "Ayarlar hash değerini kopyala"
+
+#: aperion/templates/simple/preferences/cookies.html:57
+msgid "Insert copied preferences hash (without URL) to restore"
+msgstr "Geri yüklemek için kopyalanan tercihleri hash (URL olmadan) ekleyin"
+
+#: aperion/templates/simple/preferences/cookies.html:59
+msgid "Preferences hash"
+msgstr "Hah tercihleri"
+
+#: aperion/templates/simple/preferences/doi_resolver.html:1
+msgid "Digital Object Identifier (DOI)"
+msgstr "Dijital Nesne Tanımlayıcı (DOI)"
+
+#: aperion/templates/simple/preferences/doi_resolver.html:6
+msgid "Open Access DOI resolver"
+msgstr "Açık Erişim DOI çözümleyicisi"
+
+#: aperion/templates/simple/preferences/doi_resolver.html:18
+msgid "Select service used by DOI rewrite"
+msgstr "DOI rewrite tarafından kullanılan hizmeti seçin"
+
+#: aperion/templates/simple/preferences/engines.html:9
+msgid ""
+"This tab does not exist in the user interface, but you can search with "
+"these engines via !bangs."
+msgstr ""
+"Bu sekme kullanıcı arayüzünde mevcut değildir, ancak !bangs aracılığıyla bu "
+"motorlarla arama yapabilirsiniz."
+
+#: aperion/templates/simple/preferences/engines.html:15
+msgid "Enable all"
+msgstr "Hepsini etkinleştir"
+
+#: aperion/templates/simple/preferences/engines.html:16
+msgid "Disable all"
+msgstr "Hepsini hızmet dışı bırak"
+
+#: aperion/templates/simple/preferences/engines.html:25
+msgid "!bang"
+msgstr "!bang"
+
+#: aperion/templates/simple/preferences/engines.html:26
+msgid "Supports selected language"
+msgstr "Seçili dili destekler"
+
+#: aperion/templates/simple/preferences/engines.html:29
+msgid "Weight"
+msgstr "Ağırlık"
+
+#: aperion/templates/simple/preferences/engines.html:33
+msgid "Max time"
+msgstr "En fazla zaman"
+
+#: aperion/templates/simple/preferences/favicon.html:2
+msgid "Favicon Resolver"
+msgstr "Favicon Çözümleyicisi"
+
+#: aperion/templates/simple/preferences/favicon.html:15
+msgid "Display favicons near search results"
+msgstr "Arama sonuçlarının yanında favsimgelerini göster"
+
+#: aperion/templates/simple/preferences/footer.html:2
+msgid ""
+"These settings are stored in your cookies. This allows us not to store "
+"this data about you."
+msgstr ""
+"Bu ayarlar çerezlerinizde saklanır. Bu sayede sizinle ilgili bu verileri "
+"saklamamız gerekmez."
+
+#: aperion/templates/simple/preferences/footer.html:3
+msgid "These cookies serve your sole convenience; we don't use them to track you."
+msgstr ""
+"Bu çerezler yalnızca sizin rahatlığınız için kullanılır; sizi takip etmek "
+"için kullanmayız."
+
+#: aperion/templates/simple/preferences/footer.html:6
+msgid "Save"
+msgstr "Kaydet"
+
+#: aperion/templates/simple/preferences/footer.html:9
+msgid "Reset defaults"
+msgstr "Varsayılanları sıfırla"
+
+#: aperion/templates/simple/preferences/footer.html:13
+msgid "Back"
+msgstr "Geri"
+
+#: aperion/templates/simple/preferences/hotkeys.html:2
+msgid "Hotkeys"
+msgstr "Kısayollar"
+
+#: aperion/templates/simple/preferences/hotkeys.html:13
+msgid "Vim-like"
+msgstr "Vim-tarzı"
+
+#: aperion/templates/simple/preferences/hotkeys.html:18
+msgid ""
+"Navigate search results with hotkeys (JavaScript required). Press \"h\" "
+"key on main or result page to get help."
+msgstr ""
+"Kısayollar ile arama sonuçlarını hareket ettirin (JavaScript gerektirir)."
+" Ana sayfada veya sonuç sayfasında yardım almak için \"h\" tuşuna basın."
+
+#: aperion/templates/simple/preferences/image_proxy.html:2
+msgid "Image proxy"
+msgstr "Görsel vekil sunucu"
+
+#: aperion/templates/simple/preferences/image_proxy.html:14
+msgid "Proxy image results through aperion"
+msgstr "aperion aracılığıyla proxy görüntü sonuçları"
+
+#: aperion/templates/simple/preferences/infinite_scroll.html:2
+msgid "Infinite scroll"
+msgstr "Sonsuz kaydırma"
+
+#: aperion/templates/simple/preferences/infinite_scroll.html:14
+msgid ""
+"Automatically load the next page when scrolling to the bottom of the "
+"current page"
+msgstr ""
+"Mevcut sayfanın en altına kaydırıldığında bir sonraki sayfayı otomatik "
+"olarak yükle"
+
+#: aperion/templates/simple/preferences/language.html:24
+msgid "What language do you prefer for search?"
+msgstr "Arama için hangi dili tercih edersiniz?"
+
+#: aperion/templates/simple/preferences/language.html:25
+msgid "Choose Auto-detect to let aperion detect the language of your query."
+msgstr ""
+"aperion'nin sorgunuzun dilini algılamasına izin vermek için Özdevimli "
+"algıla'yı seçin."
+
+#: aperion/templates/simple/preferences/method.html:2
+msgid "HTTP Method"
+msgstr "HTTP Metodu"
+
+#: aperion/templates/simple/preferences/method.html:14
+msgid "Change how forms are submitted"
+msgstr "Formların nasıl gönderildiğini değiştir"
+
+#: aperion/templates/simple/preferences/query_in_title.html:2
+msgid "Query in the page's title"
+msgstr "Sayfanın başındaki arama sorgusu"
+
+#: aperion/templates/simple/preferences/query_in_title.html:14
+msgid ""
+"When enabled, the result page's title contains your query. Your browser "
+"can record this title"
+msgstr ""
+"Bu etkinleştirildiği zaman sonuç sayfasının başlığı arama sonuçlarınızı "
+"da içerir. Tarayıcınız bu başlığı kaydedebilir"
+
+#: aperion/templates/simple/preferences/results_on_new_tab.html:2
+msgid "Results in new tabs"
+msgstr "Sonuçlar yeni sekmelerde"
+
+#: aperion/templates/simple/preferences/results_on_new_tab.html:14
+msgid "Open result links in new browser tabs"
+msgstr "Sonuç bağlantılarını yeni tarayıcı sekmelerinde aç"
+
+#: aperion/templates/simple/preferences/safesearch.html:20
+msgid "Filter content"
+msgstr "İçeriği süzün"
+
+#: aperion/templates/simple/preferences/search_on_category_select.html:2
+msgid "Search on category select"
+msgstr "Kategori seçimine göre ara"
+
+#: aperion/templates/simple/preferences/search_on_category_select.html:14
+msgid ""
+"Perform a search immediately if a category is selected. Disable to select"
+" multiple categories"
+msgstr ""
+"Bir kategori seçildiğinde hemen arama yapın. Birden fazla kategori seçmek "
+"için devre dışı bırakın."
+
+#: aperion/templates/simple/preferences/theme.html:2
+msgid "Theme"
+msgstr "Tema"
+
+#: aperion/templates/simple/preferences/theme.html:14
+msgid "Change the layout of aperion"
+msgstr "aperion'nin düzenini değiştirin"
+
+#: aperion/templates/simple/preferences/theme.html:19
+msgid "Theme style"
+msgstr "Tema stili"
+
+#: aperion/templates/simple/preferences/theme.html:31
+msgid "Choose auto to follow your browser settings"
+msgstr "İnternet tarayıcınızın ayarlarını kullanmak için otomatik modu seçin"
+
+#: aperion/templates/simple/preferences/tokens.html:2
+msgid "Engine tokens"
+msgstr "Motor belirteçleri"
+
+#: aperion/templates/simple/preferences/tokens.html:9
+msgid "Access tokens for private engines"
+msgstr "Özel motorlar için erişim belirteçleri"
+
+#: aperion/templates/simple/preferences/ui_locale.html:2
+msgid "Interface language"
+msgstr "Arayüz dili"
+
+#: aperion/templates/simple/preferences/ui_locale.html:14
+msgid "Change the language of the layout"
+msgstr "Düzen dilini değiştirin"
+
+#: aperion/templates/simple/preferences/urlformatting.html:2
+msgid "URL formatting"
+msgstr "URL Formatı"
+
+#: aperion/templates/simple/preferences/urlformatting.html:8
+msgid "Pretty"
+msgstr "Tatlı"
+
+#: aperion/templates/simple/preferences/urlformatting.html:13
+msgid "Full"
+msgstr "Tam dolu"
+
+#: aperion/templates/simple/preferences/urlformatting.html:18
+msgid "Host"
+msgstr "Host"
+
+#: aperion/templates/simple/preferences/urlformatting.html:23
+msgid "Change result URL formatting"
+msgstr "Sonuç URL biçimlendirmesini değiştir"
+
+#: aperion/templates/simple/result_templates/code.html:13
+msgid "repo"
+msgstr "depo"
+
+#: aperion/templates/simple/result_templates/default.html:6
+#: aperion/templates/simple/result_templates/files.html:8
+#: aperion/templates/simple/result_templates/files.html:11
+msgid "show media"
+msgstr "medyayı göster"
+
+#: aperion/templates/simple/result_templates/default.html:6
+#: aperion/templates/simple/result_templates/files.html:8
+msgid "hide media"
+msgstr "medyayı gizle"
+
+#: aperion/templates/simple/result_templates/default.html:14
+#: aperion/templates/simple/result_templates/videos.html:14
+msgid "This site did not provide any description."
+msgstr "BU site herhangi bir açıklama sağlamadı."
+
+#: aperion/templates/simple/result_templates/files.html:38
+#: aperion/templates/simple/result_templates/images.html:22
+#: aperion/templates/simple/result_templates/torrent.html:18
+msgid "Filesize"
+msgstr "Dosya boyutu"
+
+#: aperion/templates/simple/result_templates/files.html:40
+msgid "Date"
+msgstr "Gün"
+
+#: aperion/templates/simple/result_templates/files.html:42
+#: aperion/templates/simple/result_templates/paper.html:24
+msgid "Type"
+msgstr "Yaz"
+
+#: aperion/templates/simple/result_templates/images.html:20
+msgid "Resolution"
+msgstr "Çözünürlük"
+
+#: aperion/templates/simple/result_templates/images.html:21
+msgid "Format"
+msgstr "Format"
+
+#: aperion/templates/simple/result_templates/images.html:24
+msgid "Engine"
+msgstr "Motor"
+
+#: aperion/templates/simple/result_templates/images.html:25
+msgid "View source"
+msgstr "Kaynağı göster"
+
+#: aperion/templates/simple/result_templates/map.html:12
+msgid "address"
+msgstr "adres"
+
+#: aperion/templates/simple/result_templates/map.html:43
+msgid "show map"
+msgstr "haritayı göster"
+
+#: aperion/templates/simple/result_templates/map.html:43
+msgid "hide map"
+msgstr "haritayı gizle"
+
+#: aperion/templates/simple/result_templates/packages.html:12
+msgid "Version"
+msgstr "Sürüm"
+
+#: aperion/templates/simple/result_templates/packages.html:18
+msgid "Maintainer"
+msgstr "Sahibi"
+
+#: aperion/templates/simple/result_templates/packages.html:24
+msgid "Updated at"
+msgstr "Güncellenme tarihi"
+
+#: aperion/templates/simple/result_templates/packages.html:30
+#: aperion/templates/simple/result_templates/paper.html:25
+msgid "Tags"
+msgstr "Etiketler"
+
+#: aperion/templates/simple/result_templates/packages.html:36
+msgid "Popularity"
+msgstr "Popülerlik"
+
+#: aperion/templates/simple/result_templates/packages.html:42
+msgid "License"
+msgstr "Lisans"
+
+#: aperion/templates/simple/result_templates/packages.html:52
+msgid "Project"
+msgstr "Proje"
+
+#: aperion/templates/simple/result_templates/packages.html:55
+msgid "Project homepage"
+msgstr "Proje ana sayfası"
+
+#: aperion/templates/simple/result_templates/paper.html:5
+msgid "Published date"
+msgstr "Yayınlanma tarihi"
+
+#: aperion/templates/simple/result_templates/paper.html:9
+msgid "Journal"
+msgstr "Günlük"
+
+#: aperion/templates/simple/result_templates/paper.html:22
+msgid "Editor"
+msgstr "Editör"
+
+#: aperion/templates/simple/result_templates/paper.html:23
+msgid "Publisher"
+msgstr "Yayımlayıcı"
+
+#: aperion/templates/simple/result_templates/paper.html:26
+msgid "DOI"
+msgstr "DOI"
+
+#: aperion/templates/simple/result_templates/paper.html:27
+msgid "ISSN"
+msgstr "ISSN"
+
+#: aperion/templates/simple/result_templates/paper.html:28
+msgid "ISBN"
+msgstr "ISBN"
+
+#: aperion/templates/simple/result_templates/paper.html:33
+msgid "PDF"
+msgstr "PDF"
+
+#: aperion/templates/simple/result_templates/paper.html:34
+msgid "HTML"
+msgstr "HTML"
+
+#: aperion/templates/simple/result_templates/torrent.html:7
+msgid "magnet link"
+msgstr "magnet bağlantısı"
+
+#: aperion/templates/simple/result_templates/torrent.html:8
+msgid "torrent file"
+msgstr "torrent dosyası"
+
+#: aperion/templates/simple/result_templates/torrent.html:13
+msgid "Seeder"
+msgstr "Gönderenler"
+
+#: aperion/templates/simple/result_templates/torrent.html:14
+msgid "Leecher"
+msgstr "Çekenler"
+
+#: aperion/templates/simple/result_templates/torrent.html:19
+msgid "Number of Files"
+msgstr "Dosya Sayısı"
+
+#: aperion/templates/simple/result_templates/videos.html:6
+msgid "show video"
+msgstr "görüntüyü göster"
+
+#: aperion/templates/simple/result_templates/videos.html:6
+msgid "hide video"
+msgstr "görüntüyü gizle"
+
+#~ msgid "Engine time (sec)"
+#~ msgstr "Motor süresi (san)"
+
+#~ msgid "Page loads (sec)"
+#~ msgstr "Sayfa yüklemeleri (san)"
+
+#~ msgid "Errors"
+#~ msgstr "Hatalar"
+
+#~ msgid "CAPTCHA required"
+#~ msgstr "CAPTCHA gerekli"
+
+#~ msgid "Rewrite HTTP links to HTTPS if possible"
+#~ msgstr "Mümkünse HTTP bağlantıları HTTPS olarak yeniden yaz"
+
+#~ msgid ""
+#~ "Results are opened in the same "
+#~ "window by default. This plugin "
+#~ "overwrites the default behaviour to open"
+#~ " links on new tabs/windows. (JavaScript "
+#~ "required)"
+#~ msgstr ""
+#~ "Sonuçlar varsayılan olarak aynı pencerede "
+#~ "açılır. Bu eklenti, bağlantıları yeni "
+#~ "sekmelerde/pencerelerde açmak için varsayılan "
+#~ "davranışın üzerine yazar. (JavaScript gerekli)"
+
+#~ msgid "Color"
+#~ msgstr "Renk"
+
+#~ msgid "Blue (default)"
+#~ msgstr "Mavi (varsayılan)"
+
+#~ msgid "Violet"
+#~ msgstr "Mor"
+
+#~ msgid "Green"
+#~ msgstr "Yeşil"
+
+#~ msgid "Cyan"
+#~ msgstr "Camgöbeği"
+
+#~ msgid "Orange"
+#~ msgstr "Turuncu"
+
+#~ msgid "Red"
+#~ msgstr "Kırmızı"
+
+#~ msgid "Category"
+#~ msgstr "Kategori"
+
+#~ msgid "Block"
+#~ msgstr "Engelle"
+
+#~ msgid "original context"
+#~ msgstr "orijinal içerik"
+
+#~ msgid "Plugins"
+#~ msgstr "Eklentiler"
+
+#~ msgid "Answerers"
+#~ msgstr "Yanıtlayanlar"
+
+#~ msgid "Avg. time"
+#~ msgstr "Ort. zaman"
+
+#~ msgid "show details"
+#~ msgstr "ayrıntıları göster"
+
+#~ msgid "hide details"
+#~ msgstr "ayrıntıları gizle"
+
+#~ msgid "Load more..."
+#~ msgstr "Daha fazla yükle..."
+
+#~ msgid "Loading..."
+#~ msgstr "Yükleniyor..."
+
+#~ msgid "Change aperion layout"
+#~ msgstr "aperion düzenini değiştirin"
+
+#~ msgid "Proxying image results through aperion"
+#~ msgstr "aperion aracılığıyla görsel sonuçlarını vekil sunucusu üzerinden geçirin"
+
+#~ msgid "This is the list of aperion's instant answering modules."
+#~ msgstr "Bu, aperion'in anında yanıtlama modüllerinin listesidir."
+
+#~ msgid ""
+#~ "This is the list of cookies and"
+#~ " their values aperion is storing on "
+#~ "your computer."
+#~ msgstr ""
+#~ "Bu, aperion'in bilgisayarınızda depoladığı "
+#~ "tanımlama bilgileri ve değerleri listesidir."
+
+#~ msgid "With that list, you can assess aperion transparency."
+#~ msgstr "Bu listeyle aperion şeffaflığını değerlendirebilirsiniz."
+
+#~ msgid "It look like you are using aperion first time."
+#~ msgstr "İlk defa aperion kullanıyor gibi görünüyorsunuz."
+
+#~ msgid "Please, try again later or find another aperion instance."
+#~ msgstr "Lütfen daha sonra tekrar deneyin veya başka bir aperion örneği bulun."
+
+#~ msgid "Themes"
+#~ msgstr "Temalar"
+
+#~ msgid "Reliablity"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When enabled, the result page's title"
+#~ " contains your query. Your browser "
+#~ "can record this title."
+#~ msgstr ""
+
+#~ msgid "Method"
+#~ msgstr "Yöntem"
+
+#~ msgid ""
+#~ "This tab does not show up for "
+#~ "search results but you can search "
+#~ "the engines listed here via bangs."
+#~ msgstr ""
+
+#~ msgid "Advanced settings"
+#~ msgstr "Gelişmiş ayarlar"
+
+#~ msgid "Close"
+#~ msgstr "Kapat"
+
+#~ msgid "Language"
+#~ msgstr "Dil"
+
+#~ msgid "broken"
+#~ msgstr "bozuk"
+
+#~ msgid "supported"
+#~ msgstr "desteklenir"
+
+#~ msgid "not supported"
+#~ msgstr "desteklenmez"
+
+#~ msgid "about"
+#~ msgstr "hakkında"
+
+#~ msgid "Avg."
+#~ msgstr "ortalama"
+
+#~ msgid "User Interface"
+#~ msgstr "kullanıcı arayüzü"
+
+#~ msgid "Choose style for this theme"
+#~ msgstr "Bu tema için stil seçin"
+
+#~ msgid "Style"
+#~ msgstr "Stil"
+
+#~ msgid "Show advanced settings"
+#~ msgstr "gelişmiş ayarları göster"
+
+#~ msgid "Show advanced settings panel in the home page by default"
+#~ msgstr "Gelişmiş ayarlar panelini ana sayfada varsayılan olarak göster"
+
+#~ msgid "Allow all"
+#~ msgstr "Tümüne izin ver"
+
+#~ msgid "Disable all"
+#~ msgstr "Tümünü etkisizleştir"
+
+#~ msgid "Selected language"
+#~ msgstr "Seçilen dil"
+
+#~ msgid "Query"
+#~ msgstr "Sorgu"
+
+#~ msgid "save"
+#~ msgstr "kaydet"
+
+#~ msgid "back"
+#~ msgstr "geri"
+
+#~ msgid "Links"
+#~ msgstr "Bağlantılar"
+
+#~ msgid "RSS subscription"
+#~ msgstr "RSS aboneliği"
+
+#~ msgid "Search results"
+#~ msgstr "Arama sonuçları"
+
+#~ msgid "next page"
+#~ msgstr "sonraki sayfa"
+
+#~ msgid "previous page"
+#~ msgstr "önceki sayfa"
+
+#~ msgid "Start search"
+#~ msgstr "Aramayı başlat"
+
+#~ msgid "Clear search"
+#~ msgstr "Aramayı temizle"
+
+#~ msgid "Clear"
+#~ msgstr "Temizle"
+
+#~ msgid "stats"
+#~ msgstr "istatistikler"
+
+#~ msgid "Heads up!"
+#~ msgstr "Dikkat et!"
+
+#~ msgid "It look like you are using aperion first time."
+#~ msgstr ""
+
+#~ msgid "Well done!"
+#~ msgstr "Aferin!"
+
+#~ msgid "Settings saved successfully."
+#~ msgstr "Ayarlar başarılı olarak kaydedildi."
+
+#~ msgid "Oh snap!"
+#~ msgstr "Hay aksi!"
+
+#~ msgid "Something went wrong."
+#~ msgstr "Bir şeyler ters gitti."
+
+#~ msgid "Date"
+#~ msgstr "Tarih"
+
+#~ msgid "Type"
+#~ msgstr ""
+
+#~ msgid "Get image"
+#~ msgstr "Görseli al"
+
+#~ msgid "Center Alignment"
+#~ msgstr ""
+
+#~ msgid "Displays results in the center of the page (Oscar layout)."
+#~ msgstr "Sonuçları sayfanın ortasında görüntüler (Oscar düzeni)."
+
+#~ msgid "preferences"
+#~ msgstr "tercihler"
+
+#~ msgid "Scores per result"
+#~ msgstr "Sonuç başına skor"
+
+#~ msgid "a privacy-respecting, hackable metasearch engine"
+#~ msgstr "gizliliğe saygılı, kurcalanabilir bir meta arama motoru"
+
+#~ msgid "No abstract is available for this publication."
+#~ msgstr "Bu yayın için özet mevcut değil."
+
+#~ msgid "Self Informations"
+#~ msgstr "kişisel bilgileri"
+
+#~ msgid ""
+#~ "Change how forms are submited, <a "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">learn more about request "
+#~ "methods</a>"
+#~ msgstr ""
+#~ "Formların nasıl gönderildiğini değiştirin, <a"
+#~ " "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">istek yöntemleri hakkında daha"
+#~ " fazla bilgi edinin</a>"
+
+#~ msgid ""
+#~ "This plugin checks if the address "
+#~ "of the request is a TOR exit "
+#~ "node, and informs the user if it"
+#~ " is, like check.torproject.org but from "
+#~ "aperion."
+#~ msgstr ""
+#~ "Bu eklenti istek adresinin TOR çıkış "
+#~ "düğümü olup olmadığını kontrol eder ve"
+#~ " öyleyse kullanıcıya haber verir, "
+#~ "check.torproject.org benzeri ama aperion'den."
+
+#~ msgid ""
+#~ "The TOR exit node list "
+#~ "(https://check.torproject.org/exit-addresses) is "
+#~ "unreachable."
+#~ msgstr ""
+#~ "TOR cıkış düğümü listesine "
+#~ "(https://check.torproject.org/exit-addresses) "
+#~ "ulaşılamıyor."
+
+#~ msgid "You are using TOR. Your IP address seems to be: {ip_address}."
+#~ msgstr "TOR kullanıyorsunuz. Gözüken IP adresiniz: {ip_address}."
+
+#~ msgid "You are not using TOR. Your IP address seems to be: {ip_address}."
+#~ msgstr "TOR kullanmıyorsunuz. Gözüken IP adresiniz: {ip_address}."
+
+#~ msgid ""
+#~ "The could not download the list of"
+#~ " Tor exit-nodes from "
+#~ "https://check.torproject.org/exit-addresses."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You are using Tor. It looks like"
+#~ " you have this external IP address:"
+#~ " {ip_address}."
+#~ msgstr ""
+
+#~ msgid "You are not using Tor. You have this external IP address: {ip_address}."
+#~ msgstr ""
+
+#~ msgid "Autodetect search language"
+#~ msgstr "Arama dilini otomatik algıla"
+
+#~ msgid "Automatically detect the query search language and switch to it."
+#~ msgstr "Arama dilini otomatik algıla ve değiştir."
+
+#~ msgid "others"
+#~ msgstr "diğer"
+
+#~ msgid ""
+#~ "This tab does not show up for "
+#~ "search results, but you can search "
+#~ "the engines listed here via bangs."
+#~ msgstr ""
+#~ "Bu sekme arama sonuçlarında görünmüyor, "
+#~ "ama listelenen motorlarını \"bang\"ler ile "
+#~ "arayabilirsiniz."
+
+#~ msgid "Shortcut"
+#~ msgstr "Kısayol"
+
+#~ msgid "!bang"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This tab dues not exists in the"
+#~ " user interface, but you can search"
+#~ " in these engines by its !bangs."
+#~ msgstr ""
+#~ "Bu sekme kullanıcı arayüzünde yoktur, "
+#~ "ancak bu motorlarda ona göre arama "
+#~ "yapabilirsiniz."
+
+#~ msgid "Engines cannot retrieve results."
+#~ msgstr "Motorlar sonuçları alamıyor."
+
+#~ msgid "Please, try again later or find another aperion instance."
+#~ msgstr "Lütfen daha sonra tekrar deneyin veya başka bir aperion örneği bulun."
+
+#~ msgid ""
+#~ "Redirect to open-access versions of "
+#~ "publications when available (plugin required)"
+#~ msgstr ""
+#~ "Mümkün olduğunda yayınların açık erişimli "
+#~ "sürümlerine yeniden yönlendirir (eklenti "
+#~ "gerekli)"
+
+#~ msgid "Bang"
+#~ msgstr "!bang"
+
+#~ msgid ""
+#~ "Change how forms are submitted, <a "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">learn more about request "
+#~ "methods</a>"
+#~ msgstr ""
+#~ "Formların gönderilme şeklini değiştirin, <a"
+#~ " "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">istek yöntemleri hakkında daha"
+#~ " fazlasını öğrenin</a>"
+
+#~ msgid "On"
+#~ msgstr "Açık"
+
+#~ msgid "Off"
+#~ msgstr "Kapalı"
+
+#~ msgid "Enabled"
+#~ msgstr "Etkinleştirildi"
+
+#~ msgid "Disabled"
+#~ msgstr "Etkisizleştirildi"
+
+#~ msgid ""
+#~ "Perform search immediately if a category"
+#~ " selected. Disable to select multiple "
+#~ "categories. (JavaScript required)"
+#~ msgstr ""
+#~ "Bir kategori seçilirse hemen arama yap."
+#~ " Birden çok kategori seçmek için "
+#~ "devre dışı bırak. (JavaScript gerekli)"
+
+#~ msgid "Vim-like hotkeys"
+#~ msgstr "Vim benzeri kısayol tuşları"
+
+#~ msgid ""
+#~ "Navigate search results with Vim-like"
+#~ " hotkeys (JavaScript required). Press \"h\""
+#~ " key on main or result page to"
+#~ " get help."
+#~ msgstr ""
+#~ "Vim benzeri kısayol tuşlarıyla arama "
+#~ "sonuçlarında gezinin (JavaScript gerekli). "
+#~ "Yardım almak için ana sayfada veya "
+#~ "sonuç sayfasında \"h\" tuşuna basın."
+
+#~ msgid ""
+#~ "we didn't find any results. Please "
+#~ "use another query or search in "
+#~ "more categories."
+#~ msgstr ""
+#~ "herhangi bir sonuç bulamadık. Lütfen, "
+#~ "başka bir sorgu kullanın veya daha "
+#~ "fazla kategoride arama yapın."
+
+#~ msgid "Rewrite result hostnames or remove results based on the hostname"
+#~ msgstr ""
+#~ "Sonuçların sunucu adlarını tekrar yaz ya"
+#~ " da sunucu adına göre sonuçları sil"
+
+#~ msgid "Bytes"
+#~ msgstr "Bayt"
+
+#~ msgid "kiB"
+#~ msgstr "kiB"
+
+#~ msgid "MiB"
+#~ msgstr "MiB"
+
+#~ msgid "GiB"
+#~ msgstr "GiB"
+
+#~ msgid "TiB"
+#~ msgstr "TiB"
+
+#~ msgid "Hostname replace"
+#~ msgstr "Sunucu adını değiştir"
+
+#~ msgid "Error!"
+#~ msgstr "Hata!"
+
+#~ msgid "Engines cannot retrieve results"
+#~ msgstr "Motorlar sonuçları alamıyor"
+
+#~ msgid "Start submiting a new issue on GitHub"
+#~ msgstr "GitHub'a Yeni bir hata göndeymeye başlayin"
+
+#~ msgid "dummy"
+#~ msgstr ""
+
+#~ msgid "Random value generator"
+#~ msgstr "Rastgele değer üreteci"
+
+#~ msgid "Statistics functions"
+#~ msgstr "İstatistik fonksiyonları"
+
+#~ msgid "Compute {functions} of the arguments"
+#~ msgstr "Bağımsız değişkenlerin {functions} değerini hesapla"
+
+#~ msgid "Get directions"
+#~ msgstr "Yönleri al"
+
+#~ msgid ""
+#~ "Displays your IP if the query is"
+#~ " \"ip\" and your user agent if "
+#~ "the query contains \"user agent\"."
+#~ msgstr ""
+#~ "Sorgu \"ip\" ise IP'nizi ve sorgu "
+#~ "\"kullanıcı tanıtıcısı\" içeriyorsa kullanıcı "
+#~ "tanıtıcınızı görüntüler."
+
+#~ msgid ""
+#~ "Could not download the list of Tor"
+#~ " exit-nodes from: https://check.torproject.org"
+#~ "/exit-addresses"
+#~ msgstr ""
+#~ "Tor çıkış düğümlerinin listesi şu "
+#~ "adresten indirilemedi: https://check.torproject.org"
+#~ "/exit-addresses"
+
+#~ msgid ""
+#~ "You are using Tor and it looks "
+#~ "like you have this external IP "
+#~ "address: {ip_address}"
+#~ msgstr ""
+#~ "Tor kullanıyorsunuz ve şu harici IP "
+#~ "adresine sahip olduğunuz anlaşılıyor: "
+#~ "{ip_address}"
+
+#~ msgid ""
+#~ "You are not using Tor and you "
+#~ "have this external IP address: "
+#~ "{ip_address}"
+#~ msgstr "Tor kullanmıyorsunuz ve şu harici IP adresine sahipsiniz: {ip_address}"
+
+#~ msgid "Keywords"
+#~ msgstr "Anahtar kelimeler"
+
+#~ msgid "/"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Specifying custom settings in the "
+#~ "preferences URL can be used to "
+#~ "sync preferences across devices."
+#~ msgstr ""
+#~ "Tercihler URL'sinde özel ayarları belirtmek,"
+#~ " cihazlar arasında senkronize etmek için"
+#~ " kullanılabilir."
+
+#~ msgid "proxied"
+#~ msgstr "proxylendi"
+
+#~ msgid ""
+#~ "This tab does not exists in the"
+#~ " user interface, but you can search"
+#~ " in these engines by its !bangs."
+#~ msgstr ""
+#~ "Bu sekme kullanıcı arayüzünde yoktur, "
+#~ "ancak bu motorlarda ona göre arama "
+#~ "yapabilirsiniz."
+
+#~ msgid "Results on new tabs"
+#~ msgstr "Sonuçlar yeni sekmelerde"
+
+#~ msgid "Open result links on new browser tabs"
+#~ msgstr "Yeni tarayıcı sekmelerinde sonuçta ortaya çıkan bağlantıları aç"
+
+#~ msgid "Find stuff as you type"
+#~ msgstr "Yazarken bir şeyler bulun"
+
+#~ msgid "Converts strings to different hash digests."
+#~ msgstr "Dizileri farklı özdeğerlerine çevirir."
+
+#~ msgid ""
+#~ "Rewrite hostnames, remove results or "
+#~ "prioritize them based on the hostname"
+#~ msgstr ""
+#~ "Sunucu adını tekrar yaz, sonuçları sil"
+#~ " veya sunucu adına göre öncelik ver"
+
+#~ msgid "With that list, you can assess aperion transparency."
+#~ msgstr "Bu listeyle SeaXNG şeffaflığına ulaşbilirsiniz."
+
+#~ msgid ""
+#~ "These settings are stored in your "
+#~ "cookies, this allows us not to "
+#~ "store this data about you."
+#~ msgstr ""
+#~ "Bu ayarlar tanımlama bilgilerinde saklanır,"
+#~ " bu sizin hakkınızda bu verileri "
+#~ "saklamamamıza izin verir."
+
+#~ msgid ""
+#~ "These cookies serve your sole "
+#~ "convenience, we don't use these cookies"
+#~ " to track you."
+#~ msgstr ""
+#~ "Bu tanımlama bilgileri size kolaylık "
+#~ "sağlar, sizi izlemek için bu çerezleri"
+#~ " kullanmayız."
+
+#~ msgid "Proxying image results through aperion"
+#~ msgstr "Resim sonuçları aperion üzerinden vekil sunucu ile iletiliyor"
+
+#~ msgid "Automatically load next page when scrolling to bottom of current page"
+#~ msgstr ""
+#~ "Şu anki sayfanın en altına "
+#~ "kaydırıldığında sonraki sayfayı otomatik "
+#~ "olarak yükle"
+
+#~ msgid ""
+#~ "Perform search immediately if a category"
+#~ " selected. Disable to select multiple "
+#~ "categories"
+#~ msgstr ""
+#~ "Kategori seçildikten sonra aramayı hemen "
+#~ "uygulayın. Birden fazla kategori seçmek "
+#~ "için devre dışı bırakın"
+
+#~ msgid "Change aperion layout"
+#~ msgstr "aperion düzenini değiştir"

@@ -1,0 +1,94 @@
+{% extends "simple/base.html" %}
+{% from 'simple/icons.html' import icon_big, icon_small %}
+{% block title %}AI Chat{% endblock %}
+{% block content %}
+<div class="ai-page">
+  <h1>💬 AI Assistant</h1>
+  <div id="ai_chat_container" style="max-width:900px; margin:0 auto;">
+    {%- if not ai_config.endpoint or not ai_config.model -%}
+    <div style="background:#fef3c7; border:1px solid #fcd34d; border-radius:8px; padding:16px; margin-bottom:16px;">
+      <strong>⚠️ AI Not Configured</strong>
+      <p style="margin:8px 0 0;">Free option: <strong>Install <a href="https://ollama.ai" target="_blank">Ollama</a></strong> and download a model (e.g., <code>ollama pull mistral</code>).</p>
+      <p style="margin:8px 0 0;">Then go to <strong>Preferences → AI</strong> and set:</p>
+      <ul style="margin:4px 0; padding-left:20px;">
+        <li>Provider: <code>Ollama</code></li>
+        <li>Endpoint: <code>http://localhost:11434</code></li>
+        <li>Model: <code>mistral</code> (or your model)</li>
+      </ul>
+      <p style="margin:8px 0 0; font-size:0.9rem;"><a href="https://ollama.ai/library" target="_blank">Browse free models →</a></p>
+    </div>
+    {%- endif -%}
+    <div id="chat_history" style="border:1px solid #e6e6e6; padding:12px; min-height:180px; background:#fff; border-radius:8px; overflow:auto; margin-bottom:12px;"></div>
+    <div style="display:flex; gap:8px;">
+      <input id="ai_query" type="text" placeholder="Ask the AI..." style="flex:1; padding:10px; border-radius:6px; border:1px solid #d1d5db; font-size:0.95rem;">
+      <button id="ai_send" class="btn" style="padding:10px 16px;">Ask</button>
+    </div>
+    <div id="ai_status" style="margin-top:8px; color:#6b7280; font-size:0.95rem;"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  'use strict';
+  const params = new URLSearchParams(window.location.search);
+  const initialQ = params.get('q') || '';
+  const input = document.getElementById('ai_query');
+  const send = document.getElementById('ai_send');
+  const hist = document.getElementById('chat_history');
+  const status = document.getElementById('ai_status');
+
+  function appendMessage(who, text) {
+    const d = document.createElement('div');
+    d.style.padding = '8px 6px';
+    d.style.borderBottom = '1px solid #f1f5f9';
+    if (who === 'You') {
+      d.style.backgroundColor = '#f0f4f8';
+      d.style.fontWeight = 'bold';
+    }
+    d.innerHTML = '<strong>' + who + ':</strong> <span>' + (text || '') + '</span>';
+    hist.appendChild(d);
+    hist.scrollTop = hist.scrollHeight;
+  }
+
+  async function askAI(query) {
+    if (!query) return;
+    appendMessage('You', query);
+    status.textContent = 'Thinking...';
+    try {
+      const res = await fetch('/ai_chat', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest'},
+        body: JSON.stringify({query: query, context: ''})
+      });
+      const data = await res.json();
+      if (data && data.success) {
+        appendMessage('AI', (data.response || '').replace(/\n/g, '<br>'));
+        status.textContent = '';
+      } else {
+        appendMessage('AI', '<em style="color:#dc2626;">Error: ' + (data.error || 'No response') + '</em>');
+        status.textContent = '';
+      }
+    } catch (e) {
+      appendMessage('AI', '<em style="color:#dc2626;">Request failed: ' + e.message + '</em>');
+      status.textContent = '';
+    }
+  }
+
+  send.addEventListener('click', function(){
+    const q = input.value.trim();
+    if (!q) return;
+    askAI(q);
+    input.value = '';
+  });
+
+  input.addEventListener('keydown', function(e){ if (e.key === 'Enter') { e.preventDefault(); send.click(); } });
+
+  // Auto-send initial query if provided
+  if (initialQ) {
+    input.value = initialQ;
+    setTimeout(() => { askAI(initialQ); }, 500);
+  }
+})();
+</script>
+
+{% endblock %}

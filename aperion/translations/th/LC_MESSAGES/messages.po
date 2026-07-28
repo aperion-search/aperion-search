@@ -1,0 +1,2058 @@
+# Thai translations for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+# watchakorn-18k <porton2559@gmail.com>, 2022.
+# return42 <markus.heiser@darmarit.de>, 2023.
+# yuttct <yuttct@yahoo.com>, 2024.
+# return42 <return42@users.noreply.translate.codeberg.org>, 2024, 2025.
+# abhabongse <abhabongse@users.noreply.translate.codeberg.org>, 2024, 2025.
+# tutakrab <tutakrab@users.noreply.translate.codeberg.org>, 2024, 2025.
+# sahussawud <sahussawud@users.noreply.translate.codeberg.org>, 2024, 2025.
+# saledai <saledai@users.noreply.translate.codeberg.org>, 2024, 2025.
+# Anonymous <anonymous@users.noreply.translate.codeberg.org>, 2025.
+# yuttct <yuttct@users.noreply.translate.codeberg.org>, 2025.
+# return42 <return42@noreply.codeberg.org>, 2025.
+# wetinee <wetinee@noreply.codeberg.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-07-03 14:46+0000\n"
+"PO-Revision-Date: 2025-06-22 17:06+0000\n"
+"Last-Translator: return42 <return42@noreply.codeberg.org>\n"
+"Language: th\n"
+"Language-Team: Thai "
+"<https://translate.codeberg.org/projects/aperion/aperion/th/>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#. CONSTANT_NAMES['NO_SUBGROUPING']
+#: aperion/aperion.msg
+msgid "without further subgrouping"
+msgstr "โดยไม่ต้องแบ่งกลุ่มย่อยเพิ่มเติม"
+
+#. CONSTANT_NAMES['DEFAULT_CATEGORY']
+#: aperion/aperion.msg
+msgid "other"
+msgstr "หมวดหมู่อื่น ๆ"
+
+#. CATEGORY_NAMES['FILES']
+#: aperion/aperion.msg
+msgid "files"
+msgstr "ไฟล์"
+
+#. CATEGORY_NAMES['GENERAL']
+#: aperion/aperion.msg
+msgid "general"
+msgstr "ทั่วไป"
+
+#. CATEGORY_NAMES['MUSIC']
+#: aperion/aperion.msg
+msgid "music"
+msgstr "ดนตรี"
+
+#. CATEGORY_NAMES['SOCIAL_MEDIA']
+#: aperion/aperion.msg
+msgid "social media"
+msgstr "สื่อสังคม"
+
+#. CATEGORY_NAMES['IMAGES']
+#: aperion/aperion.msg
+msgid "images"
+msgstr "รูปภาพ"
+
+#. CATEGORY_NAMES['VIDEOS']
+#: aperion/aperion.msg
+msgid "videos"
+msgstr "วิดีโอ"
+
+#. CATEGORY_NAMES['RADIO']
+#: aperion/engines/radio_browser.py:151 aperion/aperion.msg
+msgid "radio"
+msgstr "วิทยุ"
+
+#. CATEGORY_NAMES['TV']
+#: aperion/aperion.msg
+msgid "tv"
+msgstr "ทีวี"
+
+#. CATEGORY_NAMES['IT']
+#: aperion/aperion.msg
+msgid "it"
+msgstr "ไอที"
+
+#. CATEGORY_NAMES['NEWS']
+#: aperion/aperion.msg
+msgid "news"
+msgstr "ข่าว"
+
+#. CATEGORY_NAMES['MAP']
+#: aperion/aperion.msg
+msgid "map"
+msgstr "แผนที่"
+
+#. CATEGORY_NAMES['ONIONS']
+#: aperion/aperion.msg
+msgid "onions"
+msgstr "หัวหอม"
+
+#. CATEGORY_NAMES['SCIENCE']
+#: aperion/aperion.msg
+msgid "science"
+msgstr "วิทยาศาสตร์"
+
+#. CATEGORY_GROUPS['APPS']
+#: aperion/aperion.msg
+msgid "apps"
+msgstr "แอป"
+
+#. CATEGORY_GROUPS['DICTIONARIES']
+#: aperion/aperion.msg
+msgid "dictionaries"
+msgstr "พจนานุกรม"
+
+#. CATEGORY_GROUPS['LYRICS']
+#: aperion/aperion.msg
+msgid "lyrics"
+msgstr "เนื้อเพลง"
+
+#. CATEGORY_GROUPS['PACKAGES']
+#: aperion/aperion.msg
+msgid "packages"
+msgstr "แพ็กเกจ"
+
+#. CATEGORY_GROUPS['Q_A']
+#: aperion/aperion.msg
+msgid "q&a"
+msgstr "ถาม-ตอบ"
+
+#. CATEGORY_GROUPS['REPOS']
+#: aperion/aperion.msg
+msgid "repos"
+msgstr "ที่เก็บข้อมูล"
+
+#. CATEGORY_GROUPS['SOFTWARE_WIKIS']
+#: aperion/aperion.msg
+msgid "software wikis"
+msgstr "ซอฟต์แวร์วิกิ"
+
+#. CATEGORY_GROUPS['WEB']
+#: aperion/aperion.msg
+msgid "web"
+msgstr "เว็บ"
+
+#. CATEGORY_GROUPS['SCIENTIFIC PUBLICATIONS']
+#: aperion/aperion.msg
+msgid "scientific publications"
+msgstr "งานตีพิมพ์ทางวิทยาศาสตร์"
+
+#. STYLE_NAMES['AUTO']
+#: aperion/aperion.msg
+msgid "auto"
+msgstr "อัตโนมัติ"
+
+#. STYLE_NAMES['LIGHT']
+#: aperion/aperion.msg
+msgid "light"
+msgstr "สว่าง"
+
+#. STYLE_NAMES['DARK']
+#: aperion/aperion.msg
+msgid "dark"
+msgstr "มืด"
+
+#. STYLE_NAMES['BLACK']
+#: aperion/aperion.msg
+msgid "black"
+msgstr "สีดำ"
+
+#. BRAND_CUSTOM_LINKS['UPTIME']
+#: aperion/aperion.msg
+msgid "Uptime"
+msgstr "ช่วงเวลาทำงาน"
+
+#. BRAND_CUSTOM_LINKS['ABOUT']
+#: aperion/aperion.msg aperion/templates/simple/base.html:49
+msgid "About"
+msgstr "เกี่ยวกับ"
+
+#. WEATHER_TERMS['AVERAGE TEMP.']
+#: aperion/aperion.msg
+msgid "Average temp."
+msgstr "อุณหภูมิเฉลี่ย"
+
+#. WEATHER_TERMS['CLOUD COVER']
+#: aperion/aperion.msg
+msgid "Cloud cover"
+msgstr "เมฆปกคลุม"
+
+#. WEATHER_TERMS['CONDITION']
+#: aperion/engines/duckduckgo_weather.py:45 aperion/aperion.msg
+msgid "Condition"
+msgstr "สภาพ"
+
+#. WEATHER_TERMS['CURRENT CONDITION']
+#: aperion/engines/duckduckgo_weather.py:118 aperion/aperion.msg
+msgid "Current condition"
+msgstr "สภาพปัจจุบัน"
+
+#. WEATHER_TERMS['EVENING']
+#: aperion/aperion.msg
+msgid "Evening"
+msgstr "เย็น"
+
+#. WEATHER_TERMS['FEELS LIKE']
+#: aperion/engines/duckduckgo_weather.py:53 aperion/aperion.msg
+msgid "Feels like"
+msgstr "รู้สึกเหมือน"
+
+#. WEATHER_TERMS['HUMIDITY']
+#: aperion/engines/duckduckgo_weather.py:64 aperion/aperion.msg
+#: aperion/templates/simple/answer/weather.html:29
+msgid "Humidity"
+msgstr "ความชื้น"
+
+#. WEATHER_TERMS['MAX TEMP.']
+#: aperion/engines/duckduckgo_weather.py:77 aperion/aperion.msg
+msgid "Max temp."
+msgstr "อุณหภูมิสูงสุด"
+
+#. WEATHER_TERMS['MIN TEMP.']
+#: aperion/engines/duckduckgo_weather.py:73 aperion/aperion.msg
+msgid "Min temp."
+msgstr "อุณหภูมิต่ำสุด"
+
+#. WEATHER_TERMS['MORNING']
+#: aperion/aperion.msg
+msgid "Morning"
+msgstr "เช้า"
+
+#. WEATHER_TERMS['NIGHT']
+#: aperion/aperion.msg
+msgid "Night"
+msgstr "ค่ำ"
+
+#. WEATHER_TERMS['NOON']
+#: aperion/aperion.msg
+msgid "Noon"
+msgstr "เที่ยงวัน"
+
+#. WEATHER_TERMS['PRESSURE']
+#: aperion/aperion.msg aperion/templates/simple/answer/weather.html:25
+msgid "Pressure"
+msgstr "ความดัน"
+
+#. WEATHER_TERMS['SUNRISE']
+#: aperion/engines/duckduckgo_weather.py:81 aperion/aperion.msg
+msgid "Sunrise"
+msgstr "อาทิตย์ขึ้น"
+
+#. WEATHER_TERMS['SUNSET']
+#: aperion/engines/duckduckgo_weather.py:82 aperion/aperion.msg
+msgid "Sunset"
+msgstr "อาทิตย์ตก"
+
+#. WEATHER_TERMS['TEMPERATURE']
+#: aperion/engines/duckduckgo_weather.py:48 aperion/aperion.msg
+#: aperion/templates/simple/answer/weather.html:17
+msgid "Temperature"
+msgstr "อุณหภูมิ"
+
+#. WEATHER_TERMS['UV INDEX']
+#: aperion/engines/duckduckgo_weather.py:80 aperion/aperion.msg
+msgid "UV index"
+msgstr "ดัชนีรังสียูวี"
+
+#. WEATHER_TERMS['VISIBILITY']
+#: aperion/engines/duckduckgo_weather.py:62 aperion/aperion.msg
+msgid "Visibility"
+msgstr "ทัศนวิสัย"
+
+#. WEATHER_TERMS['WIND']
+#: aperion/engines/duckduckgo_weather.py:58 aperion/aperion.msg
+#: aperion/templates/simple/answer/weather.html:23
+msgid "Wind"
+msgstr "ลม"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Clear sky"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Partly cloudy"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Cloudy"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Fair"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Fog"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain showers and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain showers"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain showers and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain showers"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain showers and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain showers"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet showers and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet showers"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet showers and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet showers"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet showers and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet showers"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow showers and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow showers"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow showers and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow showers"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow showers and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow showers"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow"
+msgstr ""
+
+#. SOCIAL_MEDIA_TERMS['SUBSCRIBERS']
+#: aperion/engines/lemmy.py:85 aperion/aperion.msg
+msgid "subscribers"
+msgstr "ผู้ติดตาม"
+
+#. SOCIAL_MEDIA_TERMS['POSTS']
+#: aperion/engines/lemmy.py:86 aperion/aperion.msg
+msgid "posts"
+msgstr "โพสต์"
+
+#. SOCIAL_MEDIA_TERMS['ACTIVE USERS']
+#: aperion/engines/lemmy.py:87 aperion/aperion.msg
+msgid "active users"
+msgstr "ผู้ใช้งานขณะนี้"
+
+#. SOCIAL_MEDIA_TERMS['COMMENTS']
+#: aperion/engines/discourse.py:157 aperion/engines/hackernews.py:82
+#: aperion/engines/lemmy.py:130 aperion/aperion.msg
+msgid "comments"
+msgstr "คอมเมนต์"
+
+#. SOCIAL_MEDIA_TERMS['USER']
+#: aperion/engines/lemmy.py:129 aperion/engines/lemmy.py:164 aperion/aperion.msg
+msgid "user"
+msgstr "ผู้ใช้งาน"
+
+#. SOCIAL_MEDIA_TERMS['COMMUNITY']
+#: aperion/engines/lemmy.py:131 aperion/engines/lemmy.py:165 aperion/aperion.msg
+msgid "community"
+msgstr "ประชาคม"
+
+#. SOCIAL_MEDIA_TERMS['POINTS']
+#: aperion/engines/hackernews.py:82 aperion/aperion.msg
+msgid "points"
+msgstr "คะแนน"
+
+#. SOCIAL_MEDIA_TERMS['TITLE']
+#: aperion/aperion.msg
+msgid "title"
+msgstr "ชื่อเรื่อง"
+
+#. SOCIAL_MEDIA_TERMS['AUTHOR']
+#: aperion/engines/hackernews.py:85 aperion/aperion.msg
+msgid "author"
+msgstr "ผู้เขียน"
+
+#. SOCIAL_MEDIA_TERMS['THREAD OPEN']
+#: aperion/engines/discourse.py:149 aperion/aperion.msg
+msgid "open"
+msgstr "สร้าง"
+
+#. SOCIAL_MEDIA_TERMS['THREAD CLOSED']
+#: aperion/engines/discourse.py:149 aperion/aperion.msg
+msgid "closed"
+msgstr "ลบแล้ว"
+
+#. SOCIAL_MEDIA_TERMS['THREAD ANSWERED']
+#: aperion/engines/discourse.py:160 aperion/aperion.msg
+msgid "answered"
+msgstr "ตอบแล้ว"
+
+#: aperion/webapp.py:292
+msgid "No item found"
+msgstr "ไม่พบรายการ"
+
+#: aperion/engines/qwant.py:291
+#: aperion/templates/simple/result_templates/images.html:23 aperion/webapp.py:294
+msgid "Source"
+msgstr "แหล่งที่มา"
+
+#: aperion/webapp.py:296
+msgid "Error loading the next page"
+msgstr "เกิดข้อผิดพลาดขณะโหลดหน้าถัดไป"
+
+#: aperion/webapp.py:447 aperion/webapp.py:845
+msgid "Invalid settings, please edit your preferences"
+msgstr "การตั้งค่าไม่ถูกต้อง โปรดแก้ไขการตั้งค่าของคุณ"
+
+#: aperion/webapp.py:463
+msgid "Invalid settings"
+msgstr "การตั้งค่าไม่ถูกต้อง"
+
+#: aperion/webapp.py:540 aperion/webapp.py:630
+msgid "search error"
+msgstr "ข้อผิดพลาดจากการค้นหา"
+
+#: aperion/webutils.py:35
+msgid "timeout"
+msgstr "หมดเวลา"
+
+#: aperion/webutils.py:36
+msgid "parsing error"
+msgstr "ข้อผิดพลาดระหว่างแจงโครงสร้างไวยากรณ์"
+
+#: aperion/webutils.py:37
+msgid "HTTP protocol error"
+msgstr "เกิดข้อผิดพลาดของโปรโตคอล HTTP"
+
+#: aperion/webutils.py:38
+msgid "network error"
+msgstr "ข้อผิดพลาดทางเครือข่าย"
+
+#: aperion/webutils.py:39
+msgid "SSL error: certificate validation has failed"
+msgstr "ข้อผิดพลาดทาง SSL: การตรวจสอบใบรับรองล้มเหลว"
+
+#: aperion/webutils.py:41
+msgid "unexpected crash"
+msgstr "ข้อผิดพลาดที่ไม่คาดคิด"
+
+#: aperion/webutils.py:48
+msgid "HTTP error"
+msgstr "ข้อผิดพลาดจาก HTTP"
+
+#: aperion/webutils.py:49
+msgid "HTTP connection error"
+msgstr "ข้อผิดพลาดจากการเชื่อมต่อ HTTP"
+
+#: aperion/webutils.py:55
+msgid "proxy error"
+msgstr "ข้อผิดพลาดจากพร็อกซี"
+
+#: aperion/webutils.py:56
+msgid "CAPTCHA"
+msgstr "แคปต์ชา"
+
+#: aperion/webutils.py:57
+msgid "too many requests"
+msgstr "คำขอมากเกินไป"
+
+#: aperion/webutils.py:58
+msgid "access denied"
+msgstr "การเข้าถึงถูกปฏิเสธ"
+
+#: aperion/webutils.py:59
+msgid "server API error"
+msgstr "ข้อผิดพลาดจาก API ของเซิร์ฟเวอร์"
+
+#: aperion/webutils.py:78
+msgid "Suspended"
+msgstr "ถูกระงับ"
+
+#: aperion/webutils.py:313
+#, python-brace-format
+msgid "{minutes} minute(s) ago"
+msgstr "{minutes} นาทีที่แล้ว"
+
+#: aperion/webutils.py:314
+#, python-brace-format
+msgid "{hours} hour(s), {minutes} minute(s) ago"
+msgstr "{hours} ชั่วโมง {minutes} นาทีที่แล้ว"
+
+#: aperion/answerers/random.py:69
+msgid "Generate different random values"
+msgstr "ทำการสุ่มค่าที่แตกต่างกัน"
+
+#: aperion/answerers/statistics.py:36
+#, python-brace-format
+msgid "Compute {func} of the arguments"
+msgstr "คำนวณ {func} ของอาร์กิวเมนต์"
+
+#: aperion/engines/openstreetmap.py:158
+msgid "Show route in map .."
+msgstr "แสดงเส้นทางบนแผนที่ .."
+
+#: aperion/engines/pdbe.py:96
+#, python-brace-format
+msgid "{title} (OBSOLETE)"
+msgstr "{title} (ล้าสมัย)"
+
+#: aperion/engines/pdbe.py:103
+msgid "This entry has been superseded by"
+msgstr "รายการนี้ถูกแทนที่โดย"
+
+#: aperion/engines/qwant.py:293
+msgid "Channel"
+msgstr "ช่องทาง"
+
+#: aperion/engines/radio_browser.py:153
+msgid "bitrate"
+msgstr "บิตเรต"
+
+#: aperion/engines/radio_browser.py:154
+msgid "votes"
+msgstr "โหวต"
+
+#: aperion/engines/radio_browser.py:155
+msgid "clicks"
+msgstr "คลิก"
+
+#: aperion/engines/seekr.py:193 aperion/engines/yummly.py:71
+#: aperion/engines/zlibrary.py:137
+msgid "Language"
+msgstr "ภาษา"
+
+#: aperion/engines/semantic_scholar.py:101
+#, python-brace-format
+msgid ""
+"{numCitations} citations from the year {firstCitationVelocityYear} to "
+"{lastCitationVelocityYear}"
+msgstr ""
+"การอ้างอิง {numCitations} รายการตั้งแต่ปี {firstCitationVelocityYear} ถึง"
+" {lastCitationVelocityYear}"
+
+#: aperion/engines/tineye.py:48
+msgid ""
+"Could not read that image url. This may be due to an unsupported file "
+"format. TinEye only supports images that are JPEG, PNG, GIF, BMP, TIFF or"
+" WebP."
+msgstr ""
+"ไม่สามารถอ่านภาพจากลิงก์ได้ เนื่องจากอาจเป็นไฟล์ประเภทที่ไม่รองรับ ระบบ "
+"TinEye รองรับเฉพาะไฟล์ประเภท JPEG, PNG, GIF, BMP, TIFF หรือ WebP เท่านั้น"
+
+#: aperion/engines/tineye.py:54
+msgid ""
+"The image is too simple to find matches. TinEye requires a basic level of"
+" visual detail to successfully identify matches."
+msgstr ""
+"รูปภาพนี้มีจุดสังเกตที่น้อยเกินไป ระบบของ TinEye "
+"นั้นต้องใช้ภาพที่มีลายละเอียดจุดเด่นที่ชัดเจนเล็กน้อย "
+"ถึงจะสามารถหาภาพที่คล้ายกันได้"
+
+#: aperion/engines/tineye.py:59
+msgid "The image could not be downloaded."
+msgstr "ไม่สามารถดาวน์โหลดภาพนี้ได้"
+
+#: aperion/engines/zlibrary.py:138
+msgid "Book rating"
+msgstr "บันทึกการให้คะแนน"
+
+#: aperion/engines/zlibrary.py:139
+msgid "File quality"
+msgstr "คุณภาพไฟล์"
+
+#: aperion/plugins/ahmia_filter.py:32
+msgid "Ahmia blacklist"
+msgstr "แบล็กลิสต์ Ahmia"
+
+#: aperion/plugins/ahmia_filter.py:33
+msgid "Filter out onion results that appear in Ahmia's blacklist."
+msgstr "กรองผลการค้นหา onion ที่อยู่ในแบล็กลิสต์ Ahmia"
+
+#: aperion/plugins/calculator.py:38
+msgid "Basic Calculator"
+msgstr "เครื่องคิดเลขพื้นฐาน"
+
+#: aperion/plugins/calculator.py:39
+msgid "Calculate mathematical expressions via the search bar"
+msgstr "คำนวณนิพจน์คณิตศาสตร์ผ่านช่องค้นหา"
+
+#: aperion/plugins/hash_plugin.py:34
+msgid "Hash plugin"
+msgstr "ปลั๊กอินแฮช"
+
+#: aperion/plugins/hash_plugin.py:36
+msgid ""
+"Converts strings to different hash digests. Available functions: md5, "
+"sha1, sha224, sha256, sha384, sha512."
+msgstr ""
+
+#: aperion/plugins/hash_plugin.py:64
+msgid "hash digest"
+msgstr "แฮชย่อย"
+
+#: aperion/plugins/hostnames.py:123
+msgid "Hostnames plugin"
+msgstr "ชื่อโฮส ปลั๊กอิน"
+
+#: aperion/plugins/hostnames.py:124
+msgid "Rewrite hostnames and remove or prioritize results based on the hostname"
+msgstr ""
+
+#: aperion/plugins/oa_doi_rewrite.py:55
+msgid "Open Access DOI rewrite"
+msgstr "เปิดการเข้าถึง DOI ที่เขียนใหม่"
+
+#: aperion/plugins/oa_doi_rewrite.py:56
+msgid ""
+"Avoid paywalls by redirecting to open-access versions of publications "
+"when available"
+msgstr "หลีกเลี่ยงข้อจำกัดการชำระเงินโดยเปลี่ยนเส้นทางไปรุ่นเอกสารที่เปิดให้ใช้งาน"
+
+#: aperion/plugins/self_info.py:37
+msgid "Self Information"
+msgstr "ข้อมูลตนเอง"
+
+#: aperion/plugins/self_info.py:39
+msgid ""
+"Displays your IP if the query is \"ip\" and your user agent if the query "
+"is \"user-agent\"."
+msgstr ""
+"จะแสดง IP ของคุณหากคำค้นคือ 'ip' และแสดงข้อมูล User Agent "
+"ของคุณหากคำค้นคือ 'user-agent'"
+
+#: aperion/plugins/self_info.py:52
+msgid "Your IP is: "
+msgstr "ไอพีของคุณคือ "
+
+#: aperion/plugins/self_info.py:55
+msgid "Your user-agent is: "
+msgstr "user-agent ของคุณคือ "
+
+#: aperion/plugins/tor_check.py:42
+msgid "Tor check plugin"
+msgstr "ทอร์ตรวจสอบปลั๊กอิน"
+
+#: aperion/plugins/tor_check.py:44
+msgid ""
+"This plugin checks if the address of the request is a Tor exit-node, and "
+"informs the user if it is; like check.torproject.org, but from aperion."
+msgstr ""
+"ปลั๊กอินนี้จะตรวจสอบว่าที่อยู่ของคำขอเป็นโหนดทางออกของ Tor หรือไม่ "
+"และแจ้งให้ผู้ใช้ทราบว่าเป็นหรือไม่ เช่น check.torproject.org แต่มาจาก "
+"aperion"
+
+#: aperion/plugins/tor_check.py:65
+msgid "Could not download the list of Tor exit-nodes from"
+msgstr "ไม่สามารถดาวน์โหลดรายการของโหนดทางออกของ Tor จาก"
+
+#: aperion/plugins/tor_check.py:72
+msgid "You are using Tor and it looks like you have the external IP address"
+msgstr "คุณกำลังใช้ Tor และดูเหมือนว่าคุณมีที่อยู่ IP ภายนอก"
+
+#: aperion/plugins/tor_check.py:76
+msgid "You are not using Tor and you have the external IP address"
+msgstr "คุณไม่ได้ใช้ Tor และคุณมีที่อยู่ IP ภายนอก"
+
+#: aperion/plugins/tracker_url_remover.py:35
+msgid "Tracker URL remover"
+msgstr "ลบตัวติดตาม URL"
+
+#: aperion/plugins/tracker_url_remover.py:36
+msgid "Remove trackers arguments from the returned URL"
+msgstr "ลบอาร์กิวเมนต์ตัวติดตามออกจากการส่งค่าคืนของ URL"
+
+#: aperion/plugins/unit_converter.py:49
+msgid "Unit converter plugin"
+msgstr "ปลั๊กอินแปลงหน่วย"
+
+#: aperion/plugins/unit_converter.py:50
+msgid "Convert between units"
+msgstr "แปลงหน่วย"
+
+#: aperion/result_types/answer.py:224
+#, python-brace-format
+msgid "{location}: {temperature}, {condition}"
+msgstr "{location}: {temperature}, {condition}"
+
+#: aperion/templates/simple/404.html:4
+msgid "Page not found"
+msgstr "ไม่พบหน้านี้"
+
+#: aperion/templates/simple/404.html:6
+#, python-format
+msgid "Go to %(search_page)s."
+msgstr "ไปยัง %(search_page)s"
+
+#: aperion/templates/simple/404.html:6
+msgid "search page"
+msgstr "หน้าค้นหา"
+
+#: aperion/templates/simple/base.html:53
+msgid "Donate"
+msgstr "บริจาค"
+
+#: aperion/templates/simple/base.html:57
+#: aperion/templates/simple/preferences.html:156
+msgid "Preferences"
+msgstr "การตั้งค่า"
+
+#: aperion/templates/simple/base.html:67
+msgid "Powered by"
+msgstr "ขับเคลื่อนโดย"
+
+#: aperion/templates/simple/base.html:67
+msgid "a privacy-respecting, open metasearch engine"
+msgstr "เครื่องมือค้นหาเมตาแบบเปิดที่เคารพความเป็นส่วนตัว"
+
+#: aperion/templates/simple/base.html:68
+#: aperion/templates/simple/result_templates/packages.html:59
+msgid "Source code"
+msgstr "แหล่งที่เก็บโค้ด"
+
+#: aperion/templates/simple/base.html:69
+msgid "Issue tracker"
+msgstr "ตัวติดตามปัญหา"
+
+#: aperion/templates/simple/base.html:70 aperion/templates/simple/stats.html:18
+msgid "Engine stats"
+msgstr "เครื่องมือสถิติ"
+
+#: aperion/templates/simple/base.html:72
+msgid "Public instances"
+msgstr "อินสแตนซ์สาธารณะ"
+
+#: aperion/templates/simple/base.html:75
+msgid "Privacy policy"
+msgstr "นโยบายความเป็นส่วนตัว"
+
+#: aperion/templates/simple/base.html:78
+msgid "Contact instance maintainer"
+msgstr "ติดต่อผู้ดูแลอินสแตนซ์"
+
+#: aperion/templates/simple/categories.html:30
+msgid "Click on the magnifier to perform search"
+msgstr "คลิกที่แว่นขยายเพื่อทำการค้นหา"
+
+#: aperion/templates/simple/macros.html:40
+msgid "Length"
+msgstr "ความยาว"
+
+#: aperion/templates/simple/macros.html:41
+msgid "Views"
+msgstr "มุมมอง"
+
+#: aperion/templates/simple/macros.html:42
+#: aperion/templates/simple/result_templates/files.html:34
+#: aperion/templates/simple/result_templates/images.html:19
+#: aperion/templates/simple/result_templates/paper.html:6
+msgid "Author"
+msgstr "ผู้เขียน"
+
+#: aperion/templates/simple/macros.html:50
+msgid "cached"
+msgstr "แคช"
+
+#: aperion/templates/simple/new_issue.html:64
+msgid "Start submitting a new issue on GitHub"
+msgstr "เริ่มส่งฉบับใหม่บน GitHub"
+
+#: aperion/templates/simple/new_issue.html:66
+msgid "Please check for existing bugs about this engine on GitHub"
+msgstr "โปรดตรวจสอบข้อบกพร่องที่มีอยู่เกี่ยวกับกลไกนี้บน GitHub"
+
+#: aperion/templates/simple/new_issue.html:69
+msgid "I confirm there is no existing bug about the issue I encounter"
+msgstr "ฉันยืนยันว่าไม่มีข้อบกพร่องเกี่ยวกับปัญหาที่ฉันพบ"
+
+#: aperion/templates/simple/new_issue.html:71
+msgid "If this is a public instance, please specify the URL in the bug report"
+msgstr "หากนี่เป็นกรณีสาธารณะ โปรดระบุ URL ในรายงานข้อบกพร่อง"
+
+#: aperion/templates/simple/new_issue.html:72
+msgid "Submit a new issue on Github including the above information"
+msgstr "ส่งปัญหาใหม่บน Github รวมทั้งข้อมูลข้างต้นด้วย"
+
+#: aperion/templates/simple/preferences.html:65
+msgid "No HTTPS"
+msgstr "ไม่มี HTTPS"
+
+#: aperion/templates/simple/elements/engines_msg.html:14
+#: aperion/templates/simple/preferences.html:69
+#: aperion/templates/simple/preferences.html:70
+msgid "View error logs and submit a bug report"
+msgstr "ดูบันทึกของข้อผิดพลาดและส่งรายงานข้อผิดพลาด"
+
+#: aperion/templates/simple/preferences.html:74
+msgid "!bang for this engine"
+msgstr "!ปังสำหรับเครื่องยนต์นี้"
+
+#: aperion/templates/simple/preferences.html:80
+msgid "!bang for its categories"
+msgstr "!bang สำหรับหมวดหมู่ของมัน"
+
+#: aperion/templates/simple/preferences.html:102
+#: aperion/templates/simple/stats.html:64
+msgid "Median"
+msgstr "ค่าเฉลี่ย"
+
+#: aperion/templates/simple/preferences.html:103
+#: aperion/templates/simple/stats.html:70
+msgid "P80"
+msgstr "P80"
+
+#: aperion/templates/simple/preferences.html:104
+#: aperion/templates/simple/stats.html:76
+msgid "P95"
+msgstr "P95"
+
+#: aperion/templates/simple/preferences.html:136
+msgid "Failed checker test(s): "
+msgstr "ตัวตรวจสอบการทดสอบล้มเหลว: "
+
+#: aperion/templates/simple/preferences.html:138
+msgid "Errors:"
+msgstr "ข้อผิดพลาด:"
+
+#: aperion/templates/simple/preferences.html:163
+msgid "General"
+msgstr "ทั่วไป"
+
+#: aperion/templates/simple/preferences.html:166
+msgid "Default categories"
+msgstr "หมวดหมู่เริ่มต้น"
+
+#: aperion/templates/simple/preferences.html:194
+msgid "User interface"
+msgstr "ส่วนต่อประสานกับผู้ใช้"
+
+#: aperion/templates/simple/preferences.html:217
+msgid "Privacy"
+msgstr "ความเป็นส่วนตัว"
+
+#: aperion/templates/simple/preferences.html:232
+msgid "Engines"
+msgstr "เครื่องมือ"
+
+#: aperion/templates/simple/preferences.html:234
+msgid "Currently used search engines"
+msgstr "เครื่องมือค้นหาที่ใช้อยู่ในปัจจุบัน"
+
+#: aperion/templates/simple/preferences.html:243
+msgid "Special Queries"
+msgstr "การคิวรีพิเศษ"
+
+#: aperion/templates/simple/preferences.html:251
+msgid "Cookies"
+msgstr "คุกกี้"
+
+#: aperion/templates/simple/results.html:30
+msgid "Number of results"
+msgstr "จำนวนผลลัพธ์"
+
+#: aperion/templates/simple/results.html:36
+msgid "Info"
+msgstr "ข้อมูล"
+
+#: aperion/templates/simple/results.html:77
+msgid "Back to top"
+msgstr "กลับไปด้านบน"
+
+#: aperion/templates/simple/results.html:95
+msgid "Previous page"
+msgstr "หน้าก่อนหน้านี้"
+
+#: aperion/templates/simple/results.html:113
+msgid "Next page"
+msgstr "หน้าต่อไป"
+
+#: aperion/templates/simple/search.html:3
+msgid "Display the front page"
+msgstr "แสดงหน้าแรก"
+
+#: aperion/templates/simple/search.html:9
+#: aperion/templates/simple/simple_search.html:5
+msgid "Search for..."
+msgstr "ค้นหา..."
+
+#: aperion/templates/simple/search.html:10
+#: aperion/templates/simple/simple_search.html:6
+msgid "clear"
+msgstr "ล้าง"
+
+#: aperion/templates/simple/search.html:11
+#: aperion/templates/simple/simple_search.html:7
+msgid "search"
+msgstr "ค้นหา"
+
+#: aperion/templates/simple/stats.html:21
+msgid "There is currently no data available. "
+msgstr "ขณะนี้ยังไม่มีข้อมูลที่มีอยู่"
+
+#: aperion/templates/simple/preferences/engines.html:24
+#: aperion/templates/simple/stats.html:25
+msgid "Engine name"
+msgstr "ชื่อเครื่องมือ"
+
+#: aperion/templates/simple/stats.html:26
+msgid "Scores"
+msgstr "คะแนน"
+
+#: aperion/templates/simple/stats.html:27
+msgid "Result count"
+msgstr "จำนวนผลลัพธ์"
+
+#: aperion/templates/simple/elements/engines_msg.html:7
+#: aperion/templates/simple/preferences/engines.html:31
+#: aperion/templates/simple/stats.html:28
+msgid "Response time"
+msgstr "เวลาตอบสนอง"
+
+#: aperion/templates/simple/preferences/engines.html:35
+#: aperion/templates/simple/stats.html:29
+msgid "Reliability"
+msgstr "ความน่าเชื่อถือ"
+
+#: aperion/templates/simple/stats.html:59
+msgid "Total"
+msgstr "ทั้งหมด"
+
+#: aperion/templates/simple/stats.html:60
+msgid "HTTP"
+msgstr "HTTP"
+
+#: aperion/templates/simple/stats.html:61
+msgid "Processing"
+msgstr "กำลังประมวลผล"
+
+#: aperion/templates/simple/stats.html:99
+msgid "Warnings"
+msgstr "คำเตือน"
+
+#: aperion/templates/simple/stats.html:99
+msgid "Errors and exceptions"
+msgstr "ข้อผิดพลาดและข้อยกเว้น"
+
+#: aperion/templates/simple/stats.html:105
+msgid "Exception"
+msgstr "ข้อยกเว้น"
+
+#: aperion/templates/simple/stats.html:107
+msgid "Message"
+msgstr "ข้อความ"
+
+#: aperion/templates/simple/stats.html:109
+msgid "Percentage"
+msgstr "เปอร์เซ็นต์"
+
+#: aperion/templates/simple/stats.html:111
+msgid "Parameter"
+msgstr "พารามิเตอร์"
+
+#: aperion/templates/simple/result_templates/files.html:36
+#: aperion/templates/simple/stats.html:119
+msgid "Filename"
+msgstr "ชื่อไฟล์"
+
+#: aperion/templates/simple/stats.html:120
+msgid "Function"
+msgstr "ฟังก์ชั่น"
+
+#: aperion/templates/simple/stats.html:121
+msgid "Code"
+msgstr "โค้ด"
+
+#: aperion/templates/simple/stats.html:128
+msgid "Checker"
+msgstr "ตัวตรวจสอบ"
+
+#: aperion/templates/simple/stats.html:131
+msgid "Failed test"
+msgstr "ทดสอบไม่ผ่าน"
+
+#: aperion/templates/simple/stats.html:132
+msgid "Comment(s)"
+msgstr "ความคิดเห็น"
+
+#: aperion/templates/simple/answer/translations.html:12
+#: aperion/templates/simple/preferences/answerers.html:8
+msgid "Examples"
+msgstr "ตัวอย่าง"
+
+#: aperion/templates/simple/answer/translations.html:21
+msgid "Definitions"
+msgstr "คำนิยาม"
+
+#: aperion/templates/simple/answer/translations.html:30
+msgid "Synonyms"
+msgstr "คำเหมือน"
+
+#: aperion/templates/simple/answer/weather.html:19
+msgid "Feels Like"
+msgstr ""
+
+#: aperion/templates/simple/elements/answers.html:2
+msgid "Answers"
+msgstr "คำตอบ"
+
+#: aperion/templates/simple/elements/apis.html:3
+msgid "Download results"
+msgstr "ดาวน์โหลดผลลัพธ์"
+
+#: aperion/templates/simple/elements/corrections.html:2
+msgid "Try searching for:"
+msgstr "ลองค้นหา:"
+
+#: aperion/templates/simple/elements/engines_msg.html:4
+msgid "Messages from the search engines"
+msgstr "ข้อความจากเครื่องมือค้นหา"
+
+#: aperion/templates/simple/elements/engines_msg.html:7
+msgid "seconds"
+msgstr "วินาที"
+
+#: aperion/templates/simple/elements/search_url.html:3
+msgid "Search URL"
+msgstr "ค้นหา URL"
+
+#: aperion/templates/simple/elements/search_url.html:4
+#: aperion/templates/simple/preferences/cookies.html:54
+msgid "Copied"
+msgstr "คัดลอกแล้ว"
+
+#: aperion/templates/simple/elements/search_url.html:4
+#: aperion/templates/simple/preferences/cookies.html:54
+msgid "Copy"
+msgstr "สำเนา"
+
+#: aperion/templates/simple/elements/suggestions.html:3
+msgid "Suggestions"
+msgstr "ข้อเสนอแนะ"
+
+#: aperion/templates/simple/filters/languages.html:1
+#: aperion/templates/simple/preferences/language.html:2
+msgid "Search language"
+msgstr "ค้นหาภาษา"
+
+#: aperion/templates/simple/filters/languages.html:4
+#: aperion/templates/simple/preferences/language.html:7
+msgid "Default language"
+msgstr "ภาษาเริ่มต้น"
+
+#: aperion/templates/simple/filters/languages.html:8
+#: aperion/templates/simple/preferences/language.html:11
+msgid "Auto-detect"
+msgstr "ตรวจจับอัตโนมัติ"
+
+#: aperion/templates/simple/filters/safesearch.html:1
+#: aperion/templates/simple/filters/safesearch.html:2
+#: aperion/templates/simple/filters/safesearch.html:3
+#: aperion/templates/simple/filters/safesearch.html:4
+#: aperion/templates/simple/preferences/engines.html:27
+#: aperion/templates/simple/preferences/safesearch.html:2
+msgid "SafeSearch"
+msgstr "ค้นหาแบบปลอดภัย"
+
+#: aperion/templates/simple/filters/safesearch.html:2
+#: aperion/templates/simple/preferences/safesearch.html:7
+msgid "Strict"
+msgstr "เข้มงวด"
+
+#: aperion/templates/simple/filters/safesearch.html:3
+#: aperion/templates/simple/preferences/safesearch.html:11
+msgid "Moderate"
+msgstr "ปานกลาง"
+
+#: aperion/templates/simple/filters/safesearch.html:4
+#: aperion/templates/simple/preferences/safesearch.html:15
+msgid "None"
+msgstr "ไม่มี"
+
+#: aperion/templates/simple/filters/time_range.html:1
+#: aperion/templates/simple/preferences/engines.html:28
+msgid "Time range"
+msgstr "ช่วงเวลา"
+
+#: aperion/templates/simple/filters/time_range.html:3
+msgid "Anytime"
+msgstr "ทุกเวลา"
+
+#: aperion/templates/simple/filters/time_range.html:6
+msgid "Last day"
+msgstr "วันล่าสุด"
+
+#: aperion/templates/simple/filters/time_range.html:9
+msgid "Last week"
+msgstr "สัปดาห์ล่าสุด"
+
+#: aperion/templates/simple/filters/time_range.html:12
+msgid "Last month"
+msgstr "เดือนล่าสุด"
+
+#: aperion/templates/simple/filters/time_range.html:15
+msgid "Last year"
+msgstr "ปีล่าสุด"
+
+#: aperion/templates/simple/messages/no_cookies.html:3
+msgid "Information!"
+msgstr "สารสนเทศ!"
+
+#: aperion/templates/simple/messages/no_cookies.html:4
+msgid "currently, there are no cookies defined."
+msgstr "ขณะนี้ไม่มีการกำหนดคุกกี้ใดๆ"
+
+#: aperion/templates/simple/messages/no_results.html:6
+msgid "Sorry!"
+msgstr "เสียใจด้วย!"
+
+#: aperion/templates/simple/messages/no_results.html:12
+msgid "No results were found. You can try to:"
+msgstr "ไม่พบผลลัพธ์ คุณสามารถลอง:"
+
+#: aperion/templates/simple/messages/no_results.html:14
+msgid "There are no more results. You can try to:"
+msgstr "ไม่มีผลลัพธ์อีกต่อไป คุณสามารถลอง:"
+
+#: aperion/templates/simple/messages/no_results.html:19
+msgid "Refresh the page."
+msgstr "รีเฟรชหน้า"
+
+#: aperion/templates/simple/messages/no_results.html:20
+msgid "Search for another query or select another category (above)."
+msgstr "ค้นหาคำค้นหาอื่นหรือเลือกหมวดหมู่อื่น (ด้านบน)"
+
+#: aperion/templates/simple/messages/no_results.html:21
+msgid "Change the search engine used in the preferences:"
+msgstr "เปลี่ยนเครื่องมือค้นหาที่ใช้ในการตั้งค่า:"
+
+#: aperion/templates/simple/messages/no_results.html:22
+msgid "Switch to another instance:"
+msgstr "สลับไปยังอินสแตนซ์อื่น:"
+
+#: aperion/templates/simple/messages/no_results.html:24
+msgid "Search for another query or select another category."
+msgstr "ค้นหาคำค้นหาอื่นหรือเลือกหมวดหมู่อื่น"
+
+#: aperion/templates/simple/messages/no_results.html:25
+msgid "Go back to the previous page using the previous page button."
+msgstr "กลับไปที่หน้าก่อนหน้าโดยใช้ปุ่มหน้าก่อนหน้า"
+
+#: aperion/templates/simple/preferences/answerers.html:4
+#: aperion/templates/simple/preferences/engines.html:23
+msgid "Allow"
+msgstr "อนุญาต"
+
+#: aperion/templates/simple/preferences/answerers.html:5
+msgid "Keywords (first word in query)"
+msgstr "คำหลัก (คำแรกของคำค้นหา)"
+
+#: aperion/templates/simple/preferences/answerers.html:6
+#: aperion/templates/simple/result_templates/packages.html:7
+msgid "Name"
+msgstr "ชื่อ"
+
+#: aperion/templates/simple/preferences/answerers.html:7
+msgid "Description"
+msgstr "คำอธิบาย"
+
+#: aperion/templates/simple/preferences/answerers.html:13
+msgid "This is the list of aperion's instant answering modules."
+msgstr "นี่คือรายการโมดูลที่ตอบรับทันทีของเซียร์เอ็กซ์เอ็นจี"
+
+#: aperion/templates/simple/preferences/answerers.html:29
+msgid "This is the list of plugins."
+msgstr "นี่คือรายการปลั๊กอิน"
+
+#: aperion/templates/simple/preferences/autocomplete.html:2
+msgid "Autocomplete"
+msgstr "เติมข้อความอัตโนมัติ"
+
+#: aperion/templates/simple/preferences/autocomplete.html:15
+msgid "Show possible queries as you type"
+msgstr ""
+
+#: aperion/templates/simple/preferences/center_alignment.html:2
+msgid "Center Alignment"
+msgstr "จัดตำแหน่งกึ่งกลาง"
+
+#: aperion/templates/simple/preferences/center_alignment.html:14
+msgid "Display results in the center of the page (Oscar layout)."
+msgstr ""
+
+#: aperion/templates/simple/preferences/cookies.html:2
+msgid ""
+"This is the list of cookies and their values aperion is storing on your "
+"computer."
+msgstr "นี่คือรายการคุกกี้และค่าของคุกกี้ที่เซียร์เอ็กซ์เอ็นจีจัดเก็บไว้ในคอมพิวเตอร์ของคุณ"
+
+#: aperion/templates/simple/preferences/cookies.html:3
+msgid "With this list, you can assess the transparency of aperion."
+msgstr ""
+
+#: aperion/templates/simple/preferences/cookies.html:9
+msgid "Cookie name"
+msgstr "ชื่อคุกกี้"
+
+#: aperion/templates/simple/preferences/cookies.html:10
+msgid "Value"
+msgstr "ค่า"
+
+#: aperion/templates/simple/preferences/cookies.html:23
+msgid "Search URL of the currently saved preferences"
+msgstr "ค้นหา URL จากการตั้งค่าที่บันทึกไว้ในปัจจุบัน"
+
+#: aperion/templates/simple/preferences/cookies.html:32
+msgid ""
+"Note: specifying custom settings in the search URL can reduce privacy by "
+"leaking data to the clicked result sites."
+msgstr ""
+"หมายเหตุ: การระบุการตั้งค่าแบบกำหนดเองใน URL "
+"การค้นหาสามารถลดความเป็นส่วนตัวได้โดยการทำให้ข้อมูลรั่วไหลไปยังไซต์ผลลัพธ์ที่คลิก"
+
+#: aperion/templates/simple/preferences/cookies.html:35
+msgid "URL to restore your preferences in another browser"
+msgstr "URL เพื่อกู้คืนการตั้งค่าของคุณในเบราว์เซอร์อื่น"
+
+#: aperion/templates/simple/preferences/cookies.html:43
+msgid ""
+"A URL containing your preferences. This URL can be used to restore your "
+"settings on a different device."
+msgstr ""
+"ลิงก์ URL ที่บรรจุค่าการตั้งค่าของคุณ "
+"ซึ่งสามารถนำไปใช้กู้คืนการตั้งค่าเหล่านั้นบนอุปกรณ์อื่นได้"
+
+#: aperion/templates/simple/preferences/cookies.html:46
+msgid "Copy preferences hash"
+msgstr "คัดลอกแฮชการตั้งค่า"
+
+#: aperion/templates/simple/preferences/cookies.html:57
+msgid "Insert copied preferences hash (without URL) to restore"
+msgstr "แทรกแฮชการตั้งค่าที่คัดลอกไว้ (ไม่มี URL) เพื่อกู้คืน"
+
+#: aperion/templates/simple/preferences/cookies.html:59
+msgid "Preferences hash"
+msgstr "การตั้งค่าแฮช"
+
+#: aperion/templates/simple/preferences/doi_resolver.html:1
+msgid "Digital Object Identifier (DOI)"
+msgstr "รหัส DOI"
+
+#: aperion/templates/simple/preferences/doi_resolver.html:6
+msgid "Open Access DOI resolver"
+msgstr "เปิดการเข้าถึงตัวแก้ไข DOI"
+
+#: aperion/templates/simple/preferences/doi_resolver.html:18
+msgid "Select service used by DOI rewrite"
+msgstr "เลือกบริการที่ใช้โดย DOI เขียนใหม่"
+
+#: aperion/templates/simple/preferences/engines.html:9
+msgid ""
+"This tab does not exist in the user interface, but you can search with "
+"these engines via !bangs."
+msgstr ""
+
+#: aperion/templates/simple/preferences/engines.html:15
+msgid "Enable all"
+msgstr "เปิดใช้งานทั้งหมด"
+
+#: aperion/templates/simple/preferences/engines.html:16
+msgid "Disable all"
+msgstr "ปิดใช้งานทั้งหมด"
+
+#: aperion/templates/simple/preferences/engines.html:25
+msgid "!bang"
+msgstr "!bang"
+
+#: aperion/templates/simple/preferences/engines.html:26
+msgid "Supports selected language"
+msgstr "รองรับภาษาที่เลือกแล้ว"
+
+#: aperion/templates/simple/preferences/engines.html:29
+msgid "Weight"
+msgstr "น้ำหนัก"
+
+#: aperion/templates/simple/preferences/engines.html:33
+msgid "Max time"
+msgstr "เวลาสูงสุด"
+
+#: aperion/templates/simple/preferences/favicon.html:2
+msgid "Favicon Resolver"
+msgstr "แก้ไข Favicon"
+
+#: aperion/templates/simple/preferences/favicon.html:15
+msgid "Display favicons near search results"
+msgstr "แสดงไอคอน Fav ใกล้ผลการค้นหา"
+
+#: aperion/templates/simple/preferences/footer.html:2
+msgid ""
+"These settings are stored in your cookies. This allows us not to store "
+"this data about you."
+msgstr ""
+
+#: aperion/templates/simple/preferences/footer.html:3
+msgid "These cookies serve your sole convenience; we don't use them to track you."
+msgstr ""
+
+#: aperion/templates/simple/preferences/footer.html:6
+msgid "Save"
+msgstr "บันทึก"
+
+#: aperion/templates/simple/preferences/footer.html:9
+msgid "Reset defaults"
+msgstr "รีเซ็ตค่าเริ่มต้น"
+
+#: aperion/templates/simple/preferences/footer.html:13
+msgid "Back"
+msgstr "กลับ"
+
+#: aperion/templates/simple/preferences/hotkeys.html:2
+msgid "Hotkeys"
+msgstr "ปุ่มลัด"
+
+#: aperion/templates/simple/preferences/hotkeys.html:13
+msgid "Vim-like"
+msgstr "คล้าย Vim"
+
+#: aperion/templates/simple/preferences/hotkeys.html:18
+msgid ""
+"Navigate search results with hotkeys (JavaScript required). Press \"h\" "
+"key on main or result page to get help."
+msgstr ""
+"นำทางผลการค้นหาด้วยปุ่มลัด (ต้องใช้ JavaScript) กดปุ่ม \"h\" "
+"บนหน้าหลักหรือหน้าผลลัพธ์เพื่อรับความช่วยเหลือ"
+
+#: aperion/templates/simple/preferences/image_proxy.html:2
+msgid "Image proxy"
+msgstr "พร็อกซีรูปภาพ"
+
+#: aperion/templates/simple/preferences/image_proxy.html:14
+msgid "Proxy image results through aperion"
+msgstr ""
+
+#: aperion/templates/simple/preferences/infinite_scroll.html:2
+msgid "Infinite scroll"
+msgstr "เลื่อนเมาส์แบบไม่มีที่สิ้นสุด"
+
+#: aperion/templates/simple/preferences/infinite_scroll.html:14
+msgid ""
+"Automatically load the next page when scrolling to the bottom of the "
+"current page"
+msgstr ""
+
+#: aperion/templates/simple/preferences/language.html:24
+msgid "What language do you prefer for search?"
+msgstr "คุณต้องการค้นหาภาษาใด?"
+
+#: aperion/templates/simple/preferences/language.html:25
+msgid "Choose Auto-detect to let aperion detect the language of your query."
+msgstr "เลือก ตรวจหาอัตโนมัติ เพื่อให้ aperion ตรวจจับภาษาของข้อความค้นหาของคุณ"
+
+#: aperion/templates/simple/preferences/method.html:2
+msgid "HTTP Method"
+msgstr "HTTP เมธอด"
+
+#: aperion/templates/simple/preferences/method.html:14
+msgid "Change how forms are submitted"
+msgstr "เปลี่ยนวิธีการส่งแบบฟอร์ม"
+
+#: aperion/templates/simple/preferences/query_in_title.html:2
+msgid "Query in the page's title"
+msgstr "คิวรีในชื่อหน้า"
+
+#: aperion/templates/simple/preferences/query_in_title.html:14
+msgid ""
+"When enabled, the result page's title contains your query. Your browser "
+"can record this title"
+msgstr ""
+"เมื่อเปิดใช้งานแล้ว ชื่อของหน้าผลลัพธ์จะมีข้อความคิวรีของคุณ "
+"เบราว์เซอร์ของคุณสามารถบันทึกชื่อของหน้านี้ได้"
+
+#: aperion/templates/simple/preferences/results_on_new_tab.html:2
+msgid "Results in new tabs"
+msgstr ""
+
+#: aperion/templates/simple/preferences/results_on_new_tab.html:14
+msgid "Open result links in new browser tabs"
+msgstr ""
+
+#: aperion/templates/simple/preferences/safesearch.html:20
+msgid "Filter content"
+msgstr "ตัวกรอกเนื้อหา"
+
+#: aperion/templates/simple/preferences/search_on_category_select.html:2
+msgid "Search on category select"
+msgstr "ค้นหาในตัวเลือกหมวดหมู่"
+
+#: aperion/templates/simple/preferences/search_on_category_select.html:14
+msgid ""
+"Perform a search immediately if a category is selected. Disable to select"
+" multiple categories"
+msgstr ""
+
+#: aperion/templates/simple/preferences/theme.html:2
+msgid "Theme"
+msgstr "ธีม"
+
+#: aperion/templates/simple/preferences/theme.html:14
+msgid "Change the layout of aperion"
+msgstr ""
+
+#: aperion/templates/simple/preferences/theme.html:19
+msgid "Theme style"
+msgstr "รูปแบบธีม"
+
+#: aperion/templates/simple/preferences/theme.html:31
+msgid "Choose auto to follow your browser settings"
+msgstr "เลือกอัตโนมัติเพื่อติดตามการตั้งค่าของเบราว์เซอร์ของคุณ"
+
+#: aperion/templates/simple/preferences/tokens.html:2
+msgid "Engine tokens"
+msgstr "โทเค็นของเครื่องมือ"
+
+#: aperion/templates/simple/preferences/tokens.html:9
+msgid "Access tokens for private engines"
+msgstr "โทเคนการเข้าถึงของเครื่องมือส่วนตัว"
+
+#: aperion/templates/simple/preferences/ui_locale.html:2
+msgid "Interface language"
+msgstr "ภาษาส่วนต่อประสาน"
+
+#: aperion/templates/simple/preferences/ui_locale.html:14
+msgid "Change the language of the layout"
+msgstr "เปลี่ยนภาษาของเค้าโครง"
+
+#: aperion/templates/simple/preferences/urlformatting.html:2
+msgid "URL formatting"
+msgstr "การจัดรูปแบบ URL"
+
+#: aperion/templates/simple/preferences/urlformatting.html:8
+msgid "Pretty"
+msgstr "แบบสวยงาม"
+
+#: aperion/templates/simple/preferences/urlformatting.html:13
+msgid "Full"
+msgstr "แบบเต็ม"
+
+#: aperion/templates/simple/preferences/urlformatting.html:18
+msgid "Host"
+msgstr "โฮสต์"
+
+#: aperion/templates/simple/preferences/urlformatting.html:23
+msgid "Change result URL formatting"
+msgstr "เปลี่ยนรูปแบบ URL ผลการค้นหา"
+
+#: aperion/templates/simple/result_templates/code.html:13
+msgid "repo"
+msgstr "พื้นที่เก็บข้อมูล"
+
+#: aperion/templates/simple/result_templates/default.html:6
+#: aperion/templates/simple/result_templates/files.html:8
+#: aperion/templates/simple/result_templates/files.html:11
+msgid "show media"
+msgstr "แสดงสื่อ"
+
+#: aperion/templates/simple/result_templates/default.html:6
+#: aperion/templates/simple/result_templates/files.html:8
+msgid "hide media"
+msgstr "ซ่อนสื่อ"
+
+#: aperion/templates/simple/result_templates/default.html:14
+#: aperion/templates/simple/result_templates/videos.html:14
+msgid "This site did not provide any description."
+msgstr "ไซต์นี้ไม่ได้ให้คำอธิบายใดๆไว้"
+
+#: aperion/templates/simple/result_templates/files.html:38
+#: aperion/templates/simple/result_templates/images.html:22
+#: aperion/templates/simple/result_templates/torrent.html:18
+msgid "Filesize"
+msgstr "ขนาดไฟล์"
+
+#: aperion/templates/simple/result_templates/files.html:40
+msgid "Date"
+msgstr "วันที่"
+
+#: aperion/templates/simple/result_templates/files.html:42
+#: aperion/templates/simple/result_templates/paper.html:24
+msgid "Type"
+msgstr "พิมพ์"
+
+#: aperion/templates/simple/result_templates/images.html:20
+msgid "Resolution"
+msgstr "ความละเอียดจอ"
+
+#: aperion/templates/simple/result_templates/images.html:21
+msgid "Format"
+msgstr "จัดรูปแบบ"
+
+#: aperion/templates/simple/result_templates/images.html:24
+msgid "Engine"
+msgstr "เครื่องมือ"
+
+#: aperion/templates/simple/result_templates/images.html:25
+msgid "View source"
+msgstr "ดูแหล่งที่มา"
+
+#: aperion/templates/simple/result_templates/map.html:12
+msgid "address"
+msgstr "ที่อยู่"
+
+#: aperion/templates/simple/result_templates/map.html:43
+msgid "show map"
+msgstr "แสดงแผนที่"
+
+#: aperion/templates/simple/result_templates/map.html:43
+msgid "hide map"
+msgstr "ซ่อนแผนที่"
+
+#: aperion/templates/simple/result_templates/packages.html:12
+msgid "Version"
+msgstr "เวอร์ชัน"
+
+#: aperion/templates/simple/result_templates/packages.html:18
+msgid "Maintainer"
+msgstr "ผู้ดูแล"
+
+#: aperion/templates/simple/result_templates/packages.html:24
+msgid "Updated at"
+msgstr "อัปเดตล่าสุดเมื่อ"
+
+#: aperion/templates/simple/result_templates/packages.html:30
+#: aperion/templates/simple/result_templates/paper.html:25
+msgid "Tags"
+msgstr "แท็ก"
+
+#: aperion/templates/simple/result_templates/packages.html:36
+msgid "Popularity"
+msgstr "ความนิยม"
+
+#: aperion/templates/simple/result_templates/packages.html:42
+msgid "License"
+msgstr "สัญญาอนุญาต"
+
+#: aperion/templates/simple/result_templates/packages.html:52
+msgid "Project"
+msgstr "โปรเจกต์"
+
+#: aperion/templates/simple/result_templates/packages.html:55
+msgid "Project homepage"
+msgstr "หน้าหลักโปรเจกต์"
+
+#: aperion/templates/simple/result_templates/paper.html:5
+msgid "Published date"
+msgstr "วันที่เผยแพร่"
+
+#: aperion/templates/simple/result_templates/paper.html:9
+msgid "Journal"
+msgstr "วารสาร"
+
+#: aperion/templates/simple/result_templates/paper.html:22
+msgid "Editor"
+msgstr "บรรณาธิการ"
+
+#: aperion/templates/simple/result_templates/paper.html:23
+msgid "Publisher"
+msgstr "สำนักพิมพ์"
+
+#: aperion/templates/simple/result_templates/paper.html:26
+msgid "DOI"
+msgstr "DOI"
+
+#: aperion/templates/simple/result_templates/paper.html:27
+msgid "ISSN"
+msgstr "ISSN"
+
+#: aperion/templates/simple/result_templates/paper.html:28
+msgid "ISBN"
+msgstr "ISBN"
+
+#: aperion/templates/simple/result_templates/paper.html:33
+msgid "PDF"
+msgstr "PDF"
+
+#: aperion/templates/simple/result_templates/paper.html:34
+msgid "HTML"
+msgstr "HTML"
+
+#: aperion/templates/simple/result_templates/torrent.html:7
+msgid "magnet link"
+msgstr "ลิงก์แม่เหล็ก"
+
+#: aperion/templates/simple/result_templates/torrent.html:8
+msgid "torrent file"
+msgstr "ไฟล์ทอร์เรนต์"
+
+#: aperion/templates/simple/result_templates/torrent.html:13
+msgid "Seeder"
+msgstr "ผู้ที่แบ่งปันไฟล์"
+
+#: aperion/templates/simple/result_templates/torrent.html:14
+msgid "Leecher"
+msgstr "ผู้ที่ดาวน์โหลดไฟล์"
+
+#: aperion/templates/simple/result_templates/torrent.html:19
+msgid "Number of Files"
+msgstr "จำนวนไฟล์"
+
+#: aperion/templates/simple/result_templates/videos.html:6
+msgid "show video"
+msgstr "แสดงวิดีโอ"
+
+#: aperion/templates/simple/result_templates/videos.html:6
+msgid "hide video"
+msgstr "ซ่อนวิดีโอ"
+
+#~ msgid "Scores per result"
+#~ msgstr "คะแนนต่อผลลัพธ์"
+
+#~ msgid "a privacy-respecting, hackable metasearch engine"
+#~ msgstr "เคารพความเป็นส่วนตัว เครื่องมือค้นหา meta ที่แฮ็กได้"
+
+#~ msgid "No abstract is available for this publication."
+#~ msgstr "ไม่มีเรื่องย่อของเอกสารนี้"
+
+#~ msgid "Self Informations"
+#~ msgstr "ข้อมูลตนเอง"
+
+#~ msgid ""
+#~ "Change how forms are submited, <a "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">learn more about request "
+#~ "methods</a>"
+#~ msgstr ""
+#~ "เปลี่ยนวิธีการส่งแบบฟอร์ม <a "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">เรียนรู้เพิ่มเติมเกี่ยวกับวิธีการส่งคำขอ</a>"
+
+#~ msgid ""
+#~ "This plugin checks if the address "
+#~ "of the request is a TOR exit "
+#~ "node, and informs the user if it"
+#~ " is, like check.torproject.org but from "
+#~ "aperion."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The TOR exit node list "
+#~ "(https://check.torproject.org/exit-addresses) is "
+#~ "unreachable."
+#~ msgstr ""
+
+#~ msgid "You are using TOR. Your IP address seems to be: {ip_address}."
+#~ msgstr ""
+
+#~ msgid "You are not using TOR. Your IP address seems to be: {ip_address}."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The could not download the list of"
+#~ " Tor exit-nodes from "
+#~ "https://check.torproject.org/exit-addresses."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You are using Tor. It looks like"
+#~ " you have this external IP address:"
+#~ " {ip_address}."
+#~ msgstr ""
+
+#~ msgid "You are not using Tor. You have this external IP address: {ip_address}."
+#~ msgstr ""
+
+#~ msgid "Autodetect search language"
+#~ msgstr "ตรวจพบคำในการค้นหาอัตโนมัติ"
+
+#~ msgid "Automatically detect the query search language and switch to it."
+#~ msgstr "ระบบจะตรวจจับภาษาที่ใช้ในการค้นหา และเปลี่ยนไปค้นหาในภาษานั้นอัตโนมัติ"
+
+#~ msgid "others"
+#~ msgstr "ชื่ออื่นๆ"
+
+#~ msgid ""
+#~ "This tab does not show up for "
+#~ "search results, but you can search "
+#~ "the engines listed here via bangs."
+#~ msgstr ""
+#~ "แท็บนี้ไม่แสดงผลการค้นหา "
+#~ "แต่คุณสามารถค้นหาเครื่องมือที่แสดงไว้ที่นี่ที่เรียบง่าย"
+
+#~ msgid "Shortcut"
+#~ msgstr "ทางลัด"
+
+#~ msgid "!bang"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This tab dues not exists in the"
+#~ " user interface, but you can search"
+#~ " in these engines by its !bangs."
+#~ msgstr ""
+
+#~ msgid "Engines cannot retrieve results."
+#~ msgstr "เครื่องมือไม่สามารถดึงผลลัพธ์ได้"
+
+#~ msgid "Please, try again later or find another aperion instance."
+#~ msgstr "โปรดลองอีกครั้งในภายหลังหรือค้นหาอินสแตนซ์อื่นของเซียร์เอ็กซ์เอ็นจี"
+
+#~ msgid ""
+#~ "Redirect to open-access versions of "
+#~ "publications when available (plugin required)"
+#~ msgstr "เปลี่ยนเส้นทางไปยังรุ่นเอกสารที่เปิดให้เข้าถึงได้ (ต้องใช้ปลั๊กอิน)"
+
+#~ msgid "Bang"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Change how forms are submitted, <a "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">learn more about request "
+#~ "methods</a>"
+#~ msgstr ""
+
+#~ msgid "On"
+#~ msgstr "เปิด"
+
+#~ msgid "Off"
+#~ msgstr "ปิด"
+
+#~ msgid "Enabled"
+#~ msgstr "เปิดใช้งาน"
+
+#~ msgid "Disabled"
+#~ msgstr "ปิดใช้งาน"
+
+#~ msgid ""
+#~ "Perform search immediately if a category"
+#~ " selected. Disable to select multiple "
+#~ "categories. (JavaScript required)"
+#~ msgstr ""
+#~ "ทำการค้นหาทันทีหากเลือกหมวดหมู่แล้ว "
+#~ "ปิดการใช้งานเพื่อเลือกหมวดหมู่ได้หลายหมวดหมู่ "
+#~ "(ต้องใช้จาวาสคริปต์)"
+
+#~ msgid "Vim-like hotkeys"
+#~ msgstr "วิมเหมือนปุ่มลัด"
+
+#~ msgid ""
+#~ "Navigate search results with Vim-like"
+#~ " hotkeys (JavaScript required). Press \"h\""
+#~ " key on main or result page to"
+#~ " get help."
+#~ msgstr ""
+#~ "นำทางผลลัพธ์จากการค้นหาด้วยปุ่มลัดแบบ Vim (ต้องใช้ "
+#~ "JavaScript) กดปุ่ม \"h\" "
+#~ "บนหน้าหลักหรือหน้าผลลัพธ์เพื่อรับความช่วยเหลือ"
+
+#~ msgid ""
+#~ "we didn't find any results. Please "
+#~ "use another query or search in "
+#~ "more categories."
+#~ msgstr "เราไม่พบผลลัพธ์ใดๆ โปรดใช้คิวรีอื่นหรือค้นหาในหมวดหมู่เพิ่มเติม"
+
+#~ msgid "Rewrite result hostnames or remove results based on the hostname"
+#~ msgstr "เขียนผลลัพธ์ของชื่อโฮสต์ใหม่หรือลบผลลัพธ์ตามชื่อโฮสต์"
+
+#~ msgid "Bytes"
+#~ msgstr "ไบต์"
+
+#~ msgid "kiB"
+#~ msgstr "กิบิไบต์"
+
+#~ msgid "MiB"
+#~ msgstr "เมบิไบต์"
+
+#~ msgid "GiB"
+#~ msgstr "จิบิไบต์"
+
+#~ msgid "TiB"
+#~ msgstr "เทบิไบต์"
+
+#~ msgid "Hostname replace"
+#~ msgstr "ชื่อโฮสต์ที่แทนที่"
+
+#~ msgid "Error!"
+#~ msgstr "เกิดข้อผิดพลาด!"
+
+#~ msgid "Engines cannot retrieve results"
+#~ msgstr "เครื่องมือไม่สามารถดึงผลลัพธ์ได้"
+
+#~ msgid "Start submiting a new issue on GitHub"
+#~ msgstr "เริ่มส่งฉบับใหม่บน GitHub"
+
+#~ msgid "dummy"
+#~ msgstr ""
+
+#~ msgid "Random value generator"
+#~ msgstr "ตัวสุ่มค่า"
+
+#~ msgid "Statistics functions"
+#~ msgstr "ฟังก์ชันเชิงสถิติ"
+
+#~ msgid "Compute {functions} of the arguments"
+#~ msgstr "คำนวณ {functions} จากอาร์กิวเมนต์"
+
+#~ msgid "Get directions"
+#~ msgstr "ขอเส้นทาง"
+
+#~ msgid ""
+#~ "Displays your IP if the query is"
+#~ " \"ip\" and your user agent if "
+#~ "the query contains \"user agent\"."
+#~ msgstr ""
+#~ "แสดง IP ของคุณหากคิวรีเป็นไอพี "
+#~ "และตัวแทนจากผู้ใช้ของคุณหากคิวรีเป็นตัวแทนผู้ใช้"
+
+#~ msgid ""
+#~ "Could not download the list of Tor"
+#~ " exit-nodes from: https://check.torproject.org"
+#~ "/exit-addresses"
+#~ msgstr ""
+#~ "ไม่สามารถดาวน์โหลดรายการ Tor exit-nodes จาก:"
+#~ " https://check.torproject.org/exit-addresses"
+
+#~ msgid ""
+#~ "You are using Tor and it looks "
+#~ "like you have this external IP "
+#~ "address: {ip_address}"
+#~ msgstr "คุณกำลังใช้ Tor และดูเหมือนว่าคุณมีที่อยู่ IP ภายนอกนี้: {ip_address}"
+
+#~ msgid ""
+#~ "You are not using Tor and you "
+#~ "have this external IP address: "
+#~ "{ip_address}"
+#~ msgstr "คุณไม่ได้ใช้ Tor และคุณมีที่อยู่ IP ภายนอกนี้: {ip_address}"
+
+#~ msgid "Keywords"
+#~ msgstr "คำสำคัญ"
+
+#~ msgid "/"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Specifying custom settings in the "
+#~ "preferences URL can be used to "
+#~ "sync preferences across devices."
+#~ msgstr ""
+#~ "การระบุการตั้งค่าแบบกำหนดเองใน URL "
+#~ "ค่ากำหนดสามารถใช้เพื่อซิงค์กับค่ากำหนดในอุปกรณ์ต่างๆได้"
+
+#~ msgid "proxied"
+#~ msgstr "พร็อกซี่"
+
+#~ msgid ""
+#~ "This tab does not exists in the"
+#~ " user interface, but you can search"
+#~ " in these engines by its !bangs."
+#~ msgstr ""
+#~ "แท็บนี้ไม่มีอยู่ในอินเทอร์เฟซผู้ใช้ "
+#~ "แต่คุณสามารถค้นหาในเอ็นจิ้นเหล่านี้ได้ด้วย !bangs"
+
+#~ msgid "Results on new tabs"
+#~ msgstr "ผลลัพธ์ในแท็บใหม่"
+
+#~ msgid "Open result links on new browser tabs"
+#~ msgstr "เปิดลิงก์ผลลัพธ์ด้วยแท็บเบราว์เซอร์ใหม่"
+
+#~ msgid "Find stuff as you type"
+#~ msgstr "ค้นหาสิ่งต่างๆในขณะพิมพ์"
+
+#~ msgid "Converts strings to different hash digests."
+#~ msgstr "แปลงสตริงเป็นแฮชย่อยที่ต่างกัน"
+
+#~ msgid ""
+#~ "Rewrite hostnames, remove results or "
+#~ "prioritize them based on the hostname"
+#~ msgstr "ขียนชื่อโฮสต์ใหม่ ลบผลลัพธ์ หรือจัดลำดับความสำคัญตามชื่อโฮสต์"
+
+#~ msgid "Displays results in the center of the page (Oscar layout)."
+#~ msgstr "แสดงผลตรงกลางหน้า (เค้าโครงออสการ์)"
+
+#~ msgid "With that list, you can assess aperion transparency."
+#~ msgstr "ด้วยรายการดังกล่าว คุณสามารถประเมินความโปร่งใสของเซียร์เอ็กซ์เอ็นจีได้"
+
+#~ msgid ""
+#~ "These settings are stored in your "
+#~ "cookies, this allows us not to "
+#~ "store this data about you."
+#~ msgstr ""
+#~ "การตั้งค่าพวกนี้ถูกเก็บไว้ในคุกกี้ของคุณแล้ว "
+#~ "ซึ่งช่วยให้เราไม่สามารถจัดเก็บข้อมูลนี้เกี่ยวกับคุณได้"
+
+#~ msgid ""
+#~ "These cookies serve your sole "
+#~ "convenience, we don't use these cookies"
+#~ " to track you."
+#~ msgstr ""
+#~ "คุกกี้พวกนี้ให้บริการเพื่อความสะดวกของคุณ "
+#~ "เราไม่ใช้คุกกี้เหล่านี้เพื่อติดตามคุณ"
+
+#~ msgid "Proxying image results through aperion"
+#~ msgstr "การแสดงพร็อกซี่ของภาพผ่าน เซียร์เอ็กซ์เอ็นจี"
+
+#~ msgid "Automatically load next page when scrolling to bottom of current page"
+#~ msgstr "โหลดหน้าถัดไปโดยอัตโนมัติเมื่อเลื่อนเมาส์ลงไปที่ด้านล่างของหน้าปัจจุบัน"
+
+#~ msgid ""
+#~ "Perform search immediately if a category"
+#~ " selected. Disable to select multiple "
+#~ "categories"
+#~ msgstr "ทำการค้นหาทันทีหากเลือกหมวดหมู่ไว้ ปิดการใช้งานเพื่อเลือกหลายประเภท"
+
+#~ msgid "Change aperion layout"
+#~ msgstr "เปลี่ยนเค้าโครง เซียร์เอ็กซ์เอ็นจี"
+

@@ -1,0 +1,2369 @@
+# Czech translations for .
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the  project.
+#
+# Translators:
+# Clon <fillip1@seznam.cz>, 2017
+# Lukáš Kucharczyk <lukas@kucharczyk.xyz>, 2020
+# Venca24 <Vaclav.Zouzalik@seznam.cz>, 2020
+# Venca24 <Vaclav.Zouzalik@seznam.cz>, 2018
+# Markus Heiser <markus.heiser@darmarit.de>, 2022.
+# Masterix <masterix@duck.com>, 2022.
+# LagManCZ <lagmen@post.cz>, 2022.
+# zenobit <zen@osowoso.xyz>, 2023.
+# return42 <markus.heiser@darmarit.de>, 2023, 2024.
+# Fjuro <ifjuro@proton.me>, 2023, 2024.
+# Fjuro <fjuro@alius.cz>, 2024, 2025.
+# return42 <return42@users.noreply.translate.codeberg.org>, 2024, 2025.
+# Anonymous <anonymous@users.noreply.translate.codeberg.org>, 2025.
+# zenobit <zenobit@users.noreply.translate.codeberg.org>, 2025.
+# Fjuro <fjuro@users.noreply.translate.codeberg.org>, 2025.
+# return42 <return42@noreply.codeberg.org>, 2025.
+# Fjuro <fjuro@noreply.codeberg.org>, 2025.
+# Fjuro <git@alius.cz>, 2025.
+# L33P <l33p@noreply.codeberg.org>, 2025.
+# radekjuthner <radekjuthner@noreply.codeberg.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: aperion\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-07-03 14:46+0000\n"
+"PO-Revision-Date: 2025-07-22 10:57+0000\n"
+"Last-Translator: Fjuro <fjuro@alius.cz>\n"
+"Language-Team: Czech <https://translate.codeberg.org/projects/aperion/"
+"aperion/cs/>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
+"<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+"X-Generator: Weblate 5.12.2\n"
+"Generated-By: Babel 2.17.0\n"
+
+#. CONSTANT_NAMES['NO_SUBGROUPING']
+#: aperion/aperion.msg
+msgid "without further subgrouping"
+msgstr "bez dalších podskupin"
+
+#. CONSTANT_NAMES['DEFAULT_CATEGORY']
+#: aperion/aperion.msg
+msgid "other"
+msgstr "ostatní"
+
+#. CATEGORY_NAMES['FILES']
+#: aperion/aperion.msg
+msgid "files"
+msgstr "soubory"
+
+#. CATEGORY_NAMES['GENERAL']
+#: aperion/aperion.msg
+msgid "general"
+msgstr "obecné"
+
+#. CATEGORY_NAMES['MUSIC']
+#: aperion/aperion.msg
+msgid "music"
+msgstr "hudba"
+
+#. CATEGORY_NAMES['SOCIAL_MEDIA']
+#: aperion/aperion.msg
+msgid "social media"
+msgstr "sociální sítě"
+
+#. CATEGORY_NAMES['IMAGES']
+#: aperion/aperion.msg
+msgid "images"
+msgstr "obrázky"
+
+#. CATEGORY_NAMES['VIDEOS']
+#: aperion/aperion.msg
+msgid "videos"
+msgstr "videa"
+
+#. CATEGORY_NAMES['RADIO']
+#: aperion/engines/radio_browser.py:151 aperion/aperion.msg
+msgid "radio"
+msgstr "rádio"
+
+#. CATEGORY_NAMES['TV']
+#: aperion/aperion.msg
+msgid "tv"
+msgstr "tv"
+
+#. CATEGORY_NAMES['IT']
+#: aperion/aperion.msg
+msgid "it"
+msgstr "IT"
+
+#. CATEGORY_NAMES['NEWS']
+#: aperion/aperion.msg
+msgid "news"
+msgstr "zprávy"
+
+#. CATEGORY_NAMES['MAP']
+#: aperion/aperion.msg
+msgid "map"
+msgstr "mapy"
+
+#. CATEGORY_NAMES['ONIONS']
+#: aperion/aperion.msg
+msgid "onions"
+msgstr "cibule"
+
+#. CATEGORY_NAMES['SCIENCE']
+#: aperion/aperion.msg
+msgid "science"
+msgstr "věda"
+
+#. CATEGORY_GROUPS['APPS']
+#: aperion/aperion.msg
+msgid "apps"
+msgstr "aplikace"
+
+#. CATEGORY_GROUPS['DICTIONARIES']
+#: aperion/aperion.msg
+msgid "dictionaries"
+msgstr "slovníky"
+
+#. CATEGORY_GROUPS['LYRICS']
+#: aperion/aperion.msg
+msgid "lyrics"
+msgstr "texty písní"
+
+#. CATEGORY_GROUPS['PACKAGES']
+#: aperion/aperion.msg
+msgid "packages"
+msgstr "balíčky"
+
+#. CATEGORY_GROUPS['Q_A']
+#: aperion/aperion.msg
+msgid "q&a"
+msgstr "otázky a odpovědi"
+
+#. CATEGORY_GROUPS['REPOS']
+#: aperion/aperion.msg
+msgid "repos"
+msgstr "repozitáře"
+
+#. CATEGORY_GROUPS['SOFTWARE_WIKIS']
+#: aperion/aperion.msg
+msgid "software wikis"
+msgstr "softwarové wikipédie"
+
+#. CATEGORY_GROUPS['WEB']
+#: aperion/aperion.msg
+msgid "web"
+msgstr "web"
+
+#. CATEGORY_GROUPS['SCIENTIFIC PUBLICATIONS']
+#: aperion/aperion.msg
+msgid "scientific publications"
+msgstr "vědecké publikace"
+
+#. STYLE_NAMES['AUTO']
+#: aperion/aperion.msg
+msgid "auto"
+msgstr "automaticky"
+
+#. STYLE_NAMES['LIGHT']
+#: aperion/aperion.msg
+msgid "light"
+msgstr "světlý"
+
+#. STYLE_NAMES['DARK']
+#: aperion/aperion.msg
+msgid "dark"
+msgstr "tmavý"
+
+#. STYLE_NAMES['BLACK']
+#: aperion/aperion.msg
+msgid "black"
+msgstr "černý"
+
+#. BRAND_CUSTOM_LINKS['UPTIME']
+#: aperion/aperion.msg
+msgid "Uptime"
+msgstr "Doba provozu"
+
+#. BRAND_CUSTOM_LINKS['ABOUT']
+#: aperion/aperion.msg aperion/templates/simple/base.html:49
+msgid "About"
+msgstr "O aperion"
+
+#. WEATHER_TERMS['AVERAGE TEMP.']
+#: aperion/aperion.msg
+msgid "Average temp."
+msgstr "Prům. teplota"
+
+#. WEATHER_TERMS['CLOUD COVER']
+#: aperion/aperion.msg
+msgid "Cloud cover"
+msgstr "Pokrytí mraky"
+
+#. WEATHER_TERMS['CONDITION']
+#: aperion/engines/duckduckgo_weather.py:45 aperion/aperion.msg
+msgid "Condition"
+msgstr "Stav"
+
+#. WEATHER_TERMS['CURRENT CONDITION']
+#: aperion/engines/duckduckgo_weather.py:118 aperion/aperion.msg
+msgid "Current condition"
+msgstr "Aktuální stav"
+
+#. WEATHER_TERMS['EVENING']
+#: aperion/aperion.msg
+msgid "Evening"
+msgstr "Večer"
+
+#. WEATHER_TERMS['FEELS LIKE']
+#: aperion/engines/duckduckgo_weather.py:53 aperion/aperion.msg
+msgid "Feels like"
+msgstr "Pocitová teplota"
+
+#. WEATHER_TERMS['HUMIDITY']
+#: aperion/engines/duckduckgo_weather.py:64 aperion/aperion.msg
+#: aperion/templates/simple/answer/weather.html:29
+msgid "Humidity"
+msgstr "Vlhkost"
+
+#. WEATHER_TERMS['MAX TEMP.']
+#: aperion/engines/duckduckgo_weather.py:77 aperion/aperion.msg
+msgid "Max temp."
+msgstr "Max. teplota"
+
+#. WEATHER_TERMS['MIN TEMP.']
+#: aperion/engines/duckduckgo_weather.py:73 aperion/aperion.msg
+msgid "Min temp."
+msgstr "Min. teplota"
+
+#. WEATHER_TERMS['MORNING']
+#: aperion/aperion.msg
+msgid "Morning"
+msgstr "Ráno"
+
+#. WEATHER_TERMS['NIGHT']
+#: aperion/aperion.msg
+msgid "Night"
+msgstr "Noc"
+
+#. WEATHER_TERMS['NOON']
+#: aperion/aperion.msg
+msgid "Noon"
+msgstr "Poledne"
+
+#. WEATHER_TERMS['PRESSURE']
+#: aperion/aperion.msg aperion/templates/simple/answer/weather.html:25
+msgid "Pressure"
+msgstr "Tlak"
+
+#. WEATHER_TERMS['SUNRISE']
+#: aperion/engines/duckduckgo_weather.py:81 aperion/aperion.msg
+msgid "Sunrise"
+msgstr "Východ slunce"
+
+#. WEATHER_TERMS['SUNSET']
+#: aperion/engines/duckduckgo_weather.py:82 aperion/aperion.msg
+msgid "Sunset"
+msgstr "Západ slunce"
+
+#. WEATHER_TERMS['TEMPERATURE']
+#: aperion/engines/duckduckgo_weather.py:48 aperion/aperion.msg
+#: aperion/templates/simple/answer/weather.html:17
+msgid "Temperature"
+msgstr "Teplota"
+
+#. WEATHER_TERMS['UV INDEX']
+#: aperion/engines/duckduckgo_weather.py:80 aperion/aperion.msg
+msgid "UV index"
+msgstr "UV index"
+
+#. WEATHER_TERMS['VISIBILITY']
+#: aperion/engines/duckduckgo_weather.py:62 aperion/aperion.msg
+msgid "Visibility"
+msgstr "Viditelnost"
+
+#. WEATHER_TERMS['WIND']
+#: aperion/engines/duckduckgo_weather.py:58 aperion/aperion.msg
+#: aperion/templates/simple/answer/weather.html:23
+msgid "Wind"
+msgstr "Vítr"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Clear sky"
+msgstr "Jasno"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Partly cloudy"
+msgstr "Částečně zataženo"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Cloudy"
+msgstr "Oblačno"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Fair"
+msgstr "Polojasno"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Fog"
+msgstr "Mlha"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain and thunder"
+msgstr "Slabý déšť a bouřky"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain showers and thunder"
+msgstr "Slabé dešťové přeháňky a bouřky"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain showers"
+msgstr "Slabé dešťové přeháňky"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain"
+msgstr "Slabý déšť"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain and thunder"
+msgstr "Déšť a bouřky"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain showers and thunder"
+msgstr "Dešťové přeháňky a bouřky"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain showers"
+msgstr "Dešťové přeháňky"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain"
+msgstr "Déšť"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain and thunder"
+msgstr "Silný déšť s bouří"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain showers and thunder"
+msgstr "Silné dešťové přeháňky a bouřky"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain showers"
+msgstr "Silné dešťové přeháňky"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain"
+msgstr "Silný déšť"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet and thunder"
+msgstr "Slabý déšť se sněhem a bouřky"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet showers and thunder"
+msgstr "Slabé přeháňky deště se sněhem a bouřky"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet showers"
+msgstr "Slabé přeháňky deště se sněhem"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet"
+msgstr "Lehké sněžení"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet and thunder"
+msgstr "Déšť se sněhem a bouřky"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet showers and thunder"
+msgstr "Přeháňky deště se sněhem a bouřky"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet showers"
+msgstr "Přeháňky deště se sněhem"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet"
+msgstr "Plískanice"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet and thunder"
+msgstr "Silný déšť se sněhem a bouřky"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet showers and thunder"
+msgstr "Silné přeháňky deště se sněhem a bouřky"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet showers"
+msgstr "Silné přeháňky deště se sněhem"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet"
+msgstr "Silný déšť se sněhem"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow and thunder"
+msgstr "Slabé sněžení a bouřky"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow showers and thunder"
+msgstr "Slabé sněhové přeháňky a bouřky"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow showers"
+msgstr "Slabé sněhové přeháňky"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow"
+msgstr "Slabé sněžení"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow and thunder"
+msgstr "Sníh a bouřky"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow showers and thunder"
+msgstr "Sněhové přeháňky a bouřky"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow showers"
+msgstr "Sněhové přeháňky"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow"
+msgstr "Sníh"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow and thunder"
+msgstr "Silné sněžení a bouřky"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow showers and thunder"
+msgstr "Silné sněhové přeháňky a bouřky"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow showers"
+msgstr "Silné sněhové přeháňky"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow"
+msgstr "Silné sněžení"
+
+#. SOCIAL_MEDIA_TERMS['SUBSCRIBERS']
+#: aperion/engines/lemmy.py:85 aperion/aperion.msg
+msgid "subscribers"
+msgstr "odběratelé"
+
+#. SOCIAL_MEDIA_TERMS['POSTS']
+#: aperion/engines/lemmy.py:86 aperion/aperion.msg
+msgid "posts"
+msgstr "příspěvky"
+
+#. SOCIAL_MEDIA_TERMS['ACTIVE USERS']
+#: aperion/engines/lemmy.py:87 aperion/aperion.msg
+msgid "active users"
+msgstr "aktivní uživatelé"
+
+#. SOCIAL_MEDIA_TERMS['COMMENTS']
+#: aperion/engines/discourse.py:157 aperion/engines/hackernews.py:82
+#: aperion/engines/lemmy.py:130 aperion/aperion.msg
+msgid "comments"
+msgstr "komentáře"
+
+#. SOCIAL_MEDIA_TERMS['USER']
+#: aperion/engines/lemmy.py:129 aperion/engines/lemmy.py:164 aperion/aperion.msg
+msgid "user"
+msgstr "uživatel"
+
+#. SOCIAL_MEDIA_TERMS['COMMUNITY']
+#: aperion/engines/lemmy.py:131 aperion/engines/lemmy.py:165 aperion/aperion.msg
+msgid "community"
+msgstr "komunita"
+
+#. SOCIAL_MEDIA_TERMS['POINTS']
+#: aperion/engines/hackernews.py:82 aperion/aperion.msg
+msgid "points"
+msgstr "body"
+
+#. SOCIAL_MEDIA_TERMS['TITLE']
+#: aperion/aperion.msg
+msgid "title"
+msgstr "název"
+
+#. SOCIAL_MEDIA_TERMS['AUTHOR']
+#: aperion/engines/hackernews.py:85 aperion/aperion.msg
+msgid "author"
+msgstr "autor"
+
+#. SOCIAL_MEDIA_TERMS['THREAD OPEN']
+#: aperion/engines/discourse.py:149 aperion/aperion.msg
+msgid "open"
+msgstr "otevřené"
+
+#. SOCIAL_MEDIA_TERMS['THREAD CLOSED']
+#: aperion/engines/discourse.py:149 aperion/aperion.msg
+msgid "closed"
+msgstr "zavřené"
+
+#. SOCIAL_MEDIA_TERMS['THREAD ANSWERED']
+#: aperion/engines/discourse.py:160 aperion/aperion.msg
+msgid "answered"
+msgstr "zodpovězené"
+
+#: aperion/webapp.py:292
+msgid "No item found"
+msgstr "Nic nenalezeno"
+
+#: aperion/engines/qwant.py:291
+#: aperion/templates/simple/result_templates/images.html:23 aperion/webapp.py:294
+msgid "Source"
+msgstr "zdroj"
+
+#: aperion/webapp.py:296
+msgid "Error loading the next page"
+msgstr "Chyba při načítání další stránky"
+
+#: aperion/webapp.py:447 aperion/webapp.py:845
+msgid "Invalid settings, please edit your preferences"
+msgstr "Neplatné nastavení, upravte své předvolby"
+
+#: aperion/webapp.py:463
+msgid "Invalid settings"
+msgstr "Neplatné nastavení"
+
+#: aperion/webapp.py:540 aperion/webapp.py:630
+msgid "search error"
+msgstr "chyba vyhledávání"
+
+#: aperion/webutils.py:35
+msgid "timeout"
+msgstr "čas vypršel"
+
+#: aperion/webutils.py:36
+msgid "parsing error"
+msgstr "chyba parsování"
+
+#: aperion/webutils.py:37
+msgid "HTTP protocol error"
+msgstr "chyba HTTP protokolu"
+
+#: aperion/webutils.py:38
+msgid "network error"
+msgstr "síťová chyba"
+
+#: aperion/webutils.py:39
+msgid "SSL error: certificate validation has failed"
+msgstr "chyba SSL: ověření certifikátu selhalo"
+
+#: aperion/webutils.py:41
+msgid "unexpected crash"
+msgstr "nečekaná chyba"
+
+#: aperion/webutils.py:48
+msgid "HTTP error"
+msgstr "chyba HTTP"
+
+#: aperion/webutils.py:49
+msgid "HTTP connection error"
+msgstr "Chyba spojení HTTP"
+
+#: aperion/webutils.py:55
+msgid "proxy error"
+msgstr "chyba proxy"
+
+#: aperion/webutils.py:56
+msgid "CAPTCHA"
+msgstr "CAPTCHA"
+
+#: aperion/webutils.py:57
+msgid "too many requests"
+msgstr "příliš mnoho požadavků"
+
+#: aperion/webutils.py:58
+msgid "access denied"
+msgstr "přístup odepřen"
+
+#: aperion/webutils.py:59
+msgid "server API error"
+msgstr "chyba API serveru"
+
+#: aperion/webutils.py:78
+msgid "Suspended"
+msgstr "Pozastaveno"
+
+#: aperion/webutils.py:313
+#, python-brace-format
+msgid "{minutes} minute(s) ago"
+msgstr "před {minutes} minutami"
+
+#: aperion/webutils.py:314
+#, python-brace-format
+msgid "{hours} hour(s), {minutes} minute(s) ago"
+msgstr "před {hours} hodinami, {minutes} minutami"
+
+#: aperion/answerers/random.py:69
+msgid "Generate different random values"
+msgstr "Generování náhodných hodnot"
+
+#: aperion/answerers/statistics.py:36
+#, python-brace-format
+msgid "Compute {func} of the arguments"
+msgstr "Vypočítat {func} argumentů"
+
+#: aperion/engines/openstreetmap.py:158
+msgid "Show route in map .."
+msgstr "Zobrazit trasu na mapě .."
+
+#: aperion/engines/pdbe.py:96
+#, python-brace-format
+msgid "{title} (OBSOLETE)"
+msgstr "{title} (ZASTARALÉ)"
+
+#: aperion/engines/pdbe.py:103
+msgid "This entry has been superseded by"
+msgstr "Tato položka byla nahrazena položkou"
+
+#: aperion/engines/qwant.py:293
+msgid "Channel"
+msgstr "Kanál"
+
+#: aperion/engines/radio_browser.py:153
+msgid "bitrate"
+msgstr "datový tok"
+
+#: aperion/engines/radio_browser.py:154
+msgid "votes"
+msgstr "hlasy"
+
+#: aperion/engines/radio_browser.py:155
+msgid "clicks"
+msgstr "kliknutí"
+
+#: aperion/engines/seekr.py:193 aperion/engines/yummly.py:71
+#: aperion/engines/zlibrary.py:137
+msgid "Language"
+msgstr "Jazyk"
+
+#: aperion/engines/semantic_scholar.py:101
+#, python-brace-format
+msgid ""
+"{numCitations} citations from the year {firstCitationVelocityYear} to "
+"{lastCitationVelocityYear}"
+msgstr ""
+"{numCitations} citace z roku {firstCitationVelocityYear} do "
+"{lastCitationVelocityYear}"
+
+#: aperion/engines/tineye.py:48
+msgid ""
+"Could not read that image url. This may be due to an unsupported file "
+"format. TinEye only supports images that are JPEG, PNG, GIF, BMP, TIFF or"
+" WebP."
+msgstr ""
+"Nelze načíst url adresu obrázku. Příčinou může být nepodporovaný formát "
+"souboru. TinEye podporuje pouze obrázky ve formátu JPEG, PNG, GIF, BMP, "
+"TIFF nebo WebP."
+
+#: aperion/engines/tineye.py:54
+msgid ""
+"The image is too simple to find matches. TinEye requires a basic level of"
+" visual detail to successfully identify matches."
+msgstr ""
+"Obrázek je příliš jednoduchý na to, aby bylo možné najít shody. TinEye "
+"vyžaduje základní úroveň vizuálních detailů pro úspěšnou identifikaci."
+
+#: aperion/engines/tineye.py:59
+msgid "The image could not be downloaded."
+msgstr "Obrázek se nepodařilo stáhnout."
+
+#: aperion/engines/zlibrary.py:138
+msgid "Book rating"
+msgstr "Hodnocení knih"
+
+#: aperion/engines/zlibrary.py:139
+msgid "File quality"
+msgstr "Množství souborů"
+
+#: aperion/plugins/ahmia_filter.py:32
+msgid "Ahmia blacklist"
+msgstr "Seznam blokování Ahmia"
+
+#: aperion/plugins/ahmia_filter.py:33
+msgid "Filter out onion results that appear in Ahmia's blacklist."
+msgstr "Filtrovat výsledky onion, které se objeví na seznamu zakázaných Ahmia."
+
+#: aperion/plugins/calculator.py:38
+msgid "Basic Calculator"
+msgstr "Základní kalkulačka"
+
+#: aperion/plugins/calculator.py:39
+msgid "Calculate mathematical expressions via the search bar"
+msgstr "Vypočítejte matematické výrazy pomocí vyhledávací lišty"
+
+#: aperion/plugins/hash_plugin.py:34
+msgid "Hash plugin"
+msgstr "Doplněk hashe"
+
+#: aperion/plugins/hash_plugin.py:36
+msgid ""
+"Converts strings to different hash digests. Available functions: md5, "
+"sha1, sha224, sha256, sha384, sha512."
+msgstr ""
+"Převést řetězce na různé hash digesty. Dostupné funkce: md5, sha1, "
+"sha224, sha256, sha384, sha512."
+
+#: aperion/plugins/hash_plugin.py:64
+msgid "hash digest"
+msgstr "hash hodnota"
+
+#: aperion/plugins/hostnames.py:123
+msgid "Hostnames plugin"
+msgstr "Doplněk hostitelských jmen"
+
+#: aperion/plugins/hostnames.py:124
+msgid "Rewrite hostnames and remove or prioritize results based on the hostname"
+msgstr ""
+"Přepsat názvy hostitelů a odstranit nebo upřednostnit výsledky v "
+"závislosti na názvu hostitele"
+
+#: aperion/plugins/oa_doi_rewrite.py:55
+msgid "Open Access DOI rewrite"
+msgstr "Přesměrování na Open Access DOI"
+
+#: aperion/plugins/oa_doi_rewrite.py:56
+msgid ""
+"Avoid paywalls by redirecting to open-access versions of publications "
+"when available"
+msgstr ""
+"Automaticky přesměrovat na volně přístupné verze publikací místo "
+"placených, pokud je to možné"
+
+#: aperion/plugins/self_info.py:37
+msgid "Self Information"
+msgstr "Informace o sobě"
+
+#: aperion/plugins/self_info.py:39
+msgid ""
+"Displays your IP if the query is \"ip\" and your user agent if the query "
+"is \"user-agent\"."
+msgstr ""
+"Zobrazí vaší IP, pokud je dotaz „ip“ a váš uživatelský agent, pokud je "
+"dotaz „user-agent“."
+
+#: aperion/plugins/self_info.py:52
+msgid "Your IP is: "
+msgstr "Vaše IP: "
+
+#: aperion/plugins/self_info.py:55
+msgid "Your user-agent is: "
+msgstr "Váš uživatelský agent: "
+
+#: aperion/plugins/tor_check.py:42
+msgid "Tor check plugin"
+msgstr "Doplněk kontroly TORu"
+
+#: aperion/plugins/tor_check.py:44
+msgid ""
+"This plugin checks if the address of the request is a Tor exit-node, and "
+"informs the user if it is; like check.torproject.org, but from aperion."
+msgstr ""
+"Tento doplněk kontroluje, zda je adresa požadavku výstupním uzlem sítě "
+"Tor, a informuje uživatele, pokud tomu tak je; jako check.torproject.org,"
+" ale od aperion."
+
+#: aperion/plugins/tor_check.py:65
+msgid "Could not download the list of Tor exit-nodes from"
+msgstr "Nepodařilo se stáhnout seznam výstupních uzlů sítě Tor z"
+
+#: aperion/plugins/tor_check.py:72
+msgid "You are using Tor and it looks like you have the external IP address"
+msgstr "Používáte Tor a zdá se, že máte externí IP adresu"
+
+#: aperion/plugins/tor_check.py:76
+msgid "You are not using Tor and you have the external IP address"
+msgstr "Nepoužíváte Tor a máte externí IP adresu"
+
+#: aperion/plugins/tracker_url_remover.py:35
+msgid "Tracker URL remover"
+msgstr "Odstranit sledovací URL"
+
+#: aperion/plugins/tracker_url_remover.py:36
+msgid "Remove trackers arguments from the returned URL"
+msgstr "Odstranit sledovací parametry z načtených URL"
+
+#: aperion/plugins/unit_converter.py:49
+msgid "Unit converter plugin"
+msgstr "Doplněk převodu jednotek"
+
+#: aperion/plugins/unit_converter.py:50
+msgid "Convert between units"
+msgstr "Převod mezi jednotkami"
+
+#: aperion/result_types/answer.py:224
+#, python-brace-format
+msgid "{location}: {temperature}, {condition}"
+msgstr "{location}: {temperature}, {condition}"
+
+#: aperion/templates/simple/404.html:4
+msgid "Page not found"
+msgstr "Stránka nenalezena"
+
+#: aperion/templates/simple/404.html:6
+#, python-format
+msgid "Go to %(search_page)s."
+msgstr "Přejít na %(search_page)s."
+
+#: aperion/templates/simple/404.html:6
+msgid "search page"
+msgstr "stránka vyhledávání"
+
+#: aperion/templates/simple/base.html:53
+msgid "Donate"
+msgstr "Dar"
+
+#: aperion/templates/simple/base.html:57
+#: aperion/templates/simple/preferences.html:156
+msgid "Preferences"
+msgstr "Nastavení"
+
+#: aperion/templates/simple/base.html:67
+msgid "Powered by"
+msgstr "Poháněno softwarem"
+
+#: aperion/templates/simple/base.html:67
+msgid "a privacy-respecting, open metasearch engine"
+msgstr "otevřený, metavyhledávající engine, respektující soukromí"
+
+#: aperion/templates/simple/base.html:68
+#: aperion/templates/simple/result_templates/packages.html:59
+msgid "Source code"
+msgstr "Zdrojový kód"
+
+#: aperion/templates/simple/base.html:69
+msgid "Issue tracker"
+msgstr "Hlášení chyb"
+
+#: aperion/templates/simple/base.html:70 aperion/templates/simple/stats.html:18
+msgid "Engine stats"
+msgstr "Statistiky vyhledávače"
+
+#: aperion/templates/simple/base.html:72
+msgid "Public instances"
+msgstr "Veřejné instance"
+
+#: aperion/templates/simple/base.html:75
+msgid "Privacy policy"
+msgstr "Zásady soukromí"
+
+#: aperion/templates/simple/base.html:78
+msgid "Contact instance maintainer"
+msgstr "Kontaktujte správce instance"
+
+#: aperion/templates/simple/categories.html:30
+msgid "Click on the magnifier to perform search"
+msgstr "Vyhledávání provedete kliknutím na lupu"
+
+#: aperion/templates/simple/macros.html:40
+msgid "Length"
+msgstr "Délka"
+
+#: aperion/templates/simple/macros.html:41
+msgid "Views"
+msgstr "Zhlédnutí"
+
+#: aperion/templates/simple/macros.html:42
+#: aperion/templates/simple/result_templates/files.html:34
+#: aperion/templates/simple/result_templates/images.html:19
+#: aperion/templates/simple/result_templates/paper.html:6
+msgid "Author"
+msgstr "Autor"
+
+#: aperion/templates/simple/macros.html:50
+msgid "cached"
+msgstr "archivovaná verze"
+
+#: aperion/templates/simple/new_issue.html:64
+msgid "Start submitting a new issue on GitHub"
+msgstr "Přidat nový problém na GitHub"
+
+#: aperion/templates/simple/new_issue.html:66
+msgid "Please check for existing bugs about this engine on GitHub"
+msgstr "Zkontrolujte prosím existující chyby tohoto enginu na GitHubu"
+
+#: aperion/templates/simple/new_issue.html:69
+msgid "I confirm there is no existing bug about the issue I encounter"
+msgstr ""
+"Potvrzuji, že neexistuje žádná chyba týkající se problému, se kterým se "
+"setkávám"
+
+#: aperion/templates/simple/new_issue.html:71
+msgid "If this is a public instance, please specify the URL in the bug report"
+msgstr "Pokud je toto veřejná instance, uveďte prosím URL v náhlášení chyby"
+
+#: aperion/templates/simple/new_issue.html:72
+msgid "Submit a new issue on Github including the above information"
+msgstr "Odeslat nový problém na GitHub včetně výše uvedených informací"
+
+#: aperion/templates/simple/preferences.html:65
+msgid "No HTTPS"
+msgstr "Žádné HTTPS"
+
+#: aperion/templates/simple/elements/engines_msg.html:14
+#: aperion/templates/simple/preferences.html:69
+#: aperion/templates/simple/preferences.html:70
+msgid "View error logs and submit a bug report"
+msgstr "Zobrazit ladící záznamy a poslat hlášení o chybě"
+
+#: aperion/templates/simple/preferences.html:74
+msgid "!bang for this engine"
+msgstr "!bang pro tento vyhledávač"
+
+#: aperion/templates/simple/preferences.html:80
+msgid "!bang for its categories"
+msgstr "!bang pro své kategorie"
+
+#: aperion/templates/simple/preferences.html:102
+#: aperion/templates/simple/stats.html:64
+msgid "Median"
+msgstr "Medián"
+
+#: aperion/templates/simple/preferences.html:103
+#: aperion/templates/simple/stats.html:70
+msgid "P80"
+msgstr "P80"
+
+#: aperion/templates/simple/preferences.html:104
+#: aperion/templates/simple/stats.html:76
+msgid "P95"
+msgstr "P95"
+
+#: aperion/templates/simple/preferences.html:136
+msgid "Failed checker test(s): "
+msgstr "Neúspešné testy zkoušečů: "
+
+#: aperion/templates/simple/preferences.html:138
+msgid "Errors:"
+msgstr "Chyby:"
+
+#: aperion/templates/simple/preferences.html:163
+msgid "General"
+msgstr "Obecné"
+
+#: aperion/templates/simple/preferences.html:166
+msgid "Default categories"
+msgstr "Základní kategorie"
+
+#: aperion/templates/simple/preferences.html:194
+msgid "User interface"
+msgstr "Uživatelské rozhraní"
+
+#: aperion/templates/simple/preferences.html:217
+msgid "Privacy"
+msgstr "Soukromí"
+
+#: aperion/templates/simple/preferences.html:232
+msgid "Engines"
+msgstr "Vyhledávače"
+
+#: aperion/templates/simple/preferences.html:234
+msgid "Currently used search engines"
+msgstr "Aktuálně používané vyhledávače"
+
+#: aperion/templates/simple/preferences.html:243
+msgid "Special Queries"
+msgstr "Zvláštní dotazy"
+
+#: aperion/templates/simple/preferences.html:251
+msgid "Cookies"
+msgstr "Cookies"
+
+#: aperion/templates/simple/results.html:30
+msgid "Number of results"
+msgstr "Počet výsledků"
+
+#: aperion/templates/simple/results.html:36
+msgid "Info"
+msgstr "Informace"
+
+#: aperion/templates/simple/results.html:77
+msgid "Back to top"
+msgstr "Nahoru"
+
+#: aperion/templates/simple/results.html:95
+msgid "Previous page"
+msgstr "Předchozí stránka"
+
+#: aperion/templates/simple/results.html:113
+msgid "Next page"
+msgstr "Další stránka"
+
+#: aperion/templates/simple/search.html:3
+msgid "Display the front page"
+msgstr "Zobrazit úvodní stránku"
+
+#: aperion/templates/simple/search.html:9
+#: aperion/templates/simple/simple_search.html:5
+msgid "Search for..."
+msgstr "Hledat…"
+
+#: aperion/templates/simple/search.html:10
+#: aperion/templates/simple/simple_search.html:6
+msgid "clear"
+msgstr "vyčistit"
+
+#: aperion/templates/simple/search.html:11
+#: aperion/templates/simple/simple_search.html:7
+msgid "search"
+msgstr "vyhledat"
+
+#: aperion/templates/simple/stats.html:21
+msgid "There is currently no data available. "
+msgstr "Aktuálně nejsou k dispozici žádná data. "
+
+#: aperion/templates/simple/preferences/engines.html:24
+#: aperion/templates/simple/stats.html:25
+msgid "Engine name"
+msgstr "Jméno vyhledávače"
+
+#: aperion/templates/simple/stats.html:26
+msgid "Scores"
+msgstr "Skóre"
+
+#: aperion/templates/simple/stats.html:27
+msgid "Result count"
+msgstr "Počet výsledků"
+
+#: aperion/templates/simple/elements/engines_msg.html:7
+#: aperion/templates/simple/preferences/engines.html:31
+#: aperion/templates/simple/stats.html:28
+msgid "Response time"
+msgstr "Čas odpovědi"
+
+#: aperion/templates/simple/preferences/engines.html:35
+#: aperion/templates/simple/stats.html:29
+msgid "Reliability"
+msgstr "Spolehlivost"
+
+#: aperion/templates/simple/stats.html:59
+msgid "Total"
+msgstr "Celkem"
+
+#: aperion/templates/simple/stats.html:60
+msgid "HTTP"
+msgstr "HTTP"
+
+#: aperion/templates/simple/stats.html:61
+msgid "Processing"
+msgstr "Zpracovávám"
+
+#: aperion/templates/simple/stats.html:99
+msgid "Warnings"
+msgstr "Varování"
+
+#: aperion/templates/simple/stats.html:99
+msgid "Errors and exceptions"
+msgstr "Chyby a výjimky"
+
+#: aperion/templates/simple/stats.html:105
+msgid "Exception"
+msgstr "Výjimka"
+
+#: aperion/templates/simple/stats.html:107
+msgid "Message"
+msgstr "Zpráva"
+
+#: aperion/templates/simple/stats.html:109
+msgid "Percentage"
+msgstr "Procenta"
+
+#: aperion/templates/simple/stats.html:111
+msgid "Parameter"
+msgstr "Parametr"
+
+#: aperion/templates/simple/result_templates/files.html:36
+#: aperion/templates/simple/stats.html:119
+msgid "Filename"
+msgstr "Název souboru"
+
+#: aperion/templates/simple/stats.html:120
+msgid "Function"
+msgstr "Funkce"
+
+#: aperion/templates/simple/stats.html:121
+msgid "Code"
+msgstr "Kód"
+
+#: aperion/templates/simple/stats.html:128
+msgid "Checker"
+msgstr "Zkoušeč"
+
+#: aperion/templates/simple/stats.html:131
+msgid "Failed test"
+msgstr "Test selhal"
+
+#: aperion/templates/simple/stats.html:132
+msgid "Comment(s)"
+msgstr "Komentář(e)"
+
+#: aperion/templates/simple/answer/translations.html:12
+#: aperion/templates/simple/preferences/answerers.html:8
+msgid "Examples"
+msgstr "Příklady"
+
+#: aperion/templates/simple/answer/translations.html:21
+msgid "Definitions"
+msgstr "Definice"
+
+#: aperion/templates/simple/answer/translations.html:30
+msgid "Synonyms"
+msgstr "Synonyma"
+
+#: aperion/templates/simple/answer/weather.html:19
+msgid "Feels Like"
+msgstr "Pocity jako"
+
+#: aperion/templates/simple/elements/answers.html:2
+msgid "Answers"
+msgstr "Odpovědi"
+
+#: aperion/templates/simple/elements/apis.html:3
+msgid "Download results"
+msgstr "Stáhnout výsledky vyhledávání"
+
+#: aperion/templates/simple/elements/corrections.html:2
+msgid "Try searching for:"
+msgstr "Zkuste vyhledat:"
+
+#: aperion/templates/simple/elements/engines_msg.html:4
+msgid "Messages from the search engines"
+msgstr "Hlášení vyhledávačů"
+
+#: aperion/templates/simple/elements/engines_msg.html:7
+msgid "seconds"
+msgstr "sekund"
+
+#: aperion/templates/simple/elements/search_url.html:3
+msgid "Search URL"
+msgstr "URL vyhledávání"
+
+#: aperion/templates/simple/elements/search_url.html:4
+#: aperion/templates/simple/preferences/cookies.html:54
+msgid "Copied"
+msgstr "Zkopírováno"
+
+#: aperion/templates/simple/elements/search_url.html:4
+#: aperion/templates/simple/preferences/cookies.html:54
+msgid "Copy"
+msgstr "Kopírovat"
+
+#: aperion/templates/simple/elements/suggestions.html:3
+msgid "Suggestions"
+msgstr "Návrhy"
+
+#: aperion/templates/simple/filters/languages.html:1
+#: aperion/templates/simple/preferences/language.html:2
+msgid "Search language"
+msgstr "Jazyk hledání"
+
+#: aperion/templates/simple/filters/languages.html:4
+#: aperion/templates/simple/preferences/language.html:7
+msgid "Default language"
+msgstr "Výchozí jazyk"
+
+#: aperion/templates/simple/filters/languages.html:8
+#: aperion/templates/simple/preferences/language.html:11
+msgid "Auto-detect"
+msgstr "Automatická detekce"
+
+#: aperion/templates/simple/filters/safesearch.html:1
+#: aperion/templates/simple/filters/safesearch.html:2
+#: aperion/templates/simple/filters/safesearch.html:3
+#: aperion/templates/simple/filters/safesearch.html:4
+#: aperion/templates/simple/preferences/engines.html:27
+#: aperion/templates/simple/preferences/safesearch.html:2
+msgid "SafeSearch"
+msgstr "Bezpečné vyhledávání"
+
+#: aperion/templates/simple/filters/safesearch.html:2
+#: aperion/templates/simple/preferences/safesearch.html:7
+msgid "Strict"
+msgstr "Přísné"
+
+#: aperion/templates/simple/filters/safesearch.html:3
+#: aperion/templates/simple/preferences/safesearch.html:11
+msgid "Moderate"
+msgstr "Střední"
+
+#: aperion/templates/simple/filters/safesearch.html:4
+#: aperion/templates/simple/preferences/safesearch.html:15
+msgid "None"
+msgstr "Vypnuto"
+
+#: aperion/templates/simple/filters/time_range.html:1
+#: aperion/templates/simple/preferences/engines.html:28
+msgid "Time range"
+msgstr "Časový interval"
+
+#: aperion/templates/simple/filters/time_range.html:3
+msgid "Anytime"
+msgstr "Kdykoli"
+
+#: aperion/templates/simple/filters/time_range.html:6
+msgid "Last day"
+msgstr "Dnes"
+
+#: aperion/templates/simple/filters/time_range.html:9
+msgid "Last week"
+msgstr "Tento týden"
+
+#: aperion/templates/simple/filters/time_range.html:12
+msgid "Last month"
+msgstr "Měsíc"
+
+#: aperion/templates/simple/filters/time_range.html:15
+msgid "Last year"
+msgstr "Rok"
+
+#: aperion/templates/simple/messages/no_cookies.html:3
+msgid "Information!"
+msgstr "Informace!"
+
+#: aperion/templates/simple/messages/no_cookies.html:4
+msgid "currently, there are no cookies defined."
+msgstr "aktuálně nejsou definované žádné cookies."
+
+#: aperion/templates/simple/messages/no_results.html:6
+msgid "Sorry!"
+msgstr "Omlouváme se!"
+
+#: aperion/templates/simple/messages/no_results.html:12
+msgid "No results were found. You can try to:"
+msgstr "Nebyly nalezeny žádné výsledky. Můžete zkusit:"
+
+#: aperion/templates/simple/messages/no_results.html:14
+msgid "There are no more results. You can try to:"
+msgstr "Nenašli jsme žádné další výsledky. Můžete zkusit:"
+
+#: aperion/templates/simple/messages/no_results.html:19
+msgid "Refresh the page."
+msgstr "Znovu načíst stránku."
+
+#: aperion/templates/simple/messages/no_results.html:20
+msgid "Search for another query or select another category (above)."
+msgstr "Vyhledat jinou frázi nebo vybrat jinou kategorii (výše)."
+
+#: aperion/templates/simple/messages/no_results.html:21
+msgid "Change the search engine used in the preferences:"
+msgstr "Změnit použitý vyhledávač v předvolbách:"
+
+#: aperion/templates/simple/messages/no_results.html:22
+msgid "Switch to another instance:"
+msgstr "Přepnout na jinou instanci:"
+
+#: aperion/templates/simple/messages/no_results.html:24
+msgid "Search for another query or select another category."
+msgstr "Vyhledat jiný dotaz nebo vybrat jinou kategorii."
+
+#: aperion/templates/simple/messages/no_results.html:25
+msgid "Go back to the previous page using the previous page button."
+msgstr "Vrátit se zpět na předchozí stranu."
+
+#: aperion/templates/simple/preferences/answerers.html:4
+#: aperion/templates/simple/preferences/engines.html:23
+msgid "Allow"
+msgstr "Povolit"
+
+#: aperion/templates/simple/preferences/answerers.html:5
+msgid "Keywords (first word in query)"
+msgstr "Klíčová slova (první slovo v dotazu)"
+
+#: aperion/templates/simple/preferences/answerers.html:6
+#: aperion/templates/simple/result_templates/packages.html:7
+msgid "Name"
+msgstr "Název"
+
+#: aperion/templates/simple/preferences/answerers.html:7
+msgid "Description"
+msgstr "Popis"
+
+#: aperion/templates/simple/preferences/answerers.html:13
+msgid "This is the list of aperion's instant answering modules."
+msgstr "Toto je seznam našeptávačů aperion."
+
+#: aperion/templates/simple/preferences/answerers.html:29
+msgid "This is the list of plugins."
+msgstr "Toto je seznam doplňků."
+
+#: aperion/templates/simple/preferences/autocomplete.html:2
+msgid "Autocomplete"
+msgstr "Našeptávač"
+
+#: aperion/templates/simple/preferences/autocomplete.html:15
+msgid "Show possible queries as you type"
+msgstr "Zobrazení možných dotazů při psaní"
+
+#: aperion/templates/simple/preferences/center_alignment.html:2
+msgid "Center Alignment"
+msgstr "Zarovnání na střed"
+
+#: aperion/templates/simple/preferences/center_alignment.html:14
+msgid "Display results in the center of the page (Oscar layout)."
+msgstr "Zobrazit výsledky uprostřed stránky (rozložení Oscar)."
+
+#: aperion/templates/simple/preferences/cookies.html:2
+msgid ""
+"This is the list of cookies and their values aperion is storing on your "
+"computer."
+msgstr ""
+"Toto je seznam cookies a jejich hodnoty, které si aperion ukládá na vašem"
+" počítači."
+
+#: aperion/templates/simple/preferences/cookies.html:3
+msgid "With this list, you can assess the transparency of aperion."
+msgstr "Pomocí tohoto seznamu můžete posoudit transparentnost aperion."
+
+#: aperion/templates/simple/preferences/cookies.html:9
+msgid "Cookie name"
+msgstr "Název cookie"
+
+#: aperion/templates/simple/preferences/cookies.html:10
+msgid "Value"
+msgstr "Hodnota"
+
+#: aperion/templates/simple/preferences/cookies.html:23
+msgid "Search URL of the currently saved preferences"
+msgstr "URL pro vyhledávání s aktuálně uloženými předvolbami"
+
+#: aperion/templates/simple/preferences/cookies.html:32
+msgid ""
+"Note: specifying custom settings in the search URL can reduce privacy by "
+"leaking data to the clicked result sites."
+msgstr ""
+"Poznámka: zadaní vlastních nastavení v URL může snížit soukromí "
+"prozrazením dat při kliknutí na výsledky hledání."
+
+#: aperion/templates/simple/preferences/cookies.html:35
+msgid "URL to restore your preferences in another browser"
+msgstr "URL k obnovení vašich preferencí v jiném prohlížeči"
+
+#: aperion/templates/simple/preferences/cookies.html:43
+msgid ""
+"A URL containing your preferences. This URL can be used to restore your "
+"settings on a different device."
+msgstr ""
+"Adresa URL obsahující vaše předvolby. Tuto adresu lze použít k obnovení "
+"vašich nastavení na jiném zařízení."
+
+#: aperion/templates/simple/preferences/cookies.html:46
+msgid "Copy preferences hash"
+msgstr "Kopírovat hash předvoleb"
+
+#: aperion/templates/simple/preferences/cookies.html:57
+msgid "Insert copied preferences hash (without URL) to restore"
+msgstr "Pro obnovení vložte zkopírovaný hash předvoleb (bez adresy URL)"
+
+#: aperion/templates/simple/preferences/cookies.html:59
+msgid "Preferences hash"
+msgstr "Hash předvoleb"
+
+#: aperion/templates/simple/preferences/doi_resolver.html:1
+msgid "Digital Object Identifier (DOI)"
+msgstr "Digital Object Identifier (DOI)"
+
+#: aperion/templates/simple/preferences/doi_resolver.html:6
+msgid "Open Access DOI resolver"
+msgstr "Web pro přesměrování na Open Access DOI"
+
+#: aperion/templates/simple/preferences/doi_resolver.html:18
+msgid "Select service used by DOI rewrite"
+msgstr "Výběr služby použité při přepisu DOI"
+
+#: aperion/templates/simple/preferences/engines.html:9
+msgid ""
+"This tab does not exist in the user interface, but you can search with "
+"these engines via !bangs."
+msgstr ""
+"Tato karta v uživatelském rozhraní neexistuje, ale můžete v nich "
+"vyhledávat pomocí !bangs."
+
+#: aperion/templates/simple/preferences/engines.html:15
+msgid "Enable all"
+msgstr "Povolit vše"
+
+#: aperion/templates/simple/preferences/engines.html:16
+msgid "Disable all"
+msgstr "Zakázat vše"
+
+#: aperion/templates/simple/preferences/engines.html:25
+msgid "!bang"
+msgstr "!bang"
+
+#: aperion/templates/simple/preferences/engines.html:26
+msgid "Supports selected language"
+msgstr "Podporuje vybraný jazyk"
+
+#: aperion/templates/simple/preferences/engines.html:29
+msgid "Weight"
+msgstr "Váha"
+
+#: aperion/templates/simple/preferences/engines.html:33
+msgid "Max time"
+msgstr "Max. čas"
+
+#: aperion/templates/simple/preferences/favicon.html:2
+msgid "Favicon Resolver"
+msgstr "Zobrazit ikony"
+
+#: aperion/templates/simple/preferences/favicon.html:15
+msgid "Display favicons near search results"
+msgstr "Zobrazit ikony webů vedle výsledků vyhledávání"
+
+#: aperion/templates/simple/preferences/footer.html:2
+msgid ""
+"These settings are stored in your cookies. This allows us not to store "
+"this data about you."
+msgstr ""
+"Tato nastavení jsou uložena ve vašich souborech cookie. To nám umožňuje "
+"neukládat data o vás."
+
+#: aperion/templates/simple/preferences/footer.html:3
+msgid "These cookies serve your sole convenience; we don't use them to track you."
+msgstr ""
+"Tyto soubory cookie slouží pouze pro vaše pohodlí; nepoužíváme je, "
+"abychom vás sledovali."
+
+#: aperion/templates/simple/preferences/footer.html:6
+msgid "Save"
+msgstr "Uložit"
+
+#: aperion/templates/simple/preferences/footer.html:9
+msgid "Reset defaults"
+msgstr "Obnovit výchozí"
+
+#: aperion/templates/simple/preferences/footer.html:13
+msgid "Back"
+msgstr "Zpět"
+
+#: aperion/templates/simple/preferences/hotkeys.html:2
+msgid "Hotkeys"
+msgstr "Klávesové zkratky"
+
+#: aperion/templates/simple/preferences/hotkeys.html:13
+msgid "Vim-like"
+msgstr "Podobné editoru Vim"
+
+#: aperion/templates/simple/preferences/hotkeys.html:18
+msgid ""
+"Navigate search results with hotkeys (JavaScript required). Press \"h\" "
+"key on main or result page to get help."
+msgstr ""
+"Procházejte výsledky vyhledávání klávesovými zkratkami (vyžadován "
+"JavaScript). Pro nápovědu stiskněte na hlavní stránce nebo stránce s "
+"výsledky klávesu „H“."
+
+#: aperion/templates/simple/preferences/image_proxy.html:2
+msgid "Image proxy"
+msgstr "Nepřímé vyhledávání obrázků"
+
+#: aperion/templates/simple/preferences/image_proxy.html:14
+msgid "Proxy image results through aperion"
+msgstr "Načítat výsledky hledání obrázků skrze proxy aperion"
+
+#: aperion/templates/simple/preferences/infinite_scroll.html:2
+msgid "Infinite scroll"
+msgstr "Nekonečné výsledky"
+
+#: aperion/templates/simple/preferences/infinite_scroll.html:14
+msgid ""
+"Automatically load the next page when scrolling to the bottom of the "
+"current page"
+msgstr "Automaticky načíst další stránku při posunu na konec aktuální stránky"
+
+#: aperion/templates/simple/preferences/language.html:24
+msgid "What language do you prefer for search?"
+msgstr "Jaký jazyk vyhledávání upřednostňujete?"
+
+#: aperion/templates/simple/preferences/language.html:25
+msgid "Choose Auto-detect to let aperion detect the language of your query."
+msgstr "Zvolte Automaticky detekovat, aby aperion detekoval jazyk vašeho dotazu."
+
+#: aperion/templates/simple/preferences/method.html:2
+msgid "HTTP Method"
+msgstr "Metoda HTTP"
+
+#: aperion/templates/simple/preferences/method.html:14
+msgid "Change how forms are submitted"
+msgstr "Změnit způsob odesílání dotazů"
+
+#: aperion/templates/simple/preferences/query_in_title.html:2
+msgid "Query in the page's title"
+msgstr "Dotaz v titulku stránky"
+
+#: aperion/templates/simple/preferences/query_in_title.html:14
+msgid ""
+"When enabled, the result page's title contains your query. Your browser "
+"can record this title"
+msgstr ""
+"Titulek stránky s výsledky bude obsahovat váš vyhledávací dotaz, pokud "
+"toto zapnete. Váš prohlížeč může tento titulek zaznamenat"
+
+#: aperion/templates/simple/preferences/results_on_new_tab.html:2
+msgid "Results in new tabs"
+msgstr "Výsledky na nových kartách"
+
+#: aperion/templates/simple/preferences/results_on_new_tab.html:14
+msgid "Open result links in new browser tabs"
+msgstr "Otevření odkazů na výsledky v nových kartách prohlížeče"
+
+#: aperion/templates/simple/preferences/safesearch.html:20
+msgid "Filter content"
+msgstr "Filtrovat obsah"
+
+#: aperion/templates/simple/preferences/search_on_category_select.html:2
+msgid "Search on category select"
+msgstr "Spustit vyhledávání při výběru kategorie"
+
+#: aperion/templates/simple/preferences/search_on_category_select.html:14
+msgid ""
+"Perform a search immediately if a category is selected. Disable to select"
+" multiple categories"
+msgstr ""
+"Při výběru kategorie okamžitě provést hledání. Zakažte pro výběr více "
+"kategorií"
+
+#: aperion/templates/simple/preferences/theme.html:2
+msgid "Theme"
+msgstr "Vzhled"
+
+#: aperion/templates/simple/preferences/theme.html:14
+msgid "Change the layout of aperion"
+msgstr "Změnit rozvržení aperion"
+
+#: aperion/templates/simple/preferences/theme.html:19
+msgid "Theme style"
+msgstr "Styl vzhledu"
+
+#: aperion/templates/simple/preferences/theme.html:31
+msgid "Choose auto to follow your browser settings"
+msgstr "Zvolte automaticky pro sledování nastavení vašeho prohlížeče"
+
+#: aperion/templates/simple/preferences/tokens.html:2
+msgid "Engine tokens"
+msgstr "Tokeny vyhledávačů"
+
+#: aperion/templates/simple/preferences/tokens.html:9
+msgid "Access tokens for private engines"
+msgstr "Přístupové tokeny pro soukromé vyhledávače"
+
+#: aperion/templates/simple/preferences/ui_locale.html:2
+msgid "Interface language"
+msgstr "Jazyk rozhraní"
+
+#: aperion/templates/simple/preferences/ui_locale.html:14
+msgid "Change the language of the layout"
+msgstr "Nastavit jazyk rozhraní"
+
+#: aperion/templates/simple/preferences/urlformatting.html:2
+msgid "URL formatting"
+msgstr "Formátování adres URL"
+
+#: aperion/templates/simple/preferences/urlformatting.html:8
+msgid "Pretty"
+msgstr "Pěkné"
+
+#: aperion/templates/simple/preferences/urlformatting.html:13
+msgid "Full"
+msgstr "Plné"
+
+#: aperion/templates/simple/preferences/urlformatting.html:18
+msgid "Host"
+msgstr "Hostitel"
+
+#: aperion/templates/simple/preferences/urlformatting.html:23
+msgid "Change result URL formatting"
+msgstr "Změnit formátování adres URL výsledků"
+
+#: aperion/templates/simple/result_templates/code.html:13
+msgid "repo"
+msgstr "repozitář"
+
+#: aperion/templates/simple/result_templates/default.html:6
+#: aperion/templates/simple/result_templates/files.html:8
+#: aperion/templates/simple/result_templates/files.html:11
+msgid "show media"
+msgstr "ukázat média"
+
+#: aperion/templates/simple/result_templates/default.html:6
+#: aperion/templates/simple/result_templates/files.html:8
+msgid "hide media"
+msgstr "skrýt média"
+
+#: aperion/templates/simple/result_templates/default.html:14
+#: aperion/templates/simple/result_templates/videos.html:14
+msgid "This site did not provide any description."
+msgstr "Tato stránka nemá žádný popis."
+
+#: aperion/templates/simple/result_templates/files.html:38
+#: aperion/templates/simple/result_templates/images.html:22
+#: aperion/templates/simple/result_templates/torrent.html:18
+msgid "Filesize"
+msgstr "Velikost"
+
+#: aperion/templates/simple/result_templates/files.html:40
+msgid "Date"
+msgstr "Datum"
+
+#: aperion/templates/simple/result_templates/files.html:42
+#: aperion/templates/simple/result_templates/paper.html:24
+msgid "Type"
+msgstr "Typ"
+
+#: aperion/templates/simple/result_templates/images.html:20
+msgid "Resolution"
+msgstr "Rozlišení"
+
+#: aperion/templates/simple/result_templates/images.html:21
+msgid "Format"
+msgstr "Formát"
+
+#: aperion/templates/simple/result_templates/images.html:24
+msgid "Engine"
+msgstr "Vyhledávač"
+
+#: aperion/templates/simple/result_templates/images.html:25
+msgid "View source"
+msgstr "Zobrazit zdroj"
+
+#: aperion/templates/simple/result_templates/map.html:12
+msgid "address"
+msgstr "adresa"
+
+#: aperion/templates/simple/result_templates/map.html:43
+msgid "show map"
+msgstr "zobrazit mapu"
+
+#: aperion/templates/simple/result_templates/map.html:43
+msgid "hide map"
+msgstr "skrýt mapu"
+
+#: aperion/templates/simple/result_templates/packages.html:12
+msgid "Version"
+msgstr "Verze"
+
+#: aperion/templates/simple/result_templates/packages.html:18
+msgid "Maintainer"
+msgstr "Správce"
+
+#: aperion/templates/simple/result_templates/packages.html:24
+msgid "Updated at"
+msgstr "Aktualizováno"
+
+#: aperion/templates/simple/result_templates/packages.html:30
+#: aperion/templates/simple/result_templates/paper.html:25
+msgid "Tags"
+msgstr "Značky"
+
+#: aperion/templates/simple/result_templates/packages.html:36
+msgid "Popularity"
+msgstr "Popularita"
+
+#: aperion/templates/simple/result_templates/packages.html:42
+msgid "License"
+msgstr "Licence"
+
+#: aperion/templates/simple/result_templates/packages.html:52
+msgid "Project"
+msgstr "Projekt"
+
+#: aperion/templates/simple/result_templates/packages.html:55
+msgid "Project homepage"
+msgstr "Domovská stránka projektu"
+
+#: aperion/templates/simple/result_templates/paper.html:5
+msgid "Published date"
+msgstr "Datum vydání"
+
+#: aperion/templates/simple/result_templates/paper.html:9
+msgid "Journal"
+msgstr "Časopis"
+
+#: aperion/templates/simple/result_templates/paper.html:22
+msgid "Editor"
+msgstr "Editor"
+
+#: aperion/templates/simple/result_templates/paper.html:23
+msgid "Publisher"
+msgstr "Nakladatel"
+
+#: aperion/templates/simple/result_templates/paper.html:26
+msgid "DOI"
+msgstr "DOI"
+
+#: aperion/templates/simple/result_templates/paper.html:27
+msgid "ISSN"
+msgstr "ISSN"
+
+#: aperion/templates/simple/result_templates/paper.html:28
+msgid "ISBN"
+msgstr "ISBN"
+
+#: aperion/templates/simple/result_templates/paper.html:33
+msgid "PDF"
+msgstr "PDF"
+
+#: aperion/templates/simple/result_templates/paper.html:34
+msgid "HTML"
+msgstr "HTML"
+
+#: aperion/templates/simple/result_templates/torrent.html:7
+msgid "magnet link"
+msgstr "odkaz magnet"
+
+#: aperion/templates/simple/result_templates/torrent.html:8
+msgid "torrent file"
+msgstr "soubor torrentu"
+
+#: aperion/templates/simple/result_templates/torrent.html:13
+msgid "Seeder"
+msgstr "Seeder"
+
+#: aperion/templates/simple/result_templates/torrent.html:14
+msgid "Leecher"
+msgstr "Leecher"
+
+#: aperion/templates/simple/result_templates/torrent.html:19
+msgid "Number of Files"
+msgstr "Počet souborů"
+
+#: aperion/templates/simple/result_templates/videos.html:6
+msgid "show video"
+msgstr "zobrazit video"
+
+#: aperion/templates/simple/result_templates/videos.html:6
+msgid "hide video"
+msgstr "skrýt video"
+
+#~ msgid "Engine time (sec)"
+#~ msgstr "Strojový čas (s)"
+
+#~ msgid "Page loads (sec)"
+#~ msgstr "Načítání stránky (s)"
+
+#~ msgid "Errors"
+#~ msgstr "Chyby"
+
+#~ msgid "CAPTCHA required"
+#~ msgstr "Je vyžadována CAPTCHA"
+
+#~ msgid "Rewrite HTTP links to HTTPS if possible"
+#~ msgstr "Přesměrovat HTTP na HTTPS, pokud je to možné"
+
+#~ msgid ""
+#~ "Results are opened in the same "
+#~ "window by default. This plugin "
+#~ "overwrites the default behaviour to open"
+#~ " links on new tabs/windows. (JavaScript "
+#~ "required)"
+#~ msgstr ""
+#~ "Ve výchozím nastavení se výsledky "
+#~ "zobrazují v aktuálním okně. Tento "
+#~ "zásuvný modul umožňuje otevírat odkazy v"
+#~ " novém panelu/okně (vyžaduje JavaScript)."
+
+#~ msgid "Color"
+#~ msgstr "Barva"
+
+#~ msgid "Blue (default)"
+#~ msgstr "Modrá (výchozí)"
+
+#~ msgid "Violet"
+#~ msgstr "Fialová"
+
+#~ msgid "Green"
+#~ msgstr "Zelená"
+
+#~ msgid "Cyan"
+#~ msgstr "Modrozelená"
+
+#~ msgid "Orange"
+#~ msgstr "Oranžová"
+
+#~ msgid "Red"
+#~ msgstr "Červená"
+
+#~ msgid "Category"
+#~ msgstr "Kategorie"
+
+#~ msgid "Block"
+#~ msgstr "Zakázat"
+
+#~ msgid "original context"
+#~ msgstr "původní kontext"
+
+#~ msgid "Plugins"
+#~ msgstr "Zásuvné moduly"
+
+#~ msgid "Answerers"
+#~ msgstr "Odpovídači"
+
+#~ msgid "Avg. time"
+#~ msgstr "Prům. čas"
+
+#~ msgid "show details"
+#~ msgstr "zobrazit podrobnosti"
+
+#~ msgid "hide details"
+#~ msgstr "skrýt podrobnosti"
+
+#~ msgid "Load more..."
+#~ msgstr "Načíst více…"
+
+#~ msgid "Loading..."
+#~ msgstr "Načítání…"
+
+#~ msgid "Change aperion layout"
+#~ msgstr "Motiv rozhraní aperion"
+
+#~ msgid "Proxying image results through aperion"
+#~ msgstr "Načítat výsledky vyhledávání obrázků přes proxy"
+
+#~ msgid "This is the list of aperion's instant answering modules."
+#~ msgstr ""
+#~ "Toto je seznam modulů vyhledávače aperion,"
+#~ " které poskytují okamžité odpovědi."
+
+#~ msgid ""
+#~ "This is the list of cookies and"
+#~ " their values aperion is storing on "
+#~ "your computer."
+#~ msgstr ""
+#~ "Toto je seznam cookies a jejich "
+#~ "hodnot, které aperion ukládá na vašem "
+#~ "počítači."
+
+#~ msgid "With that list, you can assess aperion transparency."
+#~ msgstr "Pomocí něj můžete posoudit, jestli je aperion transparentní."
+
+#~ msgid "It look like you are using aperion first time."
+#~ msgstr "Zdá se, že používáte aperion poprvé."
+
+#~ msgid "Please, try again later or find another aperion instance."
+#~ msgstr "Zkuste to prosím později, nebo použijte jinou instanci aperion."
+
+#~ msgid "Themes"
+#~ msgstr "Motivy"
+
+#~ msgid "Reliablity"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When enabled, the result page's title"
+#~ " contains your query. Your browser "
+#~ "can record this title."
+#~ msgstr ""
+
+#~ msgid "Method"
+#~ msgstr "Dotazovací metoda"
+
+#~ msgid ""
+#~ "This tab does not show up for "
+#~ "search results but you can search "
+#~ "the engines listed here via bangs."
+#~ msgstr ""
+
+#~ msgid "Advanced settings"
+#~ msgstr "Pokročilá nastavení"
+
+#~ msgid "Close"
+#~ msgstr "Zavřít"
+
+#~ msgid "Language"
+#~ msgstr "Jazyk"
+
+#~ msgid "broken"
+#~ msgstr "rozbitý"
+
+#~ msgid "supported"
+#~ msgstr "podporováno"
+
+#~ msgid "not supported"
+#~ msgstr "nepodporováno"
+
+#~ msgid "about"
+#~ msgstr "o nás"
+
+#~ msgid "Avg."
+#~ msgstr "Prům."
+
+#~ msgid "User Interface"
+#~ msgstr "Uživatelské rozhraní"
+
+#~ msgid "Choose style for this theme"
+#~ msgstr "Styl daného motivu"
+
+#~ msgid "Style"
+#~ msgstr "Styl"
+
+#~ msgid "Show advanced settings"
+#~ msgstr "Zobrazit rozšířená nastavení"
+
+#~ msgid "Show advanced settings panel in the home page by default"
+#~ msgstr ""
+#~ "Ve výchozím stavu zobrazovat na domovské"
+#~ " stránce panel pokročilého nastavení"
+
+#~ msgid "Allow all"
+#~ msgstr "Povolit vše"
+
+#~ msgid "Disable all"
+#~ msgstr "Zakázat vše"
+
+#~ msgid "Selected language"
+#~ msgstr "Váš jazyk vyhledávání"
+
+#~ msgid "Query"
+#~ msgstr "Dotaz"
+
+#~ msgid "save"
+#~ msgstr "uložit"
+
+#~ msgid "back"
+#~ msgstr "zpět"
+
+#~ msgid "Links"
+#~ msgstr "Odkazy"
+
+#~ msgid "RSS subscription"
+#~ msgstr "Odběr RSS"
+
+#~ msgid "Search results"
+#~ msgstr "Výsledky vyhledávání"
+
+#~ msgid "next page"
+#~ msgstr "další stránka"
+
+#~ msgid "previous page"
+#~ msgstr "předchozí stránka"
+
+#~ msgid "Start search"
+#~ msgstr "Začít hledat"
+
+#~ msgid "Clear search"
+#~ msgstr "Smazat vyhledávání"
+
+#~ msgid "Clear"
+#~ msgstr "Smazat"
+
+#~ msgid "stats"
+#~ msgstr "statistiky"
+
+#~ msgid "Heads up!"
+#~ msgstr "Jen krátká informace!"
+
+#~ msgid "It look like you are using aperion first time."
+#~ msgstr "Zdá se, že jste použili aperion poprvé."
+
+#~ msgid "Well done!"
+#~ msgstr "Výborně!"
+
+#~ msgid "Settings saved successfully."
+#~ msgstr "Nastavení úspěšně uloženo."
+
+#~ msgid "Oh snap!"
+#~ msgstr "Ale ne!"
+
+#~ msgid "Something went wrong."
+#~ msgstr "Něco se nepovedlo."
+
+#~ msgid "Date"
+#~ msgstr "Datum"
+
+#~ msgid "Type"
+#~ msgstr "Typ"
+
+#~ msgid "Get image"
+#~ msgstr "Načíst obrázek"
+
+#~ msgid "Center Alignment"
+#~ msgstr ""
+
+#~ msgid "Displays results in the center of the page (Oscar layout)."
+#~ msgstr "Zobrazí výsledky uprostřed stránky (rozložení Oscar)."
+
+#~ msgid "preferences"
+#~ msgstr "nastavení"
+
+#~ msgid "Scores per result"
+#~ msgstr "Skóre na výsledek"
+
+#~ msgid "a privacy-respecting, hackable metasearch engine"
+#~ msgstr "soukromí respektujícím, nastavitelným multivyhledávačem"
+
+#~ msgid "No abstract is available for this publication."
+#~ msgstr "Pro tuto publikaci neexistuje žádný abstrakt."
+
+#~ msgid "Self Informations"
+#~ msgstr "Informace o sobě"
+
+#~ msgid ""
+#~ "Change how forms are submited, <a "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">learn more about request "
+#~ "methods</a>"
+#~ msgstr ""
+#~ "Určuje způsob odesílání formulářů. Informace"
+#~ " o dotazovacích metodách <a "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">viz Wikipedie</a>"
+
+#~ msgid ""
+#~ "This plugin checks if the address "
+#~ "of the request is a TOR exit "
+#~ "node, and informs the user if it"
+#~ " is, like check.torproject.org but from "
+#~ "aperion."
+#~ msgstr ""
+#~ "Tento plugin kontroluje, jestli adresa "
+#~ "požadavku je výstupní uzel TORu, a "
+#~ "infromuje uživatele pokud je, jako "
+#~ "check.torproject.org ale od aperion."
+
+#~ msgid ""
+#~ "The TOR exit node list "
+#~ "(https://check.torproject.org/exit-addresses) is "
+#~ "unreachable."
+#~ msgstr ""
+#~ "Seznam výstupních uzlů TOR "
+#~ "(https://check.torproject.org/exit-addresses) je "
+#~ "nedostupný."
+
+#~ msgid "You are using TOR. Your IP address seems to be: {ip_address}."
+#~ msgstr "Používáte TOR. Zdá se, že vaše IP adresa je: {ip_address}."
+
+#~ msgid "You are not using TOR. Your IP address seems to be: {ip_address}."
+#~ msgstr "Nepoužíváte TOR. Zdá se, že vaše IP adresa je: {ip_address}."
+
+#~ msgid ""
+#~ "The could not download the list of"
+#~ " Tor exit-nodes from "
+#~ "https://check.torproject.org/exit-addresses."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You are using Tor. It looks like"
+#~ " you have this external IP address:"
+#~ " {ip_address}."
+#~ msgstr ""
+
+#~ msgid "You are not using Tor. You have this external IP address: {ip_address}."
+#~ msgstr ""
+
+#~ msgid "Autodetect search language"
+#~ msgstr "Automaticky rozpoznaný jazyk vyhledávání"
+
+#~ msgid "Automatically detect the query search language and switch to it."
+#~ msgstr "Automaticky detekuj jazyk vyhledávaného dotazu a přepni se do něj."
+
+#~ msgid "others"
+#~ msgstr "ostatní"
+
+#~ msgid ""
+#~ "This tab does not show up for "
+#~ "search results, but you can search "
+#~ "the engines listed here via bangs."
+#~ msgstr ""
+#~ "Tato záložka se nezobrazuje ve "
+#~ "výsledcích vyhledávání, ale můžete použít "
+#~ "vyhledávače zde uvedené pomocí vykřičníku."
+
+#~ msgid "Shortcut"
+#~ msgstr "Zkratka"
+
+#~ msgid "!bang"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This tab dues not exists in the"
+#~ " user interface, but you can search"
+#~ " in these engines by its !bangs."
+#~ msgstr ""
+#~ "Tato karta v uživatelském rozhraní "
+#~ "neexistuje, ale můžete v těchto "
+#~ "vyhledávačích vyhledávat podle jejích !bang."
+
+#~ msgid "Engines cannot retrieve results."
+#~ msgstr "Načtení výsledků vyhledávači se nezdařilo."
+
+#~ msgid "Please, try again later or find another aperion instance."
+#~ msgstr "Prosím zkuste to znovu později, nebo si najděte jinou instanci aperion."
+
+#~ msgid ""
+#~ "Redirect to open-access versions of "
+#~ "publications when available (plugin required)"
+#~ msgstr ""
+#~ "Přesměrovat na volně přístupné verze "
+#~ "publikací, pokud jsou k dispozici "
+#~ "(vyžaduje zásuvný modul)"
+
+#~ msgid "Bang"
+#~ msgstr "!bang"
+
+#~ msgid ""
+#~ "Change how forms are submitted, <a "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">learn more about request "
+#~ "methods</a>"
+#~ msgstr ""
+#~ "Změna způsobu odesílání formulářů, <a "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">naočit se více o metodách"
+#~ " žádání</a>"
+
+#~ msgid "On"
+#~ msgstr "Zapnuto"
+
+#~ msgid "Off"
+#~ msgstr "Vypnuto"
+
+#~ msgid "Enabled"
+#~ msgstr "Zapnuto"
+
+#~ msgid "Disabled"
+#~ msgstr "Vypnuto"
+
+#~ msgid ""
+#~ "Perform search immediately if a category"
+#~ " selected. Disable to select multiple "
+#~ "categories. (JavaScript required)"
+#~ msgstr ""
+#~ "Provede hledání okamžitě při výběru "
+#~ "kategorie. Pokud je tato funkce vypnuta,"
+#~ " je možné vybrat více kategorií "
+#~ "(vyžaduje JavaScript)"
+
+#~ msgid "Vim-like hotkeys"
+#~ msgstr "Klávesové zkratky jako v textovém editoru Vim"
+
+#~ msgid ""
+#~ "Navigate search results with Vim-like"
+#~ " hotkeys (JavaScript required). Press \"h\""
+#~ " key on main or result page to"
+#~ " get help."
+#~ msgstr ""
+#~ "Procházení výsledků pomocí kláves stejných "
+#~ "jako v textovém editoru Vim (vyžaduje"
+#~ " JavaScript). Stisknutím klávesy \"h\" na"
+#~ " hlavní stránce či stránce výsledků "
+#~ "zobrazíte nápovědu."
+
+#~ msgid ""
+#~ "we didn't find any results. Please "
+#~ "use another query or search in "
+#~ "more categories."
+#~ msgstr ""
+#~ "Nenašli jsme žádné výsledky. Použijte "
+#~ "prosím jiný dotaz nebo hledejte ve "
+#~ "více kategoriích."
+
+#~ msgid "Rewrite result hostnames or remove results based on the hostname"
+#~ msgstr "Přepsat adresy serverů nebo odstranit výsledky podle adresy"
+
+#~ msgid "Bytes"
+#~ msgstr "bajtů"
+
+#~ msgid "kiB"
+#~ msgstr "kiB"
+
+#~ msgid "MiB"
+#~ msgstr "MiB"
+
+#~ msgid "GiB"
+#~ msgstr "GiB"
+
+#~ msgid "TiB"
+#~ msgstr "TiB"
+
+#~ msgid "Hostname replace"
+#~ msgstr "Nahrazení adresy serveru"
+
+#~ msgid "Error!"
+#~ msgstr "Chyba!"
+
+#~ msgid "Engines cannot retrieve results"
+#~ msgstr "Vyhledávače nemohou získat výsledky"
+
+#~ msgid "Start submiting a new issue on GitHub"
+#~ msgstr "Začněte přidávat novou chybu na Githubu"
+
+#~ msgid "dummy"
+#~ msgstr ""
+
+#~ msgid "Random value generator"
+#~ msgstr "Generátor náhodných hodnot"
+
+#~ msgid "Statistics functions"
+#~ msgstr "Statistické funkce"
+
+#~ msgid "Compute {functions} of the arguments"
+#~ msgstr "Výpočet funkcí {functions} pro daný argument"
+
+#~ msgid "Get directions"
+#~ msgstr "Získat pokyny"
+
+#~ msgid ""
+#~ "Displays your IP if the query is"
+#~ " \"ip\" and your user agent if "
+#~ "the query contains \"user agent\"."
+#~ msgstr ""
+#~ "Umožňuje hledat informace o sobě: \"ip\""
+#~ " zobrazí vaši IP adresu a \"user "
+#~ "agent\" zobrazí identifikátor prohlížeče."
+
+#~ msgid ""
+#~ "Could not download the list of Tor"
+#~ " exit-nodes from: https://check.torproject.org"
+#~ "/exit-addresses"
+#~ msgstr ""
+#~ "Nelze stáhnout seznam výstupních uzlů "
+#~ "Tor z: https://check.torproject.org/exit-addresses"
+
+#~ msgid ""
+#~ "You are using Tor and it looks "
+#~ "like you have this external IP "
+#~ "address: {ip_address}"
+#~ msgstr "Používáte Tor a vypadá to, že máte tuto externí IP adresu: {ip_address}"
+
+#~ msgid ""
+#~ "You are not using Tor and you "
+#~ "have this external IP address: "
+#~ "{ip_address}"
+#~ msgstr "Nepoužíváte Tor a máte tuto externí IP adresu: {ip_address}"
+
+#~ msgid "Keywords"
+#~ msgstr "Klíčová slova"
+
+#~ msgid "/"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Specifying custom settings in the "
+#~ "preferences URL can be used to "
+#~ "sync preferences across devices."
+#~ msgstr ""
+#~ "Zadání vlastních nastavení v URL "
+#~ "předvoleb lze použít k synchronizaci "
+#~ "předvoleb mezi zařízeními."
+
+#~ msgid "proxied"
+#~ msgstr "přes proxy"
+
+#~ msgid ""
+#~ "This tab does not exists in the"
+#~ " user interface, but you can search"
+#~ " in these engines by its !bangs."
+#~ msgstr ""
+#~ "Tato karta v uživatelském rozhraní "
+#~ "neexistuje, ale můžete v těchto "
+#~ "vyhledávačích vyhledávat podle jejích !bang."
+
+#~ msgid "Results on new tabs"
+#~ msgstr "Výsledky na novém panelu"
+
+#~ msgid "Open result links on new browser tabs"
+#~ msgstr "Otevírat výsledky na novém panelu prohlížeče"
+
+#~ msgid "Find stuff as you type"
+#~ msgstr "Vyhledávat během psaní"
+
+#~ msgid "Converts strings to different hash digests."
+#~ msgstr "Převádí řetězce na různé hash hodnoty."
+
+#~ msgid ""
+#~ "Rewrite hostnames, remove results or "
+#~ "prioritize them based on the hostname"
+#~ msgstr ""
+#~ "Přepsat hostitelská jména, odstranit výsledky"
+#~ " nebo je prioritizovat na základě "
+#~ "hostitelského jména"
+
+#~ msgid "With that list, you can assess aperion transparency."
+#~ msgstr "S pomocí tohoto seznamu můžete určit transparentnost aperion."
+
+#~ msgid ""
+#~ "These settings are stored in your "
+#~ "cookies, this allows us not to "
+#~ "store this data about you."
+#~ msgstr ""
+#~ "Tato nastavení jsou uložena ve vašich"
+#~ " cookies, což nám umožňuje tyto data"
+#~ " neuchovávat nikde jinde."
+
+#~ msgid ""
+#~ "These cookies serve your sole "
+#~ "convenience, we don't use these cookies"
+#~ " to track you."
+#~ msgstr ""
+#~ "Tyto cookies existují výhradně pro vaše"
+#~ " pohodlí, nepoužíváme je ke sledování."
+
+#~ msgid "Proxying image results through aperion"
+#~ msgstr "Používat aperion jako prostředníka pro vyhledávání obrázků"
+
+#~ msgid "Automatically load next page when scrolling to bottom of current page"
+#~ msgstr "Automaticky načítat další výsledky při rolování"
+
+#~ msgid ""
+#~ "Perform search immediately if a category"
+#~ " selected. Disable to select multiple "
+#~ "categories"
+#~ msgstr ""
+#~ "Pokud je vybrána kategorie, ihned "
+#~ "provést vyhledávání. Zakažte pro vybrání "
+#~ "několika kategorií"
+
+#~ msgid "Change aperion layout"
+#~ msgstr "Změnit vzhled aperion"

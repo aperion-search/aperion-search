@@ -1,0 +1,2348 @@
+# Ukrainian translations for .
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the  project.
+#
+# Translators:
+# pvhn4 <pvhn4@protonmail.com>, 2017
+# zubr139, 2016-2017
+# Andrij Mizyk <andmizyk@gmail.com>, 2022.
+# Markus Heiser <markus.heiser@darmarit.de>, 2022, 2023.
+# BalkanMadman <zurabid2016@gmail.com>, 2023.
+# return42 <markus.heiser@darmarit.de>, 2023.
+# maxch <maxletters@tutanota.com>, 2023.
+# SomeTr <SomeTr@users.noreply.translate.codeberg.org>, 2023, 2024.
+# SomeTr <sometr@users.noreply.translate.codeberg.org>, 2025.
+# return42 <return42@users.noreply.translate.codeberg.org>, 2025.
+# Anonymous <anonymous@users.noreply.translate.codeberg.org>, 2025.
+# maxch <maxch@users.noreply.translate.codeberg.org>, 2025.
+# BalkanMadman <balkanmadman@users.noreply.translate.codeberg.org>, 2025.
+# curtwheeler <curtwheeler@users.noreply.translate.codeberg.org>, 2025.
+# SomeTr <sometr@noreply.codeberg.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version:  aperion\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-07-03 14:46+0000\n"
+"PO-Revision-Date: 2025-06-28 09:58+0000\n"
+"Last-Translator: SomeTr <sometr@noreply.codeberg.org>\n"
+"Language: uk\n"
+"Language-Team: Ukrainian "
+"<https://translate.codeberg.org/projects/aperion/aperion/uk/>\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 !="
+" 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n "
+"% 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9)"
+" || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#. CONSTANT_NAMES['NO_SUBGROUPING']
+#: aperion/aperion.msg
+msgid "without further subgrouping"
+msgstr "без подальшого підгрупування"
+
+#. CONSTANT_NAMES['DEFAULT_CATEGORY']
+#: aperion/aperion.msg
+msgid "other"
+msgstr "інше"
+
+#. CATEGORY_NAMES['FILES']
+#: aperion/aperion.msg
+msgid "files"
+msgstr "файли"
+
+#. CATEGORY_NAMES['GENERAL']
+#: aperion/aperion.msg
+msgid "general"
+msgstr "загальні"
+
+#. CATEGORY_NAMES['MUSIC']
+#: aperion/aperion.msg
+msgid "music"
+msgstr "музика"
+
+#. CATEGORY_NAMES['SOCIAL_MEDIA']
+#: aperion/aperion.msg
+msgid "social media"
+msgstr "соцмережі"
+
+#. CATEGORY_NAMES['IMAGES']
+#: aperion/aperion.msg
+msgid "images"
+msgstr "зображення"
+
+#. CATEGORY_NAMES['VIDEOS']
+#: aperion/aperion.msg
+msgid "videos"
+msgstr "відео"
+
+#. CATEGORY_NAMES['RADIO']
+#: aperion/engines/radio_browser.py:151 aperion/aperion.msg
+msgid "radio"
+msgstr "радіо"
+
+#. CATEGORY_NAMES['TV']
+#: aperion/aperion.msg
+msgid "tv"
+msgstr "ТБ"
+
+#. CATEGORY_NAMES['IT']
+#: aperion/aperion.msg
+msgid "it"
+msgstr "IT"
+
+#. CATEGORY_NAMES['NEWS']
+#: aperion/aperion.msg
+msgid "news"
+msgstr "новини"
+
+#. CATEGORY_NAMES['MAP']
+#: aperion/aperion.msg
+msgid "map"
+msgstr "карти"
+
+#. CATEGORY_NAMES['ONIONS']
+#: aperion/aperion.msg
+msgid "onions"
+msgstr "onions"
+
+#. CATEGORY_NAMES['SCIENCE']
+#: aperion/aperion.msg
+msgid "science"
+msgstr "наука"
+
+#. CATEGORY_GROUPS['APPS']
+#: aperion/aperion.msg
+msgid "apps"
+msgstr "програми"
+
+#. CATEGORY_GROUPS['DICTIONARIES']
+#: aperion/aperion.msg
+msgid "dictionaries"
+msgstr "словники"
+
+#. CATEGORY_GROUPS['LYRICS']
+#: aperion/aperion.msg
+msgid "lyrics"
+msgstr "тексти пісень"
+
+#. CATEGORY_GROUPS['PACKAGES']
+#: aperion/aperion.msg
+msgid "packages"
+msgstr "пакети"
+
+#. CATEGORY_GROUPS['Q_A']
+#: aperion/aperion.msg
+msgid "q&a"
+msgstr "запитання і відповіді"
+
+#. CATEGORY_GROUPS['REPOS']
+#: aperion/aperion.msg
+msgid "repos"
+msgstr "репозиторії"
+
+#. CATEGORY_GROUPS['SOFTWARE_WIKIS']
+#: aperion/aperion.msg
+msgid "software wikis"
+msgstr "вікі програм"
+
+#. CATEGORY_GROUPS['WEB']
+#: aperion/aperion.msg
+msgid "web"
+msgstr "веб"
+
+#. CATEGORY_GROUPS['SCIENTIFIC PUBLICATIONS']
+#: aperion/aperion.msg
+msgid "scientific publications"
+msgstr "наукові публікації"
+
+#. STYLE_NAMES['AUTO']
+#: aperion/aperion.msg
+msgid "auto"
+msgstr "автоматично"
+
+#. STYLE_NAMES['LIGHT']
+#: aperion/aperion.msg
+msgid "light"
+msgstr "світла"
+
+#. STYLE_NAMES['DARK']
+#: aperion/aperion.msg
+msgid "dark"
+msgstr "темна"
+
+#. STYLE_NAMES['BLACK']
+#: aperion/aperion.msg
+msgid "black"
+msgstr "чорна"
+
+#. BRAND_CUSTOM_LINKS['UPTIME']
+#: aperion/aperion.msg
+msgid "Uptime"
+msgstr "Час роботи"
+
+#. BRAND_CUSTOM_LINKS['ABOUT']
+#: aperion/aperion.msg aperion/templates/simple/base.html:49
+msgid "About"
+msgstr "Про"
+
+#. WEATHER_TERMS['AVERAGE TEMP.']
+#: aperion/aperion.msg
+msgid "Average temp."
+msgstr "Середня темп."
+
+#. WEATHER_TERMS['CLOUD COVER']
+#: aperion/aperion.msg
+msgid "Cloud cover"
+msgstr "Хмарність"
+
+#. WEATHER_TERMS['CONDITION']
+#: aperion/engines/duckduckgo_weather.py:45 aperion/aperion.msg
+msgid "Condition"
+msgstr "Умови"
+
+#. WEATHER_TERMS['CURRENT CONDITION']
+#: aperion/engines/duckduckgo_weather.py:118 aperion/aperion.msg
+msgid "Current condition"
+msgstr "Поточні умови"
+
+#. WEATHER_TERMS['EVENING']
+#: aperion/aperion.msg
+msgid "Evening"
+msgstr "Вечір"
+
+#. WEATHER_TERMS['FEELS LIKE']
+#: aperion/engines/duckduckgo_weather.py:53 aperion/aperion.msg
+msgid "Feels like"
+msgstr "Відчувається як"
+
+#. WEATHER_TERMS['HUMIDITY']
+#: aperion/engines/duckduckgo_weather.py:64 aperion/aperion.msg
+#: aperion/templates/simple/answer/weather.html:29
+msgid "Humidity"
+msgstr "Вологість"
+
+#. WEATHER_TERMS['MAX TEMP.']
+#: aperion/engines/duckduckgo_weather.py:77 aperion/aperion.msg
+msgid "Max temp."
+msgstr "Макс. температура"
+
+#. WEATHER_TERMS['MIN TEMP.']
+#: aperion/engines/duckduckgo_weather.py:73 aperion/aperion.msg
+msgid "Min temp."
+msgstr "Мін. температура"
+
+#. WEATHER_TERMS['MORNING']
+#: aperion/aperion.msg
+msgid "Morning"
+msgstr "Ранок"
+
+#. WEATHER_TERMS['NIGHT']
+#: aperion/aperion.msg
+msgid "Night"
+msgstr "Ніч"
+
+#. WEATHER_TERMS['NOON']
+#: aperion/aperion.msg
+msgid "Noon"
+msgstr "День"
+
+#. WEATHER_TERMS['PRESSURE']
+#: aperion/aperion.msg aperion/templates/simple/answer/weather.html:25
+msgid "Pressure"
+msgstr "Тиск"
+
+#. WEATHER_TERMS['SUNRISE']
+#: aperion/engines/duckduckgo_weather.py:81 aperion/aperion.msg
+msgid "Sunrise"
+msgstr "Схід"
+
+#. WEATHER_TERMS['SUNSET']
+#: aperion/engines/duckduckgo_weather.py:82 aperion/aperion.msg
+msgid "Sunset"
+msgstr "Захід"
+
+#. WEATHER_TERMS['TEMPERATURE']
+#: aperion/engines/duckduckgo_weather.py:48 aperion/aperion.msg
+#: aperion/templates/simple/answer/weather.html:17
+msgid "Temperature"
+msgstr "Температура"
+
+#. WEATHER_TERMS['UV INDEX']
+#: aperion/engines/duckduckgo_weather.py:80 aperion/aperion.msg
+msgid "UV index"
+msgstr "Індекс УФ"
+
+#. WEATHER_TERMS['VISIBILITY']
+#: aperion/engines/duckduckgo_weather.py:62 aperion/aperion.msg
+msgid "Visibility"
+msgstr "Видимість"
+
+#. WEATHER_TERMS['WIND']
+#: aperion/engines/duckduckgo_weather.py:58 aperion/aperion.msg
+#: aperion/templates/simple/answer/weather.html:23
+msgid "Wind"
+msgstr "Вітер"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Clear sky"
+msgstr "Ясне небо"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Partly cloudy"
+msgstr "Мінлива хмарність"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Cloudy"
+msgstr "Хмарно"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Fair"
+msgstr "Ясно"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Fog"
+msgstr "Туман"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain and thunder"
+msgstr "Невеликий дощ із грозою"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain showers and thunder"
+msgstr "Короткочасні зливи з грозою"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain showers"
+msgstr "Короткочасні зливи"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain"
+msgstr "Невеликий дощ"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain and thunder"
+msgstr "Дощ із грозою"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain showers and thunder"
+msgstr "Зливи з грозою"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain showers"
+msgstr "Зливи"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain"
+msgstr "Дощ"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain and thunder"
+msgstr "Сильний дощ із грозою"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain showers and thunder"
+msgstr "Сильні зливи з грозою"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain showers"
+msgstr "Сильні зливи"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain"
+msgstr "Сильний дощ"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet and thunder"
+msgstr "Невеликий мокрий сніг із грозою"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet showers and thunder"
+msgstr "Короткочасні зливи з мокрим снігом і грозою"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet showers"
+msgstr "Короткочасні зливи з мокрим снігом"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet"
+msgstr "Невеликий мокрий сніг"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet and thunder"
+msgstr "Mокрий сніг із грозою"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet showers and thunder"
+msgstr "Зливи з мокрим снігом і грозою"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet showers"
+msgstr "Зливи з мокрим снігом"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet"
+msgstr "Mокрий сніг"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet and thunder"
+msgstr "Сильний мокрий сніг із грозою"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet showers and thunder"
+msgstr "Сильні зливи з мокрим снігом і грозою"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet showers"
+msgstr "Сильні зливи з мокрим снігом"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet"
+msgstr "Сильний мокрий сніг"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow and thunder"
+msgstr "Невеликий сніг із грозою"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow showers and thunder"
+msgstr "Невеликий снігопад із грозою"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow showers"
+msgstr "Невеликий снігопад"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow"
+msgstr "Невеликий сніг"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow and thunder"
+msgstr "Сніг із грозою"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow showers and thunder"
+msgstr "Снігопад із грозою"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow showers"
+msgstr "Снігопад"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow"
+msgstr "Сніг"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow and thunder"
+msgstr "Сильний сніг із грозою"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow showers and thunder"
+msgstr "Сильний снігопад із грозою"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow showers"
+msgstr "Сильний снігопад"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow"
+msgstr "Сильний сніг"
+
+#. SOCIAL_MEDIA_TERMS['SUBSCRIBERS']
+#: aperion/engines/lemmy.py:85 aperion/aperion.msg
+msgid "subscribers"
+msgstr "підписників"
+
+#. SOCIAL_MEDIA_TERMS['POSTS']
+#: aperion/engines/lemmy.py:86 aperion/aperion.msg
+msgid "posts"
+msgstr "дописів"
+
+#. SOCIAL_MEDIA_TERMS['ACTIVE USERS']
+#: aperion/engines/lemmy.py:87 aperion/aperion.msg
+msgid "active users"
+msgstr "активних користувачів"
+
+#. SOCIAL_MEDIA_TERMS['COMMENTS']
+#: aperion/engines/discourse.py:157 aperion/engines/hackernews.py:82
+#: aperion/engines/lemmy.py:130 aperion/aperion.msg
+msgid "comments"
+msgstr "коментарів"
+
+#. SOCIAL_MEDIA_TERMS['USER']
+#: aperion/engines/lemmy.py:129 aperion/engines/lemmy.py:164 aperion/aperion.msg
+msgid "user"
+msgstr "користувач"
+
+#. SOCIAL_MEDIA_TERMS['COMMUNITY']
+#: aperion/engines/lemmy.py:131 aperion/engines/lemmy.py:165 aperion/aperion.msg
+msgid "community"
+msgstr "спільнота"
+
+#. SOCIAL_MEDIA_TERMS['POINTS']
+#: aperion/engines/hackernews.py:82 aperion/aperion.msg
+msgid "points"
+msgstr "балів"
+
+#. SOCIAL_MEDIA_TERMS['TITLE']
+#: aperion/aperion.msg
+msgid "title"
+msgstr "назва"
+
+#. SOCIAL_MEDIA_TERMS['AUTHOR']
+#: aperion/engines/hackernews.py:85 aperion/aperion.msg
+msgid "author"
+msgstr "автор"
+
+#. SOCIAL_MEDIA_TERMS['THREAD OPEN']
+#: aperion/engines/discourse.py:149 aperion/aperion.msg
+msgid "open"
+msgstr "відкрито"
+
+#. SOCIAL_MEDIA_TERMS['THREAD CLOSED']
+#: aperion/engines/discourse.py:149 aperion/aperion.msg
+msgid "closed"
+msgstr "закрито"
+
+#. SOCIAL_MEDIA_TERMS['THREAD ANSWERED']
+#: aperion/engines/discourse.py:160 aperion/aperion.msg
+msgid "answered"
+msgstr "є відповідь"
+
+#: aperion/webapp.py:292
+msgid "No item found"
+msgstr "Нічого не знайдено"
+
+#: aperion/engines/qwant.py:291
+#: aperion/templates/simple/result_templates/images.html:23 aperion/webapp.py:294
+msgid "Source"
+msgstr "Джерело"
+
+#: aperion/webapp.py:296
+msgid "Error loading the next page"
+msgstr "Не вдалося завантажити наступну сторінку"
+
+#: aperion/webapp.py:447 aperion/webapp.py:845
+msgid "Invalid settings, please edit your preferences"
+msgstr "Неправильні налаштування, будь ласка, зробіть зміни в налаштуваннях"
+
+#: aperion/webapp.py:463
+msgid "Invalid settings"
+msgstr "Неправильні налаштування"
+
+#: aperion/webapp.py:540 aperion/webapp.py:630
+msgid "search error"
+msgstr "помилка пошуку"
+
+#: aperion/webutils.py:35
+msgid "timeout"
+msgstr "тайм-аут"
+
+#: aperion/webutils.py:36
+msgid "parsing error"
+msgstr "помилка парсингу"
+
+#: aperion/webutils.py:37
+msgid "HTTP protocol error"
+msgstr "помилка протоколу HTTP"
+
+#: aperion/webutils.py:38
+msgid "network error"
+msgstr "помилка мережі"
+
+#: aperion/webutils.py:39
+msgid "SSL error: certificate validation has failed"
+msgstr "Помилка SSL: не вдалося перевірити сертифікат"
+
+#: aperion/webutils.py:41
+msgid "unexpected crash"
+msgstr "непередбачена помилка"
+
+#: aperion/webutils.py:48
+msgid "HTTP error"
+msgstr "помилка HTTP"
+
+#: aperion/webutils.py:49
+msgid "HTTP connection error"
+msgstr "помилка з'єднання HTTP"
+
+#: aperion/webutils.py:55
+msgid "proxy error"
+msgstr "помилка проксі"
+
+#: aperion/webutils.py:56
+msgid "CAPTCHA"
+msgstr "CAPTCHA"
+
+#: aperion/webutils.py:57
+msgid "too many requests"
+msgstr "забагато запитів"
+
+#: aperion/webutils.py:58
+msgid "access denied"
+msgstr "доступ заборонено"
+
+#: aperion/webutils.py:59
+msgid "server API error"
+msgstr "помилка API сервера"
+
+#: aperion/webutils.py:78
+msgid "Suspended"
+msgstr "Призупинено"
+
+#: aperion/webutils.py:313
+#, python-brace-format
+msgid "{minutes} minute(s) ago"
+msgstr "{minutes} хвилин тому"
+
+#: aperion/webutils.py:314
+#, python-brace-format
+msgid "{hours} hour(s), {minutes} minute(s) ago"
+msgstr "{hours} годин, {minutes} хвилин тому"
+
+#: aperion/answerers/random.py:69
+msgid "Generate different random values"
+msgstr "Створити різні випадкові значення"
+
+#: aperion/answerers/statistics.py:36
+#, python-brace-format
+msgid "Compute {func} of the arguments"
+msgstr "Обчислити {func} від аргументів"
+
+#: aperion/engines/openstreetmap.py:158
+msgid "Show route in map .."
+msgstr "Показати маршрут на карті ..."
+
+#: aperion/engines/pdbe.py:96
+#, python-brace-format
+msgid "{title} (OBSOLETE)"
+msgstr "{title} (ЗАСТАРІЛО)"
+
+#: aperion/engines/pdbe.py:103
+msgid "This entry has been superseded by"
+msgstr "Цей запис було замінено на"
+
+#: aperion/engines/qwant.py:293
+msgid "Channel"
+msgstr "Канал"
+
+#: aperion/engines/radio_browser.py:153
+msgid "bitrate"
+msgstr "бітрейт"
+
+#: aperion/engines/radio_browser.py:154
+msgid "votes"
+msgstr "голоси"
+
+#: aperion/engines/radio_browser.py:155
+msgid "clicks"
+msgstr "кліки"
+
+#: aperion/engines/seekr.py:193 aperion/engines/yummly.py:71
+#: aperion/engines/zlibrary.py:137
+msgid "Language"
+msgstr "Мова"
+
+#: aperion/engines/semantic_scholar.py:101
+#, python-brace-format
+msgid ""
+"{numCitations} citations from the year {firstCitationVelocityYear} to "
+"{lastCitationVelocityYear}"
+msgstr ""
+"{numCitations} цитувань з {firstCitationVelocityYear} по "
+"{lastCitationVelocityYear} рік"
+
+#: aperion/engines/tineye.py:48
+msgid ""
+"Could not read that image url. This may be due to an unsupported file "
+"format. TinEye only supports images that are JPEG, PNG, GIF, BMP, TIFF or"
+" WebP."
+msgstr ""
+"Не вдалося зчитати зображення за вказаним URL. Можливо, тому що формат "
+"цього зображення не підтримується. TinEye підтримує зображення у форматах"
+" JPEG, PNG, GIF, BMP, TIFF та WebP."
+
+#: aperion/engines/tineye.py:54
+msgid ""
+"The image is too simple to find matches. TinEye requires a basic level of"
+" visual detail to successfully identify matches."
+msgstr ""
+"Зображення занадто просте, щоб знайти збіги. TinEye вимагає базового "
+"рівня візуальної деталізації для успішного визначення збігів."
+
+#: aperion/engines/tineye.py:59
+msgid "The image could not be downloaded."
+msgstr "Зображення неможливо завантажити."
+
+#: aperion/engines/zlibrary.py:138
+msgid "Book rating"
+msgstr "Рейтинг книги"
+
+#: aperion/engines/zlibrary.py:139
+msgid "File quality"
+msgstr "Якість файлу"
+
+#: aperion/plugins/ahmia_filter.py:32
+msgid "Ahmia blacklist"
+msgstr "Чорний список Ahmia"
+
+#: aperion/plugins/ahmia_filter.py:33
+msgid "Filter out onion results that appear in Ahmia's blacklist."
+msgstr "Відфільтрувати onion-адреси, внесені до чорного списку Ahmia."
+
+#: aperion/plugins/calculator.py:38
+msgid "Basic Calculator"
+msgstr "Простий калькулятор"
+
+#: aperion/plugins/calculator.py:39
+msgid "Calculate mathematical expressions via the search bar"
+msgstr "Обчислювати математичні вирази в рядку пошуку"
+
+#: aperion/plugins/hash_plugin.py:34
+msgid "Hash plugin"
+msgstr "Плагін Hash"
+
+#: aperion/plugins/hash_plugin.py:36
+msgid ""
+"Converts strings to different hash digests. Available functions: md5, "
+"sha1, sha224, sha256, sha384, sha512."
+msgstr ""
+"Конвертує рядки у різні хеш-дайджести. Доступні функції: md5, sha1, "
+"sha224, sha256, sha384, sha512."
+
+#: aperion/plugins/hash_plugin.py:64
+msgid "hash digest"
+msgstr "геш-послідовність"
+
+#: aperion/plugins/hostnames.py:123
+msgid "Hostnames plugin"
+msgstr "Плагін Hostnames"
+
+#: aperion/plugins/hostnames.py:124
+msgid "Rewrite hostnames and remove or prioritize results based on the hostname"
+msgstr ""
+"Перепишіть імена хостів і видаляйте результати або визначайте їх "
+"пріоритетність на основі імені хоста"
+
+#: aperion/plugins/oa_doi_rewrite.py:55
+msgid "Open Access DOI rewrite"
+msgstr "Переадресація на Open Access DOI"
+
+#: aperion/plugins/oa_doi_rewrite.py:56
+msgid ""
+"Avoid paywalls by redirecting to open-access versions of publications "
+"when available"
+msgstr ""
+"Уникайте платіжних каналів шляхом переадресації на версії публікацій з "
+"відкритим доступом, коли це можливо"
+
+#: aperion/plugins/self_info.py:37
+msgid "Self Information"
+msgstr "Інформація про себе"
+
+#: aperion/plugins/self_info.py:39
+msgid ""
+"Displays your IP if the query is \"ip\" and your user agent if the query "
+"is \"user-agent\"."
+msgstr ""
+"Показує вашу IP-адресу, якщо запит «ip», і ваш User-Agent, якщо запит "
+"«user-agent»."
+
+#: aperion/plugins/self_info.py:52
+msgid "Your IP is: "
+msgstr "Ваша IP-адреса: "
+
+#: aperion/plugins/self_info.py:55
+msgid "Your user-agent is: "
+msgstr "Ваш User-Agent: "
+
+#: aperion/plugins/tor_check.py:42
+msgid "Tor check plugin"
+msgstr "Плагін перевірки Tor"
+
+#: aperion/plugins/tor_check.py:44
+msgid ""
+"This plugin checks if the address of the request is a Tor exit-node, and "
+"informs the user if it is; like check.torproject.org, but from aperion."
+msgstr ""
+"Цей плагін перевіряє, чи належить адреса запиту вихідному вузлу Tor і, "
+"якщо так, інформує користувача; як check.torproject.org, але від aperion."
+
+#: aperion/plugins/tor_check.py:65
+msgid "Could not download the list of Tor exit-nodes from"
+msgstr "Не вдалося завантажити список вихідних вузлів Tor із"
+
+#: aperion/plugins/tor_check.py:72
+msgid "You are using Tor and it looks like you have the external IP address"
+msgstr "Ви використовуєте Tor, і виглядає так, що у вас зовнішня IP-адреса"
+
+#: aperion/plugins/tor_check.py:76
+msgid "You are not using Tor and you have the external IP address"
+msgstr "Ви не використовуєте Tor, і у вас зовнішня IP-адреса"
+
+#: aperion/plugins/tracker_url_remover.py:35
+msgid "Tracker URL remover"
+msgstr "Видалення URL-адреси трекера"
+
+#: aperion/plugins/tracker_url_remover.py:36
+msgid "Remove trackers arguments from the returned URL"
+msgstr "Вилучіть аргументи трекера з поверненої URL-адреси"
+
+#: aperion/plugins/unit_converter.py:49
+msgid "Unit converter plugin"
+msgstr "Плагін-конвертер одиниць вимірювання"
+
+#: aperion/plugins/unit_converter.py:50
+msgid "Convert between units"
+msgstr "Конвертувати одиниці"
+
+#: aperion/result_types/answer.py:224
+#, python-brace-format
+msgid "{location}: {temperature}, {condition}"
+msgstr "{location}: {temperature}, {condition}"
+
+#: aperion/templates/simple/404.html:4
+msgid "Page not found"
+msgstr "Сторінку не знайдено"
+
+#: aperion/templates/simple/404.html:6
+#, python-format
+msgid "Go to %(search_page)s."
+msgstr "Перейти до %(search_page)s."
+
+#: aperion/templates/simple/404.html:6
+msgid "search page"
+msgstr "сторінки пошуку"
+
+#: aperion/templates/simple/base.html:53
+msgid "Donate"
+msgstr "Пожертви"
+
+#: aperion/templates/simple/base.html:57
+#: aperion/templates/simple/preferences.html:156
+msgid "Preferences"
+msgstr "Опції"
+
+#: aperion/templates/simple/base.html:67
+msgid "Powered by"
+msgstr "Використовується"
+
+#: aperion/templates/simple/base.html:67
+msgid "a privacy-respecting, open metasearch engine"
+msgstr "відкрита пошукова система, що поважає конфіденційність"
+
+#: aperion/templates/simple/base.html:68
+#: aperion/templates/simple/result_templates/packages.html:59
+msgid "Source code"
+msgstr "Вихідний код"
+
+#: aperion/templates/simple/base.html:69
+msgid "Issue tracker"
+msgstr "Трекер помилок"
+
+#: aperion/templates/simple/base.html:70 aperion/templates/simple/stats.html:18
+msgid "Engine stats"
+msgstr "Статистика пошукової системи"
+
+#: aperion/templates/simple/base.html:72
+msgid "Public instances"
+msgstr "Публічні інстанси"
+
+#: aperion/templates/simple/base.html:75
+msgid "Privacy policy"
+msgstr "Політика приватності"
+
+#: aperion/templates/simple/base.html:78
+msgid "Contact instance maintainer"
+msgstr "Зв'язатися з власником інстансу"
+
+#: aperion/templates/simple/categories.html:30
+msgid "Click on the magnifier to perform search"
+msgstr "Натисніть лупу, щоб виконати пошук"
+
+#: aperion/templates/simple/macros.html:40
+msgid "Length"
+msgstr "Довжина"
+
+#: aperion/templates/simple/macros.html:41
+msgid "Views"
+msgstr "Перегляди"
+
+#: aperion/templates/simple/macros.html:42
+#: aperion/templates/simple/result_templates/files.html:34
+#: aperion/templates/simple/result_templates/images.html:19
+#: aperion/templates/simple/result_templates/paper.html:6
+msgid "Author"
+msgstr "Автор"
+
+#: aperion/templates/simple/macros.html:50
+msgid "cached"
+msgstr "кеш"
+
+#: aperion/templates/simple/new_issue.html:64
+msgid "Start submitting a new issue on GitHub"
+msgstr "Створення нового повідомлення про проблему на GitHub"
+
+#: aperion/templates/simple/new_issue.html:66
+msgid "Please check for existing bugs about this engine on GitHub"
+msgstr "Будь ласка, перевірте наявність недоліку цього рушія на GitHub"
+
+#: aperion/templates/simple/new_issue.html:69
+msgid "I confirm there is no existing bug about the issue I encounter"
+msgstr ""
+"Я підтверджую, що не існує помилки, пов'язаної з проблемою, що мені "
+"зустрілася"
+
+#: aperion/templates/simple/new_issue.html:71
+msgid "If this is a public instance, please specify the URL in the bug report"
+msgstr "Якщо це публічний інстанс, укажіть URL-адресу у звіті про помилку"
+
+#: aperion/templates/simple/new_issue.html:72
+msgid "Submit a new issue on Github including the above information"
+msgstr ""
+"Надіслати нове повідомлення про проблему на GitHub, включаючи вказану "
+"вище інформацію"
+
+#: aperion/templates/simple/preferences.html:65
+msgid "No HTTPS"
+msgstr "Без HTTPS"
+
+#: aperion/templates/simple/elements/engines_msg.html:14
+#: aperion/templates/simple/preferences.html:69
+#: aperion/templates/simple/preferences.html:70
+msgid "View error logs and submit a bug report"
+msgstr "Перегляньте журнали помилок і надішліть звіт про недолік"
+
+#: aperion/templates/simple/preferences.html:74
+msgid "!bang for this engine"
+msgstr "!bang для цієї пошукової системи"
+
+#: aperion/templates/simple/preferences.html:80
+msgid "!bang for its categories"
+msgstr "!bang для її категорій"
+
+#: aperion/templates/simple/preferences.html:102
+#: aperion/templates/simple/stats.html:64
+msgid "Median"
+msgstr "Медіана"
+
+#: aperion/templates/simple/preferences.html:103
+#: aperion/templates/simple/stats.html:70
+msgid "P80"
+msgstr "P80"
+
+#: aperion/templates/simple/preferences.html:104
+#: aperion/templates/simple/stats.html:76
+msgid "P95"
+msgstr "P95"
+
+#: aperion/templates/simple/preferences.html:136
+msgid "Failed checker test(s): "
+msgstr "Невдалі тести: "
+
+#: aperion/templates/simple/preferences.html:138
+msgid "Errors:"
+msgstr "Помилки:"
+
+#: aperion/templates/simple/preferences.html:163
+msgid "General"
+msgstr "Загальні"
+
+#: aperion/templates/simple/preferences.html:166
+msgid "Default categories"
+msgstr "Типові категорії"
+
+#: aperion/templates/simple/preferences.html:194
+msgid "User interface"
+msgstr "Інтерфейс користувача"
+
+#: aperion/templates/simple/preferences.html:217
+msgid "Privacy"
+msgstr "Конфіденційність"
+
+#: aperion/templates/simple/preferences.html:232
+msgid "Engines"
+msgstr "Пошукові системи"
+
+#: aperion/templates/simple/preferences.html:234
+msgid "Currently used search engines"
+msgstr "Пошукові системи, які використовуються"
+
+#: aperion/templates/simple/preferences.html:243
+msgid "Special Queries"
+msgstr "Особливі запити"
+
+#: aperion/templates/simple/preferences.html:251
+msgid "Cookies"
+msgstr "Cookie-файли"
+
+#: aperion/templates/simple/results.html:30
+msgid "Number of results"
+msgstr "Число результатів"
+
+#: aperion/templates/simple/results.html:36
+msgid "Info"
+msgstr "Інфо"
+
+#: aperion/templates/simple/results.html:77
+msgid "Back to top"
+msgstr "Доверху"
+
+#: aperion/templates/simple/results.html:95
+msgid "Previous page"
+msgstr "Попередня сторінка"
+
+#: aperion/templates/simple/results.html:113
+msgid "Next page"
+msgstr "Наступна сторінка"
+
+#: aperion/templates/simple/search.html:3
+msgid "Display the front page"
+msgstr "Показати головну сторінку"
+
+#: aperion/templates/simple/search.html:9
+#: aperion/templates/simple/simple_search.html:5
+msgid "Search for..."
+msgstr "Шукати..."
+
+#: aperion/templates/simple/search.html:10
+#: aperion/templates/simple/simple_search.html:6
+msgid "clear"
+msgstr "очистити"
+
+#: aperion/templates/simple/search.html:11
+#: aperion/templates/simple/simple_search.html:7
+msgid "search"
+msgstr "шукати"
+
+#: aperion/templates/simple/stats.html:21
+msgid "There is currently no data available. "
+msgstr "В даний час немає доступних даних. "
+
+#: aperion/templates/simple/preferences/engines.html:24
+#: aperion/templates/simple/stats.html:25
+msgid "Engine name"
+msgstr "Назва пошукової системи"
+
+#: aperion/templates/simple/stats.html:26
+msgid "Scores"
+msgstr "Влучань"
+
+#: aperion/templates/simple/stats.html:27
+msgid "Result count"
+msgstr "Кількість результатів"
+
+#: aperion/templates/simple/elements/engines_msg.html:7
+#: aperion/templates/simple/preferences/engines.html:31
+#: aperion/templates/simple/stats.html:28
+msgid "Response time"
+msgstr "Час відгуку"
+
+#: aperion/templates/simple/preferences/engines.html:35
+#: aperion/templates/simple/stats.html:29
+msgid "Reliability"
+msgstr "Надійність"
+
+#: aperion/templates/simple/stats.html:59
+msgid "Total"
+msgstr "Всього"
+
+#: aperion/templates/simple/stats.html:60
+msgid "HTTP"
+msgstr "HTTP"
+
+#: aperion/templates/simple/stats.html:61
+msgid "Processing"
+msgstr "Обробляється"
+
+#: aperion/templates/simple/stats.html:99
+msgid "Warnings"
+msgstr "Попередження"
+
+#: aperion/templates/simple/stats.html:99
+msgid "Errors and exceptions"
+msgstr "Помилки і винятки"
+
+#: aperion/templates/simple/stats.html:105
+msgid "Exception"
+msgstr "Виняток"
+
+#: aperion/templates/simple/stats.html:107
+msgid "Message"
+msgstr "Повідомлення"
+
+#: aperion/templates/simple/stats.html:109
+msgid "Percentage"
+msgstr "Відсоток"
+
+#: aperion/templates/simple/stats.html:111
+msgid "Parameter"
+msgstr "Параметр"
+
+#: aperion/templates/simple/result_templates/files.html:36
+#: aperion/templates/simple/stats.html:119
+msgid "Filename"
+msgstr "Назва файлу"
+
+#: aperion/templates/simple/stats.html:120
+msgid "Function"
+msgstr "Функція"
+
+#: aperion/templates/simple/stats.html:121
+msgid "Code"
+msgstr "Код"
+
+#: aperion/templates/simple/stats.html:128
+msgid "Checker"
+msgstr "Перевірник"
+
+#: aperion/templates/simple/stats.html:131
+msgid "Failed test"
+msgstr "Провалений тест"
+
+#: aperion/templates/simple/stats.html:132
+msgid "Comment(s)"
+msgstr "Коментар(і)"
+
+#: aperion/templates/simple/answer/translations.html:12
+#: aperion/templates/simple/preferences/answerers.html:8
+msgid "Examples"
+msgstr "Приклади"
+
+#: aperion/templates/simple/answer/translations.html:21
+msgid "Definitions"
+msgstr "Визначення"
+
+#: aperion/templates/simple/answer/translations.html:30
+msgid "Synonyms"
+msgstr "Синоніми"
+
+#: aperion/templates/simple/answer/weather.html:19
+msgid "Feels Like"
+msgstr "Відчувається як"
+
+#: aperion/templates/simple/elements/answers.html:2
+msgid "Answers"
+msgstr "Відповіді"
+
+#: aperion/templates/simple/elements/apis.html:3
+msgid "Download results"
+msgstr "Завантажити результати"
+
+#: aperion/templates/simple/elements/corrections.html:2
+msgid "Try searching for:"
+msgstr "Спробуйте шукати:"
+
+#: aperion/templates/simple/elements/engines_msg.html:4
+msgid "Messages from the search engines"
+msgstr "Повідомлення від пошукових систем"
+
+#: aperion/templates/simple/elements/engines_msg.html:7
+msgid "seconds"
+msgstr "секунд"
+
+#: aperion/templates/simple/elements/search_url.html:3
+msgid "Search URL"
+msgstr "Посилання на пошук"
+
+#: aperion/templates/simple/elements/search_url.html:4
+#: aperion/templates/simple/preferences/cookies.html:54
+msgid "Copied"
+msgstr "Скопійовано"
+
+#: aperion/templates/simple/elements/search_url.html:4
+#: aperion/templates/simple/preferences/cookies.html:54
+msgid "Copy"
+msgstr "Копіювати"
+
+#: aperion/templates/simple/elements/suggestions.html:3
+msgid "Suggestions"
+msgstr "Пропозиції"
+
+#: aperion/templates/simple/filters/languages.html:1
+#: aperion/templates/simple/preferences/language.html:2
+msgid "Search language"
+msgstr "Мова пошуку"
+
+#: aperion/templates/simple/filters/languages.html:4
+#: aperion/templates/simple/preferences/language.html:7
+msgid "Default language"
+msgstr "Стандартна мова"
+
+#: aperion/templates/simple/filters/languages.html:8
+#: aperion/templates/simple/preferences/language.html:11
+msgid "Auto-detect"
+msgstr "Автовизначення"
+
+#: aperion/templates/simple/filters/safesearch.html:1
+#: aperion/templates/simple/filters/safesearch.html:2
+#: aperion/templates/simple/filters/safesearch.html:3
+#: aperion/templates/simple/filters/safesearch.html:4
+#: aperion/templates/simple/preferences/engines.html:27
+#: aperion/templates/simple/preferences/safesearch.html:2
+msgid "SafeSearch"
+msgstr "Безпечний пошук"
+
+#: aperion/templates/simple/filters/safesearch.html:2
+#: aperion/templates/simple/preferences/safesearch.html:7
+msgid "Strict"
+msgstr "Строгий"
+
+#: aperion/templates/simple/filters/safesearch.html:3
+#: aperion/templates/simple/preferences/safesearch.html:11
+msgid "Moderate"
+msgstr "Помірний"
+
+#: aperion/templates/simple/filters/safesearch.html:4
+#: aperion/templates/simple/preferences/safesearch.html:15
+msgid "None"
+msgstr "Вимкнений"
+
+#: aperion/templates/simple/filters/time_range.html:1
+#: aperion/templates/simple/preferences/engines.html:28
+msgid "Time range"
+msgstr "Часовий діапазон"
+
+#: aperion/templates/simple/filters/time_range.html:3
+msgid "Anytime"
+msgstr "За весь час"
+
+#: aperion/templates/simple/filters/time_range.html:6
+msgid "Last day"
+msgstr "За останній день"
+
+#: aperion/templates/simple/filters/time_range.html:9
+msgid "Last week"
+msgstr "За останній тиждень"
+
+#: aperion/templates/simple/filters/time_range.html:12
+msgid "Last month"
+msgstr "За останній місяць"
+
+#: aperion/templates/simple/filters/time_range.html:15
+msgid "Last year"
+msgstr "За останній рік"
+
+#: aperion/templates/simple/messages/no_cookies.html:3
+msgid "Information!"
+msgstr "Інформація!"
+
+#: aperion/templates/simple/messages/no_cookies.html:4
+msgid "currently, there are no cookies defined."
+msgstr "в даний час cookie-файли не встановлені."
+
+#: aperion/templates/simple/messages/no_results.html:6
+msgid "Sorry!"
+msgstr "Вибачте!"
+
+#: aperion/templates/simple/messages/no_results.html:12
+msgid "No results were found. You can try to:"
+msgstr "Результатів не знайдено. Ви можете спробувати:"
+
+#: aperion/templates/simple/messages/no_results.html:14
+msgid "There are no more results. You can try to:"
+msgstr "Результатів більше немає. Ви можете спробувати:"
+
+#: aperion/templates/simple/messages/no_results.html:19
+msgid "Refresh the page."
+msgstr "Оновити сторінку."
+
+#: aperion/templates/simple/messages/no_results.html:20
+msgid "Search for another query or select another category (above)."
+msgstr "Шукати за іншим запитом або вибрати іншу категорію (вгорі)."
+
+#: aperion/templates/simple/messages/no_results.html:21
+msgid "Change the search engine used in the preferences:"
+msgstr "Змінити пошукову систему, вказану в налаштуваннях:"
+
+#: aperion/templates/simple/messages/no_results.html:22
+msgid "Switch to another instance:"
+msgstr "Перемкнути інстанс aperion:"
+
+#: aperion/templates/simple/messages/no_results.html:24
+msgid "Search for another query or select another category."
+msgstr "Шукати за іншим запитом або вибрати іншу категорію."
+
+#: aperion/templates/simple/messages/no_results.html:25
+msgid "Go back to the previous page using the previous page button."
+msgstr "Повернутися до попередньої сторінки, натиснувши «Попередня сторінка»."
+
+#: aperion/templates/simple/preferences/answerers.html:4
+#: aperion/templates/simple/preferences/engines.html:23
+msgid "Allow"
+msgstr "Дозволити"
+
+#: aperion/templates/simple/preferences/answerers.html:5
+msgid "Keywords (first word in query)"
+msgstr "Ключові слова (перше слово в запиті)"
+
+#: aperion/templates/simple/preferences/answerers.html:6
+#: aperion/templates/simple/result_templates/packages.html:7
+msgid "Name"
+msgstr "Назва"
+
+#: aperion/templates/simple/preferences/answerers.html:7
+msgid "Description"
+msgstr "Опис"
+
+#: aperion/templates/simple/preferences/answerers.html:13
+msgid "This is the list of aperion's instant answering modules."
+msgstr "Модулі aperion з миттєвою відповіддю."
+
+#: aperion/templates/simple/preferences/answerers.html:29
+msgid "This is the list of plugins."
+msgstr "Це список плагінів."
+
+#: aperion/templates/simple/preferences/autocomplete.html:2
+msgid "Autocomplete"
+msgstr "Автозаповнення"
+
+#: aperion/templates/simple/preferences/autocomplete.html:15
+msgid "Show possible queries as you type"
+msgstr "Показувати можливі запити під час введення"
+
+#: aperion/templates/simple/preferences/center_alignment.html:2
+msgid "Center Alignment"
+msgstr "Центрування"
+
+#: aperion/templates/simple/preferences/center_alignment.html:14
+msgid "Display results in the center of the page (Oscar layout)."
+msgstr "Показувати результати в центрі сторінки (макет «Oscar»)."
+
+#: aperion/templates/simple/preferences/cookies.html:2
+msgid ""
+"This is the list of cookies and their values aperion is storing on your "
+"computer."
+msgstr ""
+"Список файлів cookie та їх значень, які aperion зберігає на вашому "
+"комп’ютері."
+
+#: aperion/templates/simple/preferences/cookies.html:3
+msgid "With this list, you can assess the transparency of aperion."
+msgstr "За допомогою цього списку ви можете оцінити прозорість aperion."
+
+#: aperion/templates/simple/preferences/cookies.html:9
+msgid "Cookie name"
+msgstr "Ім'я cookie"
+
+#: aperion/templates/simple/preferences/cookies.html:10
+msgid "Value"
+msgstr "Значення"
+
+#: aperion/templates/simple/preferences/cookies.html:23
+msgid "Search URL of the currently saved preferences"
+msgstr "URL-адреса зі збереженими налаштуваннями"
+
+#: aperion/templates/simple/preferences/cookies.html:32
+msgid ""
+"Note: specifying custom settings in the search URL can reduce privacy by "
+"leaking data to the clicked result sites."
+msgstr ""
+"Увага: використання URL з параметрами може призвести до витоку даних на "
+"сайти, відкриті з результатів пошуку."
+
+#: aperion/templates/simple/preferences/cookies.html:35
+msgid "URL to restore your preferences in another browser"
+msgstr "URL для відновлення Ваших налаштувань в іншому оглядачі"
+
+#: aperion/templates/simple/preferences/cookies.html:43
+msgid ""
+"A URL containing your preferences. This URL can be used to restore your "
+"settings on a different device."
+msgstr ""
+"URL-адреса, що містить Ваші налаштування. Цю URL-адресу можна використати"
+" для відновлення налаштувань на іншому пристрої."
+
+#: aperion/templates/simple/preferences/cookies.html:46
+msgid "Copy preferences hash"
+msgstr "Копіювати хеш налаштувань"
+
+#: aperion/templates/simple/preferences/cookies.html:57
+msgid "Insert copied preferences hash (without URL) to restore"
+msgstr "Вставте скопійований хеш налаштувань (без URL-адреси), щоб відновити"
+
+#: aperion/templates/simple/preferences/cookies.html:59
+msgid "Preferences hash"
+msgstr "Хеш налаштувань"
+
+#: aperion/templates/simple/preferences/doi_resolver.html:1
+msgid "Digital Object Identifier (DOI)"
+msgstr "Цифровий ідентифікатор об'єкта (DOI)"
+
+#: aperion/templates/simple/preferences/doi_resolver.html:6
+msgid "Open Access DOI resolver"
+msgstr "Джерело Open Access DOI"
+
+#: aperion/templates/simple/preferences/doi_resolver.html:18
+msgid "Select service used by DOI rewrite"
+msgstr "Виберіть послугу, яку використовує DOI rewrite"
+
+#: aperion/templates/simple/preferences/engines.html:9
+msgid ""
+"This tab does not exist in the user interface, but you can search with "
+"these engines via !bangs."
+msgstr ""
+"Такої вкладки немає в інтерфейсі користувача, але ви можете шукати в цих "
+"системах за допомогою !bangs."
+
+#: aperion/templates/simple/preferences/engines.html:15
+msgid "Enable all"
+msgstr "Увімкнути все"
+
+#: aperion/templates/simple/preferences/engines.html:16
+msgid "Disable all"
+msgstr "Вимкнути все"
+
+#: aperion/templates/simple/preferences/engines.html:25
+msgid "!bang"
+msgstr "!bang"
+
+#: aperion/templates/simple/preferences/engines.html:26
+msgid "Supports selected language"
+msgstr "Підтримка обраної мови"
+
+#: aperion/templates/simple/preferences/engines.html:29
+msgid "Weight"
+msgstr "Вага"
+
+#: aperion/templates/simple/preferences/engines.html:33
+msgid "Max time"
+msgstr "Максимальний час"
+
+#: aperion/templates/simple/preferences/favicon.html:2
+msgid "Favicon Resolver"
+msgstr "Обробник значків"
+
+#: aperion/templates/simple/preferences/favicon.html:15
+msgid "Display favicons near search results"
+msgstr "Показувати значки біля результатів пошуку"
+
+#: aperion/templates/simple/preferences/footer.html:2
+msgid ""
+"These settings are stored in your cookies. This allows us not to store "
+"this data about you."
+msgstr ""
+"Ці налаштування зберігаються у файлах cookie. Таким чином ми маємо змогу "
+"не зберігати дані про вас."
+
+#: aperion/templates/simple/preferences/footer.html:3
+msgid "These cookies serve your sole convenience; we don't use them to track you."
+msgstr ""
+"Файли cookie необхідні виключно для вашої зручності; ми не використовуємо"
+" їх, щоб відстежити вас."
+
+#: aperion/templates/simple/preferences/footer.html:6
+msgid "Save"
+msgstr "Зберегти"
+
+#: aperion/templates/simple/preferences/footer.html:9
+msgid "Reset defaults"
+msgstr "Відновити стандартні налаштування"
+
+#: aperion/templates/simple/preferences/footer.html:13
+msgid "Back"
+msgstr "Назад"
+
+#: aperion/templates/simple/preferences/hotkeys.html:2
+msgid "Hotkeys"
+msgstr "Гарячі клавіші"
+
+#: aperion/templates/simple/preferences/hotkeys.html:13
+msgid "Vim-like"
+msgstr "Вигляд як Vim"
+
+#: aperion/templates/simple/preferences/hotkeys.html:18
+msgid ""
+"Navigate search results with hotkeys (JavaScript required). Press \"h\" "
+"key on main or result page to get help."
+msgstr ""
+"Переміщуйтеся в результатах пошуку за допомогою гарячих клавіш (потрібен "
+"JavaScript). Натисніть клавішу «h» на головній сторінці або сторінці "
+"результатів, щоб прочитати довідку."
+
+#: aperion/templates/simple/preferences/image_proxy.html:2
+msgid "Image proxy"
+msgstr "Проксі для зображень"
+
+#: aperion/templates/simple/preferences/image_proxy.html:14
+msgid "Proxy image results through aperion"
+msgstr "Результати пошуку зображень через проксі aperion"
+
+#: aperion/templates/simple/preferences/infinite_scroll.html:2
+msgid "Infinite scroll"
+msgstr "Нескінченна прокрутка"
+
+#: aperion/templates/simple/preferences/infinite_scroll.html:14
+msgid ""
+"Automatically load the next page when scrolling to the bottom of the "
+"current page"
+msgstr ""
+"Автоматичне завантаження наступної сторінки при прокручуванні поточної до"
+" кінця"
+
+#: aperion/templates/simple/preferences/language.html:24
+msgid "What language do you prefer for search?"
+msgstr "Якій мові ви віддаєте перевагу для пошуку?"
+
+#: aperion/templates/simple/preferences/language.html:25
+msgid "Choose Auto-detect to let aperion detect the language of your query."
+msgstr "Виберіть автовизначення, щоб aperion сам визначав мову вашого запиту."
+
+#: aperion/templates/simple/preferences/method.html:2
+msgid "HTTP Method"
+msgstr "Метод HTTP"
+
+#: aperion/templates/simple/preferences/method.html:14
+msgid "Change how forms are submitted"
+msgstr "Змінити спосіб надсилання форм"
+
+#: aperion/templates/simple/preferences/query_in_title.html:2
+msgid "Query in the page's title"
+msgstr "Пошуковий запит у заголовку сторінки"
+
+#: aperion/templates/simple/preferences/query_in_title.html:14
+msgid ""
+"When enabled, the result page's title contains your query. Your browser "
+"can record this title"
+msgstr ""
+"Якщо ввімкнено, заголовок сторінки результатів містить ваш пошуковий "
+"запит. Ваш браузер може зберігати цю назву"
+
+#: aperion/templates/simple/preferences/results_on_new_tab.html:2
+msgid "Results in new tabs"
+msgstr "Результати в нових вкладках"
+
+#: aperion/templates/simple/preferences/results_on_new_tab.html:14
+msgid "Open result links in new browser tabs"
+msgstr "Відкривати посилання на результати в нових вкладках браузера"
+
+#: aperion/templates/simple/preferences/safesearch.html:20
+msgid "Filter content"
+msgstr "Фільтр контенту"
+
+#: aperion/templates/simple/preferences/search_on_category_select.html:2
+msgid "Search on category select"
+msgstr "Пошук при виборі категорії"
+
+#: aperion/templates/simple/preferences/search_on_category_select.html:14
+msgid ""
+"Perform a search immediately if a category is selected. Disable to select"
+" multiple categories"
+msgstr ""
+"Шукати негайно, якщо вибрано категорію. Вимкніть, якщо хочете вибрати "
+"кілька категорій"
+
+#: aperion/templates/simple/preferences/theme.html:2
+msgid "Theme"
+msgstr "Тема"
+
+#: aperion/templates/simple/preferences/theme.html:14
+msgid "Change the layout of aperion"
+msgstr "Змінити макет aperion"
+
+#: aperion/templates/simple/preferences/theme.html:19
+msgid "Theme style"
+msgstr "Стиль теми"
+
+#: aperion/templates/simple/preferences/theme.html:31
+msgid "Choose auto to follow your browser settings"
+msgstr "Виберіть «автоматично» для використання налаштувань вашого браузера"
+
+#: aperion/templates/simple/preferences/tokens.html:2
+msgid "Engine tokens"
+msgstr "Токени пошукової системи"
+
+#: aperion/templates/simple/preferences/tokens.html:9
+msgid "Access tokens for private engines"
+msgstr "Токени доступу для приватних пошукових систем"
+
+#: aperion/templates/simple/preferences/ui_locale.html:2
+msgid "Interface language"
+msgstr "Мова інтерфейсу"
+
+#: aperion/templates/simple/preferences/ui_locale.html:14
+msgid "Change the language of the layout"
+msgstr "Змінити мову сайту"
+
+#: aperion/templates/simple/preferences/urlformatting.html:2
+msgid "URL formatting"
+msgstr "Формат URL-адрес"
+
+#: aperion/templates/simple/preferences/urlformatting.html:8
+msgid "Pretty"
+msgstr "Компактний"
+
+#: aperion/templates/simple/preferences/urlformatting.html:13
+msgid "Full"
+msgstr "Повний"
+
+#: aperion/templates/simple/preferences/urlformatting.html:18
+msgid "Host"
+msgstr "Хост"
+
+#: aperion/templates/simple/preferences/urlformatting.html:23
+msgid "Change result URL formatting"
+msgstr "Змінити форматування URL-адрес результатів"
+
+#: aperion/templates/simple/result_templates/code.html:13
+msgid "repo"
+msgstr "репозиторій"
+
+#: aperion/templates/simple/result_templates/default.html:6
+#: aperion/templates/simple/result_templates/files.html:8
+#: aperion/templates/simple/result_templates/files.html:11
+msgid "show media"
+msgstr "показати медіа"
+
+#: aperion/templates/simple/result_templates/default.html:6
+#: aperion/templates/simple/result_templates/files.html:8
+msgid "hide media"
+msgstr "приховати медіа"
+
+#: aperion/templates/simple/result_templates/default.html:14
+#: aperion/templates/simple/result_templates/videos.html:14
+msgid "This site did not provide any description."
+msgstr "Цей сайт не надає опису."
+
+#: aperion/templates/simple/result_templates/files.html:38
+#: aperion/templates/simple/result_templates/images.html:22
+#: aperion/templates/simple/result_templates/torrent.html:18
+msgid "Filesize"
+msgstr "Розмір файлу"
+
+#: aperion/templates/simple/result_templates/files.html:40
+msgid "Date"
+msgstr "Дата"
+
+#: aperion/templates/simple/result_templates/files.html:42
+#: aperion/templates/simple/result_templates/paper.html:24
+msgid "Type"
+msgstr "Тип"
+
+#: aperion/templates/simple/result_templates/images.html:20
+msgid "Resolution"
+msgstr "Роздільна здатність"
+
+#: aperion/templates/simple/result_templates/images.html:21
+msgid "Format"
+msgstr "Формат"
+
+#: aperion/templates/simple/result_templates/images.html:24
+msgid "Engine"
+msgstr "Рушій"
+
+#: aperion/templates/simple/result_templates/images.html:25
+msgid "View source"
+msgstr "Переглянути джерело"
+
+#: aperion/templates/simple/result_templates/map.html:12
+msgid "address"
+msgstr "адреса"
+
+#: aperion/templates/simple/result_templates/map.html:43
+msgid "show map"
+msgstr "показати карту"
+
+#: aperion/templates/simple/result_templates/map.html:43
+msgid "hide map"
+msgstr "приховати карту"
+
+#: aperion/templates/simple/result_templates/packages.html:12
+msgid "Version"
+msgstr "Версія"
+
+#: aperion/templates/simple/result_templates/packages.html:18
+msgid "Maintainer"
+msgstr "Підтримка"
+
+#: aperion/templates/simple/result_templates/packages.html:24
+msgid "Updated at"
+msgstr "Оновлено о"
+
+#: aperion/templates/simple/result_templates/packages.html:30
+#: aperion/templates/simple/result_templates/paper.html:25
+msgid "Tags"
+msgstr "Теги"
+
+#: aperion/templates/simple/result_templates/packages.html:36
+msgid "Popularity"
+msgstr "Популярність"
+
+#: aperion/templates/simple/result_templates/packages.html:42
+msgid "License"
+msgstr "Ліцензія"
+
+#: aperion/templates/simple/result_templates/packages.html:52
+msgid "Project"
+msgstr "Проєкт"
+
+#: aperion/templates/simple/result_templates/packages.html:55
+msgid "Project homepage"
+msgstr "Сторінка проєкту"
+
+#: aperion/templates/simple/result_templates/paper.html:5
+msgid "Published date"
+msgstr "Дата публікації"
+
+#: aperion/templates/simple/result_templates/paper.html:9
+msgid "Journal"
+msgstr "Журнал"
+
+#: aperion/templates/simple/result_templates/paper.html:22
+msgid "Editor"
+msgstr "Редактор"
+
+#: aperion/templates/simple/result_templates/paper.html:23
+msgid "Publisher"
+msgstr "Видавець"
+
+#: aperion/templates/simple/result_templates/paper.html:26
+msgid "DOI"
+msgstr "DOI"
+
+#: aperion/templates/simple/result_templates/paper.html:27
+msgid "ISSN"
+msgstr "ISSN"
+
+#: aperion/templates/simple/result_templates/paper.html:28
+msgid "ISBN"
+msgstr "ISBN"
+
+#: aperion/templates/simple/result_templates/paper.html:33
+msgid "PDF"
+msgstr "PDF"
+
+#: aperion/templates/simple/result_templates/paper.html:34
+msgid "HTML"
+msgstr "HTML"
+
+#: aperion/templates/simple/result_templates/torrent.html:7
+msgid "magnet link"
+msgstr "магнет-посилання"
+
+#: aperion/templates/simple/result_templates/torrent.html:8
+msgid "torrent file"
+msgstr "торрент-файл"
+
+#: aperion/templates/simple/result_templates/torrent.html:13
+msgid "Seeder"
+msgstr "Сідер"
+
+#: aperion/templates/simple/result_templates/torrent.html:14
+msgid "Leecher"
+msgstr "Лічер"
+
+#: aperion/templates/simple/result_templates/torrent.html:19
+msgid "Number of Files"
+msgstr "Кількість файлів"
+
+#: aperion/templates/simple/result_templates/videos.html:6
+msgid "show video"
+msgstr "показати відео"
+
+#: aperion/templates/simple/result_templates/videos.html:6
+msgid "hide video"
+msgstr "приховати відео"
+
+#~ msgid "Engine time (sec)"
+#~ msgstr "Час пошуку (сек)"
+
+#~ msgid "Page loads (sec)"
+#~ msgstr "Час завантадення (сек)"
+
+#~ msgid "Errors"
+#~ msgstr "Помилок"
+
+#~ msgid "CAPTCHA required"
+#~ msgstr ""
+
+#~ msgid "Rewrite HTTP links to HTTPS if possible"
+#~ msgstr "За можливістю замінити в посиланнях HTTP на HTTPS"
+
+#~ msgid ""
+#~ "Results are opened in the same "
+#~ "window by default. This plugin "
+#~ "overwrites the default behaviour to open"
+#~ " links on new tabs/windows. (JavaScript "
+#~ "required)"
+#~ msgstr ""
+#~ "Типово результати відкриваються в тому ж"
+#~ " вікні. Цей плагін змінює поведінку, "
+#~ "щоб посилання відкривались типово в "
+#~ "нових вкладках/вікнах. (Необхідний JavaScript)"
+
+#~ msgid "Color"
+#~ msgstr "Колір"
+
+#~ msgid "Blue (default)"
+#~ msgstr "Синій (типово)"
+
+#~ msgid "Violet"
+#~ msgstr "Фіолетовий"
+
+#~ msgid "Green"
+#~ msgstr "Зелений"
+
+#~ msgid "Cyan"
+#~ msgstr "Блакитний"
+
+#~ msgid "Orange"
+#~ msgstr "Помаранчевий"
+
+#~ msgid "Red"
+#~ msgstr "Червоний"
+
+#~ msgid "Category"
+#~ msgstr "Категорія"
+
+#~ msgid "Block"
+#~ msgstr "Заблокувати"
+
+#~ msgid "original context"
+#~ msgstr "в контексті"
+
+#~ msgid "Plugins"
+#~ msgstr "Плагіни"
+
+#~ msgid "Answerers"
+#~ msgstr "Відповідачі"
+
+#~ msgid "Avg. time"
+#~ msgstr "Середній час"
+
+#~ msgid "show details"
+#~ msgstr "показати деталі"
+
+#~ msgid "hide details"
+#~ msgstr "приховати деталі"
+
+#~ msgid "Load more..."
+#~ msgstr "Завантажити більше..."
+
+#~ msgid "Loading..."
+#~ msgstr ""
+
+#~ msgid "Change aperion layout"
+#~ msgstr "Змінити вигляд сайту"
+
+#~ msgid "Proxying image results through aperion"
+#~ msgstr "Проксувати знайдені зображення за допомогою aperion"
+
+#~ msgid "This is the list of aperion's instant answering modules."
+#~ msgstr "Список модулів миттєвих відповідей aperion."
+
+#~ msgid ""
+#~ "This is the list of cookies and"
+#~ " their values aperion is storing on "
+#~ "your computer."
+#~ msgstr ""
+#~ "Це список cookie-файлів та їх значень,"
+#~ " які aperion зберігає на вашому "
+#~ "комп'ютері."
+
+#~ msgid "With that list, you can assess aperion transparency."
+#~ msgstr "По цьому списку ви можете оцінити відкритість aperion."
+
+#~ msgid "It look like you are using aperion first time."
+#~ msgstr "Схоже, що ви використовуєте aperion вперше."
+
+#~ msgid "Please, try again later or find another aperion instance."
+#~ msgstr ""
+
+#~ msgid "Themes"
+#~ msgstr "Теми"
+
+#~ msgid "Reliablity"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When enabled, the result page's title"
+#~ " contains your query. Your browser "
+#~ "can record this title."
+#~ msgstr ""
+
+#~ msgid "Method"
+#~ msgstr "Метод"
+
+#~ msgid ""
+#~ "This tab does not show up for "
+#~ "search results but you can search "
+#~ "the engines listed here via bangs."
+#~ msgstr ""
+
+#~ msgid "Advanced settings"
+#~ msgstr "Додаткові налаштування"
+
+#~ msgid "Close"
+#~ msgstr "Закрити"
+
+#~ msgid "Language"
+#~ msgstr ""
+
+#~ msgid "broken"
+#~ msgstr ""
+
+#~ msgid "supported"
+#~ msgstr ""
+
+#~ msgid "not supported"
+#~ msgstr ""
+
+#~ msgid "about"
+#~ msgstr "про сайт"
+
+#~ msgid "Avg."
+#~ msgstr ""
+
+#~ msgid "User Interface"
+#~ msgstr ""
+
+#~ msgid "Choose style for this theme"
+#~ msgstr "Обрати стиль для цієї теми"
+
+#~ msgid "Style"
+#~ msgstr "Стиль"
+
+#~ msgid "Show advanced settings"
+#~ msgstr ""
+
+#~ msgid "Show advanced settings panel in the home page by default"
+#~ msgstr ""
+
+#~ msgid "Allow all"
+#~ msgstr ""
+
+#~ msgid "Disable all"
+#~ msgstr ""
+
+#~ msgid "Selected language"
+#~ msgstr ""
+
+#~ msgid "Query"
+#~ msgstr ""
+
+#~ msgid "save"
+#~ msgstr "зберегти"
+
+#~ msgid "back"
+#~ msgstr "назад"
+
+#~ msgid "Links"
+#~ msgstr "Посилання"
+
+#~ msgid "RSS subscription"
+#~ msgstr ""
+
+#~ msgid "Search results"
+#~ msgstr "Результати пошуку"
+
+#~ msgid "next page"
+#~ msgstr "наступна сторінка"
+
+#~ msgid "previous page"
+#~ msgstr "попередня сторінка"
+
+#~ msgid "Start search"
+#~ msgstr "Розпочати пошук"
+
+#~ msgid "Clear search"
+#~ msgstr ""
+
+#~ msgid "Clear"
+#~ msgstr ""
+
+#~ msgid "stats"
+#~ msgstr "статистика"
+
+#~ msgid "Heads up!"
+#~ msgstr "Отакої!"
+
+#~ msgid "It look like you are using aperion first time."
+#~ msgstr ""
+
+#~ msgid "Well done!"
+#~ msgstr "Чудово!"
+
+#~ msgid "Settings saved successfully."
+#~ msgstr "Налаштування успішно збережені."
+
+#~ msgid "Oh snap!"
+#~ msgstr "От халепа!"
+
+#~ msgid "Something went wrong."
+#~ msgstr "Щось пішло не так."
+
+#~ msgid "Date"
+#~ msgstr ""
+
+#~ msgid "Type"
+#~ msgstr ""
+
+#~ msgid "Get image"
+#~ msgstr "Завантажити зображення"
+
+#~ msgid "Center Alignment"
+#~ msgstr ""
+
+#~ msgid "Displays results in the center of the page (Oscar layout)."
+#~ msgstr "Відображає результати в центрі сторінки (макет Оскар)."
+
+#~ msgid "preferences"
+#~ msgstr "опції"
+
+#~ msgid "Scores per result"
+#~ msgstr "Влучань за результат"
+
+#~ msgid "a privacy-respecting, hackable metasearch engine"
+#~ msgstr "вільна система метапошуку, яка поважає вашу приватність"
+
+#~ msgid "No abstract is available for this publication."
+#~ msgstr ""
+
+#~ msgid "Self Informations"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Change how forms are submited, <a "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">learn more about request "
+#~ "methods</a>"
+#~ msgstr ""
+#~ "Змінити спосіб відправки запитів, <a "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">детальніше про методи "
+#~ "запитів</a>"
+
+#~ msgid ""
+#~ "This plugin checks if the address "
+#~ "of the request is a TOR exit "
+#~ "node, and informs the user if it"
+#~ " is, like check.torproject.org but from "
+#~ "aperion."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The TOR exit node list "
+#~ "(https://check.torproject.org/exit-addresses) is "
+#~ "unreachable."
+#~ msgstr ""
+
+#~ msgid "You are using TOR. Your IP address seems to be: {ip_address}."
+#~ msgstr "Ви використовуєте TOR. Здається, Ваша IP-адреса: {ip_address}."
+
+#~ msgid "You are not using TOR. Your IP address seems to be: {ip_address}."
+#~ msgstr "Ви не використовуєте TOR. Здається, Ваша IP-адреса: {ip_address}."
+
+#~ msgid ""
+#~ "The could not download the list of"
+#~ " Tor exit-nodes from "
+#~ "https://check.torproject.org/exit-addresses."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You are using Tor. It looks like"
+#~ " you have this external IP address:"
+#~ " {ip_address}."
+#~ msgstr ""
+
+#~ msgid "You are not using Tor. You have this external IP address: {ip_address}."
+#~ msgstr ""
+
+#~ msgid "Autodetect search language"
+#~ msgstr ""
+
+#~ msgid "Automatically detect the query search language and switch to it."
+#~ msgstr ""
+
+#~ msgid "others"
+#~ msgstr "інші"
+
+#~ msgid ""
+#~ "This tab does not show up for "
+#~ "search results, but you can search "
+#~ "the engines listed here via bangs."
+#~ msgstr ""
+
+#~ msgid "Shortcut"
+#~ msgstr "Гарячі клавіші"
+
+#~ msgid "!bang"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This tab dues not exists in the"
+#~ " user interface, but you can search"
+#~ " in these engines by its !bangs."
+#~ msgstr ""
+
+#~ msgid "Engines cannot retrieve results."
+#~ msgstr ""
+
+#~ msgid "Please, try again later or find another aperion instance."
+#~ msgstr "Будь ласка, спробуйте пізніше або пошукайте інший екземпляр aperion."
+
+#~ msgid ""
+#~ "Redirect to open-access versions of "
+#~ "publications when available (plugin required)"
+#~ msgstr ""
+
+#~ msgid "Bang"
+#~ msgstr "!bang"
+
+#~ msgid ""
+#~ "Change how forms are submitted, <a "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">learn more about request "
+#~ "methods</a>"
+#~ msgstr ""
+
+#~ msgid "On"
+#~ msgstr "Ввімк."
+
+#~ msgid "Off"
+#~ msgstr "Вимк."
+
+#~ msgid "Enabled"
+#~ msgstr "Ввімкнено"
+
+#~ msgid "Disabled"
+#~ msgstr "Вимкнено"
+
+#~ msgid ""
+#~ "Perform search immediately if a category"
+#~ " selected. Disable to select multiple "
+#~ "categories. (JavaScript required)"
+#~ msgstr ""
+#~ "Виконувати пошук зразу при обранні "
+#~ "категорії. Вимкнути вибір декількох категорій."
+#~ " (Необхідний JavaScript)"
+
+#~ msgid "Vim-like hotkeys"
+#~ msgstr "Гарячі клавіші Vim"
+
+#~ msgid ""
+#~ "Navigate search results with Vim-like"
+#~ " hotkeys (JavaScript required). Press \"h\""
+#~ " key on main or result page to"
+#~ " get help."
+#~ msgstr ""
+#~ "Переміщення результатів пошуку за допомогою"
+#~ " віртуальних клавіш (потрібно JavaScript). "
+#~ "Натисніть клавішу \"h\" на головній "
+#~ "сторінці або на сторінці результатів, "
+#~ "щоб отримати допомогу."
+
+#~ msgid ""
+#~ "we didn't find any results. Please "
+#~ "use another query or search in "
+#~ "more categories."
+#~ msgstr ""
+#~ "ми не знайшли жодних результатів. Будь"
+#~ " ласка, використайте інший запит або "
+#~ "виконайте пошук в декількох категоріях."
+
+#~ msgid "Rewrite result hostnames or remove results based on the hostname"
+#~ msgstr "Замінити ім'я хоста або видалити результати на основі імені хоста"
+
+#~ msgid "Bytes"
+#~ msgstr "Байтів"
+
+#~ msgid "kiB"
+#~ msgstr "КіБ"
+
+#~ msgid "MiB"
+#~ msgstr "МіБ"
+
+#~ msgid "GiB"
+#~ msgstr "ГіБ"
+
+#~ msgid "TiB"
+#~ msgstr "ТіБ"
+
+#~ msgid "Hostname replace"
+#~ msgstr "Зміна імені сайту"
+
+#~ msgid "Error!"
+#~ msgstr "Помилка!"
+
+#~ msgid "Engines cannot retrieve results"
+#~ msgstr "Пошукові системи не можуть отримати результати"
+
+#~ msgid "Start submiting a new issue on GitHub"
+#~ msgstr "Надсилайте нові проблеми на GitHub"
+
+#~ msgid "dummy"
+#~ msgstr ""
+
+#~ msgid "Random value generator"
+#~ msgstr "Генератор випадкових значень"
+
+#~ msgid "Statistics functions"
+#~ msgstr "Функції статистики"
+
+#~ msgid "Compute {functions} of the arguments"
+#~ msgstr "Розрахувати {functions} аргументів"
+
+#~ msgid "Get directions"
+#~ msgstr "Отримати директорії"
+
+#~ msgid ""
+#~ "Displays your IP if the query is"
+#~ " \"ip\" and your user agent if "
+#~ "the query contains \"user agent\"."
+#~ msgstr ""
+#~ "Відображає IP-адресу при запиті \"ip\" "
+#~ "та ваш user-agent при запиті "
+#~ "\"user agent\"."
+
+#~ msgid ""
+#~ "Could not download the list of Tor"
+#~ " exit-nodes from: https://check.torproject.org"
+#~ "/exit-addresses"
+#~ msgstr ""
+#~ "Не вдалося завантажити список вихідних "
+#~ "вузлів Tor з: https://check.torproject.org/exit-"
+#~ "addresses"
+
+#~ msgid ""
+#~ "You are using Tor and it looks "
+#~ "like you have this external IP "
+#~ "address: {ip_address}"
+#~ msgstr "Ви використовуєте Tor і, здається, Ваша IP-адреса така: {ip_address}"
+
+#~ msgid ""
+#~ "You are not using Tor and you "
+#~ "have this external IP address: "
+#~ "{ip_address}"
+#~ msgstr "Ви не використовуєте Tor та маєте зовнішню IP-адресу: {ip_address}"
+
+#~ msgid "Keywords"
+#~ msgstr "Ключові слова"
+
+#~ msgid "/"
+#~ msgstr "/"
+
+#~ msgid ""
+#~ "Specifying custom settings in the "
+#~ "preferences URL can be used to "
+#~ "sync preferences across devices."
+#~ msgstr ""
+#~ "Зазначення користувацьких налаштувань в "
+#~ "URL-адресі можна використовувати для "
+#~ "синхронізації налаштувань на різних пристроях."
+
+#~ msgid "proxied"
+#~ msgstr "проксовано"
+
+#~ msgid ""
+#~ "This tab does not exists in the"
+#~ " user interface, but you can search"
+#~ " in these engines by its !bangs."
+#~ msgstr ""
+#~ "Ця вкладка не існує в інтерфейсі "
+#~ "користувача, але ви можете шукати в "
+#~ "цих системах за допомогою їх !bang."
+
+#~ msgid "Results on new tabs"
+#~ msgstr "Результати в нових вкладках"
+
+#~ msgid "Open result links on new browser tabs"
+#~ msgstr "Відкривати посилання результатів у нових вкладках"
+
+#~ msgid "Find stuff as you type"
+#~ msgstr "Шукати під час набору"
+
+#~ msgid "Converts strings to different hash digests."
+#~ msgstr "Конвертує рядки в різні геш-послідовності."
+
+#~ msgid ""
+#~ "Rewrite hostnames, remove results or "
+#~ "prioritize them based on the hostname"
+#~ msgstr ""
+#~ "Переписування імен хостів, видалення "
+#~ "результатів або визначення їх пріоритетності"
+#~ " на основі імені хоста"
+
+#~ msgid "With that list, you can assess aperion transparency."
+#~ msgstr "За допомогою цього списку ви можете оцінити прозорість aperion."
+
+#~ msgid ""
+#~ "These settings are stored in your "
+#~ "cookies, this allows us not to "
+#~ "store this data about you."
+#~ msgstr ""
+#~ "Налаштування зберігаються в ваших "
+#~ "cookie-файлах, що дає нам змогу не "
+#~ "зберігати ці відомості про вас."
+
+#~ msgid ""
+#~ "These cookies serve your sole "
+#~ "convenience, we don't use these cookies"
+#~ " to track you."
+#~ msgstr ""
+#~ "Ці cookie-файли необхідні винятково для "
+#~ "вашої зручності, ми не використовуємо ці"
+#~ " cookie-файли, щоб відслідковувати вас."
+
+#~ msgid "Proxying image results through aperion"
+#~ msgstr "Проксувати зображення в результатах методами aperion"
+
+#~ msgid "Automatically load next page when scrolling to bottom of current page"
+#~ msgstr ""
+#~ "Автоматично завантажувати наступну сторінку "
+#~ "при прокрутці поточної до кінця"
+
+#~ msgid ""
+#~ "Perform search immediately if a category"
+#~ " selected. Disable to select multiple "
+#~ "categories"
+#~ msgstr ""
+#~ "Шукати негайно при виборі категорії. "
+#~ "Вимкніть, якщо хочете вибрати кілька "
+#~ "категорій"
+
+#~ msgid "Change aperion layout"
+#~ msgstr "Змінити макет aperion"
+

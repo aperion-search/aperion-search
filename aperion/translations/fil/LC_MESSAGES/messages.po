@@ -1,0 +1,2376 @@
+# Filipino translations for .
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the  project.
+#
+# Translators:
+# gr01d, 2018
+# Markus Heiser <markus.heiser@darmarit.de>, 2022.
+# Hachiki <ninonakano408@gmail.com>, 2022.
+# return42 <markus.heiser@darmarit.de>, 2023, 2024.
+# johnmartzbuntia <johnmartibuntia@jmtb.xyz>, 2024.
+# hankskyjames777 <iamjuanz30312@gmail.com>, 2024.
+# return42 <return42@users.noreply.translate.codeberg.org>, 2024, 2025.
+# Kita Ikuyo <searinminecraft@courvix.com>, 2024, 2025.
+# Anonymous <anonymous@users.noreply.translate.codeberg.org>, 2025.
+# hankskyjames777 <hankskyjames777@users.noreply.translate.codeberg.org>,
+# 2025.
+# johnmartzbuntia <johnmartzbuntia@users.noreply.translate.codeberg.org>,
+# marc-lopez <marc-lopez@noreply.codeberg.org>, 2025.
+# Kita Ikuyo <kitakita@disroot.org>, 2025.
+# return42 <return42@noreply.codeberg.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version:  aperion\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-07-03 14:46+0000\n"
+"PO-Revision-Date: 2025-06-22 17:06+0000\n"
+"Last-Translator: return42 <return42@noreply.codeberg.org>\n"
+"Language: fil\n"
+"Language-Team: Filipino "
+"<https://translate.codeberg.org/projects/aperion/aperion/fil/>\n"
+"Plural-Forms: nplurals=2; plural=(n == 1 || n==2 || n==3) || (n % 10 != 4"
+" || n % 10 != 6 || n % 10 != 9);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#. CONSTANT_NAMES['NO_SUBGROUPING']
+#: aperion/aperion.msg
+msgid "without further subgrouping"
+msgstr "nang walang karagdagang pagbubuklod ng data"
+
+#. CONSTANT_NAMES['DEFAULT_CATEGORY']
+#: aperion/aperion.msg
+msgid "other"
+msgstr "iba pa"
+
+#. CATEGORY_NAMES['FILES']
+#: aperion/aperion.msg
+msgid "files"
+msgstr "file"
+
+#. CATEGORY_NAMES['GENERAL']
+#: aperion/aperion.msg
+msgid "general"
+msgstr "pangkalahatan"
+
+#. CATEGORY_NAMES['MUSIC']
+#: aperion/aperion.msg
+msgid "music"
+msgstr "musika"
+
+#. CATEGORY_NAMES['SOCIAL_MEDIA']
+#: aperion/aperion.msg
+msgid "social media"
+msgstr "social media"
+
+#. CATEGORY_NAMES['IMAGES']
+#: aperion/aperion.msg
+msgid "images"
+msgstr "larawan"
+
+#. CATEGORY_NAMES['VIDEOS']
+#: aperion/aperion.msg
+msgid "videos"
+msgstr "mga bidyo"
+
+#. CATEGORY_NAMES['RADIO']
+#: aperion/engines/radio_browser.py:151 aperion/aperion.msg
+msgid "radio"
+msgstr "radyo"
+
+#. CATEGORY_NAMES['TV']
+#: aperion/aperion.msg
+msgid "tv"
+msgstr "tv"
+
+#. CATEGORY_NAMES['IT']
+#: aperion/aperion.msg
+msgid "it"
+msgstr "it"
+
+#. CATEGORY_NAMES['NEWS']
+#: aperion/aperion.msg
+msgid "news"
+msgstr "mga balita"
+
+#. CATEGORY_NAMES['MAP']
+#: aperion/aperion.msg
+msgid "map"
+msgstr "mapa"
+
+#. CATEGORY_NAMES['ONIONS']
+#: aperion/aperion.msg
+msgid "onions"
+msgstr "mga onion links"
+
+#. CATEGORY_NAMES['SCIENCE']
+#: aperion/aperion.msg
+msgid "science"
+msgstr "agham't siyénsiyá"
+
+#. CATEGORY_GROUPS['APPS']
+#: aperion/aperion.msg
+msgid "apps"
+msgstr "mga aplikasyon"
+
+#. CATEGORY_GROUPS['DICTIONARIES']
+#: aperion/aperion.msg
+msgid "dictionaries"
+msgstr "diksyonaryo"
+
+#. CATEGORY_GROUPS['LYRICS']
+#: aperion/aperion.msg
+msgid "lyrics"
+msgstr "mga liriko"
+
+#. CATEGORY_GROUPS['PACKAGES']
+#: aperion/aperion.msg
+msgid "packages"
+msgstr "Packages"
+
+#. CATEGORY_GROUPS['Q_A']
+#: aperion/aperion.msg
+msgid "q&a"
+msgstr "Katanungan at Sagot"
+
+#. CATEGORY_GROUPS['REPOS']
+#: aperion/aperion.msg
+msgid "repos"
+msgstr "repositoryo"
+
+#. CATEGORY_GROUPS['SOFTWARE_WIKIS']
+#: aperion/aperion.msg
+msgid "software wikis"
+msgstr "mga software wikis"
+
+#. CATEGORY_GROUPS['WEB']
+#: aperion/aperion.msg
+msgid "web"
+msgstr "web"
+
+#. CATEGORY_GROUPS['SCIENTIFIC PUBLICATIONS']
+#: aperion/aperion.msg
+msgid "scientific publications"
+msgstr "mga lathalaing pang agham't siyénsiyá"
+
+#. STYLE_NAMES['AUTO']
+#: aperion/aperion.msg
+msgid "auto"
+msgstr "Awto"
+
+#. STYLE_NAMES['LIGHT']
+#: aperion/aperion.msg
+msgid "light"
+msgstr "maliwanag"
+
+#. STYLE_NAMES['DARK']
+#: aperion/aperion.msg
+msgid "dark"
+msgstr "madilim"
+
+#. STYLE_NAMES['BLACK']
+#: aperion/aperion.msg
+msgid "black"
+msgstr "itim"
+
+#. BRAND_CUSTOM_LINKS['UPTIME']
+#: aperion/aperion.msg
+msgid "Uptime"
+msgstr "\"uptime\""
+
+#. BRAND_CUSTOM_LINKS['ABOUT']
+#: aperion/aperion.msg aperion/templates/simple/base.html:49
+msgid "About"
+msgstr "Tungkol"
+
+#. WEATHER_TERMS['AVERAGE TEMP.']
+#: aperion/aperion.msg
+msgid "Average temp."
+msgstr "Karaniwang temp."
+
+#. WEATHER_TERMS['CLOUD COVER']
+#: aperion/aperion.msg
+msgid "Cloud cover"
+msgstr "sakop ng mga ulap"
+
+#. WEATHER_TERMS['CONDITION']
+#: aperion/engines/duckduckgo_weather.py:45 aperion/aperion.msg
+msgid "Condition"
+msgstr "Kondisyon"
+
+#. WEATHER_TERMS['CURRENT CONDITION']
+#: aperion/engines/duckduckgo_weather.py:118 aperion/aperion.msg
+msgid "Current condition"
+msgstr "Kasalukuyang kondisyon"
+
+#. WEATHER_TERMS['EVENING']
+#: aperion/aperion.msg
+msgid "Evening"
+msgstr "Hapon"
+
+#. WEATHER_TERMS['FEELS LIKE']
+#: aperion/engines/duckduckgo_weather.py:53 aperion/aperion.msg
+msgid "Feels like"
+msgstr "parang pakiramdam ng"
+
+#. WEATHER_TERMS['HUMIDITY']
+#: aperion/engines/duckduckgo_weather.py:64 aperion/aperion.msg
+#: aperion/templates/simple/answer/weather.html:29
+msgid "Humidity"
+msgstr "halumimig"
+
+#. WEATHER_TERMS['MAX TEMP.']
+#: aperion/engines/duckduckgo_weather.py:77 aperion/aperion.msg
+msgid "Max temp."
+msgstr "pinakamataas na temperatura"
+
+#. WEATHER_TERMS['MIN TEMP.']
+#: aperion/engines/duckduckgo_weather.py:73 aperion/aperion.msg
+msgid "Min temp."
+msgstr "pinikamababang temperatura"
+
+#. WEATHER_TERMS['MORNING']
+#: aperion/aperion.msg
+msgid "Morning"
+msgstr "Umaga"
+
+#. WEATHER_TERMS['NIGHT']
+#: aperion/aperion.msg
+msgid "Night"
+msgstr "Gabi"
+
+#. WEATHER_TERMS['NOON']
+#: aperion/aperion.msg
+msgid "Noon"
+msgstr "Tanghali"
+
+#. WEATHER_TERMS['PRESSURE']
+#: aperion/aperion.msg aperion/templates/simple/answer/weather.html:25
+msgid "Pressure"
+msgstr "presyon"
+
+#. WEATHER_TERMS['SUNRISE']
+#: aperion/engines/duckduckgo_weather.py:81 aperion/aperion.msg
+msgid "Sunrise"
+msgstr "silang ng araw"
+
+#. WEATHER_TERMS['SUNSET']
+#: aperion/engines/duckduckgo_weather.py:82 aperion/aperion.msg
+msgid "Sunset"
+msgstr "sibsib ng araw"
+
+#. WEATHER_TERMS['TEMPERATURE']
+#: aperion/engines/duckduckgo_weather.py:48 aperion/aperion.msg
+#: aperion/templates/simple/answer/weather.html:17
+msgid "Temperature"
+msgstr "temperatura"
+
+#. WEATHER_TERMS['UV INDEX']
+#: aperion/engines/duckduckgo_weather.py:80 aperion/aperion.msg
+msgid "UV index"
+msgstr "index ng UV"
+
+#. WEATHER_TERMS['VISIBILITY']
+#: aperion/engines/duckduckgo_weather.py:62 aperion/aperion.msg
+msgid "Visibility"
+msgstr "bisibílidád"
+
+#. WEATHER_TERMS['WIND']
+#: aperion/engines/duckduckgo_weather.py:58 aperion/aperion.msg
+#: aperion/templates/simple/answer/weather.html:23
+msgid "Wind"
+msgstr "hangin"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Clear sky"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Partly cloudy"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Cloudy"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Fair"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Fog"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain showers and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain showers"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain showers and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain showers"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain showers and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain showers"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet showers and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet showers"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet showers and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet showers"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet showers and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet showers"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow showers and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow showers"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow showers and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow showers"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow showers and thunder"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow showers"
+msgstr ""
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow"
+msgstr ""
+
+#. SOCIAL_MEDIA_TERMS['SUBSCRIBERS']
+#: aperion/engines/lemmy.py:85 aperion/aperion.msg
+msgid "subscribers"
+msgstr "mga suskritor"
+
+#. SOCIAL_MEDIA_TERMS['POSTS']
+#: aperion/engines/lemmy.py:86 aperion/aperion.msg
+msgid "posts"
+msgstr "mga post"
+
+#. SOCIAL_MEDIA_TERMS['ACTIVE USERS']
+#: aperion/engines/lemmy.py:87 aperion/aperion.msg
+msgid "active users"
+msgstr "mga aktibong gumagamit"
+
+#. SOCIAL_MEDIA_TERMS['COMMENTS']
+#: aperion/engines/discourse.py:157 aperion/engines/hackernews.py:82
+#: aperion/engines/lemmy.py:130 aperion/aperion.msg
+msgid "comments"
+msgstr "mga komento"
+
+#. SOCIAL_MEDIA_TERMS['USER']
+#: aperion/engines/lemmy.py:129 aperion/engines/lemmy.py:164 aperion/aperion.msg
+msgid "user"
+msgstr "tagagamit"
+
+#. SOCIAL_MEDIA_TERMS['COMMUNITY']
+#: aperion/engines/lemmy.py:131 aperion/engines/lemmy.py:165 aperion/aperion.msg
+msgid "community"
+msgstr "pamayanan"
+
+#. SOCIAL_MEDIA_TERMS['POINTS']
+#: aperion/engines/hackernews.py:82 aperion/aperion.msg
+msgid "points"
+msgstr "mga punto"
+
+#. SOCIAL_MEDIA_TERMS['TITLE']
+#: aperion/aperion.msg
+msgid "title"
+msgstr "titulo"
+
+#. SOCIAL_MEDIA_TERMS['AUTHOR']
+#: aperion/engines/hackernews.py:85 aperion/aperion.msg
+msgid "author"
+msgstr "maykatha"
+
+#. SOCIAL_MEDIA_TERMS['THREAD OPEN']
+#: aperion/engines/discourse.py:149 aperion/aperion.msg
+msgid "open"
+msgstr "bukas"
+
+#. SOCIAL_MEDIA_TERMS['THREAD CLOSED']
+#: aperion/engines/discourse.py:149 aperion/aperion.msg
+msgid "closed"
+msgstr "sarado"
+
+#. SOCIAL_MEDIA_TERMS['THREAD ANSWERED']
+#: aperion/engines/discourse.py:160 aperion/aperion.msg
+msgid "answered"
+msgstr "sinagot"
+
+#: aperion/webapp.py:292
+msgid "No item found"
+msgstr "Walang nakita na aytem"
+
+#: aperion/engines/qwant.py:291
+#: aperion/templates/simple/result_templates/images.html:23 aperion/webapp.py:294
+msgid "Source"
+msgstr "Pinagmulan"
+
+#: aperion/webapp.py:296
+msgid "Error loading the next page"
+msgstr "Error sa paglo-load ng susunod na pahina"
+
+#: aperion/webapp.py:447 aperion/webapp.py:845
+msgid "Invalid settings, please edit your preferences"
+msgstr "Di-wastong mga setting, pakibago ang iyong mga kagustuhan"
+
+#: aperion/webapp.py:463
+msgid "Invalid settings"
+msgstr "Di-wastong mga setting"
+
+#: aperion/webapp.py:540 aperion/webapp.py:630
+msgid "search error"
+msgstr "nagkaproblema sa paghahanap ng mga resulta"
+
+#: aperion/webutils.py:35
+msgid "timeout"
+msgstr "panandaliang pagtigil"
+
+#: aperion/webutils.py:36
+msgid "parsing error"
+msgstr "error sa pag-parse ng mga resulta"
+
+#: aperion/webutils.py:37
+msgid "HTTP protocol error"
+msgstr "Error sa HTTPS protokol"
+
+#: aperion/webutils.py:38
+msgid "network error"
+msgstr "Network Error"
+
+#: aperion/webutils.py:39
+msgid "SSL error: certificate validation has failed"
+msgstr "SSL error: Nabigo ang pagpapatunay ng sertipiko"
+
+#: aperion/webutils.py:41
+msgid "unexpected crash"
+msgstr "Hindi inaasahang pagbagsak"
+
+#: aperion/webutils.py:48
+msgid "HTTP error"
+msgstr "HTTP error"
+
+#: aperion/webutils.py:49
+msgid "HTTP connection error"
+msgstr "Error sa koneksyong HTTP"
+
+#: aperion/webutils.py:55
+msgid "proxy error"
+msgstr "Proxy Error"
+
+#: aperion/webutils.py:56
+msgid "CAPTCHA"
+msgstr "CAPTCHA"
+
+#: aperion/webutils.py:57
+msgid "too many requests"
+msgstr "masyadong maraming mga kahilingan"
+
+#: aperion/webutils.py:58
+msgid "access denied"
+msgstr "tinanggihan ang access"
+
+#: aperion/webutils.py:59
+msgid "server API error"
+msgstr "pagkakamali sa server API"
+
+#: aperion/webutils.py:78
+msgid "Suspended"
+msgstr "Suspendido"
+
+#: aperion/webutils.py:313
+#, python-brace-format
+msgid "{minutes} minute(s) ago"
+msgstr "{minutes} na minuto ang nakalipas"
+
+#: aperion/webutils.py:314
+#, python-brace-format
+msgid "{hours} hour(s), {minutes} minute(s) ago"
+msgstr "{hours} oras at {minutes} na minto ang nakalipas"
+
+#: aperion/answerers/random.py:69
+msgid "Generate different random values"
+msgstr "Maglabas ng iba't ibang halaga"
+
+#: aperion/answerers/statistics.py:36
+#, python-brace-format
+msgid "Compute {func} of the arguments"
+msgstr "Ikwenta ang {func} ng mga argumento"
+
+#: aperion/engines/openstreetmap.py:158
+msgid "Show route in map .."
+msgstr "Pakita sa mapa ang ruta .."
+
+#: aperion/engines/pdbe.py:96
+#, python-brace-format
+msgid "{title} (OBSOLETE)"
+msgstr "{title} (Luma)"
+
+#: aperion/engines/pdbe.py:103
+msgid "This entry has been superseded by"
+msgstr "Ang tala na ito ay ipinagpaliban ng"
+
+#: aperion/engines/qwant.py:293
+msgid "Channel"
+msgstr "Tyanel"
+
+#: aperion/engines/radio_browser.py:153
+msgid "bitrate"
+msgstr "bitrate"
+
+#: aperion/engines/radio_browser.py:154
+msgid "votes"
+msgstr "mga boto"
+
+#: aperion/engines/radio_browser.py:155
+msgid "clicks"
+msgstr "mga click"
+
+#: aperion/engines/seekr.py:193 aperion/engines/yummly.py:71
+#: aperion/engines/zlibrary.py:137
+msgid "Language"
+msgstr "Wika"
+
+#: aperion/engines/semantic_scholar.py:101
+#, python-brace-format
+msgid ""
+"{numCitations} citations from the year {firstCitationVelocityYear} to "
+"{lastCitationVelocityYear}"
+msgstr ""
+"{numCitations} mga sipi mula sa taon {firstCitationVelocityYear} at "
+"{lastCitationVelocityYear}"
+
+#: aperion/engines/tineye.py:48
+msgid ""
+"Could not read that image url. This may be due to an unsupported file "
+"format. TinEye only supports images that are JPEG, PNG, GIF, BMP, TIFF or"
+" WebP."
+msgstr ""
+"Hindi mabasa ang url ng imahe. Baka ang format ay hindi suportado. JPEG, "
+"PNG, GIF, BMP, TIFF o WebP lamang ang tinatanggap ng TinEye."
+
+#: aperion/engines/tineye.py:54
+msgid ""
+"The image is too simple to find matches. TinEye requires a basic level of"
+" visual detail to successfully identify matches."
+msgstr ""
+"Masyadong payak ang imahe. Gusto ni TinEye ng higit pang detalye para "
+"makahanap ng katugma."
+
+#: aperion/engines/tineye.py:59
+msgid "The image could not be downloaded."
+msgstr "Hindi ma-download ang imahe na ito."
+
+#: aperion/engines/zlibrary.py:138
+msgid "Book rating"
+msgstr "rating ng libro"
+
+#: aperion/engines/zlibrary.py:139
+msgid "File quality"
+msgstr "Kalidad ng file"
+
+#: aperion/plugins/ahmia_filter.py:32
+msgid "Ahmia blacklist"
+msgstr "Blacklist ng Ahmia"
+
+#: aperion/plugins/ahmia_filter.py:33
+msgid "Filter out onion results that appear in Ahmia's blacklist."
+msgstr "Alisin ang mga onion na resulta na lumalabas sa blacklist ng Ahmia."
+
+#: aperion/plugins/calculator.py:38
+msgid "Basic Calculator"
+msgstr "Basic na Calculator"
+
+#: aperion/plugins/calculator.py:39
+msgid "Calculate mathematical expressions via the search bar"
+msgstr "kalkulahin ang matematika gamit ang rehas ng pagsaliksik"
+
+#: aperion/plugins/hash_plugin.py:34
+msgid "Hash plugin"
+msgstr "Plugin na hash"
+
+#: aperion/plugins/hash_plugin.py:36
+msgid ""
+"Converts strings to different hash digests. Available functions: md5, "
+"sha1, sha224, sha256, sha384, sha512."
+msgstr ""
+
+#: aperion/plugins/hash_plugin.py:64
+msgid "hash digest"
+msgstr "Hash digest"
+
+#: aperion/plugins/hostnames.py:123
+msgid "Hostnames plugin"
+msgstr "Hostnames plugin"
+
+#: aperion/plugins/hostnames.py:124
+msgid "Rewrite hostnames and remove or prioritize results based on the hostname"
+msgstr ""
+
+#: aperion/plugins/oa_doi_rewrite.py:55
+msgid "Open Access DOI rewrite"
+msgstr "Malayang akses sa muling pagsulat ng DOI"
+
+#: aperion/plugins/oa_doi_rewrite.py:56
+msgid ""
+"Avoid paywalls by redirecting to open-access versions of publications "
+"when available"
+msgstr ""
+"Iwasan ang paywall sa pag-redirect sa open-access na bersyon ng "
+"pahahayagan kapagmakukuha"
+
+#: aperion/plugins/self_info.py:37
+msgid "Self Information"
+msgstr "Pansariling impormasyon"
+
+#: aperion/plugins/self_info.py:39
+msgid ""
+"Displays your IP if the query is \"ip\" and your user agent if the query "
+"is \"user-agent\"."
+msgstr ""
+"Ipapakita ang iyong IP kung ang query ay \"ip\" at ang iyong user agent "
+"kung ang query ay \"user-agent\"."
+
+#: aperion/plugins/self_info.py:52
+msgid "Your IP is: "
+msgstr "Ang iyong IP ay: "
+
+#: aperion/plugins/self_info.py:55
+msgid "Your user-agent is: "
+msgstr "Ang iyong user-agent ay: "
+
+#: aperion/plugins/tor_check.py:42
+msgid "Tor check plugin"
+msgstr "Plugin na pang-suri ng Tor"
+
+#: aperion/plugins/tor_check.py:44
+msgid ""
+"This plugin checks if the address of the request is a Tor exit-node, and "
+"informs the user if it is; like check.torproject.org, but from aperion."
+msgstr ""
+"Ang plugin na ito ay tsini-check kung ang address ng request ay isang TOR"
+" exit node, at i-iinform ang user kung oo, gaya ng check.torproject.org "
+"ngunit aperion."
+
+#: aperion/plugins/tor_check.py:65
+msgid "Could not download the list of Tor exit-nodes from"
+msgstr "Hindi madownload ang listahan ng Tor exit-nodes mula sa"
+
+#: aperion/plugins/tor_check.py:72
+msgid "You are using Tor and it looks like you have the external IP address"
+msgstr "Ikaw ay gumagamit ng Tor at mukhang meron kang pang-labas na IP address"
+
+#: aperion/plugins/tor_check.py:76
+msgid "You are not using Tor and you have the external IP address"
+msgstr "Ikaw ay hindi gumagamit ng Tor at meron kang pang-labas na IP address"
+
+#: aperion/plugins/tracker_url_remover.py:35
+msgid "Tracker URL remover"
+msgstr "Alisin ang URL tracker"
+
+#: aperion/plugins/tracker_url_remover.py:36
+msgid "Remove trackers arguments from the returned URL"
+msgstr "Alisin ang tracker sa ibabalik na URL"
+
+#: aperion/plugins/unit_converter.py:49
+msgid "Unit converter plugin"
+msgstr "Converter ng Yunit na plugin"
+
+#: aperion/plugins/unit_converter.py:50
+msgid "Convert between units"
+msgstr "ipalit sa pamamagitan ng mga yunit"
+
+#: aperion/result_types/answer.py:224
+#, python-brace-format
+msgid "{location}: {temperature}, {condition}"
+msgstr "{location}: {temperature}, {condition}"
+
+#: aperion/templates/simple/404.html:4
+msgid "Page not found"
+msgstr "Hindi natagpuan ang pahina"
+
+#: aperion/templates/simple/404.html:6
+#, python-format
+msgid "Go to %(search_page)s."
+msgstr "Pumunta sa %(search_page)s."
+
+#: aperion/templates/simple/404.html:6
+msgid "search page"
+msgstr "ang pahina ng paghahanap"
+
+#: aperion/templates/simple/base.html:53
+msgid "Donate"
+msgstr "Magbigay"
+
+#: aperion/templates/simple/base.html:57
+#: aperion/templates/simple/preferences.html:156
+msgid "Preferences"
+msgstr "Mga Kagustuhan"
+
+#: aperion/templates/simple/base.html:67
+msgid "Powered by"
+msgstr "Pinapatakbo ng"
+
+#: aperion/templates/simple/base.html:67
+msgid "a privacy-respecting, open metasearch engine"
+msgstr "isang nagrerespeto sa privacy, at open na metasearch engine"
+
+#: aperion/templates/simple/base.html:68
+#: aperion/templates/simple/result_templates/packages.html:59
+msgid "Source code"
+msgstr "sors kowd"
+
+#: aperion/templates/simple/base.html:69
+msgid "Issue tracker"
+msgstr "Tagasubaybay ng isyu"
+
+#: aperion/templates/simple/base.html:70 aperion/templates/simple/stats.html:18
+msgid "Engine stats"
+msgstr "Engine stats"
+
+#: aperion/templates/simple/base.html:72
+msgid "Public instances"
+msgstr "Pampublikong instances"
+
+#: aperion/templates/simple/base.html:75
+msgid "Privacy policy"
+msgstr "Polisiyang pampribado"
+
+#: aperion/templates/simple/base.html:78
+msgid "Contact instance maintainer"
+msgstr "Kontakin ang iyong instance maintainer"
+
+#: aperion/templates/simple/categories.html:30
+msgid "Click on the magnifier to perform search"
+msgstr "Pindutin ang magnifier para maghanap"
+
+#: aperion/templates/simple/macros.html:40
+msgid "Length"
+msgstr "Haba"
+
+#: aperion/templates/simple/macros.html:41
+msgid "Views"
+msgstr "mga pananaw"
+
+#: aperion/templates/simple/macros.html:42
+#: aperion/templates/simple/result_templates/files.html:34
+#: aperion/templates/simple/result_templates/images.html:19
+#: aperion/templates/simple/result_templates/paper.html:6
+msgid "Author"
+msgstr "Awtor"
+
+#: aperion/templates/simple/macros.html:50
+msgid "cached"
+msgstr "naka-cache"
+
+#: aperion/templates/simple/new_issue.html:64
+msgid "Start submitting a new issue on GitHub"
+msgstr "Mag-simulang mag-abot ng mga bagong isyu sa GitHub"
+
+#: aperion/templates/simple/new_issue.html:66
+msgid "Please check for existing bugs about this engine on GitHub"
+msgstr "Pakitingnan ang mga umiiral nang bug tungkol sa engine na ito sa GitHub"
+
+#: aperion/templates/simple/new_issue.html:69
+msgid "I confirm there is no existing bug about the issue I encounter"
+msgstr "Kinukumpirma kong walang umiiral na bug tungkol sa isyung nakatagpo ko"
+
+#: aperion/templates/simple/new_issue.html:71
+msgid "If this is a public instance, please specify the URL in the bug report"
+msgstr ""
+"Kung ito ay isang pampublikong instance, mangyaring tukuyin ang URL sa "
+"ulat ng bug"
+
+#: aperion/templates/simple/new_issue.html:72
+msgid "Submit a new issue on Github including the above information"
+msgstr ""
+"Mga-submit ng isang bagong issue sa GitHub kasama ng impormasyong nasa "
+"itaas"
+
+#: aperion/templates/simple/preferences.html:65
+msgid "No HTTPS"
+msgstr "Walang HTTPS"
+
+#: aperion/templates/simple/elements/engines_msg.html:14
+#: aperion/templates/simple/preferences.html:69
+#: aperion/templates/simple/preferences.html:70
+msgid "View error logs and submit a bug report"
+msgstr "Tignan ang error logs at magsumite ng bug report"
+
+#: aperion/templates/simple/preferences.html:74
+msgid "!bang for this engine"
+msgstr "!bang para sa engine"
+
+#: aperion/templates/simple/preferences.html:80
+msgid "!bang for its categories"
+msgstr "!bang para sa katerogidad"
+
+#: aperion/templates/simple/preferences.html:102
+#: aperion/templates/simple/stats.html:64
+msgid "Median"
+msgstr "Gitna"
+
+#: aperion/templates/simple/preferences.html:103
+#: aperion/templates/simple/stats.html:70
+msgid "P80"
+msgstr "P80"
+
+#: aperion/templates/simple/preferences.html:104
+#: aperion/templates/simple/stats.html:76
+msgid "P95"
+msgstr "P95"
+
+#: aperion/templates/simple/preferences.html:136
+msgid "Failed checker test(s): "
+msgstr "Nabigo ang checker test(s): "
+
+#: aperion/templates/simple/preferences.html:138
+msgid "Errors:"
+msgstr "Mga error:"
+
+#: aperion/templates/simple/preferences.html:163
+msgid "General"
+msgstr "Pangkalahatan"
+
+#: aperion/templates/simple/preferences.html:166
+msgid "Default categories"
+msgstr "Ang mga default na uri"
+
+#: aperion/templates/simple/preferences.html:194
+msgid "User interface"
+msgstr "Ang User interface"
+
+#: aperion/templates/simple/preferences.html:217
+msgid "Privacy"
+msgstr "Pagiging Pribado"
+
+#: aperion/templates/simple/preferences.html:232
+msgid "Engines"
+msgstr "Engines"
+
+#: aperion/templates/simple/preferences.html:234
+msgid "Currently used search engines"
+msgstr "Ang ginagamit natin na search engines"
+
+#: aperion/templates/simple/preferences.html:243
+msgid "Special Queries"
+msgstr "Mga Espesyal na Queries"
+
+#: aperion/templates/simple/preferences.html:251
+msgid "Cookies"
+msgstr "Cookies"
+
+#: aperion/templates/simple/results.html:30
+msgid "Number of results"
+msgstr "Bilang ng resulta"
+
+#: aperion/templates/simple/results.html:36
+msgid "Info"
+msgstr "Impormasyon"
+
+#: aperion/templates/simple/results.html:77
+msgid "Back to top"
+msgstr "Balik sa taas"
+
+#: aperion/templates/simple/results.html:95
+msgid "Previous page"
+msgstr "Kaninang Pahina"
+
+#: aperion/templates/simple/results.html:113
+msgid "Next page"
+msgstr "Susunod na page"
+
+#: aperion/templates/simple/search.html:3
+msgid "Display the front page"
+msgstr "Ipakita ang front page"
+
+#: aperion/templates/simple/search.html:9
+#: aperion/templates/simple/simple_search.html:5
+msgid "Search for..."
+msgstr "Maghanap ng..."
+
+#: aperion/templates/simple/search.html:10
+#: aperion/templates/simple/simple_search.html:6
+msgid "clear"
+msgstr "Malinaw"
+
+#: aperion/templates/simple/search.html:11
+#: aperion/templates/simple/simple_search.html:7
+msgid "search"
+msgstr "maghanap"
+
+#: aperion/templates/simple/stats.html:21
+msgid "There is currently no data available. "
+msgstr "Wala pa sa ngayon na makitang datos."
+
+#: aperion/templates/simple/preferences/engines.html:24
+#: aperion/templates/simple/stats.html:25
+msgid "Engine name"
+msgstr "Pangalan ng engine"
+
+#: aperion/templates/simple/stats.html:26
+msgid "Scores"
+msgstr "Iskor"
+
+#: aperion/templates/simple/stats.html:27
+msgid "Result count"
+msgstr "bilang ng mga resulta"
+
+#: aperion/templates/simple/elements/engines_msg.html:7
+#: aperion/templates/simple/preferences/engines.html:31
+#: aperion/templates/simple/stats.html:28
+msgid "Response time"
+msgstr "Oras ng pagtugon"
+
+#: aperion/templates/simple/preferences/engines.html:35
+#: aperion/templates/simple/stats.html:29
+msgid "Reliability"
+msgstr "pagiging maaasahan"
+
+#: aperion/templates/simple/stats.html:59
+msgid "Total"
+msgstr "Kabuuan"
+
+#: aperion/templates/simple/stats.html:60
+msgid "HTTP"
+msgstr "HTTP"
+
+#: aperion/templates/simple/stats.html:61
+msgid "Processing"
+msgstr "prumoproseso"
+
+#: aperion/templates/simple/stats.html:99
+msgid "Warnings"
+msgstr "Mga babala"
+
+#: aperion/templates/simple/stats.html:99
+msgid "Errors and exceptions"
+msgstr "Mga error at exceptions"
+
+#: aperion/templates/simple/stats.html:105
+msgid "Exception"
+msgstr "pagkakabigo/eksepsyon"
+
+#: aperion/templates/simple/stats.html:107
+msgid "Message"
+msgstr "Mensahe"
+
+#: aperion/templates/simple/stats.html:109
+msgid "Percentage"
+msgstr "porsyento"
+
+#: aperion/templates/simple/stats.html:111
+msgid "Parameter"
+msgstr "pamantayan"
+
+#: aperion/templates/simple/result_templates/files.html:36
+#: aperion/templates/simple/stats.html:119
+msgid "Filename"
+msgstr "pangalan ng file"
+
+#: aperion/templates/simple/stats.html:120
+msgid "Function"
+msgstr "gawain"
+
+#: aperion/templates/simple/stats.html:121
+msgid "Code"
+msgstr "code"
+
+#: aperion/templates/simple/stats.html:128
+msgid "Checker"
+msgstr "tagasuri"
+
+#: aperion/templates/simple/stats.html:131
+msgid "Failed test"
+msgstr "Nabigong Pagsusulit"
+
+#: aperion/templates/simple/stats.html:132
+msgid "Comment(s)"
+msgstr "(mga) komento"
+
+#: aperion/templates/simple/answer/translations.html:12
+#: aperion/templates/simple/preferences/answerers.html:8
+msgid "Examples"
+msgstr "Mga halimbawa"
+
+#: aperion/templates/simple/answer/translations.html:21
+msgid "Definitions"
+msgstr "Mga Kahulugan"
+
+#: aperion/templates/simple/answer/translations.html:30
+msgid "Synonyms"
+msgstr "síngkahulugán"
+
+#: aperion/templates/simple/answer/weather.html:19
+msgid "Feels Like"
+msgstr ""
+
+#: aperion/templates/simple/elements/answers.html:2
+msgid "Answers"
+msgstr "Mga sagot"
+
+#: aperion/templates/simple/elements/apis.html:3
+msgid "Download results"
+msgstr "I-download ang mga resulta"
+
+#: aperion/templates/simple/elements/corrections.html:2
+msgid "Try searching for:"
+msgstr "Subukan maghanap ng:"
+
+#: aperion/templates/simple/elements/engines_msg.html:4
+msgid "Messages from the search engines"
+msgstr "Mga mensahe mula sa mga search engine"
+
+#: aperion/templates/simple/elements/engines_msg.html:7
+msgid "seconds"
+msgstr "mga segundo"
+
+#: aperion/templates/simple/elements/search_url.html:3
+msgid "Search URL"
+msgstr "URL ng Search"
+
+#: aperion/templates/simple/elements/search_url.html:4
+#: aperion/templates/simple/preferences/cookies.html:54
+msgid "Copied"
+msgstr "nakopya"
+
+#: aperion/templates/simple/elements/search_url.html:4
+#: aperion/templates/simple/preferences/cookies.html:54
+msgid "Copy"
+msgstr "kopyahin"
+
+#: aperion/templates/simple/elements/suggestions.html:3
+msgid "Suggestions"
+msgstr "Mga mungkahi"
+
+#: aperion/templates/simple/filters/languages.html:1
+#: aperion/templates/simple/preferences/language.html:2
+msgid "Search language"
+msgstr "Ang wika ng paghahanap"
+
+#: aperion/templates/simple/filters/languages.html:4
+#: aperion/templates/simple/preferences/language.html:7
+msgid "Default language"
+msgstr "Default na wika"
+
+#: aperion/templates/simple/filters/languages.html:8
+#: aperion/templates/simple/preferences/language.html:11
+msgid "Auto-detect"
+msgstr "awtomatikong pangdedetekta"
+
+#: aperion/templates/simple/filters/safesearch.html:1
+#: aperion/templates/simple/filters/safesearch.html:2
+#: aperion/templates/simple/filters/safesearch.html:3
+#: aperion/templates/simple/filters/safesearch.html:4
+#: aperion/templates/simple/preferences/engines.html:27
+#: aperion/templates/simple/preferences/safesearch.html:2
+msgid "SafeSearch"
+msgstr "Ligtas na Paghahanap"
+
+#: aperion/templates/simple/filters/safesearch.html:2
+#: aperion/templates/simple/preferences/safesearch.html:7
+msgid "Strict"
+msgstr "Mahigpit"
+
+#: aperion/templates/simple/filters/safesearch.html:3
+#: aperion/templates/simple/preferences/safesearch.html:11
+msgid "Moderate"
+msgstr "Banayad"
+
+#: aperion/templates/simple/filters/safesearch.html:4
+#: aperion/templates/simple/preferences/safesearch.html:15
+msgid "None"
+msgstr "Wala"
+
+#: aperion/templates/simple/filters/time_range.html:1
+#: aperion/templates/simple/preferences/engines.html:28
+msgid "Time range"
+msgstr "Agwat ng oras"
+
+#: aperion/templates/simple/filters/time_range.html:3
+msgid "Anytime"
+msgstr "Kahit anong oras"
+
+#: aperion/templates/simple/filters/time_range.html:6
+msgid "Last day"
+msgstr "Nakaraang araw"
+
+#: aperion/templates/simple/filters/time_range.html:9
+msgid "Last week"
+msgstr "Nakaraang linggo"
+
+#: aperion/templates/simple/filters/time_range.html:12
+msgid "Last month"
+msgstr "Nakaraang buwan"
+
+#: aperion/templates/simple/filters/time_range.html:15
+msgid "Last year"
+msgstr "Nakaraang taon"
+
+#: aperion/templates/simple/messages/no_cookies.html:3
+msgid "Information!"
+msgstr "Impormasyon!"
+
+#: aperion/templates/simple/messages/no_cookies.html:4
+msgid "currently, there are no cookies defined."
+msgstr "wala pang cookies na naka-define sa ngayon."
+
+#: aperion/templates/simple/messages/no_results.html:6
+msgid "Sorry!"
+msgstr "Paumanhin!"
+
+#: aperion/templates/simple/messages/no_results.html:12
+msgid "No results were found. You can try to:"
+msgstr "Walang mga resultang nahanap. Pwede mong subukang:"
+
+#: aperion/templates/simple/messages/no_results.html:14
+msgid "There are no more results. You can try to:"
+msgstr "Walang karagdagang mga resulta. Maaari mong subukan ang:"
+
+#: aperion/templates/simple/messages/no_results.html:19
+msgid "Refresh the page."
+msgstr "I-refresh ang pahina."
+
+#: aperion/templates/simple/messages/no_results.html:20
+msgid "Search for another query or select another category (above)."
+msgstr "Hanapin ang iba pang query o pumili ng ibang kategorya (sa itaas)."
+
+#: aperion/templates/simple/messages/no_results.html:21
+msgid "Change the search engine used in the preferences:"
+msgstr "Baguhin ang ginagamit na search engine sa mga nais:"
+
+#: aperion/templates/simple/messages/no_results.html:22
+msgid "Switch to another instance:"
+msgstr "Lumipat sa ibang \"instance\":"
+
+#: aperion/templates/simple/messages/no_results.html:24
+msgid "Search for another query or select another category."
+msgstr "Humanap ng ibang query o pumili ng ibang kategorya."
+
+#: aperion/templates/simple/messages/no_results.html:25
+msgid "Go back to the previous page using the previous page button."
+msgstr "Bumalik sa nakaraang pahina gamit ang button ng nakaraang pahina."
+
+#: aperion/templates/simple/preferences/answerers.html:4
+#: aperion/templates/simple/preferences/engines.html:23
+msgid "Allow"
+msgstr "Payagan"
+
+#: aperion/templates/simple/preferences/answerers.html:5
+msgid "Keywords (first word in query)"
+msgstr "Mga mahahalagang salita (unang salita sa query)"
+
+#: aperion/templates/simple/preferences/answerers.html:6
+#: aperion/templates/simple/result_templates/packages.html:7
+msgid "Name"
+msgstr "Pangalan"
+
+#: aperion/templates/simple/preferences/answerers.html:7
+msgid "Description"
+msgstr "Paglalarawan"
+
+#: aperion/templates/simple/preferences/answerers.html:13
+msgid "This is the list of aperion's instant answering modules."
+msgstr "Ito ang listahan ng mga instant answering module ng aperion."
+
+#: aperion/templates/simple/preferences/answerers.html:29
+msgid "This is the list of plugins."
+msgstr "Ito ang listahan ng mga plugin."
+
+#: aperion/templates/simple/preferences/autocomplete.html:2
+msgid "Autocomplete"
+msgstr "Kusang tinatapos"
+
+#: aperion/templates/simple/preferences/autocomplete.html:15
+msgid "Show possible queries as you type"
+msgstr ""
+
+#: aperion/templates/simple/preferences/center_alignment.html:2
+msgid "Center Alignment"
+msgstr "Pag-align sa Gitnang"
+
+#: aperion/templates/simple/preferences/center_alignment.html:14
+msgid "Display results in the center of the page (Oscar layout)."
+msgstr ""
+
+#: aperion/templates/simple/preferences/cookies.html:2
+msgid ""
+"This is the list of cookies and their values aperion is storing on your "
+"computer."
+msgstr ""
+"Ito ang listahan ng mga cookies at values na ini-store ng aperion sa "
+"i'yong computer."
+
+#: aperion/templates/simple/preferences/cookies.html:3
+msgid "With this list, you can assess the transparency of aperion."
+msgstr ""
+
+#: aperion/templates/simple/preferences/cookies.html:9
+msgid "Cookie name"
+msgstr "Pangalan ng cookie"
+
+#: aperion/templates/simple/preferences/cookies.html:10
+msgid "Value"
+msgstr "Nilalaman"
+
+#: aperion/templates/simple/preferences/cookies.html:23
+msgid "Search URL of the currently saved preferences"
+msgstr "Search URL ng kasalukuyan na naka-save sa preferences"
+
+#: aperion/templates/simple/preferences/cookies.html:32
+msgid ""
+"Note: specifying custom settings in the search URL can reduce privacy by "
+"leaking data to the clicked result sites."
+msgstr ""
+"Tandaan: kapag gumawa ng sariling settings sa search URL mababawasan ang "
+"pagiging pribado dahil magkakaroon ng butas sa datos dahil sa pag-pindot "
+"sa resulta na sites."
+
+#: aperion/templates/simple/preferences/cookies.html:35
+msgid "URL to restore your preferences in another browser"
+msgstr "URL para ibalik ang iyong mga preference sa ibang browser"
+
+#: aperion/templates/simple/preferences/cookies.html:43
+msgid ""
+"A URL containing your preferences. This URL can be used to restore your "
+"settings on a different device."
+msgstr ""
+"URL na naglalaman ng iyong mga kagustuhan. Maaaring gamitin ang URL na "
+"ito para i-restore ang mga setting sa ibang device."
+
+#: aperion/templates/simple/preferences/cookies.html:46
+msgid "Copy preferences hash"
+msgstr "Kopyahin ang hash ng mga preference"
+
+#: aperion/templates/simple/preferences/cookies.html:57
+msgid "Insert copied preferences hash (without URL) to restore"
+msgstr ""
+"Ilagay ang kinopyahang hash ng mga preference (walang URL) upang mag-"
+"restore"
+
+#: aperion/templates/simple/preferences/cookies.html:59
+msgid "Preferences hash"
+msgstr "Hash ng mga preference"
+
+#: aperion/templates/simple/preferences/doi_resolver.html:1
+msgid "Digital Object Identifier (DOI)"
+msgstr "Digital Object Identifier (DOI)"
+
+#: aperion/templates/simple/preferences/doi_resolver.html:6
+msgid "Open Access DOI resolver"
+msgstr "Open Access DOI resolver"
+
+#: aperion/templates/simple/preferences/doi_resolver.html:18
+msgid "Select service used by DOI rewrite"
+msgstr "Pumili ng serbisyo na ginagamit sa pagsulat ng DOI"
+
+#: aperion/templates/simple/preferences/engines.html:9
+msgid ""
+"This tab does not exist in the user interface, but you can search with "
+"these engines via !bangs."
+msgstr ""
+
+#: aperion/templates/simple/preferences/engines.html:15
+msgid "Enable all"
+msgstr "paganahin ang lahat"
+
+#: aperion/templates/simple/preferences/engines.html:16
+msgid "Disable all"
+msgstr "huwag paganahin ang lahat"
+
+#: aperion/templates/simple/preferences/engines.html:25
+msgid "!bang"
+msgstr "!bang"
+
+#: aperion/templates/simple/preferences/engines.html:26
+msgid "Supports selected language"
+msgstr "Suportado ang pinili na wika"
+
+#: aperion/templates/simple/preferences/engines.html:29
+msgid "Weight"
+msgstr "Timbang"
+
+#: aperion/templates/simple/preferences/engines.html:33
+msgid "Max time"
+msgstr "Ang max na oras"
+
+#: aperion/templates/simple/preferences/favicon.html:2
+msgid "Favicon Resolver"
+msgstr "favicon solver"
+
+#: aperion/templates/simple/preferences/favicon.html:15
+msgid "Display favicons near search results"
+msgstr "Ipakita ang mga favicon malapit sa mga resulta ng paghahanap"
+
+#: aperion/templates/simple/preferences/footer.html:2
+msgid ""
+"These settings are stored in your cookies. This allows us not to store "
+"this data about you."
+msgstr ""
+
+#: aperion/templates/simple/preferences/footer.html:3
+msgid "These cookies serve your sole convenience; we don't use them to track you."
+msgstr ""
+
+#: aperion/templates/simple/preferences/footer.html:6
+msgid "Save"
+msgstr "I-save"
+
+#: aperion/templates/simple/preferences/footer.html:9
+msgid "Reset defaults"
+msgstr "I-reset ang defaults"
+
+#: aperion/templates/simple/preferences/footer.html:13
+msgid "Back"
+msgstr "Bumalik"
+
+#: aperion/templates/simple/preferences/hotkeys.html:2
+msgid "Hotkeys"
+msgstr "Mga Hotkeys"
+
+#: aperion/templates/simple/preferences/hotkeys.html:13
+msgid "Vim-like"
+msgstr "Katulad ng Vim"
+
+#: aperion/templates/simple/preferences/hotkeys.html:18
+msgid ""
+"Navigate search results with hotkeys (JavaScript required). Press \"h\" "
+"key on main or result page to get help."
+msgstr ""
+"Mag-navigate sa mga resulta ng paghahanap gamit ang mga hotkey "
+"(JavaScript ay kinakailangan). Pindutin ang \"h\" na key sa pangunahin o "
+"resultang pahina para sa tulong."
+
+#: aperion/templates/simple/preferences/image_proxy.html:2
+msgid "Image proxy"
+msgstr "Proxy ng larawan"
+
+#: aperion/templates/simple/preferences/image_proxy.html:14
+msgid "Proxy image results through aperion"
+msgstr ""
+
+#: aperion/templates/simple/preferences/infinite_scroll.html:2
+msgid "Infinite scroll"
+msgstr "Walang hanggan na pag-scroll"
+
+#: aperion/templates/simple/preferences/infinite_scroll.html:14
+msgid ""
+"Automatically load the next page when scrolling to the bottom of the "
+"current page"
+msgstr ""
+
+#: aperion/templates/simple/preferences/language.html:24
+msgid "What language do you prefer for search?"
+msgstr "Ano ang gusto mong wika sa paghahanap?"
+
+#: aperion/templates/simple/preferences/language.html:25
+msgid "Choose Auto-detect to let aperion detect the language of your query."
+msgstr ""
+"Pumili ng Auto-detect upang payagan ang aperion na matukoy ang wika ng "
+"iyong query."
+
+#: aperion/templates/simple/preferences/method.html:2
+msgid "HTTP Method"
+msgstr "Paraan ng HTTP"
+
+#: aperion/templates/simple/preferences/method.html:14
+msgid "Change how forms are submitted"
+msgstr "Ipalit panong i-submit ang mga form"
+
+#: aperion/templates/simple/preferences/query_in_title.html:2
+msgid "Query in the page's title"
+msgstr "Query sa pamagat ng page"
+
+#: aperion/templates/simple/preferences/query_in_title.html:14
+msgid ""
+"When enabled, the result page's title contains your query. Your browser "
+"can record this title"
+msgstr ""
+"Kapag pinagana, ang pamagat ng pahina ng resulta ay naglalaman ng iyong "
+"query. Maaaring i-record ng iyong browser ang pamagat na ito"
+
+#: aperion/templates/simple/preferences/results_on_new_tab.html:2
+msgid "Results in new tabs"
+msgstr ""
+
+#: aperion/templates/simple/preferences/results_on_new_tab.html:14
+msgid "Open result links in new browser tabs"
+msgstr ""
+
+#: aperion/templates/simple/preferences/safesearch.html:20
+msgid "Filter content"
+msgstr "Salain ang mga nilalaman"
+
+#: aperion/templates/simple/preferences/search_on_category_select.html:2
+msgid "Search on category select"
+msgstr "Maghanap kapag nakapili ng uri"
+
+#: aperion/templates/simple/preferences/search_on_category_select.html:14
+msgid ""
+"Perform a search immediately if a category is selected. Disable to select"
+" multiple categories"
+msgstr ""
+
+#: aperion/templates/simple/preferences/theme.html:2
+msgid "Theme"
+msgstr "Tema"
+
+#: aperion/templates/simple/preferences/theme.html:14
+msgid "Change the layout of aperion"
+msgstr ""
+
+#: aperion/templates/simple/preferences/theme.html:19
+msgid "Theme style"
+msgstr "Stilo ng theme"
+
+#: aperion/templates/simple/preferences/theme.html:31
+msgid "Choose auto to follow your browser settings"
+msgstr "Pumili ng auto para sundin ang mga setting ng iyong browser"
+
+#: aperion/templates/simple/preferences/tokens.html:2
+msgid "Engine tokens"
+msgstr "Mga token ng makina"
+
+#: aperion/templates/simple/preferences/tokens.html:9
+msgid "Access tokens for private engines"
+msgstr "I-access ang mga token para sa mga pribadong makina"
+
+#: aperion/templates/simple/preferences/ui_locale.html:2
+msgid "Interface language"
+msgstr "Ang wika ng Interface"
+
+#: aperion/templates/simple/preferences/ui_locale.html:14
+msgid "Change the language of the layout"
+msgstr "Ibahin ang layout pangwika"
+
+#: aperion/templates/simple/preferences/urlformatting.html:2
+msgid "URL formatting"
+msgstr "Format ng URL"
+
+#: aperion/templates/simple/preferences/urlformatting.html:8
+msgid "Pretty"
+msgstr "Maganda"
+
+#: aperion/templates/simple/preferences/urlformatting.html:13
+msgid "Full"
+msgstr "Puno"
+
+#: aperion/templates/simple/preferences/urlformatting.html:18
+msgid "Host"
+msgstr "Host"
+
+#: aperion/templates/simple/preferences/urlformatting.html:23
+msgid "Change result URL formatting"
+msgstr "Palitan ang pag-format ng URL ng resulta"
+
+#: aperion/templates/simple/result_templates/code.html:13
+msgid "repo"
+msgstr "repositoryo"
+
+#: aperion/templates/simple/result_templates/default.html:6
+#: aperion/templates/simple/result_templates/files.html:8
+#: aperion/templates/simple/result_templates/files.html:11
+msgid "show media"
+msgstr "ipakita ang media"
+
+#: aperion/templates/simple/result_templates/default.html:6
+#: aperion/templates/simple/result_templates/files.html:8
+msgid "hide media"
+msgstr "itago ang media"
+
+#: aperion/templates/simple/result_templates/default.html:14
+#: aperion/templates/simple/result_templates/videos.html:14
+msgid "This site did not provide any description."
+msgstr "Ang site na ito ay hindi nagbigay ng deskripsyon."
+
+#: aperion/templates/simple/result_templates/files.html:38
+#: aperion/templates/simple/result_templates/images.html:22
+#: aperion/templates/simple/result_templates/torrent.html:18
+msgid "Filesize"
+msgstr "Laki ng file"
+
+#: aperion/templates/simple/result_templates/files.html:40
+msgid "Date"
+msgstr "Petsa"
+
+#: aperion/templates/simple/result_templates/files.html:42
+#: aperion/templates/simple/result_templates/paper.html:24
+msgid "Type"
+msgstr "Uri"
+
+#: aperion/templates/simple/result_templates/images.html:20
+msgid "Resolution"
+msgstr "Resolusyon"
+
+#: aperion/templates/simple/result_templates/images.html:21
+msgid "Format"
+msgstr "Anyo"
+
+#: aperion/templates/simple/result_templates/images.html:24
+msgid "Engine"
+msgstr "Engine"
+
+#: aperion/templates/simple/result_templates/images.html:25
+msgid "View source"
+msgstr "Tignan ang source"
+
+#: aperion/templates/simple/result_templates/map.html:12
+msgid "address"
+msgstr "address"
+
+#: aperion/templates/simple/result_templates/map.html:43
+msgid "show map"
+msgstr "ipakita ang mapa"
+
+#: aperion/templates/simple/result_templates/map.html:43
+msgid "hide map"
+msgstr "itago ang mapa"
+
+#: aperion/templates/simple/result_templates/packages.html:12
+msgid "Version"
+msgstr "Bersyon"
+
+#: aperion/templates/simple/result_templates/packages.html:18
+msgid "Maintainer"
+msgstr "Tagapangasiwa"
+
+#: aperion/templates/simple/result_templates/packages.html:24
+msgid "Updated at"
+msgstr "Na-update sa"
+
+#: aperion/templates/simple/result_templates/packages.html:30
+#: aperion/templates/simple/result_templates/paper.html:25
+msgid "Tags"
+msgstr "Mga Tag/Tatak"
+
+#: aperion/templates/simple/result_templates/packages.html:36
+msgid "Popularity"
+msgstr "Kasikatan"
+
+#: aperion/templates/simple/result_templates/packages.html:42
+msgid "License"
+msgstr "Lisensya"
+
+#: aperion/templates/simple/result_templates/packages.html:52
+msgid "Project"
+msgstr "proyekto"
+
+#: aperion/templates/simple/result_templates/packages.html:55
+msgid "Project homepage"
+msgstr "homepage ng proyekto"
+
+#: aperion/templates/simple/result_templates/paper.html:5
+msgid "Published date"
+msgstr "Petsa ng Paglathala"
+
+#: aperion/templates/simple/result_templates/paper.html:9
+msgid "Journal"
+msgstr "Talaan"
+
+#: aperion/templates/simple/result_templates/paper.html:22
+msgid "Editor"
+msgstr "Patnugot"
+
+#: aperion/templates/simple/result_templates/paper.html:23
+msgid "Publisher"
+msgstr "tagapaglathala"
+
+#: aperion/templates/simple/result_templates/paper.html:26
+msgid "DOI"
+msgstr "DOI"
+
+#: aperion/templates/simple/result_templates/paper.html:27
+msgid "ISSN"
+msgstr "ISSN"
+
+#: aperion/templates/simple/result_templates/paper.html:28
+msgid "ISBN"
+msgstr "ISBN"
+
+#: aperion/templates/simple/result_templates/paper.html:33
+msgid "PDF"
+msgstr "PDF"
+
+#: aperion/templates/simple/result_templates/paper.html:34
+msgid "HTML"
+msgstr "HTML"
+
+#: aperion/templates/simple/result_templates/torrent.html:7
+msgid "magnet link"
+msgstr "i-magnet ang link"
+
+#: aperion/templates/simple/result_templates/torrent.html:8
+msgid "torrent file"
+msgstr "file na torrent"
+
+#: aperion/templates/simple/result_templates/torrent.html:13
+msgid "Seeder"
+msgstr "Seeder"
+
+#: aperion/templates/simple/result_templates/torrent.html:14
+msgid "Leecher"
+msgstr "Leecher"
+
+#: aperion/templates/simple/result_templates/torrent.html:19
+msgid "Number of Files"
+msgstr "Bilang ng mga files"
+
+#: aperion/templates/simple/result_templates/videos.html:6
+msgid "show video"
+msgstr "ipakita ang video"
+
+#: aperion/templates/simple/result_templates/videos.html:6
+msgid "hide video"
+msgstr "itago ang video"
+
+#~ msgid "Engine time (sec)"
+#~ msgstr "Oras ng engine (segundo)"
+
+#~ msgid "Page loads (sec)"
+#~ msgstr "Oras ng pagkarga ng pahina (segundo)"
+
+#~ msgid "Errors"
+#~ msgstr "Kamalian"
+
+#~ msgid "CAPTCHA required"
+#~ msgstr ""
+
+#~ msgid "Rewrite HTTP links to HTTPS if possible"
+#~ msgstr "Palitan ang HTTP links patungo sa HTTPS hanggat maaari"
+
+#~ msgid ""
+#~ "Results are opened in the same "
+#~ "window by default. This plugin "
+#~ "overwrites the default behaviour to open"
+#~ " links on new tabs/windows. (JavaScript "
+#~ "required)"
+#~ msgstr ""
+#~ "Ang mga resulta ang bubuksan sa "
+#~ "kasalukuyan window, ito ay ang default."
+#~ " Ang plugin na ito ay babaliwalain"
+#~ " ang default na kilos sa pagbukas "
+#~ "ng panibagong link sa bagong tab/window."
+
+#~ msgid "Color"
+#~ msgstr "Kulay"
+
+#~ msgid "Blue (default)"
+#~ msgstr "Asul (default)"
+
+#~ msgid "Violet"
+#~ msgstr "Byoleta"
+
+#~ msgid "Green"
+#~ msgstr "Berde"
+
+#~ msgid "Cyan"
+#~ msgstr "Siyano"
+
+#~ msgid "Orange"
+#~ msgstr "Kulay-dalandan"
+
+#~ msgid "Red"
+#~ msgstr "Pula"
+
+#~ msgid "Category"
+#~ msgstr "Uri"
+
+#~ msgid "Block"
+#~ msgstr "Harangan"
+
+#~ msgid "original context"
+#~ msgstr "orihinal na nilalaman"
+
+#~ msgid "Plugins"
+#~ msgstr "Plugins"
+
+#~ msgid "Answerers"
+#~ msgstr "Mga pangsagot"
+
+#~ msgid "Avg. time"
+#~ msgstr "Gitnang oras"
+
+#~ msgid "show details"
+#~ msgstr "ipakita ang nilalaman"
+
+#~ msgid "hide details"
+#~ msgstr "itago ang nilalaman"
+
+#~ msgid "Load more..."
+#~ msgstr "Maghanap pa..."
+
+#~ msgid "Loading..."
+#~ msgstr ""
+
+#~ msgid "Change aperion layout"
+#~ msgstr "Ibahin ang layout ng aperion"
+
+#~ msgid "Proxying image results through aperion"
+#~ msgstr "I-Proxy ang resulta ng mga larawan papunta sa aperion"
+
+#~ msgid "This is the list of aperion's instant answering modules."
+#~ msgstr "Ito ang listahan ng instant answering modules ni aperion."
+
+#~ msgid ""
+#~ "This is the list of cookies and"
+#~ " their values aperion is storing on "
+#~ "your computer."
+#~ msgstr ""
+#~ "Ito ang listahan ng cookies at ang"
+#~ " kanilang value na inilagay ni aperion"
+#~ " sa iyon kompyuter."
+
+#~ msgid "With that list, you can assess aperion transparency."
+#~ msgstr ""
+#~ "Dahil sa listahan na iyon, maaari "
+#~ "mong makita ang pagiging transparent ni"
+#~ " aperion."
+
+#~ msgid "It look like you are using aperion first time."
+#~ msgstr "Mukhang ito ang unang paggamit mo ng aperion."
+
+#~ msgid "Please, try again later or find another aperion instance."
+#~ msgstr "Paki subukan muli o gumamit ng ibang instance ng aperion."
+
+#~ msgid "Themes"
+#~ msgstr "Tema"
+
+#~ msgid "Reliablity"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When enabled, the result page's title"
+#~ " contains your query. Your browser "
+#~ "can record this title."
+#~ msgstr ""
+
+#~ msgid "Method"
+#~ msgstr "Paraan"
+
+#~ msgid ""
+#~ "This tab does not show up for "
+#~ "search results but you can search "
+#~ "the engines listed here via bangs."
+#~ msgstr ""
+
+#~ msgid "Advanced settings"
+#~ msgstr ""
+
+#~ msgid "Close"
+#~ msgstr "Isara"
+
+#~ msgid "Language"
+#~ msgstr ""
+
+#~ msgid "broken"
+#~ msgstr ""
+
+#~ msgid "supported"
+#~ msgstr "suportado"
+
+#~ msgid "not supported"
+#~ msgstr "hindi suportado"
+
+#~ msgid "about"
+#~ msgstr "hinggil"
+
+#~ msgid "Avg."
+#~ msgstr ""
+
+#~ msgid "User Interface"
+#~ msgstr ""
+
+#~ msgid "Choose style for this theme"
+#~ msgstr "Pumili ng estilo para sa tema na ito"
+
+#~ msgid "Style"
+#~ msgstr "Estilo"
+
+#~ msgid "Show advanced settings"
+#~ msgstr ""
+
+#~ msgid "Show advanced settings panel in the home page by default"
+#~ msgstr ""
+
+#~ msgid "Allow all"
+#~ msgstr ""
+
+#~ msgid "Disable all"
+#~ msgstr ""
+
+#~ msgid "Selected language"
+#~ msgstr "Piniling wika"
+
+#~ msgid "Query"
+#~ msgstr ""
+
+#~ msgid "save"
+#~ msgstr "i-save"
+
+#~ msgid "back"
+#~ msgstr "bumalik"
+
+#~ msgid "Links"
+#~ msgstr "Links"
+
+#~ msgid "RSS subscription"
+#~ msgstr ""
+
+#~ msgid "Search results"
+#~ msgstr "Mga resulta ng paghahanap"
+
+#~ msgid "next page"
+#~ msgstr "pumanhik sa sumunod na pahina"
+
+#~ msgid "previous page"
+#~ msgstr "bumalik sa nakaraang pahina"
+
+#~ msgid "Start search"
+#~ msgstr "Simulan ang paghahanap"
+
+#~ msgid "Clear search"
+#~ msgstr ""
+
+#~ msgid "Clear"
+#~ msgstr ""
+
+#~ msgid "stats"
+#~ msgstr "stats"
+
+#~ msgid "Heads up!"
+#~ msgstr "Alerto!"
+
+#~ msgid "It look like you are using aperion first time."
+#~ msgstr ""
+
+#~ msgid "Well done!"
+#~ msgstr "Mahusay!"
+
+#~ msgid "Settings saved successfully."
+#~ msgstr "Tagumpay sa pag-save ng settings."
+
+#~ msgid "Oh snap!"
+#~ msgstr "Naku!"
+
+#~ msgid "Something went wrong."
+#~ msgstr "Nagkaproblema."
+
+#~ msgid "Date"
+#~ msgstr ""
+
+#~ msgid "Type"
+#~ msgstr ""
+
+#~ msgid "Get image"
+#~ msgstr "Kuhanin ang larawan"
+
+#~ msgid "Center Alignment"
+#~ msgstr ""
+
+#~ msgid "Displays results in the center of the page (Oscar layout)."
+#~ msgstr "Tignan ang resulta sa gitnang bahagi ng pahina (Oscar layout)."
+
+#~ msgid "preferences"
+#~ msgstr ""
+
+#~ msgid "Scores per result"
+#~ msgstr "Iskor ng bawat resulta"
+
+#~ msgid "a privacy-respecting, hackable metasearch engine"
+#~ msgstr "isang gumagalang sa pagiging pribado, hackable na metasearch engine"
+
+#~ msgid "No abstract is available for this publication."
+#~ msgstr "Walang nakita na abstract para sa pahahayag na ito."
+
+#~ msgid "Self Informations"
+#~ msgstr "Pansariling impormasyon"
+
+#~ msgid ""
+#~ "Change how forms are submited, <a "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">learn more about request "
+#~ "methods</a>"
+#~ msgstr ""
+#~ "Ibahin kung paano ang mga forms "
+#~ "are pinapasa, <a "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">alamin ang iba pang mga"
+#~ " request methods</a>"
+
+#~ msgid ""
+#~ "This plugin checks if the address "
+#~ "of the request is a TOR exit "
+#~ "node, and informs the user if it"
+#~ " is, like check.torproject.org but from "
+#~ "aperion."
+#~ msgstr ""
+#~ "Ang plugin na ito ay tsini-check"
+#~ " kung ang address ng request ay "
+#~ "isang TOR exit node, at i-iinform "
+#~ "ang user kung oo, gaya ng "
+#~ "check.torproject.org ngunit aperion."
+
+#~ msgid ""
+#~ "The TOR exit node list "
+#~ "(https://check.torproject.org/exit-addresses) is "
+#~ "unreachable."
+#~ msgstr ""
+#~ "Ang TOR exit node list "
+#~ "(https://check.torproject.org/exit-addresses) ay "
+#~ "unreachable."
+
+#~ msgid "You are using TOR. Your IP address seems to be: {ip_address}."
+#~ msgstr "Ikaw ay gumagamit ng TOR. Ang i'yong IP address ay: {ip_address}."
+
+#~ msgid "You are not using TOR. Your IP address seems to be: {ip_address}."
+#~ msgstr "Ikaw ay hindi gumagamit ng TOR. Ang i'yong IP address ay: {ip_address}."
+
+#~ msgid ""
+#~ "The could not download the list of"
+#~ " Tor exit-nodes from "
+#~ "https://check.torproject.org/exit-addresses."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You are using Tor. It looks like"
+#~ " you have this external IP address:"
+#~ " {ip_address}."
+#~ msgstr ""
+
+#~ msgid "You are not using Tor. You have this external IP address: {ip_address}."
+#~ msgstr ""
+
+#~ msgid "Autodetect search language"
+#~ msgstr ""
+
+#~ msgid "Automatically detect the query search language and switch to it."
+#~ msgstr ""
+
+#~ msgid "others"
+#~ msgstr "other pa"
+
+#~ msgid ""
+#~ "This tab does not show up for "
+#~ "search results, but you can search "
+#~ "the engines listed here via bangs."
+#~ msgstr ""
+#~ "Ang tab na ito ay hindi lumalabas"
+#~ " para sa mga resulta ng paghahanap,"
+#~ " ngunit maaari kang maghanap sa mga"
+#~ " engine na nakalista dito sa "
+#~ "pamamagitan ng bangs."
+
+#~ msgid "Shortcut"
+#~ msgstr "Pagikliin/Maikli"
+
+#~ msgid "!bang"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This tab dues not exists in the"
+#~ " user interface, but you can search"
+#~ " in these engines by its !bangs."
+#~ msgstr ""
+
+#~ msgid "Engines cannot retrieve results."
+#~ msgstr "Hindi makuha ng engines ang mga resulta."
+
+#~ msgid "Please, try again later or find another aperion instance."
+#~ msgstr "Pakiusap, subukan muli mamaya o humanap ng ibang aperion instance."
+
+#~ msgid ""
+#~ "Redirect to open-access versions of "
+#~ "publications when available (plugin required)"
+#~ msgstr ""
+#~ "Mag-redirect sa open-access na mga"
+#~ " bersyon ng mga publikasyon kapag "
+#~ "available (kailangan ang plugin)"
+
+#~ msgid "Bang"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Change how forms are submitted, <a "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">learn more about request "
+#~ "methods</a>"
+#~ msgstr ""
+
+#~ msgid "On"
+#~ msgstr "Bukas"
+
+#~ msgid "Off"
+#~ msgstr "Sara"
+
+#~ msgid "Enabled"
+#~ msgstr "Paganahin"
+
+#~ msgid "Disabled"
+#~ msgstr "Hindi paganahin"
+
+#~ msgid ""
+#~ "Perform search immediately if a category"
+#~ " selected. Disable to select multiple "
+#~ "categories. (JavaScript required)"
+#~ msgstr ""
+#~ "Gawin ang paghahanap hanggat maaari "
+#~ "kapag nakapili ng uri. Alisin kapag "
+#~ "nakapili ng maraming uri. (Nangagailangan "
+#~ "ng JavaScript)"
+
+#~ msgid "Vim-like hotkeys"
+#~ msgstr "Kasingtulad ng vim hotkeys"
+
+#~ msgid ""
+#~ "Navigate search results with Vim-like"
+#~ " hotkeys (JavaScript required). Press \"h\""
+#~ " key on main or result page to"
+#~ " get help."
+#~ msgstr ""
+#~ "Maglakbay sa resulta ng paghahanap gamit"
+#~ " ang 'Vim-like hotkeys' (Nangagailangan "
+#~ "ito ng JavaScript). Pindutin ang \"h\""
+#~ " na pindutan sa panguna o ang "
+#~ "pahina ng resulta para makahingi ng "
+#~ "tulong."
+
+#~ msgid ""
+#~ "we didn't find any results. Please "
+#~ "use another query or search in "
+#~ "more categories."
+#~ msgstr ""
+#~ "wala kaming nakita na resulta. Pakiusap"
+#~ " na ibahin ang tanong o maghanap "
+#~ "sa maraming uri."
+
+#~ msgid "Rewrite result hostnames or remove results based on the hostname"
+#~ msgstr ""
+#~ "Palitan ang resulta ng hostname o "
+#~ "tanggalin ang resulta base sa hostname"
+
+#~ msgid "Bytes"
+#~ msgstr "Bytes"
+
+#~ msgid "kiB"
+#~ msgstr "kiB"
+
+#~ msgid "MiB"
+#~ msgstr "MiB"
+
+#~ msgid "GiB"
+#~ msgstr "GiB"
+
+#~ msgid "TiB"
+#~ msgstr "TiB"
+
+#~ msgid "Hostname replace"
+#~ msgstr "Palitan ang hostname"
+
+#~ msgid "Error!"
+#~ msgstr "Kamalian!"
+
+#~ msgid "Engines cannot retrieve results"
+#~ msgstr "Hindi makuha ng engines ang mga resulta"
+
+#~ msgid "Start submiting a new issue on GitHub"
+#~ msgstr "Mag-simulang mag-abot ng mga bagong isyu sa GitHub"
+
+#~ msgid "dummy"
+#~ msgstr ""
+
+#~ msgid "Random value generator"
+#~ msgstr "Random na generator ng halaga"
+
+#~ msgid "Statistics functions"
+#~ msgstr "Estatistika ng mga tungkulin"
+
+#~ msgid "Compute {functions} of the arguments"
+#~ msgstr "Tuusin ang {functions} ng pangangatuwiran"
+
+#~ msgid "Get directions"
+#~ msgstr "Kumuha ng direksyon"
+
+#~ msgid ""
+#~ "Displays your IP if the query is"
+#~ " \"ip\" and your user agent if "
+#~ "the query contains \"user agent\"."
+#~ msgstr ""
+#~ "Ipapakita ang iyong IP kapag ang "
+#~ "tanong ay \"ip\" at ang iyong user"
+#~ " agent kapag ang sa tanong ay "
+#~ "naglalaman ng \"user agent\"."
+
+#~ msgid ""
+#~ "Could not download the list of Tor"
+#~ " exit-nodes from: https://check.torproject.org"
+#~ "/exit-addresses"
+#~ msgstr ""
+#~ "Hindi ma-download ang listahan ng "
+#~ "mga Tor exit-node mula sa: "
+#~ "https://check.torproject.org/exit-addresses"
+
+#~ msgid ""
+#~ "You are using Tor and it looks "
+#~ "like you have this external IP "
+#~ "address: {ip_address}"
+#~ msgstr ""
+#~ "Ginagamit mo ang Tor at mukang ito"
+#~ " ang iyong external IP address: "
+#~ "{ip_address}"
+
+#~ msgid ""
+#~ "You are not using Tor and you "
+#~ "have this external IP address: "
+#~ "{ip_address}"
+#~ msgstr ""
+#~ "Hindi mo ginagamit ang Tor at ito"
+#~ " ang iyong external IP address: "
+#~ "{ip_address}"
+
+#~ msgid "Keywords"
+#~ msgstr "Mga keyword"
+
+#~ msgid "/"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Specifying custom settings in the "
+#~ "preferences URL can be used to "
+#~ "sync preferences across devices."
+#~ msgstr ""
+#~ "Ang pagtukoy ng pasadyang mga setting"
+#~ " sa URL ng mga preference ay "
+#~ "maaaring gamitin upang i-sync ang mga"
+#~ " preference sa iba't ibang mga "
+#~ "aparato."
+
+#~ msgid "proxied"
+#~ msgstr "na-proxy"
+
+#~ msgid ""
+#~ "This tab does not exists in the"
+#~ " user interface, but you can search"
+#~ " in these engines by its !bangs."
+#~ msgstr ""
+#~ "Ang tab na ito ay hindi umiiral"
+#~ " sa interface ng gumagamit, ngunit "
+#~ "maaari kang maghanap sa mga engine "
+#~ "na ito sa pamamagitan ng kanilang "
+#~ "!bangs."
+
+#~ msgid "Results on new tabs"
+#~ msgstr "Ang resulta ay na sa bagong tab"
+
+#~ msgid "Open result links on new browser tabs"
+#~ msgstr "Buksan ang resulta sa panibagong browser tab"
+
+#~ msgid "Find stuff as you type"
+#~ msgstr "Maghanap habang ikaw ang nag-tytype"
+
+#~ msgid "Converts strings to different hash digests."
+#~ msgstr "Isinasalin ang string sa iba't ibang hash digests."
+
+#~ msgid ""
+#~ "Rewrite hostnames, remove results or "
+#~ "prioritize them based on the hostname"
+#~ msgstr ""
+#~ "Isulat muli ang mga hostname, alisin "
+#~ "ang mga resulta o unahin ang mga"
+#~ " ito batay sa hostname"
+
+#~ msgid "With that list, you can assess aperion transparency."
+#~ msgstr ""
+#~ "Sa tulong ng listahan, maaari mong "
+#~ "suriin ang transparansiya ng aperion."
+
+#~ msgid ""
+#~ "These settings are stored in your "
+#~ "cookies, this allows us not to "
+#~ "store this data about you."
+#~ msgstr ""
+#~ "Ang settings ay nakalagay sa cookies "
+#~ "upang hindi kami makakuha ng datos "
+#~ "mula sa iyo."
+
+#~ msgid ""
+#~ "These cookies serve your sole "
+#~ "convenience, we don't use these cookies"
+#~ " to track you."
+#~ msgstr ""
+#~ "Hindi namin ginagamit ang cookies para"
+#~ " i-track ka, ito ay para maging "
+#~ "maayos ang paggamit mo."
+
+#~ msgid "Proxying image results through aperion"
+#~ msgstr "Ang pag-proxy ng mga resulta ng imahe sa pamamagitan ng aperion"
+
+#~ msgid "Automatically load next page when scrolling to bottom of current page"
+#~ msgstr ""
+#~ "Awtomatiko na ikarga ang sumunod na "
+#~ "pahina kapag nakarating na sa dulo "
+#~ "ng kasalukuyang pahina"
+
+#~ msgid ""
+#~ "Perform search immediately if a category"
+#~ " selected. Disable to select multiple "
+#~ "categories"
+#~ msgstr ""
+#~ "Isagawa ang paghahanap kaagad kung may"
+#~ " kategoryang pinili. I-disable upang pumili"
+#~ " ng maramihang mga kategorya"
+
+#~ msgid "Change aperion layout"
+#~ msgstr "Baguhin ang aperion layout"
+

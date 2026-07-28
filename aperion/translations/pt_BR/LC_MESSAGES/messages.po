@@ -1,0 +1,2414 @@
+# Portuguese (Brazil) translations for .
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the  project.
+#
+# Translators:
+# Adam Tauber <asciimoo@gmail.com>, 2017
+# C. E., 2020
+# C. E., 2018
+# Gabriel Nunes <gabriel.hkr@gmail.com>, 2017
+# Guimarães Mello <matheus.mello@disroot.org>, 2017
+# Neton Brício <fervelinux@gmail.com>, 2015
+# pizzaiolo, 2016
+# shizuka, 2018
+# Leonardo Colman <dev@leonardo.colman.com.br>, 2022.
+# Adriano Xavier <px.adriano@gmail.com>, 2022.
+# Markus Heiser <markus.heiser@darmarit.de>, 2022.
+# calb sepherus <calb.sepherus@protonmail.com>, 2022.
+# Yan Lyra <yanlyra3@gmail.com>, 2022.
+# zaioti <zaioti@tuta.io>, 2022.
+# Spectro <spectro@keemail.me>, 2023.
+# lhostfree951 <freeehost9191@gmail.com>, 2023.
+# return42 <markus.heiser@darmarit.de>, 2023, 2024.
+# Coccocoas_Helper <coccocoahelper@gmail.com>, 2023.
+# ETRB <codeberg-cm58mk@r.acmrb.uk>, 2023.
+# LeoLomardo <leoland771@gmail.com>, 2024.
+# return42 <return42@users.noreply.translate.codeberg.org>, 2024, 2025.
+# matheuspolachini <matheuspolachini@users.noreply.translate.codeberg.org>,,
+# 2025.
+# 2024.
+# nouoneq <nouoneq@users.noreply.translate.codeberg.org>, 2024, 2025.
+# Pyrbor <Pyrbor@users.noreply.translate.codeberg.org>, 2024.
+# rodgui <rodgui@users.noreply.translate.codeberg.org>, 2024, 2025.
+# rafablog77 <rafablog77@users.noreply.translate.codeberg.org>, 2024, 2025.
+# Juno Takano <jutty@users.noreply.translate.codeberg.org>, 2024, 2025.
+# purp0w <purp0w@users.noreply.translate.codeberg.org>, 2024, 2025.
+# saltsnorter <saltsnorter@users.noreply.translate.codeberg.org>, 2024,
+# Anonymous <anonymous@users.noreply.translate.codeberg.org>, 2025.
+# lhostfree951 <lhostfree951@users.noreply.translate.codeberg.org>, 2025.
+# Coccocoas_Helper <coccocoas_helper@users.noreply.translate.codeberg.org>,
+# ETRB <etrb@users.noreply.translate.codeberg.org>, 2025.
+# LeoLomardo <leolomardo@users.noreply.translate.codeberg.org>, 2025.
+# Pyrbor <pyrbor@users.noreply.translate.codeberg.org>, 2025.
+# Juno Takano <jutty@noreply.codeberg.org>, 2025.
+# rodgui <rodgui@noreply.codeberg.org>, 2025.
+# bdcdo <bdcdo@noreply.codeberg.org>, 2025.
+# "lucasmz.dev" <lucasmz.dev@noreply.codeberg.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: aperion\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-07-03 14:46+0000\n"
+"PO-Revision-Date: 2025-07-22 10:57+0000\n"
+"Last-Translator: \"lucasmz.dev\" <lucasmz.dev@noreply.codeberg.org>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.codeberg.org/projects/"
+"aperion/aperion/pt_BR/>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.12.2\n"
+"Generated-By: Babel 2.17.0\n"
+
+#. CONSTANT_NAMES['NO_SUBGROUPING']
+#: aperion/aperion.msg
+msgid "without further subgrouping"
+msgstr "sem mais subgrupos"
+
+#. CONSTANT_NAMES['DEFAULT_CATEGORY']
+#: aperion/aperion.msg
+msgid "other"
+msgstr "outra"
+
+#. CATEGORY_NAMES['FILES']
+#: aperion/aperion.msg
+msgid "files"
+msgstr "arquivos"
+
+#. CATEGORY_NAMES['GENERAL']
+#: aperion/aperion.msg
+msgid "general"
+msgstr "geral"
+
+#. CATEGORY_NAMES['MUSIC']
+#: aperion/aperion.msg
+msgid "music"
+msgstr "música"
+
+#. CATEGORY_NAMES['SOCIAL_MEDIA']
+#: aperion/aperion.msg
+msgid "social media"
+msgstr "redes sociais"
+
+#. CATEGORY_NAMES['IMAGES']
+#: aperion/aperion.msg
+msgid "images"
+msgstr "imagens"
+
+#. CATEGORY_NAMES['VIDEOS']
+#: aperion/aperion.msg
+msgid "videos"
+msgstr "vídeos"
+
+#. CATEGORY_NAMES['RADIO']
+#: aperion/engines/radio_browser.py:151 aperion/aperion.msg
+msgid "radio"
+msgstr "rádio"
+
+#. CATEGORY_NAMES['TV']
+#: aperion/aperion.msg
+msgid "tv"
+msgstr "tv"
+
+#. CATEGORY_NAMES['IT']
+#: aperion/aperion.msg
+msgid "it"
+msgstr "ti"
+
+#. CATEGORY_NAMES['NEWS']
+#: aperion/aperion.msg
+msgid "news"
+msgstr "notícias"
+
+#. CATEGORY_NAMES['MAP']
+#: aperion/aperion.msg
+msgid "map"
+msgstr "mapa"
+
+#. CATEGORY_NAMES['ONIONS']
+#: aperion/aperion.msg
+msgid "onions"
+msgstr "onions"
+
+#. CATEGORY_NAMES['SCIENCE']
+#: aperion/aperion.msg
+msgid "science"
+msgstr "ciência"
+
+#. CATEGORY_GROUPS['APPS']
+#: aperion/aperion.msg
+msgid "apps"
+msgstr "aplicativos"
+
+#. CATEGORY_GROUPS['DICTIONARIES']
+#: aperion/aperion.msg
+msgid "dictionaries"
+msgstr "dicionários"
+
+#. CATEGORY_GROUPS['LYRICS']
+#: aperion/aperion.msg
+msgid "lyrics"
+msgstr "letras"
+
+#. CATEGORY_GROUPS['PACKAGES']
+#: aperion/aperion.msg
+msgid "packages"
+msgstr "pacotes"
+
+#. CATEGORY_GROUPS['Q_A']
+#: aperion/aperion.msg
+msgid "q&a"
+msgstr "dúvidas"
+
+#. CATEGORY_GROUPS['REPOS']
+#: aperion/aperion.msg
+msgid "repos"
+msgstr "repositórios"
+
+#. CATEGORY_GROUPS['SOFTWARE_WIKIS']
+#: aperion/aperion.msg
+msgid "software wikis"
+msgstr "wikis de programas"
+
+#. CATEGORY_GROUPS['WEB']
+#: aperion/aperion.msg
+msgid "web"
+msgstr "web"
+
+#. CATEGORY_GROUPS['SCIENTIFIC PUBLICATIONS']
+#: aperion/aperion.msg
+msgid "scientific publications"
+msgstr "publicações científicas"
+
+#. STYLE_NAMES['AUTO']
+#: aperion/aperion.msg
+msgid "auto"
+msgstr "automático"
+
+#. STYLE_NAMES['LIGHT']
+#: aperion/aperion.msg
+msgid "light"
+msgstr "claro"
+
+#. STYLE_NAMES['DARK']
+#: aperion/aperion.msg
+msgid "dark"
+msgstr "escuro"
+
+#. STYLE_NAMES['BLACK']
+#: aperion/aperion.msg
+msgid "black"
+msgstr "preto"
+
+#. BRAND_CUSTOM_LINKS['UPTIME']
+#: aperion/aperion.msg
+msgid "Uptime"
+msgstr "Tempo em execução"
+
+#. BRAND_CUSTOM_LINKS['ABOUT']
+#: aperion/aperion.msg aperion/templates/simple/base.html:49
+msgid "About"
+msgstr "Sobre"
+
+#. WEATHER_TERMS['AVERAGE TEMP.']
+#: aperion/aperion.msg
+msgid "Average temp."
+msgstr "Temperatura média"
+
+#. WEATHER_TERMS['CLOUD COVER']
+#: aperion/aperion.msg
+msgid "Cloud cover"
+msgstr "Nebuloso"
+
+#. WEATHER_TERMS['CONDITION']
+#: aperion/engines/duckduckgo_weather.py:45 aperion/aperion.msg
+msgid "Condition"
+msgstr "Condição"
+
+#. WEATHER_TERMS['CURRENT CONDITION']
+#: aperion/engines/duckduckgo_weather.py:118 aperion/aperion.msg
+msgid "Current condition"
+msgstr "Condição atual"
+
+#. WEATHER_TERMS['EVENING']
+#: aperion/aperion.msg
+msgid "Evening"
+msgstr "Fim da tarde"
+
+#. WEATHER_TERMS['FEELS LIKE']
+#: aperion/engines/duckduckgo_weather.py:53 aperion/aperion.msg
+msgid "Feels like"
+msgstr "Sensação térmica"
+
+#. WEATHER_TERMS['HUMIDITY']
+#: aperion/engines/duckduckgo_weather.py:64 aperion/aperion.msg
+#: aperion/templates/simple/answer/weather.html:29
+msgid "Humidity"
+msgstr "Umidade"
+
+#. WEATHER_TERMS['MAX TEMP.']
+#: aperion/engines/duckduckgo_weather.py:77 aperion/aperion.msg
+msgid "Max temp."
+msgstr "Temperatura máxima"
+
+#. WEATHER_TERMS['MIN TEMP.']
+#: aperion/engines/duckduckgo_weather.py:73 aperion/aperion.msg
+msgid "Min temp."
+msgstr "Temperatura mínima"
+
+#. WEATHER_TERMS['MORNING']
+#: aperion/aperion.msg
+msgid "Morning"
+msgstr "Manhã"
+
+#. WEATHER_TERMS['NIGHT']
+#: aperion/aperion.msg
+msgid "Night"
+msgstr "Noite"
+
+#. WEATHER_TERMS['NOON']
+#: aperion/aperion.msg
+msgid "Noon"
+msgstr "Meio dia"
+
+#. WEATHER_TERMS['PRESSURE']
+#: aperion/aperion.msg aperion/templates/simple/answer/weather.html:25
+msgid "Pressure"
+msgstr "Pressão"
+
+#. WEATHER_TERMS['SUNRISE']
+#: aperion/engines/duckduckgo_weather.py:81 aperion/aperion.msg
+msgid "Sunrise"
+msgstr "Nascer do sol"
+
+#. WEATHER_TERMS['SUNSET']
+#: aperion/engines/duckduckgo_weather.py:82 aperion/aperion.msg
+msgid "Sunset"
+msgstr "Pôr do sol"
+
+#. WEATHER_TERMS['TEMPERATURE']
+#: aperion/engines/duckduckgo_weather.py:48 aperion/aperion.msg
+#: aperion/templates/simple/answer/weather.html:17
+msgid "Temperature"
+msgstr "Temperatura"
+
+#. WEATHER_TERMS['UV INDEX']
+#: aperion/engines/duckduckgo_weather.py:80 aperion/aperion.msg
+msgid "UV index"
+msgstr "Índice UV"
+
+#. WEATHER_TERMS['VISIBILITY']
+#: aperion/engines/duckduckgo_weather.py:62 aperion/aperion.msg
+msgid "Visibility"
+msgstr "Visibilidade"
+
+#. WEATHER_TERMS['WIND']
+#: aperion/engines/duckduckgo_weather.py:58 aperion/aperion.msg
+#: aperion/templates/simple/answer/weather.html:23
+msgid "Wind"
+msgstr "Vento"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Clear sky"
+msgstr "Céu limpo"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Partly cloudy"
+msgstr "Parcialmente nublado"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Cloudy"
+msgstr "Nublado"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Fair"
+msgstr "Razoável"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Fog"
+msgstr "Neblina"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain and thunder"
+msgstr "Chuva leve com trovões"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain showers and thunder"
+msgstr "Chuva leve e rápida com trovões"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain showers"
+msgstr "Chuva leve e rápida"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light rain"
+msgstr "Chuva leve"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain and thunder"
+msgstr "Chuva com trovões"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain showers and thunder"
+msgstr "Chuva rápida com trovões"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain showers"
+msgstr "Chuva rápida"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Rain"
+msgstr "Chuva"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain and thunder"
+msgstr "Chuva intensa com trovões"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain showers and thunder"
+msgstr "Chuva rápida e intensa com trovões"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain showers"
+msgstr "Chuva rápida e intensa"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy rain"
+msgstr "Chuva intensa"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet and thunder"
+msgstr "Granizo leve com trovões"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet showers and thunder"
+msgstr "Granizo leve e rápido com trovões"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet showers"
+msgstr "Granizo leve e rápido"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light sleet"
+msgstr "Granizo fraco"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet and thunder"
+msgstr "Granizo com trovões"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet showers and thunder"
+msgstr "Granizo rápido com trovões"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet showers"
+msgstr "Granizo rápido"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Sleet"
+msgstr "Granizo"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet and thunder"
+msgstr "Granizo intenso com trovões"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet showers and thunder"
+msgstr "Granizo pesado rápido com trovões"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet showers"
+msgstr "Chuvas rápidas e intensas de granizo"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy sleet"
+msgstr "Granizo intenso"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow and thunder"
+msgstr "Neve fraca com trovões"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow showers and thunder"
+msgstr "Neve fraca e rápida com trovões"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow showers"
+msgstr "Neve fraca e rápida"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Light snow"
+msgstr "Neve fraca"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow and thunder"
+msgstr "Neve com trovões"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow showers and thunder"
+msgstr "Neve rápida com trovões"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow showers"
+msgstr "Neve rápida"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Snow"
+msgstr "Neve"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow and thunder"
+msgstr "Neve pesada com trovões"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow showers and thunder"
+msgstr "Neve intensa rápida com trovões"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow showers"
+msgstr "Neve intensa rápida"
+
+#. WEATHER_CONDITIONS
+#: aperion/aperion.msg
+msgid "Heavy snow"
+msgstr "Neve pesada"
+
+#. SOCIAL_MEDIA_TERMS['SUBSCRIBERS']
+#: aperion/engines/lemmy.py:85 aperion/aperion.msg
+msgid "subscribers"
+msgstr "inscritos"
+
+#. SOCIAL_MEDIA_TERMS['POSTS']
+#: aperion/engines/lemmy.py:86 aperion/aperion.msg
+msgid "posts"
+msgstr "publicações"
+
+#. SOCIAL_MEDIA_TERMS['ACTIVE USERS']
+#: aperion/engines/lemmy.py:87 aperion/aperion.msg
+msgid "active users"
+msgstr "usuários ativos"
+
+#. SOCIAL_MEDIA_TERMS['COMMENTS']
+#: aperion/engines/discourse.py:157 aperion/engines/hackernews.py:82
+#: aperion/engines/lemmy.py:130 aperion/aperion.msg
+msgid "comments"
+msgstr "comentários"
+
+#. SOCIAL_MEDIA_TERMS['USER']
+#: aperion/engines/lemmy.py:129 aperion/engines/lemmy.py:164 aperion/aperion.msg
+msgid "user"
+msgstr "usuário"
+
+#. SOCIAL_MEDIA_TERMS['COMMUNITY']
+#: aperion/engines/lemmy.py:131 aperion/engines/lemmy.py:165 aperion/aperion.msg
+msgid "community"
+msgstr "comunidade"
+
+#. SOCIAL_MEDIA_TERMS['POINTS']
+#: aperion/engines/hackernews.py:82 aperion/aperion.msg
+msgid "points"
+msgstr "pontos"
+
+#. SOCIAL_MEDIA_TERMS['TITLE']
+#: aperion/aperion.msg
+msgid "title"
+msgstr "título"
+
+#. SOCIAL_MEDIA_TERMS['AUTHOR']
+#: aperion/engines/hackernews.py:85 aperion/aperion.msg
+msgid "author"
+msgstr "autor"
+
+#. SOCIAL_MEDIA_TERMS['THREAD OPEN']
+#: aperion/engines/discourse.py:149 aperion/aperion.msg
+msgid "open"
+msgstr "abrir"
+
+#. SOCIAL_MEDIA_TERMS['THREAD CLOSED']
+#: aperion/engines/discourse.py:149 aperion/aperion.msg
+msgid "closed"
+msgstr "fechado"
+
+#. SOCIAL_MEDIA_TERMS['THREAD ANSWERED']
+#: aperion/engines/discourse.py:160 aperion/aperion.msg
+msgid "answered"
+msgstr "respondido"
+
+#: aperion/webapp.py:292
+msgid "No item found"
+msgstr "Nenhum item encontrado"
+
+#: aperion/engines/qwant.py:291
+#: aperion/templates/simple/result_templates/images.html:23 aperion/webapp.py:294
+msgid "Source"
+msgstr "Fonte"
+
+#: aperion/webapp.py:296
+msgid "Error loading the next page"
+msgstr "Erro ao carregar a próxima página"
+
+#: aperion/webapp.py:447 aperion/webapp.py:845
+msgid "Invalid settings, please edit your preferences"
+msgstr "Configurações inválidas, por favor, edite suas preferências"
+
+#: aperion/webapp.py:463
+msgid "Invalid settings"
+msgstr "Configurações inválidas"
+
+#: aperion/webapp.py:540 aperion/webapp.py:630
+msgid "search error"
+msgstr "erro de pesquisa"
+
+#: aperion/webutils.py:35
+msgid "timeout"
+msgstr "tempo esgotado"
+
+#: aperion/webutils.py:36
+msgid "parsing error"
+msgstr "erro de interpretação dos dados"
+
+#: aperion/webutils.py:37
+msgid "HTTP protocol error"
+msgstr "erro de protocolo HTTP"
+
+#: aperion/webutils.py:38
+msgid "network error"
+msgstr "erro de rede"
+
+#: aperion/webutils.py:39
+msgid "SSL error: certificate validation has failed"
+msgstr "Erro de SSL: falha na validação do certificado"
+
+#: aperion/webutils.py:41
+msgid "unexpected crash"
+msgstr "falha inesperada"
+
+#: aperion/webutils.py:48
+msgid "HTTP error"
+msgstr "erro HTTP"
+
+#: aperion/webutils.py:49
+msgid "HTTP connection error"
+msgstr "erro de conexão HTTP"
+
+#: aperion/webutils.py:55
+msgid "proxy error"
+msgstr "erro de proxy"
+
+#: aperion/webutils.py:56
+msgid "CAPTCHA"
+msgstr "CAPTCHA"
+
+#: aperion/webutils.py:57
+msgid "too many requests"
+msgstr "demasiadas solicitações"
+
+#: aperion/webutils.py:58
+msgid "access denied"
+msgstr "acesso negado"
+
+#: aperion/webutils.py:59
+msgid "server API error"
+msgstr "erro de API do servidor"
+
+#: aperion/webutils.py:78
+msgid "Suspended"
+msgstr "Suspenso"
+
+#: aperion/webutils.py:313
+#, python-brace-format
+msgid "{minutes} minute(s) ago"
+msgstr "{minutes} minuto(s) atrás"
+
+#: aperion/webutils.py:314
+#, python-brace-format
+msgid "{hours} hour(s), {minutes} minute(s) ago"
+msgstr "{hours} hora(s), {minutes} minuto(s) atrás"
+
+#: aperion/answerers/random.py:69
+msgid "Generate different random values"
+msgstr "Gerar diferentes valores aleatórios"
+
+#: aperion/answerers/statistics.py:36
+#, python-brace-format
+msgid "Compute {func} of the arguments"
+msgstr "Calcular {func} dos argumentos"
+
+#: aperion/engines/openstreetmap.py:158
+msgid "Show route in map .."
+msgstr "Exibir rota no mapa .."
+
+#: aperion/engines/pdbe.py:96
+#, python-brace-format
+msgid "{title} (OBSOLETE)"
+msgstr "{title} (OBSOLETO)"
+
+#: aperion/engines/pdbe.py:103
+msgid "This entry has been superseded by"
+msgstr "Esta entrada foi substituída por"
+
+#: aperion/engines/qwant.py:293
+msgid "Channel"
+msgstr "Canal"
+
+#: aperion/engines/radio_browser.py:153
+msgid "bitrate"
+msgstr "taxa de bits"
+
+#: aperion/engines/radio_browser.py:154
+msgid "votes"
+msgstr "votos"
+
+#: aperion/engines/radio_browser.py:155
+msgid "clicks"
+msgstr "cliques"
+
+#: aperion/engines/seekr.py:193 aperion/engines/yummly.py:71
+#: aperion/engines/zlibrary.py:137
+msgid "Language"
+msgstr "Idioma"
+
+#: aperion/engines/semantic_scholar.py:101
+#, python-brace-format
+msgid ""
+"{numCitations} citations from the year {firstCitationVelocityYear} to "
+"{lastCitationVelocityYear}"
+msgstr ""
+"{numCitations} citações do ano {firstCitationVelocityYear} até o ano "
+"{lastCitationVelocityYear}"
+
+#: aperion/engines/tineye.py:48
+msgid ""
+"Could not read that image url. This may be due to an unsupported file "
+"format. TinEye only supports images that are JPEG, PNG, GIF, BMP, TIFF or"
+" WebP."
+msgstr ""
+"Não foi possível ler este URL de imagem. Isto pode ter ocorrido devido a um "
+"formato de arquivo não suportado. Apenas os seguintes tipos de imagem são "
+"suportados pelo TinEye: JPEG, PNG, GIF, BMP, TIFF ou WebP."
+
+#: aperion/engines/tineye.py:54
+msgid ""
+"The image is too simple to find matches. TinEye requires a basic level of"
+" visual detail to successfully identify matches."
+msgstr ""
+"A imagem é simples demais para achar correspondências. O TinEye necessita de "
+"um nível básico de detalhe visual para identificar correspondências."
+
+#: aperion/engines/tineye.py:59
+msgid "The image could not be downloaded."
+msgstr "A imagem não pôde ser baixada."
+
+#: aperion/engines/zlibrary.py:138
+msgid "Book rating"
+msgstr "Avaliação do livro"
+
+#: aperion/engines/zlibrary.py:139
+msgid "File quality"
+msgstr "Qualidade do arquivo"
+
+#: aperion/plugins/ahmia_filter.py:32
+msgid "Ahmia blacklist"
+msgstr "Lista de bloqueios do Ahmia"
+
+#: aperion/plugins/ahmia_filter.py:33
+msgid "Filter out onion results that appear in Ahmia's blacklist."
+msgstr "Filtrar resultados onion que aparecem na lista de bloqueios do Ahmia"
+
+#: aperion/plugins/calculator.py:38
+msgid "Basic Calculator"
+msgstr "Calculadora Básica"
+
+#: aperion/plugins/calculator.py:39
+msgid "Calculate mathematical expressions via the search bar"
+msgstr "Calcular expressões matemáticas pela barra de pesquisa"
+
+#: aperion/plugins/hash_plugin.py:34
+msgid "Hash plugin"
+msgstr "Plugin de hash"
+
+#: aperion/plugins/hash_plugin.py:36
+msgid ""
+"Converts strings to different hash digests. Available functions: md5, "
+"sha1, sha224, sha256, sha384, sha512."
+msgstr ""
+"Calcula as diferentes hashes dos textos. Funções disponíveis: md5, sha1, "
+"sha224, sha256, sha384, sha512."
+
+#: aperion/plugins/hash_plugin.py:64
+msgid "hash digest"
+msgstr "resultado de hash"
+
+#: aperion/plugins/hostnames.py:123
+msgid "Hostnames plugin"
+msgstr "Plugin de hostnames"
+
+#: aperion/plugins/hostnames.py:124
+msgid "Rewrite hostnames and remove or prioritize results based on the hostname"
+msgstr ""
+"Reescrever nomes de host e remover ou priorizar resultados baseado no nome "
+"do host"
+
+#: aperion/plugins/oa_doi_rewrite.py:55
+msgid "Open Access DOI rewrite"
+msgstr "Substituição com DOI Open Acess"
+
+#: aperion/plugins/oa_doi_rewrite.py:56
+msgid ""
+"Avoid paywalls by redirecting to open-access versions of publications "
+"when available"
+msgstr ""
+"Evite \"paywalls\" ao redirecionar para versões de acesso livre de "
+"publicações, quando possível"
+
+#: aperion/plugins/self_info.py:37
+msgid "Self Information"
+msgstr "Auto-informação"
+
+#: aperion/plugins/self_info.py:39
+msgid ""
+"Displays your IP if the query is \"ip\" and your user agent if the query "
+"is \"user-agent\"."
+msgstr ""
+"Exibe seu IP se a consulta for \"ip\" e seu agente de usuário se a consulta "
+"for \"user-agent\"."
+
+#: aperion/plugins/self_info.py:52
+msgid "Your IP is: "
+msgstr "Seu IP é: "
+
+#: aperion/plugins/self_info.py:55
+msgid "Your user-agent is: "
+msgstr "Seu agente de usuário é: "
+
+#: aperion/plugins/tor_check.py:42
+msgid "Tor check plugin"
+msgstr "Plugin de verificação Tor"
+
+#: aperion/plugins/tor_check.py:44
+msgid ""
+"This plugin checks if the address of the request is a Tor exit-node, and "
+"informs the user if it is; like check.torproject.org, but from aperion."
+msgstr ""
+"Este plugin verifica se o endereço da solicitação vem de um nó de saída do "
+"Tor e informa ao usuário se sim; é semelhante ao check.torproject.org, mas "
+"pelo aperion."
+
+#: aperion/plugins/tor_check.py:65
+msgid "Could not download the list of Tor exit-nodes from"
+msgstr "Não foi possível baixar a lista de nós de saída do Tor de"
+
+#: aperion/plugins/tor_check.py:72
+msgid "You are using Tor and it looks like you have the external IP address"
+msgstr "Você está usando o Tor e parece que seu endereço de IP externo é"
+
+#: aperion/plugins/tor_check.py:76
+msgid "You are not using Tor and you have the external IP address"
+msgstr "Você não está usando o Tor e seu endereço de IP externo é"
+
+#: aperion/plugins/tracker_url_remover.py:35
+msgid "Tracker URL remover"
+msgstr "Removedor de rastreador de URLs"
+
+#: aperion/plugins/tracker_url_remover.py:36
+msgid "Remove trackers arguments from the returned URL"
+msgstr "Remova os argumentos de rastreio da URL recebida"
+
+#: aperion/plugins/unit_converter.py:49
+msgid "Unit converter plugin"
+msgstr "Plugin de conversão de unidades"
+
+#: aperion/plugins/unit_converter.py:50
+msgid "Convert between units"
+msgstr "Converta entre diferentes unidades"
+
+#: aperion/result_types/answer.py:224
+#, python-brace-format
+msgid "{location}: {temperature}, {condition}"
+msgstr "{location}: {temperature}, {condition}"
+
+#: aperion/templates/simple/404.html:4
+msgid "Page not found"
+msgstr "Página não encontrada"
+
+#: aperion/templates/simple/404.html:6
+#, python-format
+msgid "Go to %(search_page)s."
+msgstr "Ir a %(search_page)s."
+
+#: aperion/templates/simple/404.html:6
+msgid "search page"
+msgstr "página de pesquisa"
+
+#: aperion/templates/simple/base.html:53
+msgid "Donate"
+msgstr "Doar"
+
+#: aperion/templates/simple/base.html:57
+#: aperion/templates/simple/preferences.html:156
+msgid "Preferences"
+msgstr "Preferências"
+
+#: aperion/templates/simple/base.html:67
+msgid "Powered by"
+msgstr "Oferecido pelo"
+
+#: aperion/templates/simple/base.html:67
+msgid "a privacy-respecting, open metasearch engine"
+msgstr "um meta mecanismo de pesquisa aberto, que respeita a privacidade"
+
+#: aperion/templates/simple/base.html:68
+#: aperion/templates/simple/result_templates/packages.html:59
+msgid "Source code"
+msgstr "Código-fonte"
+
+#: aperion/templates/simple/base.html:69
+msgid "Issue tracker"
+msgstr "Rastreador de problemas"
+
+#: aperion/templates/simple/base.html:70 aperion/templates/simple/stats.html:18
+msgid "Engine stats"
+msgstr "Estatísticas do mecanismo"
+
+#: aperion/templates/simple/base.html:72
+msgid "Public instances"
+msgstr "Instâncias públicas"
+
+#: aperion/templates/simple/base.html:75
+msgid "Privacy policy"
+msgstr "Política de privacidade"
+
+#: aperion/templates/simple/base.html:78
+msgid "Contact instance maintainer"
+msgstr "Contatar o responsável da instância"
+
+#: aperion/templates/simple/categories.html:30
+msgid "Click on the magnifier to perform search"
+msgstr "Clique na lupa para realizar uma pesquisa"
+
+#: aperion/templates/simple/macros.html:40
+msgid "Length"
+msgstr "Duração"
+
+#: aperion/templates/simple/macros.html:41
+msgid "Views"
+msgstr "Visualizações"
+
+#: aperion/templates/simple/macros.html:42
+#: aperion/templates/simple/result_templates/files.html:34
+#: aperion/templates/simple/result_templates/images.html:19
+#: aperion/templates/simple/result_templates/paper.html:6
+msgid "Author"
+msgstr "Autor"
+
+#: aperion/templates/simple/macros.html:50
+msgid "cached"
+msgstr "em cache"
+
+#: aperion/templates/simple/new_issue.html:64
+msgid "Start submitting a new issue on GitHub"
+msgstr "Envie um problema novo no GitHub"
+
+#: aperion/templates/simple/new_issue.html:66
+msgid "Please check for existing bugs about this engine on GitHub"
+msgstr "Por favor, verifique os bugs existentes deste mecanismo no GitHub"
+
+#: aperion/templates/simple/new_issue.html:69
+msgid "I confirm there is no existing bug about the issue I encounter"
+msgstr ""
+"Eu confirmo que não há nenhum bug existente sobre o problema que eu "
+"encontrei"
+
+#: aperion/templates/simple/new_issue.html:71
+msgid "If this is a public instance, please specify the URL in the bug report"
+msgstr ""
+"Se esta for uma instância pública, por favor, especifique a URL no relatório"
+
+#: aperion/templates/simple/new_issue.html:72
+msgid "Submit a new issue on Github including the above information"
+msgstr "Envie um novo problema no GitHub e inclua as informações acima"
+
+#: aperion/templates/simple/preferences.html:65
+msgid "No HTTPS"
+msgstr "Sem HTTPS"
+
+#: aperion/templates/simple/elements/engines_msg.html:14
+#: aperion/templates/simple/preferences.html:69
+#: aperion/templates/simple/preferences.html:70
+msgid "View error logs and submit a bug report"
+msgstr "Ver o registros de erro e enviar um relatório"
+
+#: aperion/templates/simple/preferences.html:74
+msgid "!bang for this engine"
+msgstr "!bang neste mecanismo"
+
+#: aperion/templates/simple/preferences.html:80
+msgid "!bang for its categories"
+msgstr "!bang em suas categorias"
+
+#: aperion/templates/simple/preferences.html:102
+#: aperion/templates/simple/stats.html:64
+msgid "Median"
+msgstr "Média"
+
+#: aperion/templates/simple/preferences.html:103
+#: aperion/templates/simple/stats.html:70
+msgid "P80"
+msgstr "P80"
+
+#: aperion/templates/simple/preferences.html:104
+#: aperion/templates/simple/stats.html:76
+msgid "P95"
+msgstr "P95"
+
+#: aperion/templates/simple/preferences.html:136
+msgid "Failed checker test(s): "
+msgstr "Falha em testes: "
+
+#: aperion/templates/simple/preferences.html:138
+msgid "Errors:"
+msgstr "Erros:"
+
+#: aperion/templates/simple/preferences.html:163
+msgid "General"
+msgstr "Geral"
+
+#: aperion/templates/simple/preferences.html:166
+msgid "Default categories"
+msgstr "Categorias pré-definidas"
+
+#: aperion/templates/simple/preferences.html:194
+msgid "User interface"
+msgstr "Interface do usuário"
+
+#: aperion/templates/simple/preferences.html:217
+msgid "Privacy"
+msgstr "Privacidade"
+
+#: aperion/templates/simple/preferences.html:232
+msgid "Engines"
+msgstr "Mecanismos de pesquisa"
+
+#: aperion/templates/simple/preferences.html:234
+msgid "Currently used search engines"
+msgstr "Mecanismos de pesquisa sendo utilizados no momento"
+
+#: aperion/templates/simple/preferences.html:243
+msgid "Special Queries"
+msgstr "Consultas Especiais"
+
+#: aperion/templates/simple/preferences.html:251
+msgid "Cookies"
+msgstr "Cookies"
+
+#: aperion/templates/simple/results.html:30
+msgid "Number of results"
+msgstr "Número de resultados"
+
+#: aperion/templates/simple/results.html:36
+msgid "Info"
+msgstr "Informações"
+
+#: aperion/templates/simple/results.html:77
+msgid "Back to top"
+msgstr "Voltar ao topo"
+
+#: aperion/templates/simple/results.html:95
+msgid "Previous page"
+msgstr "Página anterior"
+
+#: aperion/templates/simple/results.html:113
+msgid "Next page"
+msgstr "Próxima página"
+
+#: aperion/templates/simple/search.html:3
+msgid "Display the front page"
+msgstr "Mostrar a página inicial"
+
+#: aperion/templates/simple/search.html:9
+#: aperion/templates/simple/simple_search.html:5
+msgid "Search for..."
+msgstr "Pesquisar por..."
+
+#: aperion/templates/simple/search.html:10
+#: aperion/templates/simple/simple_search.html:6
+msgid "clear"
+msgstr "limpar"
+
+#: aperion/templates/simple/search.html:11
+#: aperion/templates/simple/simple_search.html:7
+msgid "search"
+msgstr "pesquisar"
+
+#: aperion/templates/simple/stats.html:21
+msgid "There is currently no data available. "
+msgstr "No momento, não há dados disponíveis. "
+
+#: aperion/templates/simple/preferences/engines.html:24
+#: aperion/templates/simple/stats.html:25
+msgid "Engine name"
+msgstr "Nome do mecanismo"
+
+#: aperion/templates/simple/stats.html:26
+msgid "Scores"
+msgstr "Pontuações"
+
+#: aperion/templates/simple/stats.html:27
+msgid "Result count"
+msgstr "Número de resultados"
+
+#: aperion/templates/simple/elements/engines_msg.html:7
+#: aperion/templates/simple/preferences/engines.html:31
+#: aperion/templates/simple/stats.html:28
+msgid "Response time"
+msgstr "Tempo de resposta"
+
+#: aperion/templates/simple/preferences/engines.html:35
+#: aperion/templates/simple/stats.html:29
+msgid "Reliability"
+msgstr "Confiabilidade"
+
+#: aperion/templates/simple/stats.html:59
+msgid "Total"
+msgstr "Total"
+
+#: aperion/templates/simple/stats.html:60
+msgid "HTTP"
+msgstr "HTTP"
+
+#: aperion/templates/simple/stats.html:61
+msgid "Processing"
+msgstr "Processamento"
+
+#: aperion/templates/simple/stats.html:99
+msgid "Warnings"
+msgstr "Alertas"
+
+#: aperion/templates/simple/stats.html:99
+msgid "Errors and exceptions"
+msgstr "Erros e exceções"
+
+#: aperion/templates/simple/stats.html:105
+msgid "Exception"
+msgstr "Exceção"
+
+#: aperion/templates/simple/stats.html:107
+msgid "Message"
+msgstr "Mensagem"
+
+#: aperion/templates/simple/stats.html:109
+msgid "Percentage"
+msgstr "Porcentagem"
+
+#: aperion/templates/simple/stats.html:111
+msgid "Parameter"
+msgstr "Parâmetro"
+
+#: aperion/templates/simple/result_templates/files.html:36
+#: aperion/templates/simple/stats.html:119
+msgid "Filename"
+msgstr "Nome do arquivo"
+
+#: aperion/templates/simple/stats.html:120
+msgid "Function"
+msgstr "Função"
+
+#: aperion/templates/simple/stats.html:121
+msgid "Code"
+msgstr "Código"
+
+#: aperion/templates/simple/stats.html:128
+msgid "Checker"
+msgstr "Verificador"
+
+#: aperion/templates/simple/stats.html:131
+msgid "Failed test"
+msgstr "Falha no teste"
+
+#: aperion/templates/simple/stats.html:132
+msgid "Comment(s)"
+msgstr "Comentário(s)"
+
+#: aperion/templates/simple/answer/translations.html:12
+#: aperion/templates/simple/preferences/answerers.html:8
+msgid "Examples"
+msgstr "Exemplos"
+
+#: aperion/templates/simple/answer/translations.html:21
+msgid "Definitions"
+msgstr "Definições"
+
+#: aperion/templates/simple/answer/translations.html:30
+msgid "Synonyms"
+msgstr "Sinônimos"
+
+#: aperion/templates/simple/answer/weather.html:19
+msgid "Feels Like"
+msgstr "Sensação térmica"
+
+#: aperion/templates/simple/elements/answers.html:2
+msgid "Answers"
+msgstr "Respostas"
+
+#: aperion/templates/simple/elements/apis.html:3
+msgid "Download results"
+msgstr "Resultados de download"
+
+#: aperion/templates/simple/elements/corrections.html:2
+msgid "Try searching for:"
+msgstr "Tente pesquisar:"
+
+#: aperion/templates/simple/elements/engines_msg.html:4
+msgid "Messages from the search engines"
+msgstr "Mensagens dos mecanismos de pesquisa"
+
+#: aperion/templates/simple/elements/engines_msg.html:7
+msgid "seconds"
+msgstr "segundos"
+
+#: aperion/templates/simple/elements/search_url.html:3
+msgid "Search URL"
+msgstr "URL de pesquisa"
+
+#: aperion/templates/simple/elements/search_url.html:4
+#: aperion/templates/simple/preferences/cookies.html:54
+msgid "Copied"
+msgstr "Copiado"
+
+#: aperion/templates/simple/elements/search_url.html:4
+#: aperion/templates/simple/preferences/cookies.html:54
+msgid "Copy"
+msgstr "Copiar"
+
+#: aperion/templates/simple/elements/suggestions.html:3
+msgid "Suggestions"
+msgstr "Sugestões"
+
+#: aperion/templates/simple/filters/languages.html:1
+#: aperion/templates/simple/preferences/language.html:2
+msgid "Search language"
+msgstr "Idioma de pesquisa"
+
+#: aperion/templates/simple/filters/languages.html:4
+#: aperion/templates/simple/preferences/language.html:7
+msgid "Default language"
+msgstr "Idioma padrão"
+
+#: aperion/templates/simple/filters/languages.html:8
+#: aperion/templates/simple/preferences/language.html:11
+msgid "Auto-detect"
+msgstr "Detectar automaticamente"
+
+#: aperion/templates/simple/filters/safesearch.html:1
+#: aperion/templates/simple/filters/safesearch.html:2
+#: aperion/templates/simple/filters/safesearch.html:3
+#: aperion/templates/simple/filters/safesearch.html:4
+#: aperion/templates/simple/preferences/engines.html:27
+#: aperion/templates/simple/preferences/safesearch.html:2
+msgid "SafeSearch"
+msgstr "Pesquisa segura"
+
+#: aperion/templates/simple/filters/safesearch.html:2
+#: aperion/templates/simple/preferences/safesearch.html:7
+msgid "Strict"
+msgstr "Rigorosa"
+
+#: aperion/templates/simple/filters/safesearch.html:3
+#: aperion/templates/simple/preferences/safesearch.html:11
+msgid "Moderate"
+msgstr "Moderada"
+
+#: aperion/templates/simple/filters/safesearch.html:4
+#: aperion/templates/simple/preferences/safesearch.html:15
+msgid "None"
+msgstr "Nada"
+
+#: aperion/templates/simple/filters/time_range.html:1
+#: aperion/templates/simple/preferences/engines.html:28
+msgid "Time range"
+msgstr "Intervalo de tempo"
+
+#: aperion/templates/simple/filters/time_range.html:3
+msgid "Anytime"
+msgstr "De qualquer dia"
+
+#: aperion/templates/simple/filters/time_range.html:6
+msgid "Last day"
+msgstr "Ontem"
+
+#: aperion/templates/simple/filters/time_range.html:9
+msgid "Last week"
+msgstr "Semana passada"
+
+#: aperion/templates/simple/filters/time_range.html:12
+msgid "Last month"
+msgstr "Mês passado"
+
+#: aperion/templates/simple/filters/time_range.html:15
+msgid "Last year"
+msgstr "Ano passado"
+
+#: aperion/templates/simple/messages/no_cookies.html:3
+msgid "Information!"
+msgstr "Informação!"
+
+#: aperion/templates/simple/messages/no_cookies.html:4
+msgid "currently, there are no cookies defined."
+msgstr "atualmente, não há cookies definidos."
+
+#: aperion/templates/simple/messages/no_results.html:6
+msgid "Sorry!"
+msgstr "Desculpe!"
+
+#: aperion/templates/simple/messages/no_results.html:12
+msgid "No results were found. You can try to:"
+msgstr "Nenhum resultado foi encontrado. Você pode tentar:"
+
+#: aperion/templates/simple/messages/no_results.html:14
+msgid "There are no more results. You can try to:"
+msgstr "Não há mais nenhum resultado. Você pode tentar:"
+
+#: aperion/templates/simple/messages/no_results.html:19
+msgid "Refresh the page."
+msgstr "Atualizar a página."
+
+#: aperion/templates/simple/messages/no_results.html:20
+msgid "Search for another query or select another category (above)."
+msgstr "Pesquisar outro termo ou selecionar uma categoria diferente (acima)."
+
+#: aperion/templates/simple/messages/no_results.html:21
+msgid "Change the search engine used in the preferences:"
+msgstr "Modificar o mecanismo de pesquisa utilizado nas preferências:"
+
+#: aperion/templates/simple/messages/no_results.html:22
+msgid "Switch to another instance:"
+msgstr "Mudar para outra instância:"
+
+#: aperion/templates/simple/messages/no_results.html:24
+msgid "Search for another query or select another category."
+msgstr "Pesquisar outro termo ou selecionar uma categoria diferente."
+
+#: aperion/templates/simple/messages/no_results.html:25
+msgid "Go back to the previous page using the previous page button."
+msgstr "Voltar à página anterior usando o botão 'página anterior'."
+
+#: aperion/templates/simple/preferences/answerers.html:4
+#: aperion/templates/simple/preferences/engines.html:23
+msgid "Allow"
+msgstr "Permitir"
+
+#: aperion/templates/simple/preferences/answerers.html:5
+msgid "Keywords (first word in query)"
+msgstr "Palavras chave (primeira palavra da consulta)"
+
+#: aperion/templates/simple/preferences/answerers.html:6
+#: aperion/templates/simple/result_templates/packages.html:7
+msgid "Name"
+msgstr "Nome"
+
+#: aperion/templates/simple/preferences/answerers.html:7
+msgid "Description"
+msgstr "Descrição"
+
+#: aperion/templates/simple/preferences/answerers.html:13
+msgid "This is the list of aperion's instant answering modules."
+msgstr "Esta é a lista de módulos de resposta instantânea do aperion."
+
+#: aperion/templates/simple/preferences/answerers.html:29
+msgid "This is the list of plugins."
+msgstr "Esta é a lista de plugins."
+
+#: aperion/templates/simple/preferences/autocomplete.html:2
+msgid "Autocomplete"
+msgstr "Sugestões automáticas"
+
+#: aperion/templates/simple/preferences/autocomplete.html:15
+msgid "Show possible queries as you type"
+msgstr "Mostra consultas possíveis enquanto você digita"
+
+#: aperion/templates/simple/preferences/center_alignment.html:2
+msgid "Center Alignment"
+msgstr "Alinhamento Central"
+
+#: aperion/templates/simple/preferences/center_alignment.html:14
+msgid "Display results in the center of the page (Oscar layout)."
+msgstr "Exibir resultados no centro da página (Layout Oscar)."
+
+#: aperion/templates/simple/preferences/cookies.html:2
+msgid ""
+"This is the list of cookies and their values aperion is storing on your "
+"computer."
+msgstr ""
+"Esta é a lista de cookies que o aperion armazena em seu computador e seus "
+"valores."
+
+#: aperion/templates/simple/preferences/cookies.html:3
+msgid "With this list, you can assess the transparency of aperion."
+msgstr "Com esta lista, você pode avaliar a transparência do aperion."
+
+#: aperion/templates/simple/preferences/cookies.html:9
+msgid "Cookie name"
+msgstr "Nome do cookie"
+
+#: aperion/templates/simple/preferences/cookies.html:10
+msgid "Value"
+msgstr "Valor"
+
+#: aperion/templates/simple/preferences/cookies.html:23
+msgid "Search URL of the currently saved preferences"
+msgstr "A URL de pesquisa das preferências salvas atualmente"
+
+#: aperion/templates/simple/preferences/cookies.html:32
+msgid ""
+"Note: specifying custom settings in the search URL can reduce privacy by "
+"leaking data to the clicked result sites."
+msgstr ""
+"Observação: ao especificar configurações personalizadas na URL de pesquisa "
+"você pode reduzir a privacidade vazando dados para os sites clicados nos "
+"resultados."
+
+#: aperion/templates/simple/preferences/cookies.html:35
+msgid "URL to restore your preferences in another browser"
+msgstr "URL para restaurar suas preferências em outro navegador"
+
+#: aperion/templates/simple/preferences/cookies.html:43
+msgid ""
+"A URL containing your preferences. This URL can be used to restore your "
+"settings on a different device."
+msgstr ""
+"Uma URL contendo suas preferências. Esta URL pode ser usada para "
+"restaurar suas configurações em outro dispositivo."
+
+#: aperion/templates/simple/preferences/cookies.html:46
+msgid "Copy preferences hash"
+msgstr "Copiar hash das preferências"
+
+#: aperion/templates/simple/preferences/cookies.html:57
+msgid "Insert copied preferences hash (without URL) to restore"
+msgstr "Insira a hash copiada das preferências (sem URL) para restaurar"
+
+#: aperion/templates/simple/preferences/cookies.html:59
+msgid "Preferences hash"
+msgstr "Hashes das preferências"
+
+#: aperion/templates/simple/preferences/doi_resolver.html:1
+msgid "Digital Object Identifier (DOI)"
+msgstr "Identificador de Objeto Digital (DOI)"
+
+#: aperion/templates/simple/preferences/doi_resolver.html:6
+msgid "Open Access DOI resolver"
+msgstr "Tradutor do DOI Open Access"
+
+#: aperion/templates/simple/preferences/doi_resolver.html:18
+msgid "Select service used by DOI rewrite"
+msgstr "Selecionar o serviço utilizado para substituição com o DOI"
+
+#: aperion/templates/simple/preferences/engines.html:9
+msgid ""
+"This tab does not exist in the user interface, but you can search with "
+"these engines via !bangs."
+msgstr ""
+"Esta aba não existe na interface do usuário, mas você pode pesquisar com "
+"esses mecanismos pelos !bangs."
+
+#: aperion/templates/simple/preferences/engines.html:15
+msgid "Enable all"
+msgstr "Ativar todos"
+
+#: aperion/templates/simple/preferences/engines.html:16
+msgid "Disable all"
+msgstr "Desativar todos"
+
+#: aperion/templates/simple/preferences/engines.html:25
+msgid "!bang"
+msgstr "!bang"
+
+#: aperion/templates/simple/preferences/engines.html:26
+msgid "Supports selected language"
+msgstr "Suporta o idioma selecionado"
+
+#: aperion/templates/simple/preferences/engines.html:29
+msgid "Weight"
+msgstr "Peso"
+
+#: aperion/templates/simple/preferences/engines.html:33
+msgid "Max time"
+msgstr "Tempo máximo"
+
+#: aperion/templates/simple/preferences/favicon.html:2
+msgid "Favicon Resolver"
+msgstr "Tradutor de Favicons"
+
+#: aperion/templates/simple/preferences/favicon.html:15
+msgid "Display favicons near search results"
+msgstr "Exibir favicons próximo aos resultados da pesquisa"
+
+#: aperion/templates/simple/preferences/footer.html:2
+msgid ""
+"These settings are stored in your cookies. This allows us not to store "
+"this data about you."
+msgstr ""
+"Essas configurações são armazenadas nos seus cookies. Isto permite que não "
+"armazenemos esta informação sobre você."
+
+#: aperion/templates/simple/preferences/footer.html:3
+msgid "These cookies serve your sole convenience; we don't use them to track you."
+msgstr ""
+"Esses cookies são apenas para a sua própria conveniência; nós não os usamos "
+"para te rastrear."
+
+#: aperion/templates/simple/preferences/footer.html:6
+msgid "Save"
+msgstr "Salvar"
+
+#: aperion/templates/simple/preferences/footer.html:9
+msgid "Reset defaults"
+msgstr "Redefinir para os padrões"
+
+#: aperion/templates/simple/preferences/footer.html:13
+msgid "Back"
+msgstr "Voltar"
+
+#: aperion/templates/simple/preferences/hotkeys.html:2
+msgid "Hotkeys"
+msgstr "Atalhos"
+
+#: aperion/templates/simple/preferences/hotkeys.html:13
+msgid "Vim-like"
+msgstr "Estilo Vim"
+
+#: aperion/templates/simple/preferences/hotkeys.html:18
+msgid ""
+"Navigate search results with hotkeys (JavaScript required). Press \"h\" "
+"key on main or result page to get help."
+msgstr ""
+"Navegue os resultados de pesquisa com atalhos (JavaScript é necessário). "
+"Pressione a tecla \"h\" na página principal ou de resultados para obter "
+"ajuda."
+
+#: aperion/templates/simple/preferences/image_proxy.html:2
+msgid "Image proxy"
+msgstr "Proxy de imagens"
+
+#: aperion/templates/simple/preferences/image_proxy.html:14
+msgid "Proxy image results through aperion"
+msgstr "Usar o aperion como uma proxy para as imagens"
+
+#: aperion/templates/simple/preferences/infinite_scroll.html:2
+msgid "Infinite scroll"
+msgstr "Rolagem infinita"
+
+#: aperion/templates/simple/preferences/infinite_scroll.html:14
+msgid ""
+"Automatically load the next page when scrolling to the bottom of the "
+"current page"
+msgstr "Carregar a próxima página automaticamente ao chegar no fim da página atual"
+
+#: aperion/templates/simple/preferences/language.html:24
+msgid "What language do you prefer for search?"
+msgstr "Que idioma você prefere para pesquisar?"
+
+#: aperion/templates/simple/preferences/language.html:25
+msgid "Choose Auto-detect to let aperion detect the language of your query."
+msgstr ""
+"Selecione \"Detectar automaticamente\" para permitir que o aperion detecte "
+"automaticamente o idioma da sua consulta."
+
+#: aperion/templates/simple/preferences/method.html:2
+msgid "HTTP Method"
+msgstr "Método HTTP"
+
+#: aperion/templates/simple/preferences/method.html:14
+msgid "Change how forms are submitted"
+msgstr "Altere como formulários são enviados"
+
+#: aperion/templates/simple/preferences/query_in_title.html:2
+msgid "Query in the page's title"
+msgstr "Consulta no título da página"
+
+#: aperion/templates/simple/preferences/query_in_title.html:14
+msgid ""
+"When enabled, the result page's title contains your query. Your browser "
+"can record this title"
+msgstr ""
+"Ao ativar, o título da página de resultados conterá sua consulta. Seu "
+"navegador pode registrar este título"
+
+#: aperion/templates/simple/preferences/results_on_new_tab.html:2
+msgid "Results in new tabs"
+msgstr "Resultados em abas novas"
+
+#: aperion/templates/simple/preferences/results_on_new_tab.html:14
+msgid "Open result links in new browser tabs"
+msgstr "Abrir links de resultados em abas novas no navegador"
+
+#: aperion/templates/simple/preferences/safesearch.html:20
+msgid "Filter content"
+msgstr "Filtrar conteúdo"
+
+#: aperion/templates/simple/preferences/search_on_category_select.html:2
+msgid "Search on category select"
+msgstr "Pesquisar ao selecionar categoria"
+
+#: aperion/templates/simple/preferences/search_on_category_select.html:14
+msgid ""
+"Perform a search immediately if a category is selected. Disable to select"
+" multiple categories"
+msgstr ""
+"Realizar a pesquisa imediatamente ao selecionar uma categoria. Desative para "
+"selecionar várias categorias"
+
+#: aperion/templates/simple/preferences/theme.html:2
+msgid "Theme"
+msgstr "Tema"
+
+#: aperion/templates/simple/preferences/theme.html:14
+msgid "Change the layout of aperion"
+msgstr "Mudar o layout do aperion"
+
+#: aperion/templates/simple/preferences/theme.html:19
+msgid "Theme style"
+msgstr "Estilo do tema"
+
+#: aperion/templates/simple/preferences/theme.html:31
+msgid "Choose auto to follow your browser settings"
+msgstr "Selecione \"Automático\" para seguir as configurações do seu navegador"
+
+#: aperion/templates/simple/preferences/tokens.html:2
+msgid "Engine tokens"
+msgstr "Tokens dos mecanismos"
+
+#: aperion/templates/simple/preferences/tokens.html:9
+msgid "Access tokens for private engines"
+msgstr "Tokens de acesso para mecanismos privados"
+
+#: aperion/templates/simple/preferences/ui_locale.html:2
+msgid "Interface language"
+msgstr "Idioma da interface"
+
+#: aperion/templates/simple/preferences/ui_locale.html:14
+msgid "Change the language of the layout"
+msgstr "Alterar o idioma da interface"
+
+#: aperion/templates/simple/preferences/urlformatting.html:2
+msgid "URL formatting"
+msgstr "Formatação de URL"
+
+#: aperion/templates/simple/preferences/urlformatting.html:8
+msgid "Pretty"
+msgstr "Bonito"
+
+#: aperion/templates/simple/preferences/urlformatting.html:13
+msgid "Full"
+msgstr "Completo"
+
+#: aperion/templates/simple/preferences/urlformatting.html:18
+msgid "Host"
+msgstr "Host"
+
+#: aperion/templates/simple/preferences/urlformatting.html:23
+msgid "Change result URL formatting"
+msgstr "Mudar a formatação da URL do resultado"
+
+#: aperion/templates/simple/result_templates/code.html:13
+msgid "repo"
+msgstr "repositório"
+
+#: aperion/templates/simple/result_templates/default.html:6
+#: aperion/templates/simple/result_templates/files.html:8
+#: aperion/templates/simple/result_templates/files.html:11
+msgid "show media"
+msgstr "exibir mídia"
+
+#: aperion/templates/simple/result_templates/default.html:6
+#: aperion/templates/simple/result_templates/files.html:8
+msgid "hide media"
+msgstr "ocultar mídia"
+
+#: aperion/templates/simple/result_templates/default.html:14
+#: aperion/templates/simple/result_templates/videos.html:14
+msgid "This site did not provide any description."
+msgstr "Este site não disponibilizou uma descrição."
+
+#: aperion/templates/simple/result_templates/files.html:38
+#: aperion/templates/simple/result_templates/images.html:22
+#: aperion/templates/simple/result_templates/torrent.html:18
+msgid "Filesize"
+msgstr "Tamanho do arquivo"
+
+#: aperion/templates/simple/result_templates/files.html:40
+msgid "Date"
+msgstr "Data"
+
+#: aperion/templates/simple/result_templates/files.html:42
+#: aperion/templates/simple/result_templates/paper.html:24
+msgid "Type"
+msgstr "Tipo"
+
+#: aperion/templates/simple/result_templates/images.html:20
+msgid "Resolution"
+msgstr "Resolução"
+
+#: aperion/templates/simple/result_templates/images.html:21
+msgid "Format"
+msgstr "Formato"
+
+#: aperion/templates/simple/result_templates/images.html:24
+msgid "Engine"
+msgstr "Mecanismo de pesquisa"
+
+#: aperion/templates/simple/result_templates/images.html:25
+msgid "View source"
+msgstr "Ver código-fonte"
+
+#: aperion/templates/simple/result_templates/map.html:12
+msgid "address"
+msgstr "endereço"
+
+#: aperion/templates/simple/result_templates/map.html:43
+msgid "show map"
+msgstr "exibir mapa"
+
+#: aperion/templates/simple/result_templates/map.html:43
+msgid "hide map"
+msgstr "ocultar mapa"
+
+#: aperion/templates/simple/result_templates/packages.html:12
+msgid "Version"
+msgstr "Versão"
+
+#: aperion/templates/simple/result_templates/packages.html:18
+msgid "Maintainer"
+msgstr "Mantenedor"
+
+#: aperion/templates/simple/result_templates/packages.html:24
+msgid "Updated at"
+msgstr "Atualizado em"
+
+#: aperion/templates/simple/result_templates/packages.html:30
+#: aperion/templates/simple/result_templates/paper.html:25
+msgid "Tags"
+msgstr "Etiquetas"
+
+#: aperion/templates/simple/result_templates/packages.html:36
+msgid "Popularity"
+msgstr "Popularidade"
+
+#: aperion/templates/simple/result_templates/packages.html:42
+msgid "License"
+msgstr "Licença"
+
+#: aperion/templates/simple/result_templates/packages.html:52
+msgid "Project"
+msgstr "Projeto"
+
+#: aperion/templates/simple/result_templates/packages.html:55
+msgid "Project homepage"
+msgstr "Página inicial do projeto"
+
+#: aperion/templates/simple/result_templates/paper.html:5
+msgid "Published date"
+msgstr "Data de publicação"
+
+#: aperion/templates/simple/result_templates/paper.html:9
+msgid "Journal"
+msgstr "Jornal"
+
+#: aperion/templates/simple/result_templates/paper.html:22
+msgid "Editor"
+msgstr "Editor"
+
+#: aperion/templates/simple/result_templates/paper.html:23
+msgid "Publisher"
+msgstr "Publicante"
+
+#: aperion/templates/simple/result_templates/paper.html:26
+msgid "DOI"
+msgstr "DOI"
+
+#: aperion/templates/simple/result_templates/paper.html:27
+msgid "ISSN"
+msgstr "ISSN"
+
+#: aperion/templates/simple/result_templates/paper.html:28
+msgid "ISBN"
+msgstr "ISBN"
+
+#: aperion/templates/simple/result_templates/paper.html:33
+msgid "PDF"
+msgstr "PDF"
+
+#: aperion/templates/simple/result_templates/paper.html:34
+msgid "HTML"
+msgstr "HTML"
+
+#: aperion/templates/simple/result_templates/torrent.html:7
+msgid "magnet link"
+msgstr "link magnet"
+
+#: aperion/templates/simple/result_templates/torrent.html:8
+msgid "torrent file"
+msgstr "arquivo torrent"
+
+#: aperion/templates/simple/result_templates/torrent.html:13
+msgid "Seeder"
+msgstr "Semeador"
+
+#: aperion/templates/simple/result_templates/torrent.html:14
+msgid "Leecher"
+msgstr "Sanguessuga"
+
+#: aperion/templates/simple/result_templates/torrent.html:19
+msgid "Number of Files"
+msgstr "Número de Arquivos"
+
+#: aperion/templates/simple/result_templates/videos.html:6
+msgid "show video"
+msgstr "exibir vídeo"
+
+#: aperion/templates/simple/result_templates/videos.html:6
+msgid "hide video"
+msgstr "ocultar vídeo"
+
+#~ msgid "Engine time (sec)"
+#~ msgstr "Tempo do motor (segundos)"
+
+#~ msgid "Page loads (sec)"
+#~ msgstr "Carregamento da página (sec)"
+
+#~ msgid "Errors"
+#~ msgstr "Erros"
+
+#~ msgid "CAPTCHA required"
+#~ msgstr "CAPTCHA requerido"
+
+#~ msgid "Rewrite HTTP links to HTTPS if possible"
+#~ msgstr "Redirecionar conexões HTTP para HTTPS, se possível"
+
+#~ msgid ""
+#~ "Results are opened in the same "
+#~ "window by default. This plugin "
+#~ "overwrites the default behaviour to open"
+#~ " links on new tabs/windows. (JavaScript "
+#~ "required)"
+#~ msgstr ""
+#~ "Os resultados são abertos na mesma "
+#~ "janela por padrão. Este complemento muda"
+#~ " o comportamento padrão ao abrir "
+#~ "links em novas abas/janelas (JavaScript "
+#~ "necessário)."
+
+#~ msgid "Color"
+#~ msgstr "Cor"
+
+#~ msgid "Blue (default)"
+#~ msgstr "Azul (padrão)"
+
+#~ msgid "Violet"
+#~ msgstr "Violeta"
+
+#~ msgid "Green"
+#~ msgstr "Verde"
+
+#~ msgid "Cyan"
+#~ msgstr "Ciano"
+
+#~ msgid "Orange"
+#~ msgstr "Laranja"
+
+#~ msgid "Red"
+#~ msgstr "Vermelho"
+
+#~ msgid "Category"
+#~ msgstr "Categoria"
+
+#~ msgid "Block"
+#~ msgstr "Bloqueado"
+
+#~ msgid "original context"
+#~ msgstr "Contexto original"
+
+#~ msgid "Plugins"
+#~ msgstr "Complementos"
+
+#~ msgid "Answerers"
+#~ msgstr "Operadores de Resposta"
+
+#~ msgid "Avg. time"
+#~ msgstr "Tempo médio"
+
+#~ msgid "show details"
+#~ msgstr "Exibir detalhes"
+
+#~ msgid "hide details"
+#~ msgstr "ocultar detalhes"
+
+#~ msgid "Load more..."
+#~ msgstr "Mostrar mais..."
+
+#~ msgid "Loading..."
+#~ msgstr "Carregando..."
+
+#~ msgid "Change aperion layout"
+#~ msgstr "Alterar interface do aperion"
+
+#~ msgid "Proxying image results through aperion"
+#~ msgstr "Usar proxy para resultado de imagens exibidas através do aperion"
+
+#~ msgid "This is the list of aperion's instant answering modules."
+#~ msgstr "Esta é a lista do módulos de resposta instantânea do aperion."
+
+#~ msgid ""
+#~ "This is the list of cookies and"
+#~ " their values aperion is storing on "
+#~ "your computer."
+#~ msgstr ""
+#~ "Esta é a lista de cookies que "
+#~ "o aperion está armazenando em seu "
+#~ "computador."
+
+#~ msgid "With that list, you can assess aperion transparency."
+#~ msgstr "Com essa lista, você pode avaliar a transparência do aperion."
+
+#~ msgid "It look like you are using aperion first time."
+#~ msgstr "Parece que você está usando o aperion pela primeira vez."
+
+#~ msgid "Please, try again later or find another aperion instance."
+#~ msgstr ""
+#~ "Por favor, tente novamente mais tarde"
+#~ " ou procure outra instância do aperion."
+
+#~ msgid "Themes"
+#~ msgstr "Temas"
+
+#~ msgid "Reliablity"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "When enabled, the result page's title"
+#~ " contains your query. Your browser "
+#~ "can record this title."
+#~ msgstr ""
+
+#~ msgid "Method"
+#~ msgstr "Método"
+
+#~ msgid ""
+#~ "This tab does not show up for "
+#~ "search results but you can search "
+#~ "the engines listed here via bangs."
+#~ msgstr ""
+
+#~ msgid "Advanced settings"
+#~ msgstr "Configurações avançadas"
+
+#~ msgid "Close"
+#~ msgstr "Fechar"
+
+#~ msgid "Language"
+#~ msgstr "Idioma"
+
+#~ msgid "broken"
+#~ msgstr "quebrado"
+
+#~ msgid "supported"
+#~ msgstr "suportado"
+
+#~ msgid "not supported"
+#~ msgstr "não suportado"
+
+#~ msgid "about"
+#~ msgstr "sobre"
+
+#~ msgid "Avg."
+#~ msgstr "Média"
+
+#~ msgid "User Interface"
+#~ msgstr "Interface do usuário"
+
+#~ msgid "Choose style for this theme"
+#~ msgstr "Escolher um estilo para este tema"
+
+#~ msgid "Style"
+#~ msgstr "Estilo"
+
+#~ msgid "Show advanced settings"
+#~ msgstr "Mostrar configurações avançadas"
+
+#~ msgid "Show advanced settings panel in the home page by default"
+#~ msgstr ""
+#~ "Mostrar por padrão o painel de "
+#~ "configurações avançadas na página inicial"
+
+#~ msgid "Allow all"
+#~ msgstr "Permitir tudo"
+
+#~ msgid "Disable all"
+#~ msgstr "Desativar tudo"
+
+#~ msgid "Selected language"
+#~ msgstr "Idioma selecionado"
+
+#~ msgid "Query"
+#~ msgstr "Consulta"
+
+#~ msgid "save"
+#~ msgstr "salvar"
+
+#~ msgid "back"
+#~ msgstr "voltar"
+
+#~ msgid "Links"
+#~ msgstr "Links"
+
+#~ msgid "RSS subscription"
+#~ msgstr "Assinatura RSS"
+
+#~ msgid "Search results"
+#~ msgstr "Procurar resultados"
+
+#~ msgid "next page"
+#~ msgstr "próxima página"
+
+#~ msgid "previous page"
+#~ msgstr "página anterior"
+
+#~ msgid "Start search"
+#~ msgstr "Iniciar busca"
+
+#~ msgid "Clear search"
+#~ msgstr "Limpar busca"
+
+#~ msgid "Clear"
+#~ msgstr "Limpar"
+
+#~ msgid "stats"
+#~ msgstr "estatísticas"
+
+#~ msgid "Heads up!"
+#~ msgstr "Atenção!"
+
+#~ msgid "It look like you are using aperion first time."
+#~ msgstr "Parece que você está usando o aperion pela primeira vez."
+
+#~ msgid "Well done!"
+#~ msgstr "Muito bem!"
+
+#~ msgid "Settings saved successfully."
+#~ msgstr "Configurações salvas com sucesso."
+
+#~ msgid "Oh snap!"
+#~ msgstr "Oh não!"
+
+#~ msgid "Something went wrong."
+#~ msgstr "Algo deu errado."
+
+#~ msgid "Date"
+#~ msgstr "Data"
+
+#~ msgid "Type"
+#~ msgstr "Tipo"
+
+#~ msgid "Get image"
+#~ msgstr "Obter imagem"
+
+#~ msgid "Center Alignment"
+#~ msgstr ""
+
+#~ msgid "Displays results in the center of the page (Oscar layout)."
+#~ msgstr "Exibe os resultados no centro da página (layout Oscar)."
+
+#~ msgid "preferences"
+#~ msgstr "preferências"
+
+#~ msgid "Scores per result"
+#~ msgstr "Pontuações por resultado"
+
+#~ msgid "a privacy-respecting, hackable metasearch engine"
+#~ msgstr "um mecanismo de metabusca que respeita a sua privacidade"
+
+#~ msgid "No abstract is available for this publication."
+#~ msgstr "Nenhum resumo disponível para essa publicação."
+
+#~ msgid "Self Informations"
+#~ msgstr "Informações Próprias"
+
+#~ msgid ""
+#~ "Change how forms are submited, <a "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">learn more about request "
+#~ "methods</a>"
+#~ msgstr ""
+#~ "Alterar como os formulários são "
+#~ "submetidos<a "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">saiba mais sobre os "
+#~ "métodos de solicitação</a>"
+
+#~ msgid ""
+#~ "This plugin checks if the address "
+#~ "of the request is a TOR exit "
+#~ "node, and informs the user if it"
+#~ " is, like check.torproject.org but from "
+#~ "aperion."
+#~ msgstr ""
+#~ "Esse plugin checa se o endereço do"
+#~ " requerimento é um nódulo de saída"
+#~ " TOR, e informa o usuário se "
+#~ "ele realmente for, parecido com "
+#~ "check.torproject.org mas para aperion."
+
+#~ msgid ""
+#~ "The TOR exit node list "
+#~ "(https://check.torproject.org/exit-addresses) is "
+#~ "unreachable."
+#~ msgstr ""
+#~ "A lista de nódulos de saída TOR"
+#~ " (https://check.torproject.org/exit-addresses) é "
+#~ "inalcançável."
+
+#~ msgid "You are using TOR. Your IP address seems to be: {ip_address}."
+#~ msgstr "Você está usando TOR. Seu endereço de IP aparenta ser: {ip_address}."
+
+#~ msgid "You are not using TOR. Your IP address seems to be: {ip_address}."
+#~ msgstr ""
+#~ "Você não está usando TOR. Seu "
+#~ "endereço de IP aparenta ser: "
+#~ "{ip_address}."
+
+#~ msgid ""
+#~ "The could not download the list of"
+#~ " Tor exit-nodes from "
+#~ "https://check.torproject.org/exit-addresses."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You are using Tor. It looks like"
+#~ " you have this external IP address:"
+#~ " {ip_address}."
+#~ msgstr ""
+
+#~ msgid "You are not using Tor. You have this external IP address: {ip_address}."
+#~ msgstr ""
+
+#~ msgid "Autodetect search language"
+#~ msgstr "Detecção automática de idioma de pesquisa"
+
+#~ msgid "Automatically detect the query search language and switch to it."
+#~ msgstr ""
+#~ "Detecte automaticamente o idioma de "
+#~ "pesquisa da consulta e mude para "
+#~ "ele."
+
+#~ msgid "others"
+#~ msgstr "outros"
+
+#~ msgid ""
+#~ "This tab does not show up for "
+#~ "search results, but you can search "
+#~ "the engines listed here via bangs."
+#~ msgstr ""
+#~ "Esta aba não aparece para resultados "
+#~ "de busca, mas você pode buscar os"
+#~ " sites listados aqui via bangs."
+
+#~ msgid "Shortcut"
+#~ msgstr "Atalhos"
+
+#~ msgid "!bang"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This tab dues not exists in the"
+#~ " user interface, but you can search"
+#~ " in these engines by its !bangs."
+#~ msgstr ""
+#~ "Essa aba não existe na interface "
+#~ "de usuário, mas você pode pesquisar "
+#~ "nessas ferramentas/motores pelos seus !bangs."
+
+#~ msgid "Engines cannot retrieve results."
+#~ msgstr "Os motores de busca não podem extrair os resultados."
+
+#~ msgid "Please, try again later or find another aperion instance."
+#~ msgstr ""
+#~ "Por favor, tente novamente mais tarde"
+#~ " ou encontre outra instância do "
+#~ "aperion."
+
+#~ msgid ""
+#~ "Redirect to open-access versions of "
+#~ "publications when available (plugin required)"
+#~ msgstr ""
+#~ "Quando disponível, redirecionar para as "
+#~ "versões de acesso livre das publicações"
+#~ " (necessário plugin)"
+
+#~ msgid "Bang"
+#~ msgstr "!bang"
+
+#~ msgid ""
+#~ "Change how forms are submitted, <a "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">learn more about request "
+#~ "methods</a>"
+#~ msgstr ""
+#~ "Mude como formulários são enviados, <a"
+#~ " "
+#~ "href=\"http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods\""
+#~ " rel=\"external\">aprenda mais sobre métodos "
+#~ "de requisição</a>"
+
+#~ msgid "On"
+#~ msgstr "Ligado"
+
+#~ msgid "Off"
+#~ msgstr "Desligado"
+
+#~ msgid "Enabled"
+#~ msgstr "Habilitado"
+
+#~ msgid "Disabled"
+#~ msgstr "Desabilitado"
+
+#~ msgid ""
+#~ "Perform search immediately if a category"
+#~ " selected. Disable to select multiple "
+#~ "categories. (JavaScript required)"
+#~ msgstr ""
+#~ "Executar a busca imediatamente se a "
+#~ "categoria está selecionada. Desativar para "
+#~ "selecionar várias categorias. (Necessário "
+#~ "JavaScript)"
+
+#~ msgid "Vim-like hotkeys"
+#~ msgstr "Atalhos estilo Vim"
+
+#~ msgid ""
+#~ "Navigate search results with Vim-like"
+#~ " hotkeys (JavaScript required). Press \"h\""
+#~ " key on main or result page to"
+#~ " get help."
+#~ msgstr ""
+#~ "Navegar pelos resultados de busca com"
+#~ " atalhos semelhantes ao Vim (JavaScript "
+#~ "necessário). Aperte \"h\" na página de"
+#~ " resultados para obter ajuda."
+
+#~ msgid ""
+#~ "we didn't find any results. Please "
+#~ "use another query or search in "
+#~ "more categories."
+#~ msgstr ""
+#~ "Não encontramos nenhum resultado. Utilize "
+#~ "outra consulta ou pesquisa em mais "
+#~ "categorias."
+
+#~ msgid "Rewrite result hostnames or remove results based on the hostname"
+#~ msgstr "Sobreescreve hosts dos resultados ou remove resultados baseado no host"
+
+#~ msgid "Bytes"
+#~ msgstr "Bytes"
+
+#~ msgid "kiB"
+#~ msgstr "kiB"
+
+#~ msgid "MiB"
+#~ msgstr "MiB"
+
+#~ msgid "GiB"
+#~ msgstr "GiB"
+
+#~ msgid "TiB"
+#~ msgstr "TiB"
+
+#~ msgid "Hostname replace"
+#~ msgstr "Substituir host"
+
+#~ msgid "Error!"
+#~ msgstr "Erro!"
+
+#~ msgid "Engines cannot retrieve results"
+#~ msgstr "Os motores de busca não conseguiram obter resultados"
+
+#~ msgid "Start submiting a new issue on GitHub"
+#~ msgstr "Submeta um novo problema no Github"
+
+#~ msgid "dummy"
+#~ msgstr ""
+
+#~ msgid "Random value generator"
+#~ msgstr "Gerador de valor aleatório"
+
+#~ msgid "Statistics functions"
+#~ msgstr "Funções estatísticas"
+
+#~ msgid "Compute {functions} of the arguments"
+#~ msgstr "Computar {functions} dos argumentos"
+
+#~ msgid "Get directions"
+#~ msgstr "Obter instruções"
+
+#~ msgid ""
+#~ "Displays your IP if the query is"
+#~ " \"ip\" and your user agent if "
+#~ "the query contains \"user agent\"."
+#~ msgstr ""
+#~ "Exibe o seu IP se a consulta "
+#~ "contiver \"ip\" e seu agente de "
+#~ "usuário, se a consulta contiver \"user"
+#~ " agent\"."
+
+#~ msgid ""
+#~ "Could not download the list of Tor"
+#~ " exit-nodes from: https://check.torproject.org"
+#~ "/exit-addresses"
+#~ msgstr ""
+#~ "Não foi possível baixar a lista de"
+#~ " nós de saída do Tor de: "
+#~ "https://check.torproject.org/exit-addresses"
+
+#~ msgid ""
+#~ "You are using Tor and it looks "
+#~ "like you have this external IP "
+#~ "address: {ip_address}"
+#~ msgstr ""
+#~ "Você está usando o Tor e parece"
+#~ " que tem este endereço IP externo:"
+#~ " {ip_address}"
+
+#~ msgid ""
+#~ "You are not using Tor and you "
+#~ "have this external IP address: "
+#~ "{ip_address}"
+#~ msgstr "Você não está usando o Tor e tem este endereço IP externo: {ip_address}"
+
+#~ msgid "Keywords"
+#~ msgstr "Palavras-chave"
+
+#~ msgid "/"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Specifying custom settings in the "
+#~ "preferences URL can be used to "
+#~ "sync preferences across devices."
+#~ msgstr ""
+#~ "Especificar preferências customizadas na URL"
+#~ " pode ser usado para sincronizar "
+#~ "preferências em outros dispositivos."
+
+#~ msgid "proxied"
+#~ msgstr "por proxy"
+
+#~ msgid ""
+#~ "This tab does not exists in the"
+#~ " user interface, but you can search"
+#~ " in these engines by its !bangs."
+#~ msgstr ""
+#~ "Essa aba não existe na interface "
+#~ "de usuário, mas você pode pesquisar "
+#~ "nessas ferramentas/motores pelos seus !bangs."
+
+#~ msgid "Results on new tabs"
+#~ msgstr "Resultados em novas abas"
+
+#~ msgid "Open result links on new browser tabs"
+#~ msgstr "Abrir resultados em novas abas do navegador"
+
+#~ msgid "Find stuff as you type"
+#~ msgstr "Exibir sugestões enquanto você digita"
+
+#~ msgid "Converts strings to different hash digests."
+#~ msgstr "Converte as sequências em diferentes resultados de hash."
+
+#~ msgid ""
+#~ "Rewrite hostnames, remove results or "
+#~ "prioritize them based on the hostname"
+#~ msgstr ""
+#~ "Reescrita de hostnames, remova resultados "
+#~ "ou priorize-os com base no "
+#~ "hostname"
+
+#~ msgid "With that list, you can assess aperion transparency."
+#~ msgstr "Com essa lista, você pode avaliar a transparência do aperion."
+
+#~ msgid ""
+#~ "These settings are stored in your "
+#~ "cookies, this allows us not to "
+#~ "store this data about you."
+#~ msgstr ""
+#~ "Essas configurações são armazenadas em "
+#~ "seus cookies, nos não armazenamos nenhum"
+#~ " dado a seu respeito."
+
+#~ msgid ""
+#~ "These cookies serve your sole "
+#~ "convenience, we don't use these cookies"
+#~ " to track you."
+#~ msgstr ""
+#~ "Estes cookies servem ao seu único "
+#~ "propósito, nós não usamos esses cookies"
+#~ " para rastreá-lo."
+
+#~ msgid "Proxying image results through aperion"
+#~ msgstr "Usar proxy para resultados da imagem no aperion"
+
+#~ msgid "Automatically load next page when scrolling to bottom of current page"
+#~ msgstr ""
+#~ "Automaticamente carregar a próxima página "
+#~ "ao rolar até o fim da página "
+#~ "atual"
+
+#~ msgid ""
+#~ "Perform search immediately if a category"
+#~ " selected. Disable to select multiple "
+#~ "categories"
+#~ msgstr ""
+#~ "Faça a busca imediatamente se existir"
+#~ " uma categoria selecionada. Desabilite para"
+#~ " selecionar múltiplas categorias"
+
+#~ msgid "Change aperion layout"
+#~ msgstr "Mudar a interface do aperion"
