@@ -111,16 +111,16 @@ FALLBACK_PROVIDERS = [
         "model": "llama-3.3-70b-versatile",
     },
     {
-        "provider": PROVIDER_OPENROUTER,
-        "api_key": os.getenv("AI_OPENROUTER_API_KEY", ""),
-        "endpoint": DEFAULT_ENDPOINTS[PROVIDER_OPENROUTER],
-        "model": "openai/gpt-4o",
-    },
-    {
         "provider": PROVIDER_GEMINI,
         "api_key": os.getenv("AI_GEMINI_API_KEY", ""),
         "endpoint": DEFAULT_ENDPOINTS[PROVIDER_GEMINI],
         "model": "gemini-2.5-flash",
+    },
+    {
+        "provider": PROVIDER_OPENROUTER,
+        "api_key": os.getenv("AI_OPENROUTER_API_KEY", ""),
+        "endpoint": DEFAULT_ENDPOINTS[PROVIDER_OPENROUTER],
+        "model": "openai/gpt-4o",
     },
     {
         "provider": PROVIDER_SAMBANOVA,
