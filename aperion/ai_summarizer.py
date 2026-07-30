@@ -46,11 +46,11 @@ DEFAULT_ENDPOINTS = {
     PROVIDER_MISTRAL: "https://api.mistral.ai/v1",
 }
 
-DEFAULT_SYSTEM_PROMPT = """You are a helpful assistant that summarizes search results.
-Your task is to provide a concise, accurate summary of the provided search results.
+DEFAULT_SYSTEM_PROMPT = """You are Aperion AI, an intelligent search companion designed to help users find and understand information from search results.
+Your task is to provide concise, accurate summaries of search results in a helpful, conversational tone.
 Focus on the most relevant information and present it in a clear, readable format.
 If the results contain conflicting information, mention this briefly.
-Keep the summary factual and based on the provided results."""
+Keep responses factual and based on the provided results while being engaging and user-friendly."""
 
 DEFAULT_SUMMARY_PROMPT = """Search Query: {query}
 
@@ -73,7 +73,7 @@ Format your response using Markdown:
 
 Focus on the most relevant and reliable information."""
 
-DEFAULT_CHAT_PROMPT = """You are a helpful AI assistant. Answer the user's question directly and helpfully.
+DEFAULT_CHAT_PROMPT = """You are a helpful AperionAI. Answer the user's question directly and helpfully.
 If relevant information is provided in the context, use it to enhance your answer.
 Be concise but comprehensive."""
 
@@ -859,6 +859,8 @@ def generate_chat_with_fallback(
     timeout: float = DEFAULT_TIMEOUT,
     max_tokens: int = 1000,
     temperature: float = 0.7,
+    file_data: bytes | None = None,
+    file_type: str | None = None,
 ) -> dict[str, t.Any]:
     """Generate AI chat response with fallback to multiple providers.
 
@@ -877,6 +879,8 @@ def generate_chat_with_fallback(
         timeout: Request timeout in seconds
         max_tokens: Maximum tokens in the response
         temperature: Temperature for generation (0.0 to 1.0)
+        file_data: Optional file data for multimodal requests
+        file_type: Optional file MIME type for multimodal requests
 
     Returns:
         A dictionary with success, response, error, model, timestamp, usage, stats
@@ -895,6 +899,8 @@ def generate_chat_with_fallback(
             timeout=timeout,
             max_tokens=max_tokens,
             temperature=temperature,
+            file_data=file_data,
+            file_type=file_type,
         )
 
         if primary_result.get("success"):
@@ -903,8 +909,16 @@ def generate_chat_with_fallback(
 
         logger.warning(f"Primary provider {provider} failed for chat: {primary_result.get('error', 'Unknown error')}")
 
+    # For file uploads, prioritize multimodal providers (Groq, Gemini)
+    if file_data:
+        multimodal_providers = [p for p in FALLBACK_PROVIDERS if p["provider"] in [PROVIDER_GROQ, PROVIDER_GEMINI]]
+        other_providers = [p for p in FALLBACK_PROVIDERS if p["provider"] not in [PROVIDER_GROQ, PROVIDER_GEMINI]]
+        providers_to_try = multimodal_providers + other_providers
+    else:
+        providers_to_try = FALLBACK_PROVIDERS
+
     # Try fallback providers in priority order
-    for fallback_config in FALLBACK_PROVIDERS:
+    for fallback_config in providers_to_try:
         fallback_provider = fallback_config["provider"]
         fallback_endpoint = fallback_config["endpoint"]
         fallback_model = fallback_config["model"]
@@ -933,6 +947,8 @@ def generate_chat_with_fallback(
             timeout=timeout,
             max_tokens=max_tokens,
             temperature=temperature,
+            file_data=file_data,
+            file_type=file_type,
         )
 
         if fallback_result.get("success"):
@@ -965,6 +981,8 @@ def generate_chat_sync(
     timeout: float = DEFAULT_TIMEOUT,
     max_tokens: int = 1000,
     temperature: float = 0.7,
+    file_data: bytes | None = None,
+    file_type: str | None = None,
 ) -> dict[str, t.Any]:
     """Generate AI chat response synchronously (blocking call).
 
@@ -979,6 +997,8 @@ def generate_chat_sync(
         timeout: Request timeout in seconds
         max_tokens: Maximum tokens in the response
         temperature: Temperature for generation (0.0 to 1.0)
+        file_data: Optional file data for multimodal requests
+        file_type: Optional file MIME type for multimodal requests
 
     Returns:
         A dictionary with success, response, error, model, timestamp, usage, stats
@@ -1013,14 +1033,21 @@ def generate_chat_sync(
 
     # Provider-specific payload construction
     if provider == PROVIDER_GEMINI:
+        # Gemini multimodal support
+        parts = [{"text": f"{system_prompt}\n\n{user_prompt}"}]
+        
+        if file_data and file_type:
+            import base64
+            if file_type.startswith('image/'):
+                parts.append({
+                    "inline_data": {
+                        "mime_type": file_type,
+                        "data": base64.b64encode(file_data).decode('utf-8')
+                    }
+                })
+        
         payload = {
-            "contents": [
-                {
-                    "parts": [
-                        {"text": f"{system_prompt}\n\n{user_prompt}"}
-                    ]
-                }
-            ],
+            "contents": [{"parts": parts}],
             "generationConfig": {
                 "maxOutputTokens": max_tokens,
                 "temperature": temperature,
@@ -1039,11 +1066,23 @@ def generate_chat_sync(
             }
         }
     else:
+        # OpenAI-compatible providers (Groq, OpenRouter, etc.) with multimodal support
+        user_content = [{"type": "text", "text": user_prompt}]
+        
+        if file_data and file_type and file_type.startswith('image/'):
+            import base64
+            user_content.append({
+                "type": "image_url",
+                "image_url": {
+                    "url": f"data:{file_type};base64,{base64.b64encode(file_data).decode('utf-8')}"
+                }
+            })
+        
         payload = {
             "model": model,
             "messages": [
                 {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_prompt},
+                {"role": "user", "content": user_content},
             ],
             "max_tokens": max_tokens,
             "temperature": temperature,

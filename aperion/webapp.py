@@ -888,19 +888,29 @@ def ai_models():
 @app.route('/ai_chat', methods=['POST'])
 def ai_chat():
     """Generate AI chat response (direct AI mode)."""
-    if not flask.request.is_json:
-        return jsonify({"success": False, "response": None, "stats": None, "error": "Content-Type must be application/json"}), 400
+    # Handle both JSON and multipart/form-data (for file uploads)
+    if flask.request.is_json:
+        try:
+            data = flask.request.get_json()
+        except Exception as e:
+            return jsonify({"success": False, "response": None, "stats": None, "error": f"Invalid JSON: {str(e)}"}), 400
+        query = data.get('query', '')
+        context = data.get('context', '')
+        file_data = None
+        file_type = None
+    else:
+        # Handle multipart/form-data for file uploads
+        query = flask.request.form.get('query', '')
+        context = flask.request.form.get('context', '')
+        file = flask.request.files.get('file')
+        file_data = None
+        file_type = None
+        if file:
+            file_data = file.read()
+            file_type = file.content_type
 
-    try:
-        data = flask.request.get_json()
-    except Exception as e:
-        return jsonify({"success": False, "response": None, "stats": None, "error": f"Invalid JSON: {str(e)}"}), 400
-
-    query = data.get('query', '')
-    context = data.get('context', '')
-
-    if not query:
-        return jsonify({"success": False, "response": None, "stats": None, "error": "Missing 'query' field"}), 400
+    if not query and not file_data:
+        return jsonify({"success": False, "response": None, "stats": None, "error": "Missing 'query' field or file"}), 400
 
     # AI is always enabled with fallback providers, no user configuration needed
     endpoint = ""
@@ -923,6 +933,8 @@ def ai_chat():
             context=context if context else None,
             timeout=timeout,
             max_tokens=max_tokens,
+            file_data=file_data,
+            file_type=file_type,
         )
         return jsonify({
             "success": result.get("success", False),

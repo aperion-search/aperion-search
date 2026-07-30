@@ -27,6 +27,15 @@
                     </label>
                 </div>
             {%- endfor -%}
+            {# AI Mode tab only on homepage (index.html) #}
+            {% if endpoint == 'index' %}
+            <div class="category category_checkbox">
+                <button type="button" id="ai_mode_tab_checkbox" style="background:none; border:none; padding:0; cursor:pointer; display:flex; flex-direction:column; align-items:center; width:100%;">
+                    <img src="{{ url_for('static', filename='themes/simple/img/aimode.png') }}" alt="AI" style="width: 24px; height: 24px;">
+                    <div class="category_name">AI</div>
+                </button>
+            </div>
+            {% endif %}
             {%- if display_tooltip %}<div class="help">{{ _('Click on the magnifier to perform search') }}</div>{% endif -%}
         {%- else -%}
             {%- for category in categories -%}{{- '\n' -}}
@@ -35,6 +44,13 @@
                     <div class="category_name">{{- _(category) -}}</div>{{- '' -}}
                 </button>{{- '' -}}
             {%- endfor -%}
+            {# AI Mode tab only on homepage (index.html) #}
+            {% if endpoint == 'index' %}
+            <button type="button" id="ai_mode_tab_button" class="category category_button">
+                <img src="{{ url_for('static', filename='themes/simple/img/aimode.png') }}" alt="AI" style="width: 24px; height: 24px;">
+                <div class="category_name">AI</div>
+            </button>
+            {% endif %}
             <input name="categories" id="selected-categories" type="hidden" />
             {{- '\n' -}}
         {%- endif -%}

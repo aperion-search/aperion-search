@@ -4,7 +4,9 @@
       <div class="search_box">
         <input id="q" name="q" type="text" placeholder="{{ _('Search for...') }}" autocomplete="off" autocapitalize="none" spellcheck="false" autocorrect="off" dir="auto" value="{{ q or '' }}">
         <button id="clear_search" type="reset" aria-label="{{ _('clear') }}"><span class="hide_if_nojs">{{ icon_big('close') }}</span><span class="show_if_nojs">{{ _('clear') }}</span></button>
-        <button id="ai_mode_toggle" type="button" aria-label="{{ _('AI Mode') }}" class="hide_if_nojs" title="{{ _('Ask AI directly') }}" style="background:none; border:none; padding:4px 8px; margin:0; font-size:18px; cursor:pointer; display:inline-flex; align-items:center; justify-content:center;">✨</button>
+        <button id="ai_mode_toggle" type="button" aria-label="{{ _('AI Mode') }}" class="hide_if_nojs" title="{{ _('Ask AI directly') }}" style="background:none; border:none; padding:4px 8px; margin:0; cursor:pointer; display:inline-flex; align-items:center; justify-content:center;">
+            <img src="{{ url_for('static', filename='themes/simple/img/aimode.png') }}" alt="AI" style="width: 20px; height: 20px;">
+        </button>
         <button id="send_search" type="submit" aria-label="{{ _('search') }}"><span class="hide_if_nojs">{{ icon_big('search') }}</span><span class="show_if_nojs">{{ _('search') }}</span></button>
         <div class="autocomplete hide_if_nojs"><ul></ul></div>
       </div>
@@ -28,6 +30,7 @@
   const aiToggle = document.getElementById('ai_mode_toggle');
   const aiInput = document.getElementById('ai_mode_input');
   const searchInput = document.getElementById('q');
+  const searchForm = document.getElementById('search');
 
   if (aiToggle && aiInput) {
     aiToggle.addEventListener('click', function() {
@@ -44,6 +47,38 @@
         searchInput.placeholder = '{{ _("Ask AI anything...") }}';
       }
     }
+  }
+
+  // Redirect to /aperionai if AI mode is enabled
+  const sendSearchBtn = document.getElementById('send_search');
+  
+  if (sendSearchBtn) {
+    sendSearchBtn.addEventListener('click', function(e) {
+      console.log('Search button clicked, AI mode:', aiInput ? aiInput.value : 'no ai input');
+      if (aiInput && aiInput.value === 'true' && searchInput && searchInput.value.trim()) {
+        console.log('Redirecting to AI with query:', searchInput.value.trim());
+        e.preventDefault();
+        e.stopPropagation();
+        const q = encodeURIComponent(searchInput.value.trim());
+        window.location.href = '/aperionai?q=' + q;
+        return false;
+      }
+    });
+  }
+  
+  // Also handle Enter key
+  if (searchInput) {
+    searchInput.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') {
+        console.log('Enter key pressed, AI mode:', aiInput ? aiInput.value : 'no ai input');
+        if (aiInput && aiInput.value === 'true' && searchInput.value.trim()) {
+          console.log('Redirecting to AI with query:', searchInput.value.trim());
+          e.preventDefault();
+          const q = encodeURIComponent(searchInput.value.trim());
+          window.location.href = '/aperionai?q=' + q;
+        }
+      }
+    });
   }
 })();
 </script>

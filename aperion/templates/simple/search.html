@@ -2,7 +2,7 @@
   <div id="search_header">
     <a id="search_logo" href="{{ url_for('index') }}" tabindex="0" title="{{ _('Display the front page') }}">
       <span hidden>Aperion Search</span>
-      {% include 'simple/aperion-wordmark.min.svg' without context %}
+      <img src="{{ url_for('static', filename='themes/simple/img/aperion.png') }}?v=2" alt="Aperion Search" style="height: 40px;">
     </a>
     <div id="search_view">
       <div class="search_box">
@@ -31,15 +31,27 @@
   'use strict';
   
   const aiToggle = document.getElementById('ai_mode_toggle');
+  const aiTabCheckbox = document.getElementById('ai_mode_tab_checkbox');
+  const aiTabButton = document.getElementById('ai_mode_tab_button');
   const aiInput = document.getElementById('ai_mode_input');
   const searchInput = document.getElementById('q');
   
+  function navigateToAI() {
+    const q = encodeURIComponent(searchInput.value || '');
+    const dest = q ? ('/aperionai?q=' + q) : '/aperionai';
+    window.location.href = dest;
+  }
+  
   if (aiToggle) {
-    aiToggle.addEventListener('click', function() {
-      const q = encodeURIComponent(searchInput.value || '');
-      const dest = q ? ('/aperionai?q=' + q) : '/aperionai';
-      window.location.href = dest;
-    });
+    aiToggle.addEventListener('click', navigateToAI);
+  }
+  
+  if (aiTabCheckbox) {
+    aiTabCheckbox.addEventListener('click', navigateToAI);
+  }
+  
+  if (aiTabButton) {
+    aiTabButton.addEventListener('click', navigateToAI);
   }
 })();
 </script>

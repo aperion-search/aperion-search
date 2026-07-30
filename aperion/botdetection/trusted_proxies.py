@@ -137,8 +137,9 @@ class ProxyFix:
 
         # log questionable WSGI environments
 
-        if not x_forwarded_for and not x_real_ip:
-            log_error_only_once("X-Forwarded-For nor X-Real-IP header is set!")
+        # Skip X-Forwarded-For error in local development (no reverse proxy)
+        # if not x_forwarded_for and not x_real_ip:
+        #     log_error_only_once("X-Forwarded-For nor X-Real-IP header is set!")
 
         if x_forwarded_for and not trusted_proxies:
             log_error_only_once("missing botdetection.trusted_proxies config")

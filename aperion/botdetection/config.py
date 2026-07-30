@@ -77,7 +77,7 @@ class Config:
         log.debug("load schema file: %s", schema_file)
         cfg = cls(cfg_schema=toml_load(schema_file), deprecated=deprecated)
         if not cfg_file.exists():
-            log.warning("missing config file: %s", cfg_file)
+            # Config file is optional in development
             return cfg
 
         # load configuration

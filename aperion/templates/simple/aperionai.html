@@ -2,28 +2,354 @@
 {% from 'simple/icons.html' import icon_big, icon_small %}
 {% block title %}AI Chat{% endblock %}
 {% block content %}
-<div class="ai-page">
-  <h1>💬 AI Assistant</h1>
-  <div id="ai_chat_container" style="max-width:900px; margin:0 auto;">
-    {%- if not ai_config.endpoint or not ai_config.model -%}
-    <div style="background:#fef3c7; border:1px solid #fcd34d; border-radius:8px; padding:16px; margin-bottom:16px;">
-      <strong>⚠️ AI Not Configured</strong>
-      <p style="margin:8px 0 0;">Free option: <strong>Install <a href="https://ollama.ai" target="_blank">Ollama</a></strong> and download a model (e.g., <code>ollama pull mistral</code>).</p>
-      <p style="margin:8px 0 0;">Then go to <strong>Preferences → AI</strong> and set:</p>
-      <ul style="margin:4px 0; padding-left:20px;">
-        <li>Provider: <code>Ollama</code></li>
-        <li>Endpoint: <code>http://localhost:11434</code></li>
-        <li>Model: <code>mistral</code> (or your model)</li>
-      </ul>
-      <p style="margin:8px 0 0; font-size:0.9rem;"><a href="https://ollama.ai/library" target="_blank">Browse free models →</a></p>
+<style>
+.ai-chat-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.ai-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.ai-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+}
+
+.ai-header p {
+  color: #666;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.chat-wrapper {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.chat-messages {
+  min-height: 400px;
+  max-height: 600px;
+  overflow-y: auto;
+  padding: 20px;
+  background: #fafafa;
+}
+
+.message {
+  display: flex;
+  margin-bottom: 16px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.message.user {
+  justify-content: flex-end;
+}
+
+.message.ai {
+  justify-content: flex-start;
+}
+
+.message-bubble {
+  max-width: 70%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.message-sender {
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  opacity: 0.7;
+}
+
+.message.user .message-sender {
+  color: white;
+}
+
+.message.ai .message-sender {
+  color: #667eea;
+}
+
+.message.user .message-bubble {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.message.ai .message-bubble {
+  background: white;
+  color: #1a1a1a;
+  border: 1px solid #e5e7eb;
+  border-bottom-left-radius: 4px;
+}
+
+.message-bubble strong {
+  font-weight: 600;
+}
+
+.message-bubble code {
+  background: rgba(0,0,0,0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+.message.ai .message-bubble code {
+  background: #f3f4f6;
+}
+
+.message-bubble pre {
+  background: #1a1a1a;
+  color: #f0f0f0;
+  padding: 12px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 8px 0;
+}
+
+.message-bubble ul, .message-bubble ol {
+  margin: 8px 0;
+  padding-left: 20px;
+}
+
+.message-bubble li {
+  margin: 4px 0;
+}
+
+.message-bubble p {
+  margin: 8px 0;
+}
+
+.message-bubble p:first-child {
+  margin-top: 0;
+}
+
+.message-bubble p:last-child {
+  margin-bottom: 0;
+}
+
+.chat-input-area {
+  padding: 16px;
+  background: white;
+  border-top: 1px solid #e5e7eb;
+}
+
+.chat-input-wrapper {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: none;
+  min-height: 48px;
+  max-height: 120px;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.chat-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.send-button {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.2s;
+}
+
+.send-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.send-button:active {
+  transform: translateY(0);
+}
+
+.send-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.upload-button {
+  padding: 8px 12px;
+  background: white;
+  color: #667eea;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+}
+
+.upload-button:hover {
+  background: #f9fafb;
+  border-color: #667eea;
+}
+
+.upload-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.file-preview {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.file-preview img {
+  max-width: 60px;
+  max-height: 60px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.file-preview .file-info {
+  flex: 1;
+  font-size: 0.85rem;
+  color: #374151;
+}
+
+.file-preview .file-remove {
+  background: none;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  padding: 4px;
+  font-size: 1.2rem;
+}
+
+.typing-indicator {
+  display: flex;
+  gap: 4px;
+  padding: 12px 16px;
+}
+
+.typing-indicator span {
+  width: 8px;
+  height: 8px;
+  background: #667eea;
+  border-radius: 50%;
+  animation: bounce 1.4s infinite ease-in-out;
+}
+
+.typing-indicator span:nth-child(1) { animation-delay: -0.32s; }
+.typing-indicator span:nth-child(2) { animation-delay: -0.16s; }
+
+@keyframes bounce {
+  0%, 80%, 100% { transform: scale(0); }
+  40% { transform: scale(1); }
+}
+
+.error-message {
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #9ca3af;
+}
+
+.empty-state svg {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.empty-state h3 {
+  margin: 0 0 8px 0;
+  color: #6b7280;
+}
+
+.empty-state p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+</style>
+
+<div class="ai-chat-container">
+  <div class="ai-header">
+    <h1>✨ Aperion AI</h1>
+    <p>Your intelligent search companion powered by AperionSearch</p>
+  </div>
+  
+  <div class="chat-wrapper">
+    <div id="chat_messages" class="chat-messages">
+      <div class="empty-state">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Welcome to Aperion AI</h3>
+        <p>I'm your intelligent search companion. Ask me anything!</p>
+      </div>
     </div>
-    {%- endif -%}
-    <div id="chat_history" style="border:1px solid #e6e6e6; padding:12px; min-height:180px; background:#fff; border-radius:8px; overflow:auto; margin-bottom:12px;"></div>
-    <div style="display:flex; gap:8px;">
-      <input id="ai_query" type="text" placeholder="Ask the AI..." style="flex:1; padding:10px; border-radius:6px; border:1px solid #d1d5db; font-size:0.95rem;">
-      <button id="ai_send" class="btn" style="padding:10px 16px;">Ask</button>
+    
+    <div class="chat-input-area">
+      <div class="chat-input-wrapper">
+        <button id="ai_upload" class="upload-button" title="Upload file or image">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke-linecap="round" stroke-linejoin="round"/>
+            <polyline points="17,8 12,3 7,8" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="12" y1="3" x2="12" y2="15" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <input type="file" id="ai_file_input" accept="image/*,.pdf,.doc,.docx,.txt" style="display: none;">
+        <textarea 
+          id="ai_query" 
+          class="chat-input" 
+          placeholder="Type your message... (Press Enter to send, Shift+Enter for new line)"
+          rows="1"
+        ></textarea>
+        <button id="ai_send" class="send-button">Send</button>
+      </div>
+      <div id="file_preview" class="file-preview" style="display: none;"></div>
     </div>
-    <div id="ai_status" style="margin-top:8px; color:#6b7280; font-size:0.95rem;"></div>
   </div>
 </div>
 
@@ -34,54 +360,196 @@
   const initialQ = params.get('q') || '';
   const input = document.getElementById('ai_query');
   const send = document.getElementById('ai_send');
-  const hist = document.getElementById('chat_history');
-  const status = document.getElementById('ai_status');
+  const messages = document.getElementById('chat_messages');
+  const uploadBtn = document.getElementById('ai_upload');
+  const fileInput = document.getElementById('ai_file_input');
+  const filePreview = document.getElementById('file_preview');
+  
+  let isTyping = false;
+  let selectedFile = null;
 
-  function appendMessage(who, text) {
-    const d = document.createElement('div');
-    d.style.padding = '8px 6px';
-    d.style.borderBottom = '1px solid #f1f5f9';
-    if (who === 'You') {
-      d.style.backgroundColor = '#f0f4f8';
-      d.style.fontWeight = 'bold';
+  function removeEmptyState() {
+    const emptyState = messages.querySelector('.empty-state');
+    if (emptyState) {
+      emptyState.remove();
     }
-    d.innerHTML = '<strong>' + who + ':</strong> <span>' + (text || '') + '</span>';
-    hist.appendChild(d);
-    hist.scrollTop = hist.scrollHeight;
+  }
+
+  function addTypingIndicator() {
+    const typingDiv = document.createElement('div');
+    typingDiv.className = 'message ai';
+    typingDiv.id = 'typing_indicator';
+    typingDiv.innerHTML = '<div class="message-bubble"><div class="typing-indicator"><span></span><span></span><span></span></div></div>';
+    messages.appendChild(typingDiv);
+    messages.scrollTop = messages.scrollHeight;
+  }
+
+  function removeTypingIndicator() {
+    const typing = document.getElementById('typing_indicator');
+    if (typing) typing.remove();
+  }
+
+  function convertMarkdown(text) {
+    if (!text) return '';
+    return text
+      .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\*(.*?)\*/g, '<em>$1</em>')
+      .replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>')
+      .replace(/`(.*?)`/g, '<code>$1</code>')
+      .replace(/^### (.*$)/gm, '<h3>$1</h3>')
+      .replace(/^## (.*$)/gm, '<h2>$1</h2>')
+      .replace(/^# (.*$)/gm, '<h1>$1</h1>')
+      .replace(/^- (.*$)/gm, '<li>$1</li>')
+      .replace(/^(\d+)\. (.*$)/gm, '<li>$2</li>')
+      .replace(/\n\n/g, '</p><p>')
+      .replace(/\n/g, '<br>');
+  }
+
+  function appendMessage(role, text) {
+    removeEmptyState();
+    const messageDiv = document.createElement('div');
+    messageDiv.className = `message ${role}`;
+    
+    const bubble = document.createElement('div');
+    bubble.className = 'message-bubble';
+    
+    const sender = document.createElement('div');
+    sender.className = 'message-sender';
+    sender.textContent = role === 'user' ? 'You' : 'Aperion AI';
+    
+    const content = document.createElement('div');
+    content.innerHTML = convertMarkdown(text);
+    
+    bubble.appendChild(sender);
+    bubble.appendChild(content);
+    messageDiv.appendChild(bubble);
+    messages.appendChild(messageDiv);
+    messages.scrollTop = messages.scrollHeight;
+  }
+
+  function appendError(text) {
+    removeEmptyState();
+    const messageDiv = document.createElement('div');
+    messageDiv.className = 'message ai';
+    
+    const bubble = document.createElement('div');
+    bubble.className = 'message-bubble error-message';
+    bubble.textContent = text;
+    
+    messageDiv.appendChild(bubble);
+    messages.appendChild(messageDiv);
+    messages.scrollTop = messages.scrollHeight;
   }
 
   async function askAI(query) {
-    if (!query) return;
-    appendMessage('You', query);
-    status.textContent = 'Thinking...';
+    if (!query || isTyping) return;
+    
+    isTyping = true;
+    send.disabled = true;
+    input.disabled = true;
+    
+    appendMessage('user', query);
+    addTypingIndicator();
+    
     try {
+      const formData = new FormData();
+      formData.append('query', query);
+      formData.append('context', '');
+      if (selectedFile) {
+        formData.append('file', selectedFile);
+      }
+      
       const res = await fetch('/ai_chat', {
         method: 'POST',
-        headers: {'Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest'},
-        body: JSON.stringify({query: query, context: ''})
+        headers: {'X-Requested-With': 'XMLHttpRequest'},
+        body: formData
       });
+      
       const data = await res.json();
+      removeTypingIndicator();
+      
       if (data && data.success) {
-        appendMessage('AI', (data.response || '').replace(/\n/g, '<br>'));
-        status.textContent = '';
+        appendMessage('ai', data.response || '');
       } else {
-        appendMessage('AI', '<em style="color:#dc2626;">Error: ' + (data.error || 'No response') + '</em>');
-        status.textContent = '';
+        appendError(data.error || 'No response from AI');
       }
     } catch (e) {
-      appendMessage('AI', '<em style="color:#dc2626;">Request failed: ' + e.message + '</em>');
-      status.textContent = '';
+      removeTypingIndicator();
+      appendError('Request failed: ' + e.message);
+    } finally {
+      isTyping = false;
+      send.disabled = false;
+      input.disabled = false;
+      input.focus();
     }
   }
 
-  send.addEventListener('click', function(){
+  function sendMessage() {
     const q = input.value.trim();
-    if (!q) return;
-    askAI(q);
+    if (!q && !selectedFile) return;
+    askAI(q || 'Analyze this file');
     input.value = '';
+    input.style.height = 'auto';
+    clearFilePreview();
+  }
+
+  uploadBtn.addEventListener('click', () => fileInput.click());
+  
+  fileInput.addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      selectedFile = file;
+      showFilePreview(file);
+    }
+  });
+  
+  function showFilePreview(file) {
+    filePreview.style.display = 'flex';
+    filePreview.innerHTML = '';
+    
+    if (file.type.startsWith('image/')) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        const img = document.createElement('img');
+        img.src = e.target.result;
+        filePreview.appendChild(img);
+      };
+      reader.readAsDataURL(file);
+    }
+    
+    const info = document.createElement('div');
+    info.className = 'file-info';
+    info.textContent = file.name;
+    filePreview.appendChild(info);
+    
+    const remove = document.createElement('button');
+    remove.className = 'file-remove';
+    remove.textContent = '×';
+    remove.addEventListener('click', clearFilePreview);
+    filePreview.appendChild(remove);
+  }
+  
+  function clearFilePreview() {
+    selectedFile = null;
+    fileInput.value = '';
+    filePreview.style.display = 'none';
+    filePreview.innerHTML = '';
+  }
+
+  send.addEventListener('click', sendMessage);
+
+  input.addEventListener('keydown', function(e){
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      sendMessage();
+    }
   });
 
-  input.addEventListener('keydown', function(e){ if (e.key === 'Enter') { e.preventDefault(); send.click(); } });
+  // Auto-resize textarea
+  input.addEventListener('input', function() {
+    this.style.height = 'auto';
+    this.style.height = Math.min(120, this.scrollHeight) + 'px';
+  });
 
   // Auto-send initial query if provided
   if (initialQ) {

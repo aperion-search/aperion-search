@@ -51,7 +51,10 @@ def get_git_url_and_branch():
     try:
         ref = subprocess_run("git rev-parse --abbrev-ref @{upstream}")
     except subprocess.CalledProcessError:
-        ref = subprocess_run("git rev-parse --abbrev-ref master@{upstream}")
+        try:
+            ref = subprocess_run("git rev-parse --abbrev-ref main@{upstream}")
+        except subprocess.CalledProcessError:
+            ref = subprocess_run("git rev-parse --abbrev-ref master@{upstream}")
     origin, git_branch = ref.split("/", 1)
     git_url = subprocess_run(["git", "remote", "get-url", origin])
 

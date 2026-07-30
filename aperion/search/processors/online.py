@@ -181,7 +181,7 @@ class OnlineProcessor(EngineProcessor):
             )
         except AperionEngineCaptchaException as e:
             self.handle_exception(result_container, e, suspend=True)
-            self.logger.exception('CAPTCHA')
+            # Suppress CAPTCHA error logging - external issue from search engine
         except AperionEngineTooManyRequestsException as e:
             self.handle_exception(result_container, e, suspend=True)
             self.logger.exception('Too many requests')
