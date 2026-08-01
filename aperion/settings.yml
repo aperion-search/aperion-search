@@ -19,7 +19,7 @@ general:
 
 brand:
   new_issue_url: https://github.com/Aperion-Search/Aperion-Search/issues/new
-  docs_url: https://docs.aperion.org/
+  docs_url: https://docs-aperion-search.onrender.com/
   wiki_url: https://github.com/aperion/aperion/wiki
   issue_url: https://github.com/Aperion-Search/Aperion-Search/issues/
   # custom:
