@@ -46,7 +46,6 @@
 <!-- Draw result sub footer -->
 {%- macro result_sub_footer(result) -%}
 <div class="engines">
-  {% for engine in result.engines %}<span>{{ engine }}</span>{% endfor %}
   {{ icon_small('ellipsis-vertical') + result_link(cache_url + result.url, _('cached'), "cache_link") }}
 </div>{{- '' -}}
 <div class="break"></div>{{- '' -}}

@@ -237,7 +237,7 @@ html_sidebars = {
     ],
 }
 singlehtml_sidebars = {"index": ["project.html", "localtoc.html"]}
-html_logo = "../client/simple/src/brand/aperion-wordmark.svg"
+html_logo = "../aperion/static/themes/simple/img/aperion.png"
 html_title = "Aperion Search Documentation ({})".format(VERSION_STRING)
 html_show_sourcelink = True
 

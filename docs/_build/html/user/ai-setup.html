@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Summarization Setup Guide (FREE) &#8212; Aperion Search Documentation (2026.7.30+3c8e93f+dirty)</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=6625fa76" />
+    <link rel="stylesheet" type="text/css" href="../_static/aperion.css?v=52e4ff28" />
+    <script src="../_static/documentation_options.js?v=9738312a"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script data-project="aperion search" data-version="2026.7.30+3c8e93f+dirty" src="../_static/describe_version.js?v=fa7f30d0"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Aperion Search Documentation (2026.7.30+3c8e93f+dirty)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">AI Summarization Setup Guide (FREE)</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ai-summarization-setup-guide-free">
+<h1>AI Summarization Setup Guide (FREE)<a class="headerlink" href="#ai-summarization-setup-guide-free" title="Link to this heading">¶</a></h1>
+<p>This guide shows how to set up <strong>free</strong> AI summarization without paying for API keys.</p>
+<section id="option-1-free-local-ai-with-ollama-recommended">
+<h2><strong>Option 1: Free Local AI with Ollama (Recommended)</strong><a class="headerlink" href="#option-1-free-local-ai-with-ollama-recommended" title="Link to this heading">¶</a></h2>
+<p><a class="reference external" href="https://ollama.ai">Ollama</a> provides free, unlimited local AI models with no account needed.</p>
+<p><strong>Installation:</strong></p>
+<ol class="arabic">
+<li><p>Download and install Ollama from <a class="reference external" href="https://ollama.ai">https://ollama.ai</a></p></li>
+<li><p>Start the Ollama service (it runs on <code class="docutils literal notranslate"><span class="pre">localhost:11434</span></code> by default)</p></li>
+<li><p>Download a free model:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ollama</span> <span class="n">pull</span> <span class="n">mistral</span>          <span class="c1"># Fast, good quality (7B)</span>
+<span class="n">ollama</span> <span class="n">pull</span> <span class="n">neural</span><span class="o">-</span><span class="n">chat</span>      <span class="c1"># General purpose (7B)</span>
+<span class="n">ollama</span> <span class="n">pull</span> <span class="n">llama2</span>           <span class="c1"># Powerful (7B/13B/70B)</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p><strong>Configure in Aperion:</strong></p>
+<ol class="arabic simple">
+<li><p>Go to <strong>Preferences</strong> → <strong>AI</strong></p></li>
+<li><p>Set:
+- <strong>AI Provider:</strong> <code class="docutils literal notranslate"><span class="pre">Ollama</span></code>
+- <strong>AI API Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">http://localhost:11434</span></code>
+- <strong>AI Model:</strong> <code class="docutils literal notranslate"><span class="pre">mistral</span></code> (or the model you downloaded)
+- <strong>AI API Key:</strong> (leave empty)</p></li>
+<li><p>Enable <strong>AI Summarization</strong></p></li>
+</ol>
+<p><strong>That’s it!</strong> You now have unlimited free AI summaries.</p>
+</section>
+<section id="option-2-free-online-services">
+<h2><strong>Option 2: Free Online Services</strong><a class="headerlink" href="#option-2-free-online-services" title="Link to this heading">¶</a></h2>
+<section id="huggingface-inference-api-free-tier">
+<h3><strong>HuggingFace Inference API (Free Tier)</strong><a class="headerlink" href="#huggingface-inference-api-free-tier" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Sign up at <a class="reference external" href="https://huggingface.co">https://huggingface.co</a> (free account)</p></li>
+<li><p>Get your API token from <a class="reference external" href="https://huggingface.co/settings/tokens">https://huggingface.co/settings/tokens</a></p></li>
+<li><p>In Aperion Preferences:
+- <strong>AI Provider:</strong> <code class="docutils literal notranslate"><span class="pre">Custom</span> <span class="pre">OpenAI-compatible</span></code>
+- <strong>AI API Endpoint:</strong> <code class="docutils literal notranslate"><span class="pre">https://api-inference.huggingface.co/models/HuggingFaceH4/zephyr-7b-beta</span></code>
+- <strong>AI API Key:</strong> Your HuggingFace token</p></li>
+</ol>
+<p>(Note: Free tier has rate limits)</p>
+</section>
+</section>
+<section id="option-3-free-self-hosted-advanced">
+<h2><strong>Option 3: Free Self-Hosted (Advanced)</strong><a class="headerlink" href="#option-3-free-self-hosted-advanced" title="Link to this heading">¶</a></h2>
+<p>Use any OpenAI-compatible LLM running locally or on a VPS:</p>
+<ul class="simple">
+<li><p><strong>vLLM:</strong> Run any Hugging Face model with OpenAI-compatible API</p></li>
+<li><p><strong>LocalAI:</strong> Local inference server</p></li>
+<li><p><strong>Text Generation WebUI:</strong> User-friendly local UI</p></li>
+</ul>
+<p>Then point Aperion to your endpoint using the <strong>Custom OpenAI-compatible</strong> provider.</p>
+</section>
+<section id="performance-tips">
+<h2><strong>Performance Tips</strong><a class="headerlink" href="#performance-tips" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Ollama on CPU:</strong> Use smaller models like <code class="docutils literal notranslate"><span class="pre">mistral</span></code> or <code class="docutils literal notranslate"><span class="pre">neural-chat</span></code> (7B)</p></li>
+<li><p><strong>Ollama on GPU:</strong> You can use larger models like <code class="docutils literal notranslate"><span class="pre">llama2:13b</span></code> or <code class="docutils literal notranslate"><span class="pre">mistral:large</span></code></p></li>
+<li><p><strong>Better answers:</strong> Larger models give better quality (7B &lt; 13B &lt; 70B)</p></li>
+<li><p><strong>Speed:</strong> Smaller models summarize faster</p></li>
+</ul>
+</section>
+<section id="model-recommendations">
+<h2><strong>Model Recommendations</strong><a class="headerlink" href="#model-recommendations" title="Link to this heading">¶</a></h2>
+</section>
+<section id="troubleshooting">
+<h2><strong>Troubleshooting</strong><a class="headerlink" href="#troubleshooting" title="Link to this heading">¶</a></h2>
+<dl>
+<dt><strong>“AI summarizer is not configured”</strong></dt><dd><p>Check that all three are set:
+- AI Provider (e.g., <code class="docutils literal notranslate"><span class="pre">Ollama</span></code>)
+- AI API Endpoint (e.g., <code class="docutils literal notranslate"><span class="pre">http://localhost:11434</span></code>)
+- AI Model (e.g., <code class="docutils literal notranslate"><span class="pre">mistral</span></code>)</p>
+</dd>
+<dt><strong>Ollama connection refused</strong></dt><dd><p>Make sure Ollama is running:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ollama</span> <span class="n">serve</span>
+</pre></div>
+</div>
+</dd>
+<dt><strong>Slow responses</strong></dt><dd><p>Use a smaller model or enable GPU acceleration in Ollama.</p>
+</dd>
+<dt><strong>No response after “Thinking…”</strong></dt><dd><p>The model may be processing a large summary. Try a shorter query or restart the model.</p>
+</dd>
+</dl>
+</section>
+<section id="getting-started-now">
+<h2><strong>Getting Started Now</strong><a class="headerlink" href="#getting-started-now" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Install Ollama: <a class="reference external" href="https://ollama.ai/download">https://ollama.ai/download</a></p></li>
+<li><p>Download a model: <code class="docutils literal notranslate"><span class="pre">ollama</span> <span class="pre">pull</span> <span class="pre">mistral</span></code></p></li>
+<li><p>Configure in Aperion Preferences</p></li>
+<li><p>Search and enjoy free AI summaries!</p></li>
+</ol>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  
+    
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/aperion.png" alt="Logo of Aperion Search"/>
+            </a></p>
+  
+
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">User information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../own-instance.html">Why use a private instance?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/index.html">Administrator documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/index.html">Developer documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../utils/index.html">DevOps tooling box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../src/index.html">Source-Code</a></li>
+</ul>
+
+  <h3>Project Links</h3>
+  <ul>
+    <li><a href="https://github.com/aperion-search/aperion-search/tree/main">Source</a>
+  
+    <li><a href="https://github.com/aperion/aperion/wiki">Wiki</a>
+  
+    <li><a href="https://aperion.space">Public instances</a>
+  
+    <li><a href="https://github.com/Aperion-Search/Aperion-Search/issues/">Issue Tracker</a>
+  </ul><h3>Navigation</h3>
+<ul>
+  <li><a href="../index.html">Overview</a>
+    
+  </li>
+</ul>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/user/ai-setup.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright Aperion Search team.
+    </div>
+  </body>
+</html>

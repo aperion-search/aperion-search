@@ -1,7 +1,6 @@
 # Über Aperion Search
 
-Aperion Search ist eine [Metasuchmaschine], die die Ergebnisse anderer
-{{link('Suchmaschinen', 'preferences')}} aggregiert, ohne Informationen über ihre Nutzer zu speichern.
+Aperion Search ist eine leistungsstarke Suchmaschine, die schnelle, genaue und private Suchergebnisse liefert, ohne Informationen über ihre Nutzer zu speichern.
 
 ## Warum sollte man sie nutzen?
 
@@ -25,7 +24,7 @@ Wenn Sie eine Suchmaschine hinzufügen, dürfen keine Duplikate mit demselben Na
 
 ## Wie funktioniert es?
 
-Aperion Search ist eine bekannte [Isearch]-[Metasuchmaschine], die vom [Infinity-Projekt] inspiriert wurde. Sie bietet grundlegenden Datenschutz, indem sie Ihre Suchanfragen mit Suchen auf anderen Plattformen mischt, ohne Suchdaten zu speichern. Aperion Search kann zur Suchleiste Ihres Browsers hinzugefügt werden und kann außerdem als Standardsuchmaschine festgelegt werden.
+Aperion Search ist eine leistungsstarke Suchmaschine, die von modernen Suchtechnologien inspiriert ist. Sie bietet grundlegenden Datenschutz, indem sie keine Suchdaten speichert. Aperion Search kann zur Suchleiste Ihres Browsers hinzugefügt werden und kann außerdem als Standardsuchmaschine festgelegt werden.
 
 ## Wer hat Aperion Search entwickelt?
 

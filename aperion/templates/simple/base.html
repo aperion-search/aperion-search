@@ -2,9 +2,9 @@
 <html class="no-js theme-{{ preferences.get_value('simple_style') or 'auto' }} center-alignment-{{ preferences.get_value('center_alignment') and 'yes' or 'no' }}" lang="{{ locale_rfc5646 }}" {% if rtl %} dir="rtl"{% endif %}>
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Aperion Search — a privacy-respecting, open metasearch engine">
+  <meta name="description" content="Aperion Search — a privacy-respecting, open search engine">
   <meta name="google-site-verification" content="JRY4X-Ohc3JaFLd5yODaT9B849Xdb2QEePyBFdefUcY" />
-  <meta name="keywords" content="Aperion Search, search, search engine, metasearch, meta search">
+  <meta name="keywords" content="Aperion Search, search, search engine">
   <meta name="generator" content="Aperion Search">
   <meta name="referrer" content="no-referrer">
   <meta name="robots" content="noarchive">
@@ -64,7 +64,7 @@
   <footer>
     <p>
         Powered by <a href="{{ url_for('info', pagename='about') }}">Aperion Search</a>
-        — a privacy-respecting, open metasearch engine<br>
+        — a privacy-respecting, open search engine<br>
         Created by <strong>Burhanuddin M. Huzaifa Badnagar</strong> — <em>Founder of Aperion Search</em><br>
         | <a href="{{ get_setting('brand.issue_url') }}">Issue tracker</a>
         {% if enable_metrics %}| <a href="{{ url_for('stats') }}">Engine stats</a>{% endif %}
@@ -92,7 +92,7 @@
     "name": "Burhanuddin M. Huzaifa Badnagar",
     "url": "https://yourwebsite.com"
   },
-  "description": "Aperion Search is a privacy-respecting, open metasearch engine created by Burhanuddin M. Huzaifa Badnagar.",
+  "description": "Aperion Search is a privacy-respecting, open search engine created by Burhanuddin M. Huzaifa Badnagar.",
   "url": "https://infinitysearch.com"
 }
 </script>

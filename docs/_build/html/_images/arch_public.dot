@@ -1,0 +1,31 @@
+digraph G {
+
+  node [style=filled, shape=box, fillcolor="#ffffcc", fontname=Sans];
+  edge [fontname="Sans"];
+
+  browser [label="browser", shape=tab, fillcolor=aliceblue];
+  rp      [label="reverse proxy"];
+  static  [label="static files", shape=folder, href="url to configure static files", fillcolor=lightgray];
+  uwsgi   [label="uwsgi", shape=parallelogram href="https://docs.aperion.org/utils/aperion.sh.html"]
+  valkey  [label="valkey DB", shape=cylinder];
+
+  aperion1  [label="aperion #1", fontcolor=blue3];
+  aperion2  [label="aperion #2", fontcolor=blue3];
+  aperion3  [label="aperion #3", fontcolor=blue3];
+  aperion4  [label="aperion #4", fontcolor=blue3];
+
+  browser -> rp [label="HTTPS"]
+
+  subgraph cluster_aperion {
+      label = "aperion instance" fontname=Sans;
+      bgcolor="#fafafa";
+      { rank=same; static rp };
+      rp -> static  [label="optional: reverse proxy serves static files", fillcolor=slategray, fontcolor=slategray];
+      rp -> uwsgi [label="http:// (tcp) or unix:// (socket)"];
+      uwsgi -> aperion1 -> valkey;
+      uwsgi -> aperion2 -> valkey;
+      uwsgi -> aperion3 -> valkey;
+      uwsgi -> aperion4 -> valkey;
+  }
+
+}

@@ -227,17 +227,6 @@
     {{- plugin_preferences('privacy') -}}
     {{- tab_footer() -}}
 
-    {# tab: engines #}
-
-    {{- tab_header('maintab', 'engines', _('Search Engines')) -}}
-    <p>
-      {{- _('Currently used search engines in Aperion Search') -}}
-    </p>
-    {{- tabs_open() -}}
-    {%- include 'simple/preferences/engines.html' -%}
-    {{- tabs_close() -}}
-    {{- tab_footer() -}}
-
     {# tab: query #}
 
     {{- tab_header('maintab', 'query', _('Special Queries')) -}}

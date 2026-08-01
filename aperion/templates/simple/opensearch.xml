@@ -2,7 +2,7 @@
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
   <ShortName>Aperion Search</ShortName>
   <LongName>Aperion Search</LongName>
-  <Description>Aperion Search is a metasearch engine that respects your privacy.</Description>
+  <Description>Aperion Search is a search engine that respects your privacy.</Description>
   <InputEncoding>UTF-8</InputEncoding>
   <Image type="image/png">{% include 'simple/aperion-wordmark.min.svg' without context %}</Image>
   {% if opensearch_method == 'GET' %}

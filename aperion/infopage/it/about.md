@@ -1,7 +1,6 @@
 # Informazioni su Aperion Search
 
-Aperion Search è un [metamotore di ricerca] che aggrega i risultati di altri
-{{link('motori di ricerca', 'preferences')}} senza memorizzare informazioni sugli utenti.
+Aperion Search è un motore di ricerca potente che fornisce risultati di ricerca rapidi, accurati e privati senza memorizzare informazioni sugli utenti.
 
 ## Perché usarlo?
 
@@ -25,7 +24,7 @@ Quando aggiungi un motore di ricerca, assicurati che non ci siano duplicati con 
 
 ## Come funziona?
 
-Aperion Search è un noto [metamotore di ricerca] [Isearch], ispirato al [progetto Infinity]. Fornisce un livello base di privacy mescolando le tue query con ricerche effettuate su altre piattaforme, senza memorizzare i dati di ricerca. Aperion Search può essere aggiunto alla barra di ricerca del browser e impostato come motore predefinito.
+Aperion Search è un motore di ricerca potente ispirato alle tecnologie di ricerca moderne. Fornisce un livello base di privacy senza memorizzare i dati di ricerca. Aperion Search può essere aggiunto alla barra di ricerca del browser e impostato come motore predefinito.
 
 ## Chi ha creato Aperion Search?
 

@@ -1,7 +1,6 @@
 # Tentang Aperion Search
 
-Aperion Search adalah sebuah [metamesin pencari] yang menggabungkan hasil dari berbagai
-{{link('mesin pencari', 'preferences')}} tanpa menyimpan informasi tentang penggunanya.
+Aperion Search adalah mesin pencari yang kuat yang memberikan hasil pencarian cepat, akurat, dan privat tanpa menyimpan informasi tentang penggunanya.
 
 ## Mengapa menggunakannya?
 
@@ -25,7 +24,7 @@ Saat menambahkan mesin pencari, pastikan tidak ada duplikat dengan nama yang sam
 
 ## Bagaimana cara kerjanya?
 
-Aperion Search adalah [metamesin pencari] [Isearch] terkenal yang terinspirasi dari [proyek Infinity]. Mesin ini memberikan privasi dasar dengan mencampurkan kueri Anda dengan pencarian di platform lain tanpa menyimpan data pencarian. Aperion Search dapat ditambahkan ke bilah pencarian browser Anda dan dijadikan mesin pencari default.
+Aperion Search adalah mesin pencari yang kuat yang terinspirasi dari teknologi pencarian modern. Mesin ini memberikan privasi dasar dengan tidak menyimpan data pencarian. Aperion Search dapat ditambahkan ke bilah pencarian browser Anda dan dijadikan mesin pencari default.
 
 ## Siapa yang membuat Aperion Search?
 

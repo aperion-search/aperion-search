@@ -2,19 +2,51 @@
 
 ----
 
-.. figure:: https://burhanuddin-1.github.io/svg/
-   :target: https://docs.aperion.org/
+.. figure:: https://raw.githubusercontent.com/aperion-search/aperion-search/refs/heads/main/aperion/static/themes/simple/img/aperion.png
+   :target: https://docs.aperion-search.onrender.com/
    :alt: Aperion Search
    :width: 100%
    :align: center
 
 ----
 
-Privacy-respecting, hackable `metasearch engine`_
+Privacy-respecting
 
 https://Aperion-Search.onrender.com/ lists ready-to-use running instances.
 
 A user_, admin_ and developer_ handbook is available on the homepage_.
+
+AI-Powered Features
+===================
+
+Aperion Search includes advanced AI capabilities to enhance your search experience:
+
+**AI Chat Interface** (`/aperionai`)
+- Modern, fluent chat interface with beautiful gradient design
+- Real-time conversations with Aperion AI
+- Markdown support for formatted responses
+- File and image upload support for multimodal AI analysis
+- Automatic provider selection (Groq, Gemini, OpenRouter, etc.)
+- Typing indicators and smooth animations
+
+**AI Summaries**
+- Automatic summarization of search results
+- Multiple AI provider fallback system
+- Configurable system prompts
+- Context-aware responses
+- Support for various AI providers (Groq, Gemini, OpenAI, Mistral, etc.)
+
+**AI Mode**
+- Toggle AI mode from the homepage search bar
+- Beautiful animated AI button with gradient effects
+- Automatic redirection to AI chat with your query
+- Seamless integration with regular search
+
+**Multimodal Support**
+- Upload images for AI analysis
+- Document upload support
+- Automatic provider selection for vision capabilities
+- File preview in chat interface
 
 |Install|
 |Homepage|
@@ -32,7 +64,6 @@ A user_, admin_ and developer_ handbook is available on the homepage_.
 .. _admin: https://Aperion-Search.onrender.com/admin
 .. _developer: https://Aperion-Search.onrender.com/dev
 .. _homepage: https://Aperion-Search.onrender.com/
-.. _metasearch engine: https://en.wikipedia.org/wiki/Metasearch_engine
 
 .. |Aperion Search logo| image:: "C:\Users\lenov\AppData\Aperion-Search\aperion\static\themes\simple\img\aperion.svg"
    :target: https://Aperion-Search.onrender.com/

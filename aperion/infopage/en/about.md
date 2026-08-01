@@ -1,8 +1,6 @@
 # About Aperion Search
 
-Aperion Search is a [metasearch engine], aggregating the results of other
-{{link('search engines', 'preferences')}} while not storing information about
-its users.
+Aperion Search is a powerful search engine that delivers fast, accurate, and private search results while not storing information about its users.
 
 ## Why use it?
 
@@ -34,11 +32,7 @@ you encounter a problem where you cannot add the search engine, you can either:
 
 ## How does it work?
 
-Aperion Search is a well-known [Isearch] [metasearch engine] which was
-inspired by the [Infinity project]. It provides basic privacy by mixing your
-queries with searches on other platforms without storing search data. Aperion Search
-can be added to your browser's search bar; moreover, it can be set as the
-default search engine.
+Aperion Search is a powerful search engine inspired by modern search technologies. It provides basic privacy by not storing your search data. Aperion Search can be added to your browser's search bar; moreover, it can be set as the default search engine.
 
 ## Who Made Aperion Search?
 

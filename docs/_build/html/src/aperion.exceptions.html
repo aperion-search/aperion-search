@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aperion Search Exceptions &#8212; Aperion Search Documentation (2026.7.30+3c8e93f+dirty)</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=6625fa76" />
+    <link rel="stylesheet" type="text/css" href="../_static/aperion.css?v=52e4ff28" />
+    <script src="../_static/documentation_options.js?v=9738312a"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script data-project="aperion search" data-version="2026.7.30+3c8e93f+dirty" src="../_static/describe_version.js?v=fa7f30d0"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Favicons (source)" href="aperion.favicons.html" />
+    <link rel="prev" title="Caches" href="aperion.cache.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="aperion.favicons.html" title="Favicons (source)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="aperion.cache.html" title="Caches"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Aperion Search Documentation (2026.7.30+3c8e93f+dirty)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Source-Code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Aperion Search Exceptions</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="aperion-search-exceptions">
+<span id="aperion-exceptions"></span><h1>Aperion Search Exceptions<a class="headerlink" href="#aperion-search-exceptions" title="Link to this heading">¶</a></h1>
+<p id="module-aperion.exceptions">Exception types raised by aperion modules.</p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="aperion.exceptions.AperionException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">aperion.exceptions.</span></span><span class="sig-name descname"><span class="pre">AperionException</span></span><a class="reference internal" href="../_modules/aperion/exceptions.html#AperionException"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aperion.exceptions.AperionException" title="Link to this definition">¶</a></dt>
+<dd><p>Base aperion exception.</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="aperion.exceptions.AperionParameterException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">aperion.exceptions.</span></span><span class="sig-name descname"><span class="pre">AperionParameterException</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aperion/exceptions.html#AperionParameterException"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aperion.exceptions.AperionParameterException" title="Link to this definition">¶</a></dt>
+<dd><p>Raised when query miss a required parameter</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="aperion.exceptions.AperionSettingsException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">aperion.exceptions.</span></span><span class="sig-name descname"><span class="pre">AperionSettingsException</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#Exception" title="(in Python v3.14)"><span class="pre">Exception</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aperion/exceptions.html#AperionSettingsException"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aperion.exceptions.AperionSettingsException" title="Link to this definition">¶</a></dt>
+<dd><p>Error while loading the settings</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="aperion.exceptions.AperionEngineException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">aperion.exceptions.</span></span><span class="sig-name descname"><span class="pre">AperionEngineException</span></span><a class="reference internal" href="../_modules/aperion/exceptions.html#AperionEngineException"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aperion.exceptions.AperionEngineException" title="Link to this definition">¶</a></dt>
+<dd><p>Error inside an engine</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="aperion.exceptions.AperionXPathSyntaxException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">aperion.exceptions.</span></span><span class="sig-name descname"><span class="pre">AperionXPathSyntaxException</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xpath_spec</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aperion/exceptions.html#AperionXPathSyntaxException"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aperion.exceptions.AperionXPathSyntaxException" title="Link to this definition">¶</a></dt>
+<dd><p>Syntax error in a XPATH</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="aperion.exceptions.AperionEngineResponseException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">aperion.exceptions.</span></span><span class="sig-name descname"><span class="pre">AperionEngineResponseException</span></span><a class="reference internal" href="../_modules/aperion/exceptions.html#AperionEngineResponseException"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aperion.exceptions.AperionEngineResponseException" title="Link to this definition">¶</a></dt>
+<dd><p>Impossible to parse the result of an engine</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="aperion.exceptions.AperionEngineAPIException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">aperion.exceptions.</span></span><span class="sig-name descname"><span class="pre">AperionEngineAPIException</span></span><a class="reference internal" href="../_modules/aperion/exceptions.html#AperionEngineAPIException"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aperion.exceptions.AperionEngineAPIException" title="Link to this definition">¶</a></dt>
+<dd><p>The website has returned an application error</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="aperion.exceptions.AperionEngineAccessDeniedException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">aperion.exceptions.</span></span><span class="sig-name descname"><span class="pre">AperionEngineAccessDeniedException</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">suspended_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.14)"><span class="pre">str</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Access</span> <span class="pre">denied'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aperion/exceptions.html#AperionEngineAccessDeniedException"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aperion.exceptions.AperionEngineAccessDeniedException" title="Link to this definition">¶</a></dt>
+<dd><p>The website is blocking the access</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="aperion.exceptions.AperionEngineAccessDeniedException.SUSPEND_TIME_SETTING">
+<span class="sig-name descname"><span class="pre">SUSPEND_TIME_SETTING</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'search.suspended_times.AperionEngineAccessDenied'</span></em><a class="headerlink" href="#aperion.exceptions.AperionEngineAccessDeniedException.SUSPEND_TIME_SETTING" title="Link to this definition">¶</a></dt>
+<dd><p>This settings contains the default suspended time (default 86400 sec / 1
+day).</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="aperion.exceptions.AperionEngineCaptchaException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">aperion.exceptions.</span></span><span class="sig-name descname"><span class="pre">AperionEngineCaptchaException</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">suspended_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'CAPTCHA'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aperion/exceptions.html#AperionEngineCaptchaException"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aperion.exceptions.AperionEngineCaptchaException" title="Link to this definition">¶</a></dt>
+<dd><p>The website has returned a CAPTCHA.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="aperion.exceptions.AperionEngineCaptchaException.SUSPEND_TIME_SETTING">
+<span class="sig-name descname"><span class="pre">SUSPEND_TIME_SETTING</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'search.suspended_times.AperionEngineCaptcha'</span></em><a class="headerlink" href="#aperion.exceptions.AperionEngineCaptchaException.SUSPEND_TIME_SETTING" title="Link to this definition">¶</a></dt>
+<dd><p>This settings contains the default suspended time (default 86400 sec / 1
+day).</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="aperion.exceptions.AperionEngineTooManyRequestsException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">aperion.exceptions.</span></span><span class="sig-name descname"><span class="pre">AperionEngineTooManyRequestsException</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">suspended_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><span class="pre">int</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.14)"><span class="pre">None</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Too</span> <span class="pre">many</span> <span class="pre">request'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aperion/exceptions.html#AperionEngineTooManyRequestsException"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aperion.exceptions.AperionEngineTooManyRequestsException" title="Link to this definition">¶</a></dt>
+<dd><p>The website has returned a Too Many Request status code</p>
+<p>By default, aperion stops sending requests to this engine for 1 hour.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="aperion.exceptions.AperionEngineTooManyRequestsException.SUSPEND_TIME_SETTING">
+<span class="sig-name descname"><span class="pre">SUSPEND_TIME_SETTING</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'search.suspended_times.AperionEngineTooManyRequests'</span></em><a class="headerlink" href="#aperion.exceptions.AperionEngineTooManyRequestsException.SUSPEND_TIME_SETTING" title="Link to this definition">¶</a></dt>
+<dd><p>This settings contains the default suspended time (default 3660 sec / 1
+hour).</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="aperion.exceptions.AperionEngineXPathException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">aperion.exceptions.</span></span><span class="sig-name descname"><span class="pre">AperionEngineXPathException</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xpath_spec</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/aperion/exceptions.html#AperionEngineXPathException"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#aperion.exceptions.AperionEngineXPathException" title="Link to this definition">¶</a></dt>
+<dd><p>Error while getting the result of an XPath expression</p>
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  
+    
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/aperion.png" alt="Logo of Aperion Search"/>
+            </a></p>
+  
+
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../user/index.html">User information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../own-instance.html">Why use a private instance?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/index.html">Administrator documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/index.html">Developer documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../utils/index.html">DevOps tooling box</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Source-Code</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="aperion.babel_extract.html">Custom message extractor (i18n)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.botdetection.html">Bot Detection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.cache.html">Caches</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Aperion Search Exceptions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#aperion.exceptions.AperionException"><code class="docutils literal notranslate"><span class="pre">AperionException</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aperion.exceptions.AperionParameterException"><code class="docutils literal notranslate"><span class="pre">AperionParameterException</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aperion.exceptions.AperionSettingsException"><code class="docutils literal notranslate"><span class="pre">AperionSettingsException</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aperion.exceptions.AperionEngineException"><code class="docutils literal notranslate"><span class="pre">AperionEngineException</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aperion.exceptions.AperionXPathSyntaxException"><code class="docutils literal notranslate"><span class="pre">AperionXPathSyntaxException</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aperion.exceptions.AperionEngineResponseException"><code class="docutils literal notranslate"><span class="pre">AperionEngineResponseException</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aperion.exceptions.AperionEngineAPIException"><code class="docutils literal notranslate"><span class="pre">AperionEngineAPIException</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aperion.exceptions.AperionEngineAccessDeniedException"><code class="docutils literal notranslate"><span class="pre">AperionEngineAccessDeniedException</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#aperion.exceptions.AperionEngineAccessDeniedException.SUSPEND_TIME_SETTING"><code class="docutils literal notranslate"><span class="pre">AperionEngineAccessDeniedException.SUSPEND_TIME_SETTING</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#aperion.exceptions.AperionEngineCaptchaException"><code class="docutils literal notranslate"><span class="pre">AperionEngineCaptchaException</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#aperion.exceptions.AperionEngineCaptchaException.SUSPEND_TIME_SETTING"><code class="docutils literal notranslate"><span class="pre">AperionEngineCaptchaException.SUSPEND_TIME_SETTING</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#aperion.exceptions.AperionEngineTooManyRequestsException"><code class="docutils literal notranslate"><span class="pre">AperionEngineTooManyRequestsException</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#aperion.exceptions.AperionEngineTooManyRequestsException.SUSPEND_TIME_SETTING"><code class="docutils literal notranslate"><span class="pre">AperionEngineTooManyRequestsException.SUSPEND_TIME_SETTING</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#aperion.exceptions.AperionEngineXPathException"><code class="docutils literal notranslate"><span class="pre">AperionEngineXPathException</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.favicons.html">Favicons (source)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.infopage.html">Online <code class="docutils literal notranslate"><span class="pre">/info</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.locales.html">Locales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.search.html">Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.search.processors.html">Search processors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.settings.html">Settings Loader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.sqlitedb.html">SQLite DB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html">Utility functions for the engines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.valkeydb.html">Valkey DB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.valkeylib.html">Valkey Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.weather.html">Weather</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>Project Links</h3>
+  <ul>
+    <li><a href="https://github.com/aperion-search/aperion-search/tree/main">Source</a>
+  
+    <li><a href="https://github.com/aperion/aperion/wiki">Wiki</a>
+  
+    <li><a href="https://aperion.space">Public instances</a>
+  
+    <li><a href="https://github.com/Aperion-Search/Aperion-Search/issues/">Issue Tracker</a>
+  </ul><h3>Navigation</h3>
+<ul>
+  <li><a href="../index.html">Overview</a>
+    <ul>
+      <li><a href="index.html">Source-Code</a>
+        <ul>
+          <li>Previous: <a href="aperion.cache.html" title="previous chapter">Caches</a>
+          <li>Next: <a href="aperion.favicons.html" title="next chapter">Favicons (source)</a></ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/src/aperion.exceptions.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright Aperion Search team.
+    </div>
+  </body>
+</html>

@@ -8,32 +8,47 @@
   margin: 0 auto;
   padding: 20px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(102, 126, 234, 0.3);
 }
 
 .ai-header {
   text-align: center;
   margin-bottom: 24px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .ai-header h1 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #1a1a1a;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
   margin: 0 0 8px 0;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #fff 0%, #e0e7ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .ai-header p {
-  color: #666;
+  color: rgba(255, 255, 255, 0.9);
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .chat-wrapper {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
 .chat-messages {
@@ -41,18 +56,36 @@
   max-height: 600px;
   overflow-y: auto;
   padding: 20px;
-  background: #fafafa;
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.chat-messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+  background: rgba(102, 126, 234, 0.5);
+  border-radius: 4px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb:hover {
+  background: rgba(102, 126, 234, 0.7);
 }
 
 .message {
   display: flex;
   margin-bottom: 16px;
-  animation: fadeIn 0.3s ease;
+  animation: slideIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(20px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 .message.user {
@@ -65,21 +98,30 @@
 
 .message-bubble {
   max-width: 70%;
-  padding: 12px 16px;
-  border-radius: 12px;
-  line-height: 1.5;
+  padding: 16px 20px;
+  border-radius: 20px;
+  line-height: 1.6;
   word-wrap: break-word;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.message-bubble:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .message-sender {
-  font-size: 0.75rem;
-  font-weight: 600;
-  margin-bottom: 4px;
-  opacity: 0.7;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .message.user .message-sender {
-  color: white;
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .message.ai .message-sender {
@@ -89,14 +131,27 @@
 .message.user .message-bubble {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 6px;
 }
 
 .message.ai .message-bubble {
   background: white;
   color: #1a1a1a;
   border: 1px solid #e5e7eb;
-  border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 6px;
+}
+
+.message-file {
+  margin-bottom: 12px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.file-icon {
+  font-size: 24px;
+  margin-right: 8px;
 }
 
 .message-bubble strong {
@@ -146,9 +201,10 @@
 }
 
 .chat-input-area {
-  padding: 16px;
-  background: white;
-  border-top: 1px solid #e5e7eb;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .chat-input-wrapper {
@@ -159,37 +215,41 @@
 
 .chat-input {
   flex: 1;
-  padding: 12px 16px;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
+  padding: 14px 18px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
   font-size: 1rem;
   resize: none;
-  min-height: 48px;
+  min-height: 52px;
   max-height: 120px;
   font-family: inherit;
-  transition: border-color 0.2s;
+  transition: all 0.3s ease;
+  background: #f8fafc;
 }
 
 .chat-input:focus {
   outline: none;
   border-color: #667eea;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
 }
 
 .send-button {
-  padding: 12px 24px;
+  padding: 14px 28px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
-  transition: transform 0.1s, box-shadow 0.2s;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 
 .send-button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
 }
 
 .send-button:active {
@@ -203,114 +263,153 @@
 }
 
 .upload-button {
-  padding: 8px 12px;
-  background: white;
+  padding: 10px 14px;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
   color: #667eea;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 40px;
+  min-width: 48px;
+  min-height: 52px;
 }
 
 .upload-button:hover {
-  background: #f9fafb;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
   border-color: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
 }
 
 .upload-button svg {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
+  transition: stroke 0.3s ease;
 }
 
 .file-preview {
-  margin-top: 8px;
-  padding: 8px 12px;
-  background: #f3f4f6;
-  border-radius: 8px;
+  margin-top: 12px;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
+  animation: slideIn 0.3s ease;
 }
 
 .file-preview img {
-  max-width: 60px;
-  max-height: 60px;
-  border-radius: 4px;
+  max-width: 80px;
+  max-height: 80px;
+  border-radius: 8px;
   object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .file-preview .file-info {
   flex: 1;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: #374151;
+  font-weight: 500;
 }
 
 .file-preview .file-remove {
-  background: none;
-  border: none;
+  background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+  border: 2px solid #fecaca;
   color: #ef4444;
   cursor: pointer;
-  padding: 4px;
+  padding: 8px 12px;
   font-size: 1.2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.file-preview .file-remove:hover {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: white;
+  border-color: #ef4444;
+  transform: scale(1.1);
 }
 
 .typing-indicator {
   display: flex;
-  gap: 4px;
-  padding: 12px 16px;
+  gap: 6px;
+  padding: 16px 20px;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 20px;
+  border: 2px solid rgba(102, 126, 234, 0.2);
 }
 
 .typing-indicator span {
-  width: 8px;
-  height: 8px;
-  background: #667eea;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border-radius: 50%;
-  animation: bounce 1.4s infinite ease-in-out;
+  animation: typing 1.4s infinite ease-in-out;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
 }
 
-.typing-indicator span:nth-child(1) { animation-delay: -0.32s; }
-.typing-indicator span:nth-child(2) { animation-delay: -0.16s; }
+.typing-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
 
-@keyframes bounce {
-  0%, 80%, 100% { transform: scale(0); }
-  40% { transform: scale(1); }
+.typing-indicator span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing {
+  0%, 60%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.5;
+  }
+  30% {
+    transform: translateY(-12px) scale(1.2);
+    opacity: 1;
+  }
 }
 
 .error-message {
-  background: #fee2e2;
-  border: 1px solid #fecaca;
+  background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+  border: 2px solid #fecaca;
   color: #dc2626;
-  padding: 12px 16px;
-  border-radius: 8px;
-  margin: 8px 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.2);
 }
 
 .empty-state {
   text-align: center;
   padding: 60px 20px;
-  color: #9ca3af;
+  color: rgba(255, 255, 255, 0.8);
+  animation: fadeIn 0.5s ease;
 }
 
 .empty-state svg {
-  width: 64px;
-  height: 64px;
-  margin-bottom: 16px;
-  opacity: 0.5;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  opacity: 0.6;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
 }
 
 .empty-state h3 {
-  margin: 0 0 8px 0;
-  color: #6b7280;
+  margin: 0 0 12px 0;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .empty-state p {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  opacity: 0.8;
 }
+
 </style>
 
 <div class="ai-chat-container">
@@ -405,7 +504,7 @@
       .replace(/\n/g, '<br>');
   }
 
-  function appendMessage(role, text) {
+  function appendMessage(role, text, fileData = null) {
     removeEmptyState();
     const messageDiv = document.createElement('div');
     messageDiv.className = `message ${role}`;
@@ -418,7 +517,38 @@
     sender.textContent = role === 'user' ? 'You' : 'Aperion AI';
     
     const content = document.createElement('div');
-    content.innerHTML = convertMarkdown(text);
+    
+    // Show uploaded file/image if present
+    if (fileData && role === 'user') {
+      const fileDisplay = document.createElement('div');
+      fileDisplay.className = 'message-file';
+      
+      if (fileData.type && fileData.type.startsWith('image/')) {
+        const img = document.createElement('img');
+        img.src = fileData.data;
+        img.alt = fileData.name;
+        img.style.maxWidth = '200px';
+        img.style.maxHeight = '200px';
+        img.style.borderRadius = '8px';
+        img.style.marginBottom = '8px';
+        fileDisplay.appendChild(img);
+      } else {
+        const fileIcon = document.createElement('div');
+        fileIcon.className = 'file-icon';
+        fileIcon.textContent = '📎';
+        fileDisplay.appendChild(fileIcon);
+        
+        const fileName = document.createElement('span');
+        fileName.textContent = fileData.name;
+        fileDisplay.appendChild(fileName);
+      }
+      
+      content.appendChild(fileDisplay);
+    }
+    
+    const textContent = document.createElement('div');
+    textContent.innerHTML = convertMarkdown(text);
+    content.appendChild(textContent);
     
     bubble.appendChild(sender);
     bubble.appendChild(content);
@@ -448,7 +578,23 @@
     send.disabled = true;
     input.disabled = true;
     
-    appendMessage('user', query);
+    // Store file data for display
+    const currentFileData = selectedFile ? {
+      name: selectedFile.name,
+      type: selectedFile.type,
+      data: null
+    } : null;
+    
+    // Read file as data URL for display
+    if (currentFileData && selectedFile.type && selectedFile.type.startsWith('image/')) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        currentFileData.data = e.target.result;
+      };
+      reader.readAsDataURL(selectedFile);
+    }
+    
+    appendMessage('user', query, currentFileData);
     addTypingIndicator();
     
     try {
@@ -553,8 +699,10 @@
 
   // Auto-send initial query if provided
   if (initialQ) {
-    input.value = initialQ;
-    setTimeout(() => { askAI(initialQ); }, 500);
+    setTimeout(() => { 
+      askAI(initialQ);
+      input.value = '';
+    }, 500);
   }
 })();
 </script>

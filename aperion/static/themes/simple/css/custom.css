@@ -1,6 +1,6 @@
 /* Make logo bigger and responsive */
 .header__logo img {
-    height: 80px !important;  /* Adjust this value as needed */
+    height: 100px !important;  /* Adjust this value as needed */
     width: auto !important;
 }
 

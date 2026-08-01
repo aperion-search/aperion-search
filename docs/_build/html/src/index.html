@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Source-Code &#8212; Aperion Search Documentation (2026.7.30+3c8e93f+dirty)</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=6625fa76" />
+    <link rel="stylesheet" type="text/css" href="../_static/aperion.css?v=52e4ff28" />
+    <script src="../_static/documentation_options.js?v=9738312a"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script data-project="aperion search" data-version="2026.7.30+3c8e93f+dirty" src="../_static/describe_version.js?v=fa7f30d0"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Custom message extractor (i18n)" href="aperion.babel_extract.html" />
+    <link rel="prev" title="utils/aperion.sh" href="../utils/aperion.sh.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="aperion.babel_extract.html" title="Custom message extractor (i18n)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../utils/aperion.sh.html" title="utils/aperion.sh"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Aperion Search Documentation (2026.7.30+3c8e93f+dirty)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Source-Code</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="source-code">
+<h1>Source-Code<a class="headerlink" href="#source-code" title="Link to this heading">¶</a></h1>
+<p>This is a partial documentation of our source code.  We are not aiming to
+document every item from the source code, but we will add documentation when
+requested.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="aperion.babel_extract.html">Custom message extractor (i18n)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="aperion.babel_extract.html#aperion.babel_extract.extract"><code class="docutils literal notranslate"><span class="pre">extract()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="aperion.botdetection.html">Bot Detection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="aperion.botdetection.html#aperion.botdetection.get_network"><code class="docutils literal notranslate"><span class="pre">get_network()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.botdetection.html#aperion.botdetection.too_many_requests"><code class="docutils literal notranslate"><span class="pre">too_many_requests()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.botdetection.html#aperion.botdetection.ProxyFix"><code class="docutils literal notranslate"><span class="pre">ProxyFix</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.botdetection.html#module-aperion.botdetection.ip_lists">IP lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.botdetection.html#module-aperion.botdetection.ip_limit">Rate limit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.botdetection.html#module-aperion.botdetection.http_accept">Probe HTTP headers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.botdetection.html#module-aperion.botdetection.config">Config</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="aperion.cache.html">Caches</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="aperion.cache.html#aperion.cache.ExpireCacheCfg"><code class="docutils literal notranslate"><span class="pre">ExpireCacheCfg</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.cache.html#aperion.cache.ExpireCacheStats"><code class="docutils literal notranslate"><span class="pre">ExpireCacheStats</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.cache.html#aperion.cache.ExpireCache"><code class="docutils literal notranslate"><span class="pre">ExpireCache</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.cache.html#aperion.cache.ExpireCacheSQLite"><code class="docutils literal notranslate"><span class="pre">ExpireCacheSQLite</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="aperion.exceptions.html">Aperion Search Exceptions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="aperion.exceptions.html#aperion.exceptions.AperionException"><code class="docutils literal notranslate"><span class="pre">AperionException</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.exceptions.html#aperion.exceptions.AperionParameterException"><code class="docutils literal notranslate"><span class="pre">AperionParameterException</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.exceptions.html#aperion.exceptions.AperionSettingsException"><code class="docutils literal notranslate"><span class="pre">AperionSettingsException</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.exceptions.html#aperion.exceptions.AperionEngineException"><code class="docutils literal notranslate"><span class="pre">AperionEngineException</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.exceptions.html#aperion.exceptions.AperionXPathSyntaxException"><code class="docutils literal notranslate"><span class="pre">AperionXPathSyntaxException</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.exceptions.html#aperion.exceptions.AperionEngineResponseException"><code class="docutils literal notranslate"><span class="pre">AperionEngineResponseException</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.exceptions.html#aperion.exceptions.AperionEngineAPIException"><code class="docutils literal notranslate"><span class="pre">AperionEngineAPIException</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.exceptions.html#aperion.exceptions.AperionEngineAccessDeniedException"><code class="docutils literal notranslate"><span class="pre">AperionEngineAccessDeniedException</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.exceptions.html#aperion.exceptions.AperionEngineCaptchaException"><code class="docutils literal notranslate"><span class="pre">AperionEngineCaptchaException</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.exceptions.html#aperion.exceptions.AperionEngineTooManyRequestsException"><code class="docutils literal notranslate"><span class="pre">AperionEngineTooManyRequestsException</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.exceptions.html#aperion.exceptions.AperionEngineXPathException"><code class="docutils literal notranslate"><span class="pre">AperionEngineXPathException</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="aperion.favicons.html">Favicons (source)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="aperion.favicons.html#aperion.favicons.favicon_url"><code class="docutils literal notranslate"><span class="pre">favicon_url()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.favicons.html#aperion.favicons.favicon_proxy"><code class="docutils literal notranslate"><span class="pre">favicon_proxy()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.favicons.html#module-aperion.favicons.config">Favicons Config</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.favicons.html#module-aperion.favicons.proxy">Favicons Proxy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.favicons.html#module-aperion.favicons.resolvers">Favicons Resolver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.favicons.html#module-aperion.favicons.cache">Favicons Cache</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="aperion.infopage.html">Online <code class="docutils literal notranslate"><span class="pre">/info</span></code></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="aperion.infopage.html#aperion.infopage.InfoPage"><code class="docutils literal notranslate"><span class="pre">InfoPage</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.infopage.html#aperion.infopage.InfoPageSet"><code class="docutils literal notranslate"><span class="pre">InfoPageSet</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="aperion.locales.html">Locales</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="aperion.locales.html#aperions-locale-data">aperion’s locale data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.locales.html#module-aperion.sxng_locales">aperion’s locale codes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.locales.html#aperions-locale-implementations">aperion’s locale implementations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.locales.html#aperion.locales.LOCALE_NAMES"><code class="docutils literal notranslate"><span class="pre">LOCALE_NAMES</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.locales.html#aperion.locales.RTL_LOCALES"><code class="docutils literal notranslate"><span class="pre">RTL_LOCALES</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.locales.html#aperion.locales.ADDITIONAL_TRANSLATIONS"><code class="docutils literal notranslate"><span class="pre">ADDITIONAL_TRANSLATIONS</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.locales.html#aperion.locales.LOCALE_BEST_MATCH"><code class="docutils literal notranslate"><span class="pre">LOCALE_BEST_MATCH</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.locales.html#aperion.locales.get_translations"><code class="docutils literal notranslate"><span class="pre">get_translations()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.locales.html#aperion.locales.get_translation_locales"><code class="docutils literal notranslate"><span class="pre">get_translation_locales()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.locales.html#aperion.locales.locales_initialize"><code class="docutils literal notranslate"><span class="pre">locales_initialize()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.locales.html#aperion.locales.region_tag"><code class="docutils literal notranslate"><span class="pre">region_tag()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.locales.html#aperion.locales.language_tag"><code class="docutils literal notranslate"><span class="pre">language_tag()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.locales.html#aperion.locales.get_locale"><code class="docutils literal notranslate"><span class="pre">get_locale()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.locales.html#aperion.locales.get_official_locales"><code class="docutils literal notranslate"><span class="pre">get_official_locales()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.locales.html#aperion.locales.get_engine_locale"><code class="docutils literal notranslate"><span class="pre">get_engine_locale()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.locales.html#aperion.locales.match_locale"><code class="docutils literal notranslate"><span class="pre">match_locale()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.locales.html#aperion.locales.build_engine_locales"><code class="docutils literal notranslate"><span class="pre">build_engine_locales()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="aperion.search.html">Search</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="aperion.search.html#aperion.search.EngineRef"><code class="docutils literal notranslate"><span class="pre">EngineRef</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.search.html#aperion.search.SearchQuery"><code class="docutils literal notranslate"><span class="pre">SearchQuery</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.search.html#aperion.search.Search"><code class="docutils literal notranslate"><span class="pre">Search</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.search.html#aperion.search.SearchWithPlugins"><code class="docutils literal notranslate"><span class="pre">SearchWithPlugins</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="aperion.search.processors.html">Search processors</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="aperion.search.processors.html#module-aperion.search.processors.abstract">Abstract processor class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.search.processors.html#module-aperion.search.processors.offline">Offline processor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.search.processors.html#module-aperion.search.processors.online">Online processor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.search.processors.html#module-aperion.search.processors.online_currency">Online currency processor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.search.processors.html#module-aperion.search.processors.online_dictionary">Online dictionary processor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.search.processors.html#module-aperion.search.processors.online_url_search">Online URL search processor</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="aperion.settings.html">Settings Loader</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="aperion.settings.html#aperion.settings_loader.DEFAULT_SETTINGS_FILE"><code class="docutils literal notranslate"><span class="pre">DEFAULT_SETTINGS_FILE</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.settings.html#aperion.settings_loader.load_yaml"><code class="docutils literal notranslate"><span class="pre">load_yaml()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.settings.html#aperion.settings_loader.get_yaml_cfg"><code class="docutils literal notranslate"><span class="pre">get_yaml_cfg()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.settings.html#aperion.settings_loader.get_user_cfg_folder"><code class="docutils literal notranslate"><span class="pre">get_user_cfg_folder()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.settings.html#aperion.settings_loader.load_settings"><code class="docutils literal notranslate"><span class="pre">load_settings()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="aperion.sqlitedb.html">SQLite DB</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="aperion.sqlitedb.html#aperion.sqlitedb.DBSession"><code class="docutils literal notranslate"><span class="pre">DBSession</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.sqlitedb.html#aperion.sqlitedb.SQLiteAppl"><code class="docutils literal notranslate"><span class="pre">SQLiteAppl</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.sqlitedb.html#aperion.sqlitedb.SQLiteProperties"><code class="docutils literal notranslate"><span class="pre">SQLiteProperties</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="aperion.utils.html">Utility functions for the engines</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.SEARCH_LANGUAGE_CODES"><code class="docutils literal notranslate"><span class="pre">SEARCH_LANGUAGE_CODES</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.aperion_useragent"><code class="docutils literal notranslate"><span class="pre">aperion_useragent()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.gen_useragent"><code class="docutils literal notranslate"><span class="pre">gen_useragent()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.html_to_text"><code class="docutils literal notranslate"><span class="pre">html_to_text()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.markdown_to_text"><code class="docutils literal notranslate"><span class="pre">markdown_to_text()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.extract_text"><code class="docutils literal notranslate"><span class="pre">extract_text()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.normalize_url"><code class="docutils literal notranslate"><span class="pre">normalize_url()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.extract_url"><code class="docutils literal notranslate"><span class="pre">extract_url()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.dict_subset"><code class="docutils literal notranslate"><span class="pre">dict_subset()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.humanize_bytes"><code class="docutils literal notranslate"><span class="pre">humanize_bytes()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.humanize_number"><code class="docutils literal notranslate"><span class="pre">humanize_number()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.convert_str_to_int"><code class="docutils literal notranslate"><span class="pre">convert_str_to_int()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.extr"><code class="docutils literal notranslate"><span class="pre">extr()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.int_or_zero"><code class="docutils literal notranslate"><span class="pre">int_or_zero()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.is_valid_lang"><code class="docutils literal notranslate"><span class="pre">is_valid_lang()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.to_string"><code class="docutils literal notranslate"><span class="pre">to_string()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.ecma_unescape"><code class="docutils literal notranslate"><span class="pre">ecma_unescape()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.remove_pua_from_str"><code class="docutils literal notranslate"><span class="pre">remove_pua_from_str()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.get_engine_from_settings"><code class="docutils literal notranslate"><span class="pre">get_engine_from_settings()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.get_xpath"><code class="docutils literal notranslate"><span class="pre">get_xpath()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.eval_xpath"><code class="docutils literal notranslate"><span class="pre">eval_xpath()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.eval_xpath_list"><code class="docutils literal notranslate"><span class="pre">eval_xpath_list()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.eval_xpath_getindex"><code class="docutils literal notranslate"><span class="pre">eval_xpath_getindex()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.get_embeded_stream_url"><code class="docutils literal notranslate"><span class="pre">get_embeded_stream_url()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.detect_language"><code class="docutils literal notranslate"><span class="pre">detect_language()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.js_variable_to_python"><code class="docutils literal notranslate"><span class="pre">js_variable_to_python()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html#aperion.utils.parse_duration_string"><code class="docutils literal notranslate"><span class="pre">parse_duration_string()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="aperion.valkeydb.html">Valkey DB</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="aperion.valkeydb.html#aperion.valkeydb.client"><code class="docutils literal notranslate"><span class="pre">client()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="aperion.valkeylib.html">Valkey Library</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="aperion.valkeylib.html#aperion.valkeylib.LUA_SCRIPT_STORAGE"><code class="docutils literal notranslate"><span class="pre">LUA_SCRIPT_STORAGE</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.valkeylib.html#aperion.valkeylib.lua_script_storage"><code class="docutils literal notranslate"><span class="pre">lua_script_storage()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.valkeylib.html#aperion.valkeylib.purge_by_prefix"><code class="docutils literal notranslate"><span class="pre">purge_by_prefix()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.valkeylib.html#aperion.valkeylib.secret_hash"><code class="docutils literal notranslate"><span class="pre">secret_hash()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.valkeylib.html#aperion.valkeylib.incr_counter"><code class="docutils literal notranslate"><span class="pre">incr_counter()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.valkeylib.html#aperion.valkeylib.drop_counter"><code class="docutils literal notranslate"><span class="pre">drop_counter()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.valkeylib.html#aperion.valkeylib.incr_sliding_window"><code class="docutils literal notranslate"><span class="pre">incr_sliding_window()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="aperion.weather.html">Weather</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="aperion.weather.html#aperion.weather.symbol_url"><code class="docutils literal notranslate"><span class="pre">symbol_url()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.weather.html#aperion.weather.Temperature"><code class="docutils literal notranslate"><span class="pre">Temperature</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.weather.html#aperion.weather.Pressure"><code class="docutils literal notranslate"><span class="pre">Pressure</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.weather.html#aperion.weather.WindSpeed"><code class="docutils literal notranslate"><span class="pre">WindSpeed</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.weather.html#aperion.weather.RelativeHumidity"><code class="docutils literal notranslate"><span class="pre">RelativeHumidity</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.weather.html#aperion.weather.Compass"><code class="docutils literal notranslate"><span class="pre">Compass</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.weather.html#aperion.weather.WeatherConditionType"><code class="docutils literal notranslate"><span class="pre">WeatherConditionType</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.weather.html#aperion.weather.DateTime"><code class="docutils literal notranslate"><span class="pre">DateTime</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.weather.html#aperion.weather.GeoLocation"><code class="docutils literal notranslate"><span class="pre">GeoLocation</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  
+    
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/aperion.png" alt="Logo of Aperion Search"/>
+            </a></p>
+  
+
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../user/index.html">User information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../own-instance.html">Why use a private instance?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/index.html">Administrator documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/index.html">Developer documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../utils/index.html">DevOps tooling box</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Source-Code</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="aperion.babel_extract.html">Custom message extractor (i18n)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.botdetection.html">Bot Detection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.cache.html">Caches</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.exceptions.html">Aperion Search Exceptions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.favicons.html">Favicons (source)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.infopage.html">Online <code class="docutils literal notranslate"><span class="pre">/info</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.locales.html">Locales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.search.html">Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.search.processors.html">Search processors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.settings.html">Settings Loader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.sqlitedb.html">SQLite DB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.utils.html">Utility functions for the engines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.valkeydb.html">Valkey DB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.valkeylib.html">Valkey Library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.weather.html">Weather</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>Project Links</h3>
+  <ul>
+    <li><a href="https://github.com/aperion-search/aperion-search/tree/main">Source</a>
+  
+    <li><a href="https://github.com/aperion/aperion/wiki">Wiki</a>
+  
+    <li><a href="https://aperion.space">Public instances</a>
+  
+    <li><a href="https://github.com/Aperion-Search/Aperion-Search/issues/">Issue Tracker</a>
+  </ul><h3>Navigation</h3>
+<ul>
+  <li><a href="../index.html">Overview</a>
+    <ul>
+          <li>Previous: <a href="../utils/aperion.sh.html" title="previous chapter"><code class="docutils literal notranslate"><span class="pre">utils/aperion.sh</span></code></a>
+          <li>Next: <a href="aperion.babel_extract.html" title="next chapter">Custom message extractor (i18n)</a>
+    </ul>
+  </li>
+</ul>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/src/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright Aperion Search team.
+    </div>
+  </body>
+</html>

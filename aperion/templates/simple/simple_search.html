@@ -4,8 +4,28 @@
       <div class="search_box">
         <input id="q" name="q" type="text" placeholder="{{ _('Search for...') }}" autocomplete="off" autocapitalize="none" spellcheck="false" autocorrect="off" dir="auto" value="{{ q or '' }}">
         <button id="clear_search" type="reset" aria-label="{{ _('clear') }}"><span class="hide_if_nojs">{{ icon_big('close') }}</span><span class="show_if_nojs">{{ _('clear') }}</span></button>
-        <button id="ai_mode_toggle" type="button" aria-label="{{ _('AI Mode') }}" class="hide_if_nojs" title="{{ _('Ask AI directly') }}" style="background:none; border:none; padding:4px 8px; margin:0; cursor:pointer; display:inline-flex; align-items:center; justify-content:center;">
-            <img src="{{ url_for('static', filename='themes/simple/img/aimode.png') }}" alt="AI" style="width: 20px; height: 20px;">
+        <button id="ai_mode_toggle" type="button" aria-label="{{ _('AI Mode') }}" class="hide_if_nojs ai-btn" title="{{ _('Ask AI directly') }}">
+            <div class="aurora"></div>
+            <div class="glass">
+                <svg class="sparkle" viewBox="0 0 24 24">
+                    <defs>
+                        <linearGradient id="iconGradient">
+                            <stop offset="0%" stop-color="#4285F4"/>
+                            <stop offset="25%" stop-color="#8B5DFF"/>
+                            <stop offset="50%" stop-color="#FF4FD8"/>
+                            <stop offset="75%" stop-color="#FFD54F"/>
+                            <stop offset="100%" stop-color="#34A853"/>
+                        </linearGradient>
+                        <filter id="goo">
+                            <feGaussianBlur stdDeviation="6" result="blur"/>
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 22 -10" result="goo"/>
+                            <feBlend in="SourceGraphic" in2="goo"/>
+                        </filter>
+                    </defs>
+                    <path fill="url(#iconGradient)" d="M12 2l2.2 5.8L20 10l-5.8 2.2L12 18l-2.2-5.8L4 10l5.8-2.2z"/>
+                </svg>
+                <span>AI</span>
+            </div>
         </button>
         <button id="send_search" type="submit" aria-label="{{ _('search') }}"><span class="hide_if_nojs">{{ icon_big('search') }}</span><span class="show_if_nojs">{{ _('search') }}</span></button>
         <div class="autocomplete hide_if_nojs"><ul></ul></div>
@@ -23,6 +43,184 @@
   {% if timeout_limit %}<input type="hidden" name="timeout_limit" value="{{ timeout_limit|e }}" >{% endif %}
 </form>
 
+<style>
+.ai-btn {
+  position: relative;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 999px;
+  overflow: visible;
+  transition: transform .35s ease;
+  padding: 0;
+  min-width: auto;
+}
+
+.glass {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: rgba(22, 24, 29, .82);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  border: 1px solid rgba(255, 255, 255, .08);
+  z-index: 5;
+  box-shadow: inset 0 1px rgba(255, 255, 255, .08), inset 0 -1px rgba(0, 0, 0, .45), 0 8px 30px rgba(0, 0, 0, .45);
+}
+
+.glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(180deg, rgba(255, 255, 255, .08), rgba(255, 255, 255, 0));
+  pointer-events: none;
+}
+
+.sparkle {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, .35));
+}
+
+.glass span {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: .2px;
+}
+
+.aurora {
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  top: -4px;
+  bottom: -4px;
+  border-radius: 999px;
+  overflow: hidden;
+  z-index: 1;
+  filter: blur(10px) saturate(175%) brightness(1.15);
+}
+
+.aurora::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #4285F4, #5D8DFF, #7B61FF, #B05EFF, #FF55D8, #FF8A65, #FFD54F, #8BC34A, #34A853, #00D4FF, #4285F4);
+  background-size: 350% 350%;
+  opacity: .95;
+  animation: auroraMove1 28s linear infinite;
+}
+
+.aurora::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(circle at 10% 50%, #4285F4, transparent 35%), radial-gradient(circle at 35% 40%, #7B61FF, transparent 30%), radial-gradient(circle at 55% 55%, #FF4FD8, transparent 35%), radial-gradient(circle at 75% 45%, #FFD54F, transparent 28%), radial-gradient(circle at 90% 50%, #34A853, transparent 35%);
+  mix-blend-mode: screen;
+  opacity: .75;
+  animation: auroraMove2 20s ease-in-out infinite alternate;
+}
+
+.ai-btn::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 999px;
+  padding: 1px;
+  background: linear-gradient(90deg, #4285F4, #7B61FF, #FF4FD8, #FFD54F, #34A853, #00D4FF, #4285F4);
+  background-size: 250%;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: 3;
+  animation: borderFlow 20s linear infinite;
+}
+
+.ai-btn:hover {
+  transform: scale(1.04);
+}
+
+.ai-btn:hover .aurora {
+  filter: blur(12px) brightness(1.22) saturate(185%);
+}
+
+.ai-btn.active .aurora {
+  filter: blur(14px) brightness(1.25) saturate(200%);
+}
+
+@keyframes auroraMove1 {
+  0% { background-position: 0% 50%; transform: translateX(-2%) scale(1); }
+  20% { background-position: 30% 40%; }
+  40% { background-position: 65% 55%; transform: translateX(1%) scale(1.02); }
+  60% { background-position: 100% 45%; }
+  80% { background-position: 70% 60%; }
+  100% { background-position: 0% 50%; transform: translateX(-2%) scale(1); }
+}
+
+@keyframes auroraMove2 {
+  0% { transform: translate(-2%, 0%) scale(1) rotate(0deg); opacity: .72; }
+  25% { transform: translate(1%, -1%) scale(1.03) rotate(1deg); opacity: .82; }
+  50% { transform: translate(2%, 1%) scale(1.05) rotate(-1deg); opacity: .75; }
+  75% { transform: translate(-1%, 1%) scale(1.02) rotate(1deg); opacity: .82; }
+  100% { transform: translate(-2%, 0%) scale(1) rotate(0deg); opacity: .72; }
+}
+
+@keyframes borderFlow {
+  0% { background-position: 0%; }
+  100% { background-position: 250%; }
+}
+
+.sparkle {
+  animation: sparkleSpin 18s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes sparkleSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.glass span {
+  background: linear-gradient(90deg, #A9D5FF, #C89BFF, #FF8DE5, #FFE36D, #85F5AF, #A9D5FF);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textFlow 12s linear infinite;
+}
+
+@keyframes textFlow {
+  0% { background-position: 0%; }
+  100% { background-position: 300%; }
+}
+
+@keyframes breathe {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.012); }
+  100% { transform: scale(1); }
+}
+
+.ai-btn {
+  animation: breathe 8s ease-in-out infinite;
+}
+
+.ai-btn:active {
+  transform: scale(.97);
+}
+
+@media (max-width: 600px) {
+  .glass { padding: 8px 16px; }
+  .glass span { font-size: 13px; }
+  .sparkle { width: 16px; height: 16px; }
+}
+</style>
+
 <script>
 (function() {
   'use strict';
@@ -31,15 +229,67 @@
   const aiInput = document.getElementById('ai_mode_input');
   const searchInput = document.getElementById('q');
   const searchForm = document.getElementById('search');
+  const aurora = aiToggle ? aiToggle.querySelector('.aurora') : null;
 
   if (aiToggle && aiInput) {
-    aiToggle.addEventListener('click', function() {
+    // Ripple effect
+    aiToggle.addEventListener('click', function(e) {
+      const ripple = document.createElement('span');
+      ripple.className = 'ripple';
+      const rect = aiToggle.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height);
+      ripple.style.width = size + 'px';
+      ripple.style.height = size + 'px';
+      ripple.style.left = (e.clientX - rect.left - size/2) + 'px';
+      ripple.style.top = (e.clientY - rect.top - size/2) + 'px';
+      ripple.style.position = 'absolute';
+      ripple.style.borderRadius = '50%';
+      ripple.style.pointerEvents = 'none';
+      ripple.style.background = 'rgba(255,255,255,.25)';
+      ripple.style.transform = 'scale(0)';
+      ripple.style.opacity = '1';
+      ripple.style.transition = 'transform .6s ease, opacity .6s ease';
+      aiToggle.appendChild(ripple);
+      
+      requestAnimationFrame(() => {
+        ripple.style.transform = 'scale(4)';
+        ripple.style.opacity = '0';
+      });
+      
+      setTimeout(() => {
+        ripple.remove();
+      }, 650);
+
+      // Toggle AI mode
       aiInput.value = aiInput.value === 'true' ? '' : 'true';
       aiToggle.classList.toggle('active', aiInput.value === 'true');
       if (searchInput) {
         searchInput.placeholder = aiInput.value === 'true' ? '{{ _("Ask AI anything...") }}' : '{{ _("Search for...") }}';
       }
     });
+
+    // Mouse aurora effect
+    if (aurora) {
+      aiToggle.addEventListener('mousemove', function(e) {
+        const rect = aiToggle.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
+        aurora.style.backgroundPosition = x + '% ' + y + '%';
+      });
+
+      aiToggle.addEventListener('mouseleave', function() {
+        aurora.style.backgroundPosition = '50% 50%';
+      });
+
+      aiToggle.addEventListener('mouseenter', function() {
+        aurora.style.transition = 'filter .4s ease';
+        aurora.style.filter = 'blur(14px) brightness(1.25) saturate(200%)';
+      });
+
+      aiToggle.addEventListener('mouseleave', function() {
+        aurora.style.filter = 'blur(10px) brightness(1.15) saturate(175%)';
+      });
+    }
 
     if (aiInput.value === 'true') {
       aiToggle.classList.add('active');

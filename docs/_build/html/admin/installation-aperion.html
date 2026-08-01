@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Step by step installation &#8212; Aperion Search Documentation (2026.7.30+3c8e93f+dirty)</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=6625fa76" />
+    <link rel="stylesheet" type="text/css" href="../_static/aperion.css?v=52e4ff28" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css?v=a5c4661c" />
+    <script src="../_static/documentation_options.js?v=9738312a"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script data-project="aperion search" data-version="2026.7.30+3c8e93f+dirty" src="../_static/describe_version.js?v=fa7f30d0"></script>
+    <script src="../_static/tabs.js?v=3030b3cb"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Granian" href="installation-granian.html" />
+    <link rel="prev" title="Installation Script" href="installation-scripts.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="installation-granian.html" title="Granian"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="installation-scripts.html" title="Installation Script"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Aperion Search Documentation (2026.7.30+3c8e93f+dirty)</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Administrator documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Step by step installation</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="step-by-step-installation">
+<span id="installation-basic"></span><h1>Step by step installation<a class="headerlink" href="#step-by-step-installation" title="Link to this heading">¶</a></h1>
+<nav class="contents local" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#install-packages" id="id2">Install packages</a></p></li>
+<li><p><a class="reference internal" href="#create-user" id="id3">Create user</a></p></li>
+<li><p><a class="reference internal" href="#install-aperion-dependencies" id="id4">Install aperion &amp; dependencies</a></p></li>
+<li><p><a class="reference internal" href="#configuration" id="id5">Configuration</a></p></li>
+<li><p><a class="reference internal" href="#check" id="id6">Check</a></p></li>
+</ul>
+</nav>
+<p>In this section we show the setup of a aperion instance that will be installed
+by the <a class="reference internal" href="installation-scripts.html#installation-scripts"><span class="std std-ref">Installation Script</span></a>.</p>
+<section id="install-packages">
+<span id="id1"></span><h2><a class="toc-backref" href="#id2" role="doc-backlink">Install packages</a><a class="headerlink" href="#install-packages" title="Link to this heading">¶</a></h2>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>This installs also the packages needed by <a class="reference internal" href="installation-uwsgi.html#aperion-uwsgi"><span class="std std-ref">uWSGI</span></a></p>
+</div>
+</section>
+<section id="create-user">
+<span id="create-aperion-user"></span><h2><a class="toc-backref" href="#id3" role="doc-backlink">Create user</a><a class="headerlink" href="#create-user" title="Link to this heading">¶</a></h2>
+</section>
+<section id="install-aperion-dependencies">
+<span id="aperion-src"></span><h2><a class="toc-backref" href="#id4" role="doc-backlink">Install aperion &amp; dependencies</a><a class="headerlink" href="#install-aperion-dependencies" title="Link to this heading">¶</a></h2>
+<p>Start a interactive shell from new created user and clone aperion:</p>
+<p>In the same shell create <em>virtualenv</em>:</p>
+<p>To install aperion’s dependencies, exit the aperion <em>bash</em> session you opened above
+and start a new one.  Before installing, check if your <em>virtualenv</em> was sourced
+from the login (<em>~/.profile</em>):</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Open a second terminal for the configuration tasks and leave the <code class="docutils literal notranslate"><span class="pre">(aperion)$</span></code>
+terminal open for the tasks below.</p>
+</div>
+</section>
+<section id="configuration">
+<span id="use-default-settings-yml"></span><h2><a class="toc-backref" href="#id5" role="doc-backlink">Configuration</a><a class="headerlink" href="#configuration" title="Link to this heading">¶</a></h2>
+<aside class="sidebar">
+<p class="sidebar-title"><code class="docutils literal notranslate"><span class="pre">use_default_settings:</span> <span class="pre">True</span></code></p>
+<ul class="simple">
+<li><p><a class="reference internal" href="settings/settings.html#settings-yml"><span class="std std-ref">settings.yml</span></a></p></li>
+<li><p><a class="reference internal" href="settings/settings.html#settings-location"><span class="std std-ref">settings.yml location</span></a></p></li>
+<li><p><a class="reference internal" href="settings/settings.html#settings-use-default-settings"><span class="std std-ref">use_default_settings</span></a></p></li>
+<li><p><a class="extlink-origin reference external" href="https://github.com/aperion-search/aperion-search/blob/main/utils/templates/etc/aperion/settings.yml">/etc/aperion/settings.yml</a></p></li>
+</ul>
+</aside>
+<p>To create a initial <code class="docutils literal notranslate"><span class="pre">/etc/aperion/settings.yml</span></code> we recommend to start with a
+copy of the file <a class="extlink-origin reference external" href="https://github.com/aperion-search/aperion-search/blob/main/utils/templates/etc/aperion/settings.yml">git://utils/templates/etc/aperion/settings.yml</a>.  This setup
+<a class="reference internal" href="settings/settings.html#settings-use-default-settings"><span class="std std-ref">use default settings</span></a> from
+<a class="extlink-origin reference external" href="https://github.com/aperion-search/aperion-search/blob/main/aperion/settings.yml">git://aperion/settings.yml</a> and is shown in the tab <em>“Use default settings”</em>
+below. This setup:</p>
+<ul class="simple">
+<li><p>enables <a class="reference internal" href="aperion.limiter.html#limiter"><span class="std std-ref">limiter</span></a> to protect against bots</p></li>
+<li><p>enables <a class="reference internal" href="settings/settings_server.html#image-proxy"><span class="std std-ref">image proxy</span></a> for better privacy</p></li>
+</ul>
+<p>Modify the <code class="docutils literal notranslate"><span class="pre">/etc/aperion/settings.yml</span></code> to your needs:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-VXNlIGRlZmF1bHQgc2V0dGluZ3M=" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-VXNlIGRlZmF1bHQgc2V0dGluZ3M=" name="VXNlIGRlZmF1bHQgc2V0dGluZ3M=" role="tab" tabindex="0">Use default settings</button><button aria-controls="panel-0-YXBlcmlvbi9zZXR0aW5ncy55bWw=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-YXBlcmlvbi9zZXR0aW5ncy55bWw=" name="YXBlcmlvbi9zZXR0aW5ncy55bWw=" role="tab" tabindex="-1">aperion/settings.yml</button></div><div aria-labelledby="tab-0-VXNlIGRlZmF1bHQgc2V0dGluZ3M=" class="sphinx-tabs-panel group-tab" id="panel-0-VXNlIGRlZmF1bHQgc2V0dGluZ3M=" name="VXNlIGRlZmF1bHQgc2V0dGluZ3M=" role="tabpanel" tabindex="0"><div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="c1"># aperion settings</span>
+
+<span class="nt">use_default_settings</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+
+<span class="nt">general</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">debug</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="nt">instance_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;aperion&quot;</span>
+
+<span class="nt">search</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">safe_search</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<span class="w">  </span><span class="nt">autocomplete</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;duckduckgo&#39;</span>
+<span class="w">  </span><span class="nt">formats</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">html</span>
+
+<span class="nt">server</span><span class="p">:</span>
+<span class="w">  </span><span class="c1"># Is overwritten by ${aperion_SECRET}</span>
+<span class="w">  </span><span class="nt">secret_key</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ultrasecretkey&quot;</span>
+<span class="w">  </span><span class="nt">limiter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">image_proxy</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="c1"># public URL of the instance, to ensure correct inbound links. Is overwritten</span>
+<span class="w">  </span><span class="c1"># by ${aperion_BASE_URL}.</span>
+<span class="w">  </span><span class="c1"># base_url: http://example.com/location</span>
+
+<span class="nt">valkey</span><span class="p">:</span>
+<span class="w">  </span><span class="c1"># URL to connect valkey database. Is overwritten by ${aperion_VALKEY_URL}.</span>
+<span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">valkey://localhost:6379/0</span>
+</pre></div>
+</div>
+<p>To see the entire file jump to <a class="extlink-origin reference external" href="https://github.com/aperion-search/aperion-search/blob/main/utils/templates/etc/aperion/settings.yml">git://utils/templates/etc/aperion/settings.yml</a></p>
+</div><div aria-labelledby="tab-0-YXBlcmlvbi9zZXR0aW5ncy55bWw=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-YXBlcmlvbi9zZXR0aW5ncy55bWw=" name="YXBlcmlvbi9zZXR0aW5ncy55bWw=" role="tabpanel" tabindex="0"><div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">general</span><span class="p">:</span>
+<span class="w">  </span><span class="c1"># Debug mode, only for development. Is overwritten by ${aperion_DEBUG}</span>
+<span class="w">  </span><span class="nt">debug</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="c1"># displayed name</span>
+<span class="w">  </span><span class="nt">instance_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Aperion</span><span class="nv"> </span><span class="s">Search&quot;</span>
+<span class="w">  </span><span class="c1"># For example: https://example.com/privacy</span>
+<span class="w">  </span><span class="nt">privacypolicy_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="c1"># use true to use your own donation page written in aperion/info/en/donate.md</span>
+<span class="w">  </span><span class="c1"># use false to disable the donation link</span>
+<span class="w">  </span><span class="nt">donation_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="c1"># mailto:contact@example.com</span>
+<span class="w">  </span><span class="nt">contact_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="c1"># record stats</span>
+<span class="w">  </span><span class="nt">enable_metrics</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="c1"># expose stats in open metrics format at /metrics</span>
+<span class="w">  </span><span class="c1"># leave empty to disable (no password set)</span>
+<span class="w">  </span><span class="c1"># open_metrics: &lt;password&gt;</span>
+<span class="w">  </span><span class="nt">open_metrics</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;&#39;</span>
+
+<span class="nt">brand</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">new_issue_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/Aperion-Search/Aperion-Search/issues/new</span>
+<span class="w">  </span><span class="nt">docs_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://docs.aperion.org/</span>
+<span class="w">  </span><span class="nt">wiki_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/aperion/aperion/wiki</span>
+<span class="w">  </span><span class="nt">issue_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/Aperion-Search/Aperion-Search/issues/</span>
+<span class="w">  </span><span class="c1"># custom:</span>
+<span class="w">  </span><span class="c1">#   maintainer: &quot;Jon Doe&quot;</span>
+<span class="w">  </span><span class="c1">#   # Custom entries in the footer: [title]: [link]</span>
+<span class="w">  </span><span class="c1">#   links:</span>
+<span class="w">  </span><span class="c1">#     Uptime: https://uptime.aperion.org/history/darmarit-org</span>
+<span class="w">  </span><span class="c1">#     About: &quot;https://aperion.org&quot;</span>
+
+<span class="nt">search</span><span class="p">:</span>
+<span class="w">  </span><span class="c1"># Filter results. 0: None, 1: Moderate, 2: Strict</span>
+<span class="w">  </span><span class="nt">safe_search</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<span class="w">  </span><span class="c1"># Existing autocomplete backends: &quot;360search&quot;, &quot;baidu&quot;, &quot;brave&quot;, &quot;dbpedia&quot;, &quot;duckduckgo&quot;, &quot;google&quot;, &quot;yandex&quot;,</span>
+<span class="w">  </span><span class="c1"># &quot;mwmbl&quot;, &quot;naver&quot;, &quot;seznam&quot;, &quot;sogou&quot;, &quot;startpage&quot;, &quot;stract&quot;, &quot;swisscows&quot;, &quot;quark&quot;, &quot;qwant&quot;, &quot;wikipedia&quot; -</span>
+<span class="w">  </span><span class="c1"># leave blank to turn it off by default.</span>
+<span class="w">  </span><span class="nt">autocomplete</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
+<span class="w">  </span><span class="c1"># minimun characters to type before autocompleter starts</span>
+<span class="w">  </span><span class="nt">autocomplete_min</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4</span>
+<span class="w">  </span><span class="c1"># backend for the favicon near URL in search results.</span>
+<span class="w">  </span><span class="c1"># Available resolvers: &quot;allesedv&quot;, &quot;duckduckgo&quot;, &quot;google&quot;, &quot;yandex&quot; - leave blank to turn it off by default.</span>
+<span class="w">  </span><span class="nt">favicon_resolver</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
+<span class="w">  </span><span class="c1"># Default search language - leave blank to detect from browser information or</span>
+<span class="w">  </span><span class="c1"># use codes from &#39;languages.py&#39;</span>
+<span class="w">  </span><span class="nt">default_lang</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;auto&quot;</span>
+<span class="w">  </span><span class="c1"># max_page: 0  # if engine supports paging, 0 means unlimited numbers of pages</span>
+<span class="w">  </span><span class="c1"># Available languages</span>
+<span class="w">  </span><span class="c1"># languages:</span>
+<span class="w">  </span><span class="c1">#   - all</span>
+<span class="w">  </span><span class="c1">#   - en</span>
+<span class="w">  </span><span class="c1">#   - en-US</span>
+<span class="w">  </span><span class="c1">#   - de</span>
+<span class="w">  </span><span class="c1">#   - it-IT</span>
+<span class="w">  </span><span class="c1">#   - fr</span>
+<span class="w">  </span><span class="c1">#   - fr-BE</span>
+<span class="w">  </span><span class="c1"># ban time in seconds after engine errors</span>
+<span class="w">  </span><span class="nt">ban_time_on_fail</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
+<span class="w">  </span><span class="c1"># max ban time in seconds after engine errors</span>
+<span class="w">  </span><span class="nt">max_ban_time_on_fail</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">120</span>
+<span class="w">  </span><span class="nt">suspended_times</span><span class="p">:</span>
+<span class="w">    </span><span class="c1"># Engine suspension time after error (in seconds; set to 0 to disable)</span>
+<span class="w">    </span><span class="c1"># For error &quot;Access denied&quot; and &quot;HTTP error [402, 403]&quot;</span>
+<span class="w">    </span><span class="nt">AperionEngineAccessDenied</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">86400</span>
+<span class="w">    </span><span class="c1"># For error &quot;CAPTCHA&quot;</span>
+<span class="w">    </span><span class="nt">AperionEngineCaptcha</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">86400</span>
+<span class="w">    </span><span class="c1"># For error &quot;Too many request&quot; and &quot;HTTP error 429&quot;</span>
+<span class="w">    </span><span class="nt">AperionEngineTooManyRequests</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3600</span>
+<span class="w">    </span><span class="c1"># Cloudflare CAPTCHA</span>
+<span class="w">    </span><span class="nt">cf_AperionEngineCaptcha</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1296000</span>
+<span class="w">    </span><span class="nt">cf_AperionEngineAccessDenied</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">86400</span>
+<span class="w">    </span><span class="c1"># ReCAPTCHA</span>
+<span class="w">    </span><span class="nt">recaptcha_AperionEngineCaptcha</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">604800</span>
+
+<span class="w">  </span><span class="c1"># remove format to deny access, use lower case.</span>
+<span class="w">  </span><span class="c1"># formats: [html, csv, json, rss]</span>
+<span class="w">  </span><span class="nt">formats</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">html</span>
+
+<span class="nt">server</span><span class="p">:</span>
+<span class="w">  </span><span class="c1"># Is overwritten by ${aperion_PORT} and ${aperion_BIND_ADDRESS}</span>
+<span class="w">  </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8888</span>
+<span class="w">  </span><span class="nt">bind_address</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;127.0.0.1&quot;</span>
+<span class="w">  </span><span class="c1"># public URL of the instance, to ensure correct inbound links. Is overwritten</span>
+<span class="w">  </span><span class="c1"># by ${aperion_BASE_URL}.</span>
+<span class="w">  </span><span class="nt">base_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w">  </span><span class="c1"># &quot;http://example.com/location&quot;</span>
+<span class="w">  </span><span class="c1"># rate limit the number of request on the instance, block some bots.</span>
+<span class="w">  </span><span class="c1"># Is overwritten by ${aperion_LIMITER}</span>
+<span class="w">  </span><span class="nt">limiter</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="c1"># enable features designed only for public instances.</span>
+<span class="w">  </span><span class="c1"># Is overwritten by ${aperion_PUBLIC_INSTANCE}</span>
+<span class="w">  </span><span class="nt">public_instance</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+
+<span class="w">  </span><span class="c1"># If your instance owns a /etc/aperion/settings.yml file, then set the following</span>
+<span class="w">  </span><span class="c1"># values there.</span>
+
+<span class="w">  </span><span class="nt">secret_key</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;f267fe000cb84c4a089d7212773fa82a9a01e56dd8f70f533588d982cccd6445&quot;</span><span class="w">  </span><span class="c1"># Is overwritten by ${aperion_SECRET}</span>
+<span class="w">  </span><span class="c1"># Proxy image results through aperion. Is overwritten by ${aperion_IMAGE_PROXY}</span>
+<span class="w">  </span><span class="nt">image_proxy</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="c1"># 1.0 and 1.1 are supported</span>
+<span class="w">  </span><span class="nt">http_protocol_version</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1.0&quot;</span>
+<span class="w">  </span><span class="c1"># POST queries are more secure as they don&#39;t show up in history but may cause</span>
+<span class="w">  </span><span class="c1"># problems when using Firefox containers.</span>
+<span class="w">  </span><span class="c1"># Is overwritten by ${aperion_METHOD}</span>
+<span class="w">  </span><span class="nt">method</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;POST&quot;</span>
+<span class="w">  </span><span class="nt">default_http_headers</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">X-Content-Type-Options</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nosniff</span>
+<span class="w">    </span><span class="nt">X-Download-Options</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">noopen</span>
+<span class="w">    </span><span class="nt">X-Robots-Tag</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">noindex, nofollow</span>
+<span class="w">    </span><span class="nt">Referrer-Policy</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">no-referrer</span>
+
+<span class="nt">valkey</span><span class="p">:</span>
+<span class="w">  </span><span class="c1"># URL to connect valkey database. Is overwritten by ${aperion_VALKEY_URL}.</span>
+<span class="w">  </span><span class="c1"># https://docs.aperion.org/admin/settings/settings_valkey.html#settings-valkey</span>
+<span class="w">  </span><span class="c1"># url: valkey://localhost:6379/0</span>
+<span class="w">  </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+
+<span class="nt">ui</span><span class="p">:</span>
+<span class="w">  </span><span class="c1"># Custom static path - leave it blank if you didn&#39;t change</span>
+<span class="w">  </span><span class="nt">static_path</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
+<span class="w">  </span><span class="c1"># Custom templates path - leave it blank if you didn&#39;t change</span>
+<span class="w">  </span><span class="nt">templates_path</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
+<span class="w">  </span><span class="c1"># query_in_title: When true, the result page&#39;s titles contains the query</span>
+<span class="w">  </span><span class="c1"># it decreases the privacy, since the browser can records the page titles.</span>
+<span class="w">  </span><span class="nt">query_in_title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="c1"># infinite_scroll: When true, automatically loads the next page when scrolling to bottom of the current page.</span>
+<span class="w">  </span><span class="nt">infinite_scroll</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="c1"># ui theme</span>
+<span class="w">  </span><span class="nt">default_theme</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">simple</span>
+<span class="w">  </span><span class="c1"># center the results ?</span>
+<span class="w">  </span><span class="nt">center_alignment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="c1"># URL prefix of the internet archive, don&#39;t forget trailing slash (if needed).</span>
+<span class="w">  </span><span class="c1"># cache_url: &quot;https://webcache.googleusercontent.com/search?q=cache:&quot;</span>
+<span class="w">  </span><span class="c1"># Default interface locale - leave blank to detect from browser information or</span>
+<span class="w">  </span><span class="c1"># use codes from the &#39;locales&#39; config section</span>
+<span class="w">  </span><span class="nt">default_locale</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
+<span class="w">  </span><span class="c1"># Open result links in a new tab by default</span>
+<span class="w">  </span><span class="c1"># results_on_new_tab: false</span>
+<span class="w">  </span><span class="nt">theme_args</span><span class="p">:</span>
+<span class="w">    </span><span class="c1"># style of simple theme: auto, light, dark</span>
+<span class="w">    </span><span class="nt">simple_style</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">auto</span>
+<span class="w">  </span><span class="c1"># Perform search immediately if a category selected.</span>
+<span class="w">  </span><span class="c1"># Disable to select multiple categories at once and start the search manually.</span>
+<span class="w">  </span><span class="nt">search_on_category_select</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="c1"># Hotkeys: default or vim</span>
+<span class="w">  </span><span class="nt">hotkeys</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span>
+<span class="w">  </span><span class="c1"># URL formatting: pretty, full or host</span>
+<span class="w">  </span><span class="nt">url_formatting</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pretty</span>
+<span class="w">  </span><span class="c1"># AI Summarization settings</span>
+<span class="w">  </span><span class="c1"># These can be locked by administrators to prevent user changes</span>
+<span class="w">  </span><span class="c1"># ai_summarization_enabled: false</span>
+<span class="w">  </span><span class="c1"># ai_api_endpoint: &quot;&quot;</span>
+<span class="w">  </span><span class="c1"># ai_api_key: &quot;&quot;</span>
+<span class="w">  </span><span class="c1"># ai_model: &quot;&quot;</span>
+<span class="w">  </span><span class="c1"># ai_num_results: &quot;5&quot;</span>
+<span class="w">  </span><span class="c1"># ai_timeout_per_result: &quot;5&quot;</span>
+<span class="w">  </span><span class="c1"># ai_max_tokens: &quot;500&quot;</span>
+<span class="w">  </span><span class="c1"># ai_system_prompt: &quot;&quot;</span>
+
+<span class="c1"># Lock arbitrary settings on the preferences page.</span>
+<span class="c1">#</span>
+<span class="c1"># preferences:</span>
+<span class="c1">#   lock:</span>
+<span class="c1">#     - categories</span>
+<span class="c1">#     - language</span>
+<span class="c1">#     - autocomplete</span>
+<span class="c1">#     - favicon</span>
+<span class="c1">#     - safesearch</span>
+<span class="c1">#     - method</span>
+<span class="c1">#     - doi_resolver</span>
+<span class="c1">#     - locale</span>
+<span class="c1">#     - theme</span>
+<span class="c1">#     - results_on_new_tab</span>
+<span class="c1">#     - infinite_scroll</span>
+<span class="c1">#     - search_on_category_select</span>
+<span class="c1">#     - method</span>
+<span class="c1">#     - image_proxy</span>
+<span class="c1">#     - query_in_title</span>
+
+<span class="c1"># communication with search engines</span>
+<span class="c1">#</span>
+
+<span class="nt">botdetection</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="nt">trusted_proxies</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span>
+
+<span class="nt">outgoing</span><span class="p">:</span>
+<span class="w">  </span><span class="c1"># default timeout in seconds, can be override by engine</span>
+<span class="w">  </span><span class="nt">request_timeout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100.0</span>
+<span class="w">  </span><span class="c1"># the maximum timeout in seconds</span>
+<span class="w">  </span><span class="c1"># max_request_timeout: 10.0</span>
+<span class="w">  </span><span class="c1"># suffix of aperion_useragent, could contain information like an email address</span>
+<span class="w">  </span><span class="c1"># to the administrator</span>
+<span class="w">  </span><span class="nt">useragent_suffix</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
+<span class="w">  </span><span class="c1"># The maximum number of concurrent connections that may be established.</span>
+<span class="w">  </span><span class="nt">pool_connections</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+<span class="w">  </span><span class="c1"># Allow the connection pool to maintain keep-alive connections below this</span>
+<span class="w">  </span><span class="c1"># point.</span>
+<span class="w">  </span><span class="nt">pool_maxsize</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">20</span>
+<span class="w">  </span><span class="c1"># See https://www.python-httpx.org/http2/</span>
+<span class="w">  </span><span class="nt">enable_http2</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="c1"># uncomment below section if you want to use a custom server certificate</span>
+<span class="w">  </span><span class="c1"># see https://www.python-httpx.org/advanced/#changing-the-verification-defaults</span>
+<span class="w">  </span><span class="c1"># and https://www.python-httpx.org/compatibility/#ssl-configuration</span>
+<span class="w">  </span><span class="c1">#  verify: ~/.mitmproxy/mitmproxy-ca-cert.cer</span>
+<span class="w">  </span><span class="c1">#</span>
+<span class="w">  </span><span class="c1"># uncomment below section if you want to use a proxyq see: SOCKS proxies</span>
+<span class="w">  </span><span class="c1">#   https://2.python-requests.org/en/latest/user/advanced/#proxies</span>
+<span class="w">  </span><span class="c1"># are also supported: see</span>
+<span class="w">  </span><span class="c1">#   https://2.python-requests.org/en/latest/user/advanced/#socks</span>
+<span class="w">  </span><span class="c1">#</span>
+<span class="w">  </span><span class="c1">#  proxies:</span>
+<span class="w">  </span><span class="c1">#    all://:</span>
+<span class="w">  </span><span class="c1">#      - http://proxy1:8080</span>
+<span class="w">  </span><span class="c1">#      - http://proxy2:8080</span>
+<span class="w">  </span><span class="c1">#</span>
+<span class="w">  </span><span class="c1">#  using_tor_proxy: true</span>
+<span class="w">  </span><span class="c1">#</span>
+<span class="w">  </span><span class="c1"># Extra seconds to add in order to account for the time taken by the proxy</span>
+<span class="w">  </span><span class="c1">#</span>
+<span class="w">  </span><span class="c1">#  extra_proxy_timeout: 10</span>
+<span class="w">  </span><span class="c1">#</span>
+<span class="w">  </span><span class="c1"># uncomment below section only if you have more than one network interface</span>
+<span class="w">  </span><span class="c1"># which can be the source of outgoing search requests</span>
+<span class="w">  </span><span class="c1">#</span>
+<span class="w">  </span><span class="c1">#  source_ips:</span>
+<span class="w">  </span><span class="c1">#    - 1.1.1.1</span>
+<span class="w">  </span><span class="c1">#    - 1.1.1.2</span>
+<span class="w">  </span><span class="c1">#    - fe80::/126</span>
+
+<span class="c1"># Plugin configuration, for more details see</span>
+<span class="c1">#   https://docs.aperion.org/admin/settings/settings_plugins.html</span>
+<span class="c1">#</span>
+<span class="nt">plugins</span><span class="p">:</span>
+
+<span class="w">  </span><span class="nt">aperion.plugins.calculator.SXNGPlugin</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">active</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+
+<span class="w">  </span><span class="nt">aperion.plugins.hash_plugin.SXNGPlugin</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">active</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+
+<span class="w">  </span><span class="nt">aperion.plugins.self_info.SXNGPlugin</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">active</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+
+<span class="w">  </span><span class="nt">aperion.plugins.unit_converter.SXNGPlugin</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">active</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+
+<span class="w">  </span><span class="nt">aperion.plugins.ahmia_filter.SXNGPlugin</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">active</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+
+<span class="w">  </span><span class="nt">aperion.plugins.hostnames.SXNGPlugin</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">active</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+
+<span class="w">  </span><span class="nt">aperion.plugins.oa_doi_rewrite.SXNGPlugin</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">active</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+
+<span class="w">  </span><span class="nt">aperion.plugins.tor_check.SXNGPlugin</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">active</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+
+<span class="w">  </span><span class="nt">aperion.plugins.tracker_url_remover.SXNGPlugin</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">active</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+
+
+<span class="c1"># Configuration of the &quot;Hostnames plugin&quot;:</span>
+<span class="c1">#</span>
+</pre></div>
+</div>
+<p>To see the entire file jump to <a class="extlink-origin reference external" href="https://github.com/aperion-search/aperion-search/blob/main/aperion/settings.yml">git://aperion/settings.yml</a></p>
+</div></div>
+<p>For a <em>minimal setup</em> you need to set <code class="docutils literal notranslate"><span class="pre">server:secret_key</span></code>.</p>
+</section>
+<section id="check">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Check</a><a class="headerlink" href="#check" title="Link to this heading">¶</a></h2>
+<p>To check your aperion setup, optional enable debugging and start the <em>webapp</em>.
+aperion looks at the exported environment <code class="docutils literal notranslate"><span class="pre">$aperion_SETTINGS_PATH</span></code> for a
+configuration file.</p>
+<p>If everything works fine, hit <code class="docutils literal notranslate"><span class="pre">[CTRL-C]</span></code> to stop the <em>webapp</em> and disable the
+debug option in <code class="docutils literal notranslate"><span class="pre">settings.yml</span></code>. You can now exit aperion user bash session (enter exit
+command twice).  At this point aperion is not demonized; uwsgi allows this.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  
+    
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/aperion.png" alt="Logo of Aperion Search"/>
+            </a></p>
+  
+
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../user/index.html">User information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../own-instance.html">Why use a private instance?</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Administrator documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="settings/index.html">Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation-docker.html">Installation container</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation-scripts.html">Installation Script</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Step by step installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#install-packages">Install packages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-user">Create user</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-aperion-dependencies">Install aperion &amp; dependencies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#check">Check</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="installation-granian.html">Granian</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation-uwsgi.html">uWSGI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation-nginx.html">NGINX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation-apache.html">Apache</a></li>
+<li class="toctree-l2"><a class="reference internal" href="update-aperion.html">aperion maintenance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="answer-captcha.html">Answer CAPTCHA from server’s IP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.favicons.html">Favicons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="aperion.limiter.html">Limiter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html">Administration API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="architecture.html">Architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plugins.html">List of plugins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="buildhosts.html">Buildhosts</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../dev/index.html">Developer documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../utils/index.html">DevOps tooling box</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../src/index.html">Source-Code</a></li>
+</ul>
+
+  <h3>Project Links</h3>
+  <ul>
+    <li><a href="https://github.com/aperion-search/aperion-search/tree/main">Source</a>
+  
+    <li><a href="https://github.com/aperion/aperion/wiki">Wiki</a>
+  
+    <li><a href="https://aperion.space">Public instances</a>
+  
+    <li><a href="https://github.com/Aperion-Search/Aperion-Search/issues/">Issue Tracker</a>
+  </ul><h3>Navigation</h3>
+<ul>
+  <li><a href="../index.html">Overview</a>
+    <ul>
+      <li><a href="index.html">Administrator documentation</a>
+        <ul>
+          <li>Previous: <a href="installation-scripts.html" title="previous chapter">Installation Script</a>
+          <li>Next: <a href="installation-granian.html" title="next chapter">Granian</a></ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/admin/installation-aperion.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright Aperion Search team.
+    </div>
+  </body>
+</html>
