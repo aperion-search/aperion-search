@@ -3,8 +3,8 @@
 ----
 
 .. figure:: https://raw.githubusercontent.com/aperion-search/aperion-search/refs/heads/main/aperion/static/themes/simple/img/aperion.png
-   :target: https://docs.aperion-search.onrender.com/
-   :alt: Aperion Search
+   :target: https://docs-aperion-search.onrender.com/
+   :alt: Aperion-Search
    :width: 100%
    :align: center
 
