@@ -441,8 +441,8 @@ class Preferences:
                 settings['ui']['results_on_new_tab'],
                 locked=is_locked('results_on_new_tab')
             ),
-            'doi_resolver': MultipleChoiceSetting(
-                [settings['default_doi_resolver'], ],
+           'doi_resolver': MultipleChoiceSetting(
+                [settings.get('search', {}).get('default_doi_resolver', 'oadoi.org'), ],
                 locked=is_locked('doi_resolver'),
                 choices=DOI_RESOLVERS
             ),
