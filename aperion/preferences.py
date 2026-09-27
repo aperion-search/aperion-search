@@ -442,7 +442,7 @@ class Preferences:
                 locked=is_locked('results_on_new_tab')
             ),
            'doi_resolver': MultipleChoiceSetting(
-                [settings.get('search', {}).get('default_doi_resolver', 'oadoi.org'), ],
+                [settings.get('search', {}).get('default_doi_resolver', 'https://unpaywall.org/'), ],
                 locked=is_locked('doi_resolver'),
                 choices=DOI_RESOLVERS
             ),
