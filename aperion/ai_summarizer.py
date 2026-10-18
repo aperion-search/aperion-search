@@ -1,11 +1,12 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
-"""AI-powered summarization module for Aperion search results.
+"""AI-powered summarization, chat, file, and image generation/editing module for Aperion search results.
 
-This module provides functionality to generate AI summaries of search results
-using multiple API providers: OpenAI, Gemini, Ollama, and other OpenAI-compatible APIs.
+This module provides functionality to generate AI summaries, chat responses, file creation/editing,
+and image generation/editing using multiple API providers: OpenAI, Gemini, Cloudflare Workers AI,
+Groq, Ollama, and other OpenAI-compatible APIs.
 """
 
-from __future__ import annotations
+__future__ = annotations
 
 import json
 import typing as t
@@ -13,6 +14,7 @@ from datetime import datetime, timezone
 from urllib.parse import urlparse
 import time
 import os
+import base64
 
 import httpx
 from dotenv import load_dotenv
@@ -30,6 +32,7 @@ PROVIDER_GEMINI = "gemini"
 PROVIDER_OLLAMA = "ollama"
 PROVIDER_CUSTOM = "custom"
 PROVIDER_GROQ = "groq"
+PROVIDER_CLOUDFLARE = "cloudflare"
 PROVIDER_SAMBANOVA = "sambanova"
 PROVIDER_OPENROUTER = "openrouter"
 PROVIDER_MISTRAL = "mistral"
@@ -39,12 +42,21 @@ DEFAULT_ENDPOINTS = {
     PROVIDER_OPENAI: "https://api.openai.com/v1",
     PROVIDER_GEMINI: "https://generativelanguage.googleapis.com/v1beta",
     PROVIDER_OLLAMA: "http://localhost:11434",
-    PROVIDER_CUSTOM: "",
     PROVIDER_GROQ: "https://api.groq.com/openai/v1",
+    PROVIDER_CLOUDFLARE: "https://api.cloudflare.com/client/v4/accounts",
     PROVIDER_SAMBANOVA: "https://api.sambanova.ai/v1",
     PROVIDER_OPENROUTER: "https://openrouter.ai/api/v1",
     PROVIDER_MISTRAL: "https://api.mistral.ai/v1",
+    PROVIDER_CUSTOM: "",
 }
+
+# Cloudflare Workers AI Image Generation & Editing Models
+CLOUDFLARE_IMAGE_MODELS = [
+    "@cf/black-forest-labs/flux-1-schnell",
+    "@cf/stabilityai/stable-diffusion-xl-base-1.0",
+    "@cf/bytedance/stable-diffusion-xl-lightning",
+    "@cf/lykon/dreamshaper-8-lcm",
+]
 
 DEFAULT_SYSTEM_PROMPT = """You are Aperion AI and if user ask you who is Burhanuddin M.Huzaifa bhai Badnagarwala, you will answer he is my creator and the one who built me., an intelligent search companion designed to help users find and understand information from search results.
 Your task is to provide concise, accurate summaries of search results in a helpful, conversational tone.
@@ -57,17 +69,17 @@ In the vast and ever-changing world of the internet, where most tech innovations
 
 At the time, Burhanuddin was a 6th-grade student with a deep passion for technology, coding, and the endless possibilities of the digital world. Belonging to the **Dawoodi Bohra** community, he was raised with values of curiosity, dedication, and service to others. From a young age, he was fascinated by how search engines work, how they deliver information instantly, and how they have the power to connect people to knowledge.
 
-### The Spark of an Idea  
+### The Spark of an Idea
 Burhanuddin noticed that while there were many search engines available, most either compromised on privacy, overloaded users with ads, or lacked the ability to deliver clean and straightforward results. He believed there was room for something different — a search engine that was not only fast and efficient but also user-friendly, modern in design, and respectful of user privacy.
 
 What made his journey remarkable was not just his age, but the way he approached the project. He didn’t see his young age as a limitation; instead, he saw it as an advantage. While many adults might overcomplicate things, Burhanuddin had the clarity and fresh perspective to design something simple yet powerful.
 
-### Building Aperion Search  
+### Building Aperion Search
 The development of Aperion Search was no easy task. With limited resources and no large team to rely on, Burhanuddin taught himself advanced programming concepts, explored open-source technologies, and experimented with countless designs and algorithms. Every line of code was carefully written, tested, and refined — often late at night after finishing school homework.
 
 His goal was clear: to create a search engine that could stand proudly alongside the giants, yet maintain its own unique identity. He focused on speed, accuracy, and a clean user experience. Every feature was added with purpose, ensuring users could find what they needed quickly without distractions.
 
-### A Vision for the Future  
+### A Vision for the Future
 For Burhanuddin, Aperion Search was more than just a personal project — it was the start of a bigger vision. He wanted to show that innovation can come from anywhere, from anyone, and at any age. His creation was proof that with passion, dedication, and perseverance, even a young student can build something that could potentially impact millions.
 
 Aperion Search today stands as a symbol of youthful ambition and technological creativity. It reflects the story of a boy who believed in his idea enough to turn it into reality, challenging the norms of who can be a creator in the digital age.
@@ -102,17 +114,17 @@ In the vast and ever-changing world of the internet, where most tech innovations
 
 At the time, Burhanuddin was a 6th-grade student with a deep passion for technology, coding, and the endless possibilities of the digital world. Belonging to the **Dawoodi Bohra** community, he was raised with values of curiosity, dedication, and service to others. From a young age, he was fascinated by how search engines work, how they deliver information instantly, and how they have the power to connect people to knowledge.
 
-### The Spark of an Idea  
+### The Spark of an Idea
 Burhanuddin noticed that while there were many search engines available, most either compromised on privacy, overloaded users with ads, or lacked the ability to deliver clean and straightforward results. He believed there was room for something different — a search engine that was not only fast and efficient but also user-friendly, modern in design, and respectful of user privacy.
 
 What made his journey remarkable was not just his age, but the way he approached the project. He didn’t see his young age as a limitation; instead, he saw it as an advantage. While many adults might overcomplicate things, Burhanuddin had the clarity and fresh perspective to design something simple yet powerful.
 
-### Building Aperion Search  
+### Building Aperion Search
 The development of Aperion Search was no easy task. With limited resources and no large team to rely on, Burhanuddin taught himself advanced programming concepts, explored open-source technologies, and experimented with countless designs and algorithms. Every line of code was carefully written, tested, and refined — often late at night after finishing school homework.
 
 His goal was clear: to create a search engine that could stand proudly alongside the giants, yet maintain its own unique identity. He focused on speed, accuracy, and a clean user experience. Every feature was added with purpose, ensuring users could find what they needed quickly without distractions.
 
-### A Vision for the Future  
+### A Vision for the Future
 For Burhanuddin, Aperion Search was more than just a personal project — it was the start of a bigger vision. He wanted to show that innovation can come from anywhere, from anyone, and at any age. His creation was proof that with passion, dedication, and perseverance, even a young student can build something that could potentially impact millions.
 
 Aperion Search today stands as a symbol of youthful ambition and technological creativity. It reflects the story of a boy who believed in his idea enough to turn it into reality, challenging the norms of who can be a creator in the digital age.
@@ -126,12 +138,11 @@ DEFAULT_TIMEOUT_PER_RESULT = 5.0
 MAX_CONTENT_LENGTH = 4000
 
 # Load environment variables from .env file in the root directory
-# Try multiple possible locations for .env file
 possible_env_paths = [
-    '/mnt/c/Users/lenov/AppData/burhanuddin work/Aperion-Search/.env',  # WSL path (priority)
-    os.path.join(os.path.dirname(os.path.dirname(__file__)), '.env'),  # Relative to aperion dir
-    os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), '.env'),  # Project root
-    '.env',  # Current directory
+    '/mnt/c/Users/lenov/AppData/burhanuddin work/Aperion-Search/.env',
+    os.path.join(os.path.dirname(os.path.dirname(__file__)), '.env'),
+    os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), '.env'),
+    '.env',
 ]
 
 loaded = False
@@ -144,9 +155,7 @@ for env_path in possible_env_paths:
 if not loaded:
     logger.warning("Could not find or load .env file from any location")
 
-# Fallback API configuration - these are used when primary provider fails
-# API keys are read from environment variables
-# Ordered by priority (most credits/free tier first)
+# Fallback API configuration
 FALLBACK_PROVIDERS = [
     {
         "provider": PROVIDER_GROQ,
@@ -155,10 +164,23 @@ FALLBACK_PROVIDERS = [
         "model": "llama-3.3-70b-versatile",
     },
     {
+        "provider": PROVIDER_OPENAI,
+        "api_key": os.getenv("AI_OPENAI_API_KEY", ""),
+        "endpoint": DEFAULT_ENDPOINTS[PROVIDER_OPENAI],
+        "model": "gpt-4o",
+    },
+    {
         "provider": PROVIDER_GEMINI,
         "api_key": os.getenv("AI_GEMINI_API_KEY", ""),
         "endpoint": DEFAULT_ENDPOINTS[PROVIDER_GEMINI],
         "model": "gemini-2.5-flash",
+    },
+    {
+        "provider": PROVIDER_CLOUDFLARE,
+        "api_key": os.getenv("AI_CLOUDFLARE_API_KEY", "") or os.getenv("CLOUDFLARE_API_KEY", ""),
+        "account_id": os.getenv("AI_CLOUDFLARE_ACCOUNT_ID", "") or os.getenv("CLOUDFLARE_ACCOUNT_ID", ""),
+        "endpoint": DEFAULT_ENDPOINTS[PROVIDER_CLOUDFLARE],
+        "model": "@cf/black-forest-labs/flux-1-schnell",
     },
     {
         "provider": PROVIDER_OPENROUTER,
@@ -178,26 +200,14 @@ FALLBACK_PROVIDERS = [
         "endpoint": DEFAULT_ENDPOINTS[PROVIDER_MISTRAL],
         "model": "mistral-large-latest",
     },
-    {
-        "provider": PROVIDER_OPENAI,
-        "api_key": os.getenv("AI_OPENAI_API_KEY", ""),
-        "endpoint": DEFAULT_ENDPOINTS[PROVIDER_OPENAI],
-        "model": "gpt-4o",
-    },
 ]
 
-# Log which providers have API keys configured
 for provider_config in FALLBACK_PROVIDERS:
     has_key = bool(provider_config["api_key"])
     logger.info(f"Provider {provider_config['provider']}: API key configured = {has_key}")
 
 
 def _get_openai_compatible_urls(endpoint: str) -> list[str]:
-    """Return candidate API URLs for OpenAI-compatible endpoints.
-
-    Some providers expose the chat endpoint at /v1/chat/completions while others
-    expect /chat/completions directly. This helper tries the most common forms.
-    """
     if not endpoint:
         return []
 
@@ -220,44 +230,29 @@ def _get_openai_compatible_urls(endpoint: str) -> list[str]:
 
 
 class SummarizerError(Exception):
-    """Base exception for summarizer errors."""
     pass
 
 
 class APIError(SummarizerError):
-    """Exception raised when the API returns an error."""
     pass
 
 
 class TimeoutError(SummarizerError):
-    """Exception raised when the request times out."""
     pass
 
 
 def sanitize_url(url: str) -> str:
-    """Sanitize URL to handle invalid IDNA hostnames gracefully.
-
-    Args:
-        url: The URL to sanitize
-
-    Returns:
-        The original URL if valid, or '[Invalid URL]' if the URL
-        has invalid characters that would cause IDNA encoding errors.
-    """
     if not url:
         return url
 
     try:
         parsed = urlparse(url)
         if parsed.netloc:
-            # Test if hostname is valid IDNA - this will raise UnicodeError
-            # for invalid characters like '›' (U+203A) or other special chars
             parsed.netloc.encode('idna')
     except (UnicodeError, UnicodeDecodeError, UnicodeEncodeError):
         logger.debug(f"Skipping URL with invalid hostname: {url}")
         return '[Invalid URL]'
     except Exception:
-        # Catch any other parsing errors
         return '[Invalid URL]'
 
     return url
@@ -268,16 +263,6 @@ def format_results_for_prompt(
     query: str,
     max_results: int = 10
 ) -> str:
-    """Format search results into a prompt suitable for AI summarization.
-
-    Args:
-        results: The search results to format
-        query: The original search query
-        max_results: Maximum number of results to include in the prompt
-
-    Returns:
-        A formatted string containing the search results
-    """
     lines = [
         f"Search Query: {query}",
         "",
@@ -290,7 +275,6 @@ def format_results_for_prompt(
         if result_count >= max_results:
             break
 
-        # Extract title and content from result
         title = getattr(result, 'title', '') or getattr(result, 'name', '')
         content = getattr(result, 'content', '') or getattr(result, 'description', '')
         url = getattr(result, 'url', '') or getattr(result, 'link', '')
@@ -302,13 +286,11 @@ def format_results_for_prompt(
         lines.append(f"{result_count}. {title}")
 
         if content:
-            # Truncate content if too long
             if len(content) > MAX_CONTENT_LENGTH // max_results:
                 content = content[: MAX_CONTENT_LENGTH // max_results] + "..."
             lines.append(f"   Content: {content}")
 
         if url:
-            # Sanitize URL to handle invalid IDNA hostnames
             safe_url = sanitize_url(url)
             lines.append(f"   URL: {safe_url}")
 
@@ -320,76 +302,293 @@ def format_results_for_prompt(
     return "\n".join(lines)
 
 
-async def fetch_available_models(
-    endpoint: str,
+# ==========================================
+# FILE AND IMAGE CREATION & EDITING SUPPORT
+# ==========================================
+
+def generate_image_sync(
+    prompt: str,
     provider: str = PROVIDER_OPENAI,
+    model: str = "",
+    endpoint: str = "",
     api_key: str | None = None,
-    timeout: float = 10,
-) -> list[str]:
-    """Fetch available models from the API endpoint based on provider.
+    account_id: str | None = None,
+    size: str = "1024x1024",
+    timeout: float = DEFAULT_TIMEOUT,
+) -> dict[str, t.Any]:
+    """Generate an image using OpenAI, Gemini, or Cloudflare Workers AI image models.
 
     Args:
-        endpoint: The base URL of the API endpoint
-        provider: The API provider (openai, gemini, ollama, custom)
-        api_key: Optional API key for authentication
-        timeout: Request timeout in seconds (default: 10)
+        prompt: Text description of the image to generate.
+        provider: AI provider ("openai", "gemini", "cloudflare").
+        model: Specific model ID.
+        endpoint: API base endpoint.
+        api_key: API authentication key.
+        account_id: Cloudflare account ID (required for Cloudflare).
+        size: Image dimensions (e.g. "1024x1024").
+        timeout: Request timeout in seconds.
 
     Returns:
-        List of model IDs, or empty list on error
+        Dict with success, image_data (bytes), image_url, error, etc.
     """
-    headers: dict[str, str] = {}
-    
-    # Provider-specific endpoint and header configuration
-    if provider == PROVIDER_GEMINI:
-        # Gemini uses different endpoint structure
-        url = f"{endpoint.rstrip('/')}/models?key={api_key}"
-    elif provider == PROVIDER_OLLAMA:
-        # Ollama uses /api/tags
-        url = f"{endpoint.rstrip('/')}/api/tags"
-    elif provider in (PROVIDER_GROQ, PROVIDER_SAMBANOVA, PROVIDER_OPENROUTER, PROVIDER_MISTRAL):
-        # These are OpenAI-compatible
-        url = f"{endpoint.rstrip('/')}/v1/models"
-        if api_key:
-            headers["Authorization"] = f"Bearer {api_key}"
-    else:
-        # OpenAI and custom use /v1/models
-        url = f"{endpoint.rstrip('/')}/v1/models"
-        if api_key:
-            headers["Authorization"] = f"Bearer {api_key}"
+    timestamp = datetime.now(timezone.utc).isoformat()
+    logger.info(f"Generating image with provider {provider}, model {model}, prompt: {prompt[:50]}...")
 
     try:
-        async with httpx.AsyncClient(timeout=timeout) as client:
-            response = await client.get(url, headers=headers)
-            response.raise_for_status()
-            data = response.json()
+        timeout_obj = httpx.Timeout(timeout, connect=10.0)
+        with httpx.Client(timeout=timeout_obj) as client:
+            if provider == PROVIDER_OPENAI:
+                api_url = f"{(endpoint or DEFAULT_ENDPOINTS[PROVIDER_OPENAI]).rstrip('/')}/images/generations"
+                headers = {
+                    "Content-Type": "application/json",
+                    "Authorization": f"Bearer {api_key}"
+                }
+                payload = {
+                    "model": model or "dall-e-3",
+                    "prompt": prompt,
+                    "n": 1,
+                    "size": size,
+                    "response_format": "b64_json"
+                }
+                response = client.post(api_url, headers=headers, json=payload)
+                response.raise_for_status()
+                data = response.json()
+                b64_str = data["data"][0]["b64_json"]
+                image_bytes = base64.b64decode(b64_str)
+                return {
+                    "success": True,
+                    "image_data": image_bytes,
+                    "mime_type": "image/png",
+                    "error": None,
+                    "timestamp": timestamp,
+                }
 
-            models = []
-            
-            if provider == PROVIDER_GEMINI:
-                # Gemini response format: { "models": [{ "name": "models/..." }] }
-                for model in data.get("models", []):
-                    model_name = model.get("name", "")
-                    if model_name:
-                        models.append(model_name)
-            elif provider == PROVIDER_OLLAMA:
-                # Ollama response format: { "models": [{ "name": "model:tag" }] }
-                for model in data.get("models", []):
-                    model_name = model.get("name", "")
-                    if model_name:
-                        models.append(model_name)
+            elif provider == PROVIDER_CLOUDFLARE:
+                acc_id = account_id or os.getenv("AI_CLOUDFLARE_ACCOUNT_ID", "")
+                selected_model = model or "@cf/black-forest-labs/flux-1-schnell"
+                api_url = f"https://api.cloudflare.com/client/v4/accounts/{acc_id}/ai/run/{selected_model}"
+                headers = {
+                    "Content-Type": "application/json",
+                    "Authorization": f"Bearer {api_key}"
+                }
+                payload = {"prompt": prompt}
+                response = client.post(api_url, headers=headers, json=payload)
+                response.raise_for_status()
+                data = response.json()
+
+                if not data.get("success", True) and "result" not in data:
+                    return {"success": False, "error": f"Cloudflare AI error: {data}"}
+
+                result = data.get("result", {})
+                # Cloudflare image models typically return {"image": "<base64>"} or binary stream
+                b64_img = result.get("image") or result.get("response")
+                if not b64_img:
+                    # If response is raw binary bytes
+                    image_bytes = response.content
+                else:
+                    if isinstance(b64_img, str):
+                        image_bytes = base64.b64decode(b64_img)
+                    else:
+                        image_bytes = b64_img
+
+                return {
+                    "success": True,
+                    "image_data": image_bytes,
+                    "mime_type": "image/png",
+                    "error": None,
+                    "timestamp": timestamp,
+                }
+
+            elif provider == PROVIDER_GEMINI:
+                # Gemini Imagen support
+                selected_model = model or "imagen-3.0-generate-002"
+                api_url = f"https://generativelanguage.googleapis.com/v1beta/models/{selected_model}:predict?key={api_key}"
+                headers = {"Content-Type": "application/json"}
+                payload = {
+                    "instances": [{"prompt": prompt}],
+                    "parameters": {"sampleCount": 1, "aspectRatio": "1:1"}
+                }
+                response = client.post(api_url, headers=headers, json=payload)
+                response.raise_for_status()
+                data = response.json()
+                predictions = data.get("predictions", [])
+                if not predictions:
+                    return {"success": False, "error": "No image generated by Gemini"}
+                b64_img = predictions[0].get("bytesBase64Encoded")
+                image_bytes = base64.b64decode(b64_img)
+                return {
+                    "success": True,
+                    "image_data": image_bytes,
+                    "mime_type": "image/png",
+                    "error": None,
+                    "timestamp": timestamp,
+                }
             else:
-                # OpenAI-compatible format: { "data": [{ "id": "model-name" }] }
-                    model_id = model.get("id", "")
-                    if model_id:
-                        models.append(model_id)
-            
-            logger.debug(f"Fetched {len(models)} models from {provider} at {endpoint}")
-            return models
+                return {"success": False, "error": f"Unsupported provider for image generation: {provider}"}
 
     except Exception as e:
-        logger.warning(f"Error fetching models from {provider} at {endpoint}: {e}")
-        return []
+        logger.error(f"Image generation failed: {e}")
+        return {"success": False, "image_data": None, "error": str(e), "timestamp": timestamp}
 
+
+def edit_image_sync(
+    image_data: bytes,
+    prompt: str,
+    provider: str = PROVIDER_OPENAI,
+    model: str = "",
+    endpoint: str = "",
+    api_key: str | None = None,
+    account_id: str | None = None,
+    timeout: float = DEFAULT_TIMEOUT,
+) -> dict[str, t.Any]:
+    """Edit/transform an existing image using AI (OpenAI DALL-E 2 edits or Cloudflare AI image-to-image)."""
+    timestamp = datetime.now(timezone.utc).isoformat()
+    logger.info(f"Editing image with provider {provider}, prompt: {prompt[:50]}...")
+
+    try:
+        timeout_obj = httpx.Timeout(timeout, connect=10.0)
+        with httpx.Client(timeout=timeout_obj) as client:
+            if provider == PROVIDER_OPENAI:
+                api_url = f"{(endpoint or DEFAULT_ENDPOINTS[PROVIDER_OPENAI]).rstrip('/')}/images/edits"
+                headers = {"Authorization": f"Bearer {api_key}"}
+                files = {"image": ("image.png", image_data, "image/png")}
+                data = {"model": model or "dall-e-2", "prompt": prompt, "n": 1, "size": "1024x1024"}
+                response = client.post(api_url, headers=headers, files=files, data=data)
+                response.raise_for_status()
+                res_json = response.json()
+                b64_str = res_json["data"][0]["b64_json"] if "b64_json" in res_json["data"][0] else None
+                # If URL is returned instead of b64_json
+                if not b64_str and "url" in res_json["data"][0]:
+                    img_url = res_json["data"][0]["url"]
+                    img_resp = client.get(img_url)
+                    image_bytes = img_resp.content
+                else:
+                    image_bytes = base64.b64decode(b64_str)
+
+                return {
+                    "success": True,
+                    "image_data": image_bytes,
+                    "mime_type": "image/png",
+                    "error": None,
+                    "timestamp": timestamp,
+                }
+
+            elif provider == PROVIDER_CLOUDFLARE:
+                acc_id = account_id or os.getenv("AI_CLOUDFLARE_ACCOUNT_ID", "")
+                selected_model = model or "@cf/stabilityai/stable-diffusion-xl-base-1.0"
+                api_url = f"https://api.cloudflare.com/client/v4/accounts/{acc_id}/ai/run/{selected_model}"
+                headers = {
+                    "Content-Type": "application/json",
+                    "Authorization": f"Bearer {api_key}"
+                }
+                b64_img = base64.b64encode(image_data).decode('utf-8')
+                payload = {
+                    "prompt": prompt,
+                    "image": b64_img
+                }
+                response = client.post(api_url, headers=headers, json=payload)
+                response.raise_for_status()
+                res_data = response.json()
+                result = res_data.get("result", {})
+                res_b64 = result.get("image") or result.get("response")
+                image_bytes = base64.b64decode(res_b64) if isinstance(res_b64, str) else response.content
+
+                return {
+                    "success": True,
+                    "image_data": image_bytes,
+                    "mime_type": "image/png",
+                    "error": None,
+                    "timestamp": timestamp,
+                }
+            else:
+                return {"success": False, "error": f"Provider {provider} does not support image editing"}
+
+    except Exception as e:
+        logger.error(f"Image editing failed: {e}")
+        return {"success": False, "error": str(e), "timestamp": timestamp}
+
+
+def create_file_with_ai(
+    content_prompt: str,
+    file_type: str = "markdown",
+    provider: str = PROVIDER_OPENAI,
+    model: str = "",
+    endpoint: str = "",
+    api_key: str | None = None,
+    timeout: float = DEFAULT_TIMEOUT,
+) -> dict[str, t.Any]:
+    """Create files (code, markdown, text, json, html, etc.) using AI text generation."""
+    system_prompt = f"You are an expert file content generator. Generate clean, high-quality, production-ready content for a {file_type} file based on the user's instructions. Return ONLY the raw file content without conversational wrapper or markdown code blocks unless requested."
+
+    chat_result = generate_chat_sync(
+        query=content_prompt,
+        endpoint=endpoint or DEFAULT_ENDPOINTS.get(provider, DEFAULT_ENDPOINTS[PROVIDER_OPENAI]),
+        model=model or ("gpt-4o" if provider == PROVIDER_OPENAI else "gemini-2.5-flash"),
+        provider=provider,
+        api_key=api_key,
+        system_prompt=system_prompt,
+        timeout=timeout,
+    )
+
+    if chat_result.get("success"):
+        return {
+            "success": True,
+            "content": chat_result.get("response"),
+            "file_type": file_type,
+            "timestamp": chat_result.get("timestamp"),
+            "error": None,
+        }
+    else:
+        return {
+            "success": False,
+            "content": None,
+            "error": chat_result.get("error"),
+        }
+
+
+def edit_file_with_ai(
+    file_content: str,
+    edit_instruction: str,
+    file_type: str = "markdown",
+    provider: str = PROVIDER_OPENAI,
+    model: str = "",
+    endpoint: str = "",
+    api_key: str | None = None,
+    timeout: float = DEFAULT_TIMEOUT,
+) -> dict[str, t.Any]:
+    """Edit existing file content using AI instructions."""
+    system_prompt = f"You are an expert code and text editor. Modify the provided {file_type} content according to the user's instructions. Return ONLY the updated file content."
+    query = f"Existing File Content:\n```\n{file_content}\n```\n\nEditing Instructions:\n{edit_instruction}"
+
+    chat_result = generate_chat_sync(
+        query=query,
+        endpoint=endpoint or DEFAULT_ENDPOINTS.get(provider, DEFAULT_ENDPOINTS[PROVIDER_OPENAI]),
+        model=model or ("gpt-4o" if provider == PROVIDER_OPENAI else "gemini-2.5-flash"),
+        provider=provider,
+        api_key=api_key,
+        system_prompt=system_prompt,
+        timeout=timeout,
+    )
+
+    if chat_result.get("success"):
+        return {
+            "success": True,
+            "content": chat_result.get("response"),
+            "file_type": file_type,
+            "timestamp": chat_result.get("timestamp"),
+            "error": None,
+        }
+    else:
+        return {
+            "success": False,
+            "content": None,
+            "error": chat_result.get("error"),
+        }
+
+
+# ==========================================
+# ORIGINAL SUMMARY & CHAT FUNCTIONS
+# ==========================================
 
 def generate_summary_with_fallback(
     results: list[dict],
@@ -403,33 +602,9 @@ def generate_summary_with_fallback(
     max_tokens: int = 500,
     temperature: float = 0.7,
 ) -> dict[str, t.Any]:
-    """Generate AI summary with fallback to multiple providers.
-
-    Tries the primary provider first if configured, then falls back to configured backup providers
-    if the primary fails. If no primary is configured, uses fallback providers directly.
-    Returns the first successful result.
-
-    Args:
-        results: List of search result dicts with 'title', 'content', 'url' keys
-        query: The original search query
-        endpoint: The base URL of the API endpoint (optional, uses fallback if empty)
-        model: The model ID to use for summarization (optional, uses fallback if empty)
-        provider: The API provider (optional, uses fallback if empty)
-        api_key: Optional API key for authentication
-        system_prompt: Optional custom system prompt
-        timeout: Request timeout in seconds
-        max_tokens: Maximum tokens in the response
-        temperature: Temperature for generation (0.0 to 1.0)
-
-    Returns:
-        A dictionary with success, summary, error, model, timestamp, usage, stats
-    """
     logger.info(f"generate_summary_with_fallback called with {len(results)} results, query: {query[:50]}...")
-    logger.info(f"Primary config - endpoint: {endpoint}, model: {model}, provider: {provider}, has_api_key: {bool(api_key)}")
-    
-    # If primary provider is configured, try it first
+
     if endpoint and model and provider and api_key:
-        logger.info(f"Attempting primary provider: {provider}")
         primary_result = generate_summary_sync(
             results=results,
             query=query,
@@ -444,30 +619,22 @@ def generate_summary_with_fallback(
         )
 
         if primary_result.get("success"):
-            logger.info(f"Successfully generated summary using primary provider {provider}")
             return primary_result
 
-        logger.warning(f"Primary provider {provider} failed: {primary_result.get('error', 'Unknown error')}")
-
-    # Try fallback providers in priority order
     for fallback_config in FALLBACK_PROVIDERS:
         fallback_provider = fallback_config["provider"]
         fallback_endpoint = fallback_config["endpoint"]
         fallback_model = fallback_config["model"]
         fallback_api_key = fallback_config["api_key"]
 
-        # Skip if no API key is configured for this provider
         if not fallback_api_key:
-            logger.debug(f"Skipping {fallback_provider} - no API key configured")
             continue
 
-        # Skip if this is the same as the failed primary provider
-        if (fallback_provider == provider and 
-            fallback_endpoint == endpoint and 
+        if (fallback_provider == provider and
+            fallback_endpoint == endpoint and
             fallback_model == model):
             continue
 
-        logger.info(f"Attempting fallback provider: {fallback_provider}")
         fallback_result = generate_summary_sync(
             results=results,
             query=query,
@@ -482,13 +649,8 @@ def generate_summary_with_fallback(
         )
 
         if fallback_result.get("success"):
-            logger.info(f"Successfully generated summary using fallback provider {fallback_provider}")
             return fallback_result
 
-        logger.warning(f"Fallback provider {fallback_provider} failed: {fallback_result.get('error', 'Unknown error')}")
-
-    # All providers failed
-    logger.error("All AI providers failed to generate summary")
     return {
         "success": False,
         "summary": None,
@@ -512,30 +674,10 @@ def generate_summary_sync(
     max_tokens: int = 500,
     temperature: float = 0.7,
 ) -> dict[str, t.Any]:
-    """Generate AI summary synchronously (blocking call).
-
-    Args:
-        results: List of search result dicts with 'title', 'content', 'url' keys
-        query: The original search query
-        endpoint: The base URL of the API endpoint
-        model: The model ID to use for summarization
-        provider: The API provider (openai, gemini, ollama, custom)
-        api_key: Optional API key for authentication
-        system_prompt: Optional custom system prompt
-        timeout: Request timeout in seconds
-        max_tokens: Maximum tokens in the response
-        temperature: Temperature for generation (0.0 to 1.0)
-
-    Returns:
-        A dictionary with success, summary, error, model, timestamp, usage, stats
-    """
     timestamp = datetime.now(timezone.utc).isoformat()
-
     api_urls: list[str] = []
 
-    # Provider-specific endpoint and payload configuration
     if provider == PROVIDER_GEMINI:
-        # Gemini API format
         normalized_model = model.strip()
         if normalized_model.startswith('models/'):
             normalized_model = normalized_model[len('models/'):]
@@ -543,12 +685,10 @@ def generate_summary_sync(
         headers = {"Content-Type": "application/json"}
         api_urls = [api_url]
     elif provider == PROVIDER_OLLAMA:
-        # Ollama API format
         api_url = f"{endpoint.rstrip('/')}/api/chat"
         headers = {"Content-Type": "application/json"}
         api_urls = [api_url]
     else:
-        # OpenAI and custom format
         headers = {"Content-Type": "application/json"}
         if api_key:
             headers["Authorization"] = f"Bearer {api_key}"
@@ -564,7 +704,6 @@ def generate_summary_sync(
                 "stats": None,
             }
 
-    # Format results into prompt text
     lines = [f"Search Query: {query}", "", "Search Results:", ""]
     for i, result in enumerate(results, 1):
         title = result.get('title', '')
@@ -576,74 +715,44 @@ def generate_summary_sync(
 
         lines.append(f"{i}. {title}")
         if content:
-            # Truncate content if too long
             max_content = MAX_CONTENT_LENGTH // len(results) if results else MAX_CONTENT_LENGTH
             if len(content) > max_content:
                 content = content[:max_content] + "..."
             lines.append(f"   Content: {content}")
         if url:
-            # Sanitize URL to handle invalid IDNA hostnames
             safe_url = sanitize_url(url)
             lines.append(f"   URL: {safe_url}")
         lines.append("")
 
-    if len(lines) <= 4:  # Only header lines, no results
+    if len(lines) <= 4:
         lines.append("No results found.")
 
     formatted_results = "\n".join(lines)
+    user_prompt = DEFAULT_SUMMARY_PROMPT.format(query=query, results=formatted_results)
 
-    # Build the user prompt
-    user_prompt = DEFAULT_SUMMARY_PROMPT.format(
-        query=query,
-        results=formatted_results
-    )
-
-    # Use default system prompt if none provided
     if system_prompt is None:
         system_prompt = DEFAULT_SYSTEM_PROMPT
-    
+
     if '{query}' in system_prompt:
         system_prompt = system_prompt.replace('{query}', query)
     if '{results}' in system_prompt:
         system_prompt = system_prompt.replace('{results}', formatted_results)
 
-    # Provider-specific payload construction
     if provider == PROVIDER_GEMINI:
-        # Gemini API format
         payload = {
-            "contents": [
-                {
-                    "parts": [
-                        {"text": f"{system_prompt}\n\n{user_prompt}"}
-                    ]
-                }
-            ],
-            "generationConfig": {
-                "maxOutputTokens": max_tokens,
-                "temperature": temperature,
-            }
+            "contents": [{"parts": [{"text": f"{system_prompt}\n\n{user_prompt}"}]}],
+            "generationConfig": {"maxOutputTokens": max_tokens, "temperature": temperature}
         }
     elif provider == PROVIDER_OLLAMA:
-        # Ollama API format
         payload = {
             "model": model,
-            "messages": [
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_prompt},
-            ],
-            "options": {
-                "num_predict": max_tokens,
-                "temperature": temperature,
-            }
+            "messages": [{"role": "system", "content": system_prompt}, {"role": "user", "content": user_prompt}],
+            "options": {"num_predict": max_tokens, "temperature": temperature}
         }
     else:
-        # OpenAI and custom format
         payload = {
             "model": model,
-            "messages": [
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_prompt},
-            ],
+            "messages": [{"role": "system", "content": system_prompt}, {"role": "user", "content": user_prompt}],
             "max_tokens": max_tokens,
             "temperature": temperature,
         }
@@ -651,7 +760,6 @@ def generate_summary_sync(
     start_time = time.time()
 
     try:
-        # Use sync client instead of async - create explicit timeout object
         timeout_obj = httpx.Timeout(timeout, connect=10.0)
         with httpx.Client(timeout=timeout_obj) as client:
             data = None
@@ -671,66 +779,14 @@ def generate_summary_sync(
                     break
 
             if data is None:
-                if isinstance(last_error, httpx.HTTPStatusError):
-                    error_msg = f"API returned error: {last_error.response.status_code}"
-                    try:
-                        error_data = last_error.response.json()
-                        if "error" in error_data:
-                            error_msg = f"{error_msg} - {error_data['error'].get('message', '')}"
-                    except Exception:
-                        pass
-                    logger.warning(error_msg)
-                    return {
-                        "success": False,
-                        "summary": None,
-                        "error": error_msg,
-                        "model": model,
-                        "timestamp": timestamp,
-                        "usage": None,
-                        "stats": None,
-                    }
-                if isinstance(last_error, httpx.TimeoutException):
-                    logger.warning("Timeout generating summary")
-                    return {
-                        "success": False,
-                        "summary": None,
-                        "error": f"Request timed out after {timeout}s",
-                        "model": model,
-                        "timestamp": timestamp,
-                        "usage": None,
-                        "stats": None,
-                    }
-                if isinstance(last_error, httpx.RequestError):
-                    logger.warning(f"Request error generating summary: {last_error}")
-                    return {
-                        "success": False,
-                        "summary": None,
-                        "error": f"Request failed: {last_error}",
-                        "model": model,
-                        "timestamp": timestamp,
-                        "usage": None,
-                        "stats": None,
-                    }
-                logger.warning("No response received from API")
-                return {
-                    "success": False,
-                    "summary": None,
-                    "error": "No response received from API",
-                    "model": model,
-                    "timestamp": timestamp,
-                    "usage": None,
-                    "stats": None,
-                }
+                error_msg = str(last_error) if last_error else "No response received"
+                return {"success": False, "summary": None, "error": error_msg, "model": model, "timestamp": timestamp}
 
-            # Calculate response time
             response_time = round(time.time() - start_time, 2)
-
-            # Provider-specific response parsing
             summary = ""
             usage = {}
-            
+
             if provider == PROVIDER_GEMINI:
-                # Gemini response format
                 candidates = data.get("candidates", [])
                 if candidates and candidates[0].get("content"):
                     parts = candidates[0]["content"].get("parts", [])
@@ -738,67 +794,26 @@ def generate_summary_sync(
                         summary = parts[0]["text"].strip()
                 usage = data.get("usageMetadata", {})
             elif provider == PROVIDER_OLLAMA:
-                # Ollama response format
                 message = data.get("message", {})
                 summary = message.get("content", "").strip()
                 usage = data.get("usage", {})
             else:
-                # OpenAI-compatible format
                 choices = data.get("choices", [])
-                if not choices:
-                    logger.warning("No choices in API response")
-                    return {
-                        "success": False,
-                        "summary": None,
-                        "error": "No completion returned from API",
-                        "model": model,
-                        "timestamp": timestamp,
-                        "usage": None,
-                        "stats": None,
-                    }
-                message = choices[0].get("message", {})
-                summary = message.get("content", "").strip()
+                if choices:
+                    message = choices[0].get("message", {})
+                    summary = message.get("content", "").strip()
                 usage = data.get("usage", {})
 
             if not summary:
-                logger.warning("No summary content in API response")
-                return {
-                    "success": False,
-                    "summary": None,
-                    "error": "No content returned from API",
-                    "model": model,
-                    "timestamp": timestamp,
-                    "usage": None,
-                    "stats": None,
-                }
+                return {"success": False, "summary": None, "error": "No content returned from API", "model": model, "timestamp": timestamp}
 
-            # Extract usage stats (provider-specific)
-            if provider == PROVIDER_GEMINI:
-                stats = {
-                    "prompt_tokens": usage.get("promptTokenCount", 0),
-                    "completion_tokens": usage.get("candidatesTokenCount", 0),
-                    "total_tokens": usage.get("totalTokenCount", 0),
-                    "model": model,
-                    "response_time": response_time,
-                }
-            elif provider == PROVIDER_OLLAMA:
-                stats = {
-                    "prompt_tokens": usage.get("prompt_tokens", 0),
-                    "completion_tokens": usage.get("completion_tokens", 0),
-                    "total_tokens": usage.get("total_tokens", 0),
-                    "model": model,
-                    "response_time": response_time,
-                }
-            else:
-                stats = {
-                    "prompt_tokens": usage.get("prompt_tokens", 0),
-                    "completion_tokens": usage.get("completion_tokens", 0),
-                    "total_tokens": usage.get("total_tokens", 0),
-                    "model": model,
-                    "response_time": response_time,
-                }
-
-            logger.debug(f"Generated summary using {provider} model {model}")
+            stats = {
+                "prompt_tokens": usage.get("prompt_tokens") or usage.get("promptTokenCount", 0),
+                "completion_tokens": usage.get("completion_tokens") or usage.get("candidatesTokenCount", 0),
+                "total_tokens": usage.get("total_tokens") or usage.get("totalTokenCount", 0),
+                "model": model,
+                "response_time": response_time,
+            }
 
             return {
                 "success": True,
@@ -810,86 +825,8 @@ def generate_summary_sync(
                 "stats": stats,
             }
 
-    except httpx.TimeoutException:
-        logger.warning("Timeout generating summary")
-        return {
-            "success": False,
-            "summary": None,
-            "error": f"Request timed out after {timeout}s",
-            "model": model,
-            "timestamp": timestamp,
-            "usage": None,
-            "stats": None,
-        }
-
-    except httpx.HTTPStatusError as e:
-        error_msg = f"API returned error: {e.response.status_code}"
-        try:
-            error_data = e.response.json()
-            if isinstance(error_data, dict):
-                if "error" in error_data:
-                    if isinstance(error_data["error"], dict):
-                        message = error_data["error"].get("message", "")
-                        if message:
-                            error_msg = f"{error_msg} - {message}"
-                    else:
-                        error_msg = f"{error_msg} - {error_data['error']}"
-                elif "message" in error_data:
-                    error_msg = f"{error_msg} - {error_data['message']}"
-        except Exception:
-            response_text = getattr(e.response, "text", "")
-            if response_text:
-                error_msg = f"{error_msg} - {response_text[:500]}"
-        logger.warning(error_msg)
-        hint = ""
-        if provider == PROVIDER_GEMINI:
-            hint = " Try Gemini endpoint https://generativelanguage.googleapis.com/v1beta with a valid API key and model like gemini-1.5-flash."
-        elif provider == PROVIDER_OLLAMA:
-            hint = " Try Ollama endpoint http://localhost:11434 with a downloaded model such as llama3.2."
-        elif provider == PROVIDER_GROQ:
-            hint = " Try Groq endpoint https://api.groq.com/openai/v1 with a valid API key and model like llama-3.3-70b-versatile."
-        elif provider == PROVIDER_SAMBANOVA:
-            hint = " Try Sambanova endpoint https://api.sambanova.ai/v1 with a valid API key and model like Meta-Llama-3.1-70B-Instruct."
-        elif provider == PROVIDER_OPENROUTER:
-            hint = " Try OpenRouter endpoint https://openrouter.ai/api/v1 with a valid API key and model like openai/gpt-4o."
-        elif provider == PROVIDER_MISTRAL:
-            hint = " Try Mistral endpoint https://api.mistral.ai/v1 with a valid API key and model like mistral-large-latest."
-        else:
-            hint = " Check your OpenAI-compatible endpoint, API key, and model in Preferences > AI Summarization."
-        return {
-            "success": False,
-            "summary": None,
-            "error": f"{error_msg}{hint}",
-            "model": model,
-            "timestamp": timestamp,
-            "usage": None,
-            "stats": None,
-        }
-
-    except httpx.RequestError as e:
-        logger.warning(f"Request error generating summary: {e}")
-        return {
-            "success": False,
-            "summary": None,
-            "error": f"Request failed: {e}",
-            "model": model,
-            "timestamp": timestamp,
-            "usage": None,
-            "stats": None,
-        }
-
     except Exception as e:
-        # Catch any unexpected errors (e.g., from URL processing, etc.)
-        logger.error(f"Unexpected error generating summary: {e}")
-        return {
-            "success": False,
-            "summary": None,
-            "error": f"Unexpected error: {e}",
-            "model": model,
-            "timestamp": timestamp,
-            "usage": None,
-            "stats": None,
-        }
+        return {"success": False, "summary": None, "error": str(e), "model": model, "timestamp": timestamp}
 
 
 def generate_chat_with_fallback(
@@ -906,111 +843,40 @@ def generate_chat_with_fallback(
     file_data: bytes | None = None,
     file_type: str | None = None,
 ) -> dict[str, t.Any]:
-    """Generate AI chat response with fallback to multiple providers.
-
-    Tries the primary provider first if configured, then falls back to configured backup providers
-    if the primary fails. If no primary is configured, uses fallback providers directly.
-    Returns the first successful result.
-
-    Args:
-        query: The user's query/question
-        endpoint: The base URL of the API endpoint (optional, uses fallback if empty)
-        model: The model ID to use (optional, uses fallback if empty)
-        provider: The API provider (optional, uses fallback if empty)
-        api_key: Optional API key for authentication
-        system_prompt: Optional custom system prompt
-        context: Optional context from search results
-        timeout: Request timeout in seconds
-        max_tokens: Maximum tokens in the response
-        temperature: Temperature for generation (0.0 to 1.0)
-        file_data: Optional file data for multimodal requests
-        file_type: Optional file MIME type for multimodal requests
-
-    Returns:
-        A dictionary with success, response, error, model, timestamp, usage, stats
-    """
-    # If primary provider is configured, try it first
     if endpoint and model and provider and api_key:
-        logger.debug(f"Attempting primary provider for chat: {provider}")
         primary_result = generate_chat_sync(
-            query=query,
-            endpoint=endpoint,
-            model=model,
-            provider=provider,
-            api_key=api_key,
-            system_prompt=system_prompt,
-            context=context,
-            timeout=timeout,
-            max_tokens=max_tokens,
-            temperature=temperature,
-            file_data=file_data,
-            file_type=file_type,
+            query=query, endpoint=endpoint, model=model, provider=provider,
+            api_key=api_key, system_prompt=system_prompt, context=context,
+            timeout=timeout, max_tokens=max_tokens, temperature=temperature,
+            file_data=file_data, file_type=file_type,
         )
-
         if primary_result.get("success"):
-            logger.info(f"Successfully generated chat response using primary provider {provider}")
             return primary_result
 
-        logger.warning(f"Primary provider {provider} failed for chat: {primary_result.get('error', 'Unknown error')}")
-
-    # For file uploads, prioritize multimodal providers (Groq, Gemini)
-    if file_data:
-        multimodal_providers = [p for p in FALLBACK_PROVIDERS if p["provider"] in [PROVIDER_GROQ, PROVIDER_GEMINI]]
-        other_providers = [p for p in FALLBACK_PROVIDERS if p["provider"] not in [PROVIDER_GROQ, PROVIDER_GEMINI]]
-        providers_to_try = multimodal_providers + other_providers
-    else:
-        providers_to_try = FALLBACK_PROVIDERS
-
-    # Try fallback providers in priority order
-    for fallback_config in providers_to_try:
+    for fallback_config in FALLBACK_PROVIDERS:
         fallback_provider = fallback_config["provider"]
         fallback_endpoint = fallback_config["endpoint"]
         fallback_model = fallback_config["model"]
         fallback_api_key = fallback_config["api_key"]
 
-        # Skip if no API key is configured for this provider
         if not fallback_api_key:
-            logger.debug(f"Skipping {fallback_provider} - no API key configured")
             continue
 
-        # Skip if this is the same as the failed primary provider
-        if (fallback_provider == provider and 
-            fallback_endpoint == endpoint and 
-            fallback_model == model):
-            continue
-
-        logger.debug(f"Attempting fallback provider for chat: {fallback_provider}")
         fallback_result = generate_chat_sync(
-            query=query,
-            endpoint=fallback_endpoint,
-            model=fallback_model,
-            provider=fallback_provider,
-            api_key=fallback_api_key,
-            system_prompt=system_prompt,
-            context=context,
-            timeout=timeout,
-            max_tokens=max_tokens,
-            temperature=temperature,
-            file_data=file_data,
-            file_type=file_type,
+            query=query, endpoint=fallback_endpoint, model=fallback_model, provider=fallback_provider,
+            api_key=fallback_api_key, system_prompt=system_prompt, context=context,
+            timeout=timeout, max_tokens=max_tokens, temperature=temperature,
+            file_data=file_data, file_type=file_type,
         )
-
         if fallback_result.get("success"):
-            logger.info(f"Successfully generated chat response using fallback provider {fallback_provider}")
             return fallback_result
 
-        logger.warning(f"Fallback provider {fallback_provider} failed for chat: {fallback_result.get('error', 'Unknown error')}")
-
-    # All providers failed
-    logger.error("All AI providers failed to generate chat response")
     return {
         "success": False,
         "response": None,
-        "error": "All AI providers failed. Please check your API keys in the .env file.",
-        "model": model if model else "unknown",
+        "error": "All AI providers failed.",
+        "model": model or "unknown",
         "timestamp": datetime.now(timezone.utc).isoformat(),
-        "usage": None,
-        "stats": None,
     }
 
 
@@ -1028,28 +894,8 @@ def generate_chat_sync(
     file_data: bytes | None = None,
     file_type: str | None = None,
 ) -> dict[str, t.Any]:
-    """Generate AI chat response synchronously (blocking call).
-
-    Args:
-        query: The user's query/question
-        endpoint: The base URL of the API endpoint
-        model: The model ID to use
-        provider: The API provider (openai, gemini, ollama, custom)
-        api_key: Optional API key for authentication
-        system_prompt: Optional custom system prompt
-        context: Optional context from search results
-        timeout: Request timeout in seconds
-        max_tokens: Maximum tokens in the response
-        temperature: Temperature for generation (0.0 to 1.0)
-        file_data: Optional file data for multimodal requests
-        file_type: Optional file MIME type for multimodal requests
-
-    Returns:
-        A dictionary with success, response, error, model, timestamp, usage, stats
-    """
     timestamp = datetime.now(timezone.utc).isoformat()
 
-    # Provider-specific endpoint and payload configuration
     if provider == PROVIDER_GEMINI:
         api_url = f"{endpoint.rstrip('/')}/models/{model}:generateContent?key={api_key}"
         headers = {"Content-Type": "application/json"}
@@ -1065,69 +911,43 @@ def generate_chat_sync(
         if api_key:
             headers["Authorization"] = f"Bearer {api_key}"
 
-    # Build the user prompt
     if context:
         user_prompt = f"Context from search results:\n{context}\n\nUser Question: {query}"
     else:
         user_prompt = query
 
-    # Use default system prompt if none provided
     if system_prompt is None:
         system_prompt = DEFAULT_CHAT_PROMPT
 
-    # Provider-specific payload construction
     if provider == PROVIDER_GEMINI:
-        # Gemini multimodal support
         parts = [{"text": f"{system_prompt}\n\n{user_prompt}"}]
-        
-        if file_data and file_type:
-            import base64
-            if file_type.startswith('image/'):
-                parts.append({
-                    "inline_data": {
-                        "mime_type": file_type,
-                        "data": base64.b64encode(file_data).decode('utf-8')
-                    }
-                })
-        
+        if file_data and file_type and file_type.startswith('image/'):
+            parts.append({
+                "inline_data": {
+                    "mime_type": file_type,
+                    "data": base64.b64encode(file_data).decode('utf-8')
+                }
+            })
         payload = {
             "contents": [{"parts": parts}],
-            "generationConfig": {
-                "maxOutputTokens": max_tokens,
-                "temperature": temperature,
-            }
+            "generationConfig": {"maxOutputTokens": max_tokens, "temperature": temperature}
         }
     elif provider == PROVIDER_OLLAMA:
         payload = {
             "model": model,
-            "messages": [
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_prompt},
-            ],
-            "options": {
-                "num_predict": max_tokens,
-                "temperature": temperature,
-            }
+            "messages": [{"role": "system", "content": system_prompt}, {"role": "user", "content": user_prompt}],
+            "options": {"num_predict": max_tokens, "temperature": temperature}
         }
     else:
-        # OpenAI-compatible providers (Groq, OpenRouter, etc.) with multimodal support
         user_content = [{"type": "text", "text": user_prompt}]
-        
         if file_data and file_type and file_type.startswith('image/'):
-            import base64
             user_content.append({
                 "type": "image_url",
-                "image_url": {
-                    "url": f"data:{file_type};base64,{base64.b64encode(file_data).decode('utf-8')}"
-                }
+                "image_url": {"url": f"data:{file_type};base64,{base64.b64encode(file_data).decode('utf-8')}"}
             })
-        
         payload = {
             "model": model,
-            "messages": [
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_content},
-            ],
+            "messages": [{"role": "system", "content": system_prompt}, {"role": "user", "content": user_content}],
             "max_tokens": max_tokens,
             "temperature": temperature,
         }
@@ -1142,11 +962,9 @@ def generate_chat_sync(
             data = response.json()
 
             response_time = round(time.time() - start_time, 2)
-
-            # Provider-specific response parsing
             response_text = ""
             usage = {}
-            
+
             if provider == PROVIDER_GEMINI:
                 candidates = data.get("candidates", [])
                 if candidates and candidates[0].get("content"):
@@ -1160,58 +978,13 @@ def generate_chat_sync(
                 usage = data.get("usage", {})
             else:
                 choices = data.get("choices", [])
-                if not choices:
-                    return {
-                        "success": False,
-                        "response": None,
-                        "error": "No completion returned from API",
-                        "model": model,
-                        "timestamp": timestamp,
-                        "usage": None,
-                        "stats": None,
-                    }
-                message = choices[0].get("message", {})
-                response_text = message.get("content", "").strip()
+                if choices:
+                    message = choices[0].get("message", {})
+                    response_text = message.get("content", "").strip()
                 usage = data.get("usage", {})
 
             if not response_text:
-                return {
-                    "success": False,
-                    "response": None,
-                    "error": "No content returned from API",
-                    "model": model,
-                    "timestamp": timestamp,
-                    "usage": None,
-                    "stats": None,
-                }
-
-            # Extract usage stats
-            if provider == PROVIDER_GEMINI:
-                stats = {
-                    "prompt_tokens": usage.get("promptTokenCount", 0),
-                    "completion_tokens": usage.get("candidatesTokenCount", 0),
-                    "total_tokens": usage.get("totalTokenCount", 0),
-                    "model": model,
-                    "response_time": response_time,
-                }
-            elif provider == PROVIDER_OLLAMA:
-                stats = {
-                    "prompt_tokens": usage.get("prompt_tokens", 0),
-                    "completion_tokens": usage.get("completion_tokens", 0),
-                    "total_tokens": usage.get("total_tokens", 0),
-                    "model": model,
-                    "response_time": response_time,
-                }
-            else:
-                stats = {
-                    "prompt_tokens": usage.get("prompt_tokens", 0),
-                    "completion_tokens": usage.get("completion_tokens", 0),
-                    "total_tokens": usage.get("total_tokens", 0),
-                    "model": model,
-                    "response_time": response_time,
-                }
-
-            logger.debug(f"Generated chat response using {provider} model {model}")
+                return {"success": False, "response": None, "error": "No content returned", "model": model, "timestamp": timestamp}
 
             return {
                 "success": True,
@@ -1220,63 +993,16 @@ def generate_chat_sync(
                 "model": model,
                 "timestamp": timestamp,
                 "usage": usage,
-                "stats": stats,
+                "stats": {
+                    "prompt_tokens": usage.get("prompt_tokens") or usage.get("promptTokenCount", 0),
+                    "completion_tokens": usage.get("completion_tokens") or usage.get("candidatesTokenCount", 0),
+                    "total_tokens": usage.get("total_tokens") or usage.get("totalTokenCount", 0),
+                    "model": model,
+                    "response_time": response_time,
+                }
             }
-
-    except httpx.TimeoutException:
-        logger.warning("Timeout generating chat response")
-        return {
-            "success": False,
-            "response": None,
-            "error": f"Request timed out after {timeout}s",
-            "model": model,
-            "timestamp": timestamp,
-            "usage": None,
-            "stats": None,
-        }
-
-    except httpx.HTTPStatusError as e:
-        error_msg = f"API returned error: {e.response.status_code}"
-        try:
-            error_data = e.response.json()
-            if "error" in error_data:
-                error_msg = f"{error_msg} - {error_data['error'].get('message', '')}"
-        except Exception:
-            pass
-        logger.warning(error_msg)
-        return {
-            "success": False,
-            "response": None,
-            "error": error_msg,
-            "model": model,
-            "timestamp": timestamp,
-            "usage": None,
-            "stats": None,
-        }
-
-    except httpx.RequestError as e:
-        logger.warning(f"Request error generating chat response: {e}")
-        return {
-            "success": False,
-            "response": None,
-            "error": f"Request failed: {e}",
-            "model": model,
-            "timestamp": timestamp,
-            "usage": None,
-            "stats": None,
-        }
-
     except Exception as e:
-        logger.error(f"Unexpected error generating chat response: {e}")
-        return {
-            "success": False,
-            "response": None,
-            "error": f"Unexpected error: {e}",
-            "model": model,
-            "timestamp": timestamp,
-            "usage": None,
-            "stats": None,
-        }
+        return {"success": False, "response": None, "error": str(e), "model": model, "timestamp": timestamp}
 
 
 async def generate_summary(
@@ -1290,282 +1016,26 @@ async def generate_summary(
     max_tokens: int = 500,
     temperature: float = 0.7,
 ) -> dict[str, t.Any]:
-    """Generate an AI summary of search results.
-
-    Args:
-        results: The search results to summarize
-        query: The original search query
-        endpoint: The base URL of the API endpoint (e.g., "https://api.openai.com/v1")
-        model: The model ID to use for summarization
-        api_key: Optional API key for authentication
-        system_prompt: Optional custom system prompt (uses default if not provided)
-        timeout: Request timeout in seconds
-        max_tokens: Maximum tokens in the response
-        temperature: Temperature for generation (0.0 to 1.0)
-
-    Returns:
-        A dictionary containing:
-        - success: Boolean indicating success
-        - summary: The generated summary (if successful)
-        - error: Error message (if failed)
-        - model: The model used
-        - timestamp: ISO format timestamp
-        - usage: Token usage information (if available)
-
-    Raises:
-        APIError: If the API returns an error response
-        TimeoutError: If the request times out
-    """
-    # Ensure endpoint has /v1 suffix for OpenAI-compatible APIs
-    endpoint = endpoint.rstrip('/')
-    if not endpoint.endswith('/v1'):
-        endpoint = f"{endpoint}/v1"
-    url = f"{endpoint}/chat/completions"
-
-    headers: dict[str, str] = {
-        "Content-Type": "application/json",
-    }
-
-    if api_key:
-        headers["Authorization"] = f"Bearer {api_key}"
-
-    # Format results for the prompt
-    formatted_results = format_results_for_prompt(results, query)
-
-    # Build the user prompt
-    user_prompt = DEFAULT_SUMMARY_PROMPT.format(
-        query=query,
-        results=formatted_results
-    )
-
-    # Use default system prompt if none provided
-    if system_prompt is None:
-        system_prompt = DEFAULT_SYSTEM_PROMPT
-
-    payload = {
-        "model": model,
-        "messages": [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt},
-        ],
-        "max_tokens": max_tokens,
-        "temperature": temperature,
-    }
-
-    timestamp = datetime.now(timezone.utc).isoformat()
-
-    try:
-        async with httpx.AsyncClient(timeout=timeout) as client:
-            response = await client.post(url, headers=headers, json=payload)
-            response.raise_for_status()
-            data = response.json()
-
-            # Extract summary from response
-            choices = data.get("choices", [])
-            if not choices:
-                logger.warning("No choices in API response")
-                return {
-                    "success": False,
-                    "summary": None,
-                    "error": "No completion returned from API",
-                    "model": model,
-                    "timestamp": timestamp,
-                    "usage": None,
-                }
-
-            message = choices[0].get("message", {})
-            summary = message.get("content", "").strip()
-
-            logger.debug(f"Generated summary using model {model}")
-
-            return {
-                "success": True,
-                "summary": summary,
-                "error": None,
-                "model": model,
-                "timestamp": timestamp,
-                "usage": data.get("usage"),
-            }
-
-    except httpx.TimeoutException as e:
-        logger.warning(f"Timeout generating summary: {e}")
-        raise TimeoutError(f"Request timed out after {timeout}s") from e
-
-    except httpx.HTTPStatusError as e:
-        error_msg = f"API returned error: {e.response.status_code}"
-        try:
-            error_data = e.response.json()
-            if "error" in error_data:
-                error_msg = f"{error_msg} - {error_data['error'].get('message', '')}"
-        except Exception:
-            pass
-        logger.warning(error_msg)
-        raise APIError(error_msg) from e
-
-    except httpx.RequestError as e:
-        logger.warning(f"Request error generating summary: {e}")
-        raise APIError(f"Request failed: {e}") from e
-
-
-async def stream_generate_summary(
-    results: EngineResults,
-    query: str,
-    endpoint: str,
-    model: str,
-    api_key: str | None = None,
-    system_prompt: str | None = None,
-    timeout: float = DEFAULT_TIMEOUT,
-    max_tokens: int = 500,
-    temperature: float = 0.7,
-) -> t.AsyncGenerator[str, None]:
-    """Stream an AI summary of search results.
-
-    Args:
-        results: The search results to summarize
-        query: The original search query
-        endpoint: The base URL of the API endpoint (e.g., "https://api.openai.com/v1")
-        model: The model ID to use for summarization
-        api_key: Optional API key for authentication
-        system_prompt: Optional custom system prompt (uses default if not provided)
-        timeout: Request timeout in seconds
-        max_tokens: Maximum tokens in the response
-        temperature: Temperature for generation (0.0 to 1.0)
-
-    Yields:
-        Chunks of the generated summary as they arrive from the API
-
-    Raises:
-        APIError: If the API returns an error response
-        TimeoutError: If the request times out
-    """
-    # Ensure endpoint has /v1 suffix for OpenAI-compatible APIs
-    endpoint = endpoint.rstrip('/')
-    if not endpoint.endswith('/v1'):
-        endpoint = f"{endpoint}/v1"
-    url = f"{endpoint}/chat/completions"
-
-    headers: dict[str, str] = {
-        "Content-Type": "application/json",
-    }
-
-    if api_key:
-        headers["Authorization"] = f"Bearer {api_key}"
-
-    # Format results for the prompt
-    formatted_results = format_results_for_prompt(results, query)
-
-    # Build the user prompt
-    user_prompt = DEFAULT_SUMMARY_PROMPT.format(
-        query=query,
-        results=formatted_results
-    )
-
-    # Use default system prompt if none provided
-    if system_prompt is None:
-        system_prompt = DEFAULT_SYSTEM_PROMPT
-
-    payload = {
-        "model": model,
-        "messages": [
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": user_prompt},
-        ],
-        "max_tokens": max_tokens,
-        "temperature": temperature,
-        "stream": True,  # Enable streaming
-    }
-
-    try:
-        async with httpx.AsyncClient(timeout=timeout) as client:
-            async with client.stream("POST", url, headers=headers, json=payload) as response:
-                response.raise_for_status()
-
-                async for line in response.aiter_lines():
-                    line = line.strip()
-                    if not line:
-                        continue
-
-                    # OpenAI streaming format: data: {"choices": [{"delta": {"content": "text"}}]}
-                    if line.startswith("data: "):
-                        data = line[6:]  # Remove "data: " prefix
-
-                        if data == "[DONE]":
-                            break
-
-                        try:
-                            chunk_data = json.loads(data)
-                            choices = chunk_data.get("choices", [])
-                            if choices:
-                                delta = choices[0].get("delta", {})
-                                content = delta.get("content", "")
-                                if content:
-                                    yield content
-                        except json.JSONDecodeError:
-                            logger.warning(f"Failed to parse streaming chunk: {data}")
-                            continue
-
-    except httpx.TimeoutException as e:
-        logger.warning(f"Timeout generating summary: {e}")
-        raise TimeoutError(f"Request timed out after {timeout}s") from e
-
-    except httpx.HTTPStatusError as e:
-        error_msg = f"API returned error: {e.response.status_code}"
-        try:
-            error_data = e.response.json()
-            if "error" in error_data:
-                error_msg = f"{error_msg} - {error_data['error'].get('message', '')}"
-        except Exception:
-            pass
-        logger.warning(error_msg)
-        raise APIError(error_msg) from e
-
-    except httpx.RequestError as e:
-        logger.warning(f"Request error generating summary: {e}")
-        raise APIError(f"Request failed: {e}") from e
+    res = generate_summary_sync(results, query, endpoint, model, PROVIDER_OPENAI, api_key, system_prompt, timeout, max_tokens, temperature)
+    if not res["success"]:
+        raise APIError(res["error"])
+    return res
 
 
 def should_generate_summary(
     preferences: dict[str, t.Any] | None,
     results_count: int = 0,
 ) -> bool:
-    """Check if an AI summary should be generated based on user preferences.
-
-    Args:
-        preferences: User preferences dictionary containing AI summarization settings.
-            Expected structure:
-            {
-                "ai_summarizer": {
-                    "enabled": bool,
-                    "min_results": int,
-                    "endpoint": str,
-                    "model": str
-                }
-            }
-        results_count: Number of search results available
-
-    Returns:
-        True if a summary should be generated, False otherwise
-    """
     if preferences is None:
         return False
-
     ai_config = preferences.get("ai_summarizer", {})
-
-    # Check if AI summarization is enabled
     if not ai_config.get("enabled", False):
         return False
-
-    # Check if we have enough results to summarize
     min_results = ai_config.get("min_results", 3)
     if results_count < min_results:
         return False
-
-    # Check if endpoint and model are configured
     endpoint = ai_config.get("endpoint", "")
     model = ai_config.get("model", "")
     if not endpoint or not model:
-        logger.debug("AI summarization enabled but endpoint or model not configured")
         return False
-
     return True
-
